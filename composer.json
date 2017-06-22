@@ -1,5 +1,5 @@
 {
-    "name": "imper69/allegropai",
+    "name": "imper69/allegroapi",
     "description": "library making allegro rest and soap api using easier",
     "type": "library",
     "require": {
