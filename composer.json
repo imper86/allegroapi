@@ -1,0 +1,21 @@
+{
+    "name": "imper69/allegropai",
+    "description": "library making allegro rest and soap api using easier",
+    "type": "library",
+    "require": {
+        "imper69/core": "^1.0",
+        "imper69/curl": "^1.0",
+        "ramsey/uuid": "^3.6"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "imper",
+            "email": "me@imper.info"
+        }
+    ],
+    "minimum-stability": "stable"
+}
