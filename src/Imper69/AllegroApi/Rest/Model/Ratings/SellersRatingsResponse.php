@@ -9,8 +9,9 @@ namespace Imper69\AllegroApi\Rest\Model\Ratings;
 
 
 use Imper69\AllegroApi\Rest\Model\Http\AbstractResponseFromCurl;
+use Imper69\AllegroApi\Rest\Model\Http\ResponseInterface;
 
-class SellersRatingsResponse extends AbstractResponseFromCurl
+class SellersRatingsResponse extends AbstractResponseFromCurl implements ResponseInterface
 {
 
 }

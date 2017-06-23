@@ -14,7 +14,7 @@ use Imper69\AllegroApi\Rest\Model\Http\ResponseInterface;
 use Imper69\AllegroApi\Rest\Service\Exception\RestServiceException;
 use Imper69\Curl\Model\ResponseInterface as CurlResponseInterface;
 
-class ChangePriceResponse extends AbstractResponseFromCurl
+class ChangePriceResponse extends AbstractResponseFromCurl implements ResponseInterface
 {
     public function __construct(ChangePriceRequest $request, CurlResponseInterface $curlResponse)
     {
