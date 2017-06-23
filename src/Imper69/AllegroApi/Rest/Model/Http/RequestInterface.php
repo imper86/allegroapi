@@ -11,23 +11,30 @@ namespace Imper69\AllegroApi\Rest\Model\Http;
 interface RequestInterface
 {
     /**
-     * Metoda powinna zwrócić jedną z czterech możliwości: GET, POST, PUT, DELETE
+     * Method should return on of standard HTTP methods: GET, POST, PUT, DELETE
      *
      * @return string
      */
     public function getMethod(): string;
 
     /**
-     * Metoda powinna zwrócić adres URI wywoływanego zasobu
+     * Method should return URI of requested API resource
      *
      * @return string
      */
     public function getUri(): string;
 
     /**
-     * Metoda powinna zwrócić tablicę z requestem do API
+     * Method should return request data array
      *
      * @return array
      */
     public function getData(): array;
+
+    /**
+     * Method should return proper content type from api docs
+     *
+     * @return string
+     */
+    public function getContentType(): ?string;
 }

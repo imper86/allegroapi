@@ -8,15 +8,15 @@
 namespace Imper69\AllegroApi\Rest\Model\AfterSalesServiceConditions;
 
 
-use Imper69\AllegroApi\AccountInterface;
+use Imper69\AllegroApi\CredentialsInterface;
 use Imper69\AllegroApi\Rest\Model\Http\RequestInterface;
 
 abstract class AbstractAfterSalesServiceConditonsRequest implements RequestInterface
 {
     /**
-     * @var AccountInterface
+     * @var CredentialsInterface
      */
-    private $account;
+    private $credentials;
 
     /**
      * @var int
@@ -29,9 +29,9 @@ abstract class AbstractAfterSalesServiceConditonsRequest implements RequestInter
     private $offset;
 
 
-    public function __construct(AccountInterface $account, int $limit = null, int $offset = null)
+    public function __construct(CredentialsInterface $credentials, int $limit = null, int $offset = null)
     {
-        $this->account = $account;
+        $this->credentials = $credentials;
         $this->limit = $limit;
         $this->offset = $offset;
     }
@@ -46,9 +46,15 @@ abstract class AbstractAfterSalesServiceConditonsRequest implements RequestInter
     public function getData(): array
     {
         return [
-            'sellerId' => $this->account->getAllegroSellerId(),
+            'sellerId' => $this->credentials->getAllegroSellerId(),
             'limit' => $this->limit,
             'offset' => $this->offset,
         ];
     }
+
+    public function getContentType(): ?string
+    {
+        return 'application/vnd.allegro.public.v1+json';
+    }
+
 }

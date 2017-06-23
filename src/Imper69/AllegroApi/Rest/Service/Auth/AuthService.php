@@ -8,7 +8,7 @@
 namespace Imper69\AllegroApi\Rest\Service\Auth;
 
 
-use Imper69\AllegroApi\AccountInterface;
+use Imper69\AllegroApi\CredentialsInterface;
 use Imper69\AllegroApi\Rest\Model\Auth\Token;
 use Imper69\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper69\Curl\CurlClientInterface;
@@ -19,24 +19,24 @@ class AuthService implements AuthServiceInterface
     const ALLEGRO_OAUTH_URL = 'https://ssl.allegro.pl/auth/oauth';
 
     /**
-     * @var AccountInterface
+     * @var CredentialsInterface
      */
-    private $account;
+    private $credentials;
 
     /**
      * @var CurlClientInterface
      */
     private $curl;
 
-    public function __construct(AccountInterface $account, CurlClientInterface $curl)
+    public function __construct(CredentialsInterface $credentials, CurlClientInterface $curl)
     {
         $curl->setBaseUrl(self::ALLEGRO_OAUTH_URL);
         $curl->setBasicAuthentication(
-            $account->getAllegroApiRestClientId(),
-            $account->getAllegroApiRestClientSecret()
+            $credentials->getAllegroApiRestClientId(),
+            $credentials->getAllegroApiRestClientSecret()
         );
 
-        $this->account = $account;
+        $this->credentials = $credentials;
         $this->curl = $curl;
     }
 
@@ -50,8 +50,8 @@ class AuthService implements AuthServiceInterface
         if (is_null($this->curl)) {
             $this->curl = new CurlClient(self::ALLEGRO_OAUTH_URL);
             $this->curl->setBasicAuthentication(
-                $this->account->getAllegroApiRestClientId(),
-                $this->account->getAllegroApiRestClientSecret()
+                $this->credentials->getAllegroApiRestClientId(),
+                $this->credentials->getAllegroApiRestClientSecret()
             );
         }
 
@@ -60,9 +60,9 @@ class AuthService implements AuthServiceInterface
 
     public function getAuthUrl(): string
     {
-        $clientId = $this->account->getAllegroApiRestClientId();
-        $apiKey = $this->account->getAllegroApiRestApiKey();
-        $redirectUri = $this->account->getAllegroApiRestRedirectUri();
+        $clientId = $this->credentials->getAllegroApiRestClientId();
+        $apiKey = $this->credentials->getAllegroApiRestApiKey();
+        $redirectUri = $this->credentials->getAllegroApiRestRedirectUri();
 
         return self::ALLEGRO_OAUTH_URL . "/authorize?response_type=code&client_id={$clientId}&api-key={$apiKey}&redirect_uri={$redirectUri}";
     }
@@ -71,7 +71,7 @@ class AuthService implements AuthServiceInterface
     {
         $curl = $this->getAuthorizedCurl();
 
-        $response = $curl->post("/token?grant_type=authorization_code&code={$authCode}&api-key={$this->account->getAllegroApiRestApiKey()}&redirect_uri={$this->account->getAllegroApiRestRedirectUri()}");
+        $response = $curl->post("/token?grant_type=authorization_code&code={$authCode}&api-key={$this->credentials->getAllegroApiRestApiKey()}&redirect_uri={$this->credentials->getAllegroApiRestRedirectUri()}");
 
         return new Token($response);
     }
@@ -80,7 +80,7 @@ class AuthService implements AuthServiceInterface
     {
         $curl = $this->getAuthorizedCurl();
 
-        $response = $curl->post("/token?grant_type=refresh_token&refresh_token={$token->getRefreshToken()}&redirect_uri={$this->account->getAllegroApiRestRedirectUri()}");
+        $response = $curl->post("/token?grant_type=refresh_token&refresh_token={$token->getRefreshToken()}&redirect_uri={$this->credentials->getAllegroApiRestRedirectUri()}");
 
         return new Token($response);
     }

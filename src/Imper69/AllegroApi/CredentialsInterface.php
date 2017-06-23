@@ -8,7 +8,7 @@
 namespace Imper69\AllegroApi;
 
 
-interface AccountInterface
+interface CredentialsInterface
 {
     public function getAllegroApiRestClientId(): string;
 

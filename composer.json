@@ -17,5 +17,8 @@
             "email": "me@imper.info"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": { "Imper69\\AllegroApi\\": "src/Imper69/AllegroApi" }
+    }
 }

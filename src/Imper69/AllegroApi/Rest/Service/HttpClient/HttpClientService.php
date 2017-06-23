@@ -8,7 +8,7 @@
 namespace Imper69\AllegroApi\Rest\Service\HttpClient;
 
 
-use Imper69\AllegroApi\AccountInterface;
+use Imper69\AllegroApi\CredentialsInterface;
 use Imper69\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper69\AllegroApi\Rest\Model\Http\RequestInterface;
 use Imper69\Curl\CurlClientInterface;
@@ -27,26 +27,32 @@ class HttpClientService implements HttpClientServiceInterface
     private $token;
 
     /**
-     * @var AccountInterface
+     * @var CredentialsInterface
      */
-    private $account;
+    private $credentials;
 
 
-    public function __construct(CurlClientInterface $curlClient, TokenInterface $token, AccountInterface $account)
+    public function __construct(CurlClientInterface $curlClient, TokenInterface $token, CredentialsInterface $credentials)
     {
         $curlClient->setBaseUrl('https://allegroapi.io');
         $curlClient->setHeader('Authorization', "Bearer {$token->getAccessToken()}");
-        $curlClient->setHeader('Api-Key', $account->getAllegroApiRestApiKey());
-        $curlClient->setHeader('Accept', 'application/vnd.allegro.public.v1+json');
-        $curlClient->setHeader('Content-Type', 'application/vnd.allegro.public.v1+json');
+        $curlClient->setHeader('Api-Key', $credentials->getAllegroApiRestApiKey());
 
         $this->curl = $curlClient;
         $this->token = $token;
-        $this->account = $account;
+        $this->credentials = $credentials;
     }
 
     public function sendRequest(RequestInterface $request): CurlResponseInterface
     {
+        if (!is_null($request->getContentType())) {
+            $this->curl->setHeader('Accept', $request->getContentType());
+            $this->curl->setHeader('Content-Type', $request->getContentType());
+        } else {
+            $this->curl->setHeader('Accept', 'application/vnd.allegro.public.v1+json');
+            $this->curl->setHeader('Content-Type', 'application/vnd.allegro.public.v1+json');
+        }
+
         return $this->curl->{$request->getMethod()}($request->getUri(), $request->getData());
     }
 
