@@ -13,7 +13,7 @@ use Imper69\AllegroApi\Soap\Service\SoapService;
 use Imper69\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest;
 use Imper69\AllegroApi\Soap\Wsdl\ServiceService;
 
-class AllegroApiClientSoapClient implements AllegroApiSoapClientInterface
+class AllegroApiSoapClient implements AllegroApiSoapClientInterface
 {
     /**
      * @var string
@@ -26,14 +26,14 @@ class AllegroApiClientSoapClient implements AllegroApiSoapClientInterface
     private $soapService;
 
     /**
-     * @var AccountInterface
+     * @var CredentialsInterface
      */
-    private $account;
+    private $credentials;
 
 
-    public function __construct(AccountInterface $account, string $sessionHandle = null)
+    public function __construct(CredentialsInterface $credentials, string $sessionHandle = null)
     {
-        $this->account = $account;
+        $this->credentials = $credentials;
         $this->sessionHandle = $sessionHandle;
     }
 
@@ -54,7 +54,7 @@ class AllegroApiClientSoapClient implements AllegroApiSoapClientInterface
         $request = new DoLoginWithAccessTokenRequest(
             $token->getAccessToken(),
             1,
-            $this->account->getAllegroSoapApiKey()
+            $this->credentials->getAllegroSoapApiKey()
         );
 
         $response = $client->doLoginWithAccessToken($request);

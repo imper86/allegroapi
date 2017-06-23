@@ -68,6 +68,11 @@ class ChangePriceRequest implements RequestInterface
         ];
     }
 
+    public function getContentType(): ?string
+    {
+        return 'application/vnd.allegro.public.v1+json';
+    }
+
     /**
      * @return int
      */

@@ -17,15 +17,15 @@ use Imper69\AllegroApi\Rest\Service\ChangePrice\ChangePriceService;
 use Imper69\AllegroApi\Rest\Service\ChangePrice\ChangePriceServiceInterface;
 use Imper69\AllegroApi\Rest\Service\HttpClient\HttpClientService;
 use Imper69\AllegroApi\Rest\Service\HttpClient\HttpClientServiceInterface;
-use Imper69\Core\Curl\Curl;
-use Imper69\Core\Curl\CurlClientInterface;
+use Imper69\Curl\CurlClient;
+use Imper69\Curl\CurlClientInterface;
 
 class AllegroApiRestClient implements AllegroApiRestClientInterface
 {
     /**
-     * @var AccountInterface
+     * @var CredentialsInterface
      */
-    private $account;
+    private $credentials;
 
     /**
      * @var TokenInterface
@@ -53,9 +53,9 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
     private $afterSalesServiceConditionsService;
 
 
-    public function __construct(AccountInterface $account, TokenInterface $token = null)
+    public function __construct(CredentialsInterface $credentials, TokenInterface $token = null)
     {
-        $this->account = $account;
+        $this->credentials = $credentials;
         $this->token = $token;
     }
 
@@ -66,7 +66,7 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
 
     public function setToken(TokenInterface $token)
     {
-        $this->setToken($token);
+        $this->token = $token;
     }
 
     public function refreshToken()
@@ -77,13 +77,13 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
 
     private function getCurlClient(): CurlClientInterface
     {
-        return new Curl();
+        return new CurlClient();
     }
 
     private function getHttpClient(): HttpClientServiceInterface
     {
         if (is_null($this->httpClient)) {
-            $this->httpClient = new HttpClientService($this->getCurlClient(), $this->token, $this->account);
+            $this->httpClient = new HttpClientService($this->getCurlClient(), $this->token, $this->credentials);
         }
 
         return $this->httpClient;
@@ -92,7 +92,7 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
     public function getAuthService(): AuthServiceInterface
     {
         if (is_null($this->authService)) {
-            $this->authService = new AuthService($this->account, $this->getCurlClient());
+            $this->authService = new AuthService($this->credentials, $this->getCurlClient());
         }
 
         return $this->authService;
