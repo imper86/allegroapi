@@ -12,6 +12,7 @@ use Imper69\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper69\AllegroApi\Rest\Service\AfterSalesServiceConditons\AfterSalesServicesConditionsServiceInterface;
 use Imper69\AllegroApi\Rest\Service\Auth\AuthServiceInterface;
 use Imper69\AllegroApi\Rest\Service\ChangePrice\ChangePriceServiceInterface;
+use Imper69\AllegroApi\Rest\Service\Ratings\SellersRatingsServiceInterface;
 
 interface AllegroApiRestClientInterface
 {
@@ -26,4 +27,6 @@ interface AllegroApiRestClientInterface
     public function getChangePriceService(): ChangePriceServiceInterface;
 
     public function getAfterSalesServiceConditionsService(): AfterSalesServicesConditionsServiceInterface;
+
+    public function getSellersRatingsService(): SellersRatingsServiceInterface;
 }

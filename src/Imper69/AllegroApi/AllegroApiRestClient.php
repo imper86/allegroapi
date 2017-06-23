@@ -17,6 +17,8 @@ use Imper69\AllegroApi\Rest\Service\ChangePrice\ChangePriceService;
 use Imper69\AllegroApi\Rest\Service\ChangePrice\ChangePriceServiceInterface;
 use Imper69\AllegroApi\Rest\Service\HttpClient\HttpClientService;
 use Imper69\AllegroApi\Rest\Service\HttpClient\HttpClientServiceInterface;
+use Imper69\AllegroApi\Rest\Service\Ratings\SellersRatingsService;
+use Imper69\AllegroApi\Rest\Service\Ratings\SellersRatingsServiceInterface;
 use Imper69\Curl\CurlClient;
 use Imper69\Curl\CurlClientInterface;
 
@@ -51,6 +53,11 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
      * @var AfterSalesServicesConditionsServiceInterface
      */
     private $afterSalesServiceConditionsService;
+
+    /**
+     * @var SellersRatingsServiceInterface
+     */
+    private $sellersRatingsService;
 
 
     public function __construct(CredentialsInterface $credentials, TokenInterface $token = null)
@@ -115,5 +122,15 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
 
         return $this->afterSalesServiceConditionsService;
     }
+
+    public function getSellersRatingsService(): SellersRatingsServiceInterface
+    {
+        if (is_null($this->sellersRatingsService)) {
+            $this->sellersRatingsService = new SellersRatingsService($this->getHttpClient());
+        }
+
+        return $this->sellersRatingsService;
+    }
+
 
 }
