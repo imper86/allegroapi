@@ -8,6 +8,7 @@
 namespace Imper69\AllegroApi;
 
 
+use Imper69\AllegroApi\Rest\Exception\NoTokenException;
 use Imper69\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper69\AllegroApi\Rest\Service\AfterSalesServiceConditons\AfterSalesServicesConditionsService;
 use Imper69\AllegroApi\Rest\Service\AfterSalesServiceConditons\AfterSalesServicesConditionsServiceInterface;
@@ -66,7 +67,7 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
         $this->token = $token;
     }
 
-    public function getToken(): TokenInterface
+    public function getToken(): ?TokenInterface
     {
         return $this->token;
     }
@@ -78,6 +79,8 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
 
     public function refreshToken()
     {
+        if (empty($this->token)) throw new NoTokenException();
+
         $newToken = $this->getAuthService()->refreshToken($this->token);
         $this->token = $newToken;
     }
@@ -89,6 +92,8 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
 
     private function getHttpClient(): HttpClientServiceInterface
     {
+        if (empty($this->token)) throw new NoTokenException();
+
         if (is_null($this->httpClient)) {
             $this->httpClient = new HttpClientService($this->getCurlClient(), $this->token, $this->credentials);
         }

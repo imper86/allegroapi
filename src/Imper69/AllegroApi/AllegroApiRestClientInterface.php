@@ -16,7 +16,7 @@ use Imper69\AllegroApi\Rest\Service\Ratings\SellersRatingsServiceInterface;
 
 interface AllegroApiRestClientInterface
 {
-    public function getToken(): TokenInterface;
+    public function getToken(): ?TokenInterface;
 
     public function setToken(TokenInterface $token);
 
