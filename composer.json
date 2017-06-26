@@ -1,10 +1,10 @@
 {
-    "name": "imper69/allegroapi",
+    "name": "imper86/allegroapi",
     "description": "library making allegro rest and soap api using easier",
     "type": "library",
     "require": {
-        "imper69/core": "^1.0",
-        "imper69/curl": "^1.0",
+        "imper86/core": "^1.0",
+        "imper86/curl": "^1.0",
         "ramsey/uuid": "^3.6"
     },
     "require-dev": {
