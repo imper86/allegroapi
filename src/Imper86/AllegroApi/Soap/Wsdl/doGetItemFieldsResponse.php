@@ -16,20 +16,13 @@ class doGetItemFieldsResponse
     protected $afterSalesServiceConditions = null;
 
     /**
-     * @var string $additionalServicesGroup
-     */
-    protected $additionalServicesGroup = null;
-
-    /**
      * @param ArrayOfFieldsvalue $itemFields
      * @param AfterSalesServiceConditionsStruct $afterSalesServiceConditions
-     * @param string $additionalServicesGroup
      */
-    public function __construct($itemFields = null, $afterSalesServiceConditions = null, $additionalServicesGroup = null)
+    public function __construct($itemFields = null, $afterSalesServiceConditions = null)
     {
       $this->itemFields = $itemFields;
       $this->afterSalesServiceConditions = $afterSalesServiceConditions;
-      $this->additionalServicesGroup = $additionalServicesGroup;
     }
 
     /**
@@ -65,24 +58,6 @@ class doGetItemFieldsResponse
     public function setAfterSalesServiceConditions($afterSalesServiceConditions)
     {
       $this->afterSalesServiceConditions = $afterSalesServiceConditions;
-      return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getAdditionalServicesGroup()
-    {
-      return $this->additionalServicesGroup;
-    }
-
-    /**
-     * @param string $additionalServicesGroup
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemFieldsResponse
-     */
-    public function setAdditionalServicesGroup($additionalServicesGroup)
-    {
-      $this->additionalServicesGroup = $additionalServicesGroup;
       return $this;
     }
 

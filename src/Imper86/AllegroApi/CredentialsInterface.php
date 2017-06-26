@@ -10,13 +10,15 @@ namespace Imper86\AllegroApi;
 
 interface CredentialsInterface
 {
-    public function getRestClientId(): string;
+    public function getAllegroApiRestClientId(): string;
 
-    public function getRestClientSecret(): string;
+    public function getAllegroApiRestClientSecret(): string;
 
-    public function getRestApiKey(): string;
+    public function getAllegroApiRestApiKey(): string;
 
-    public function getRestRedirectUri(): string;
+    public function getAllegroApiRestRedirectUri(): string;
 
-    public function getSoapApiKey(): string;
+    public function getAllegroSellerId(): int;
+
+    public function getAllegroSoapApiKey(): string;
 }

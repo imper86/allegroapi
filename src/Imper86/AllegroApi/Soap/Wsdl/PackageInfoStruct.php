@@ -16,11 +16,6 @@ class PackageInfoStruct
     protected $packageId = null;
 
     /**
-     * @var string $operatorName
-     */
-    protected $operatorName = null;
-
-    /**
      * @param int $operatorId
      * @param string $packageId
      */
@@ -63,24 +58,6 @@ class PackageInfoStruct
     public function setPackageId($packageId)
     {
       $this->packageId = $packageId;
-      return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getOperatorName()
-    {
-      return $this->operatorName;
-    }
-
-    /**
-     * @param string $operatorName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PackageInfoStruct
-     */
-    public function setOperatorName($operatorName)
-    {
-      $this->operatorName = $operatorName;
       return $this;
     }
 

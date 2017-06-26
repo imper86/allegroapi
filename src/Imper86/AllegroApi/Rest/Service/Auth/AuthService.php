@@ -8,75 +8,79 @@
 namespace Imper86\AllegroApi\Rest\Service\Auth;
 
 
-use GuzzleHttp\Client;
 use Imper86\AllegroApi\CredentialsInterface;
 use Imper86\AllegroApi\Rest\Model\Auth\Token;
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
-use Imper86\AllegroApi\RestClientInterface;
-use Imper86\Curl\CurlClient;
 use Imper86\Curl\CurlClientInterface;
+use Imper86\Curl\CurlClient;
 
 class AuthService implements AuthServiceInterface
 {
+    const ALLEGRO_OAUTH_URL = 'https://ssl.allegro.pl/auth/oauth';
+
     /**
      * @var CredentialsInterface
      */
     private $credentials;
+
     /**
-     * @var Client
+     * @var CurlClientInterface
      */
-    private $httpClient;
+    private $curl;
 
-
-    public function __construct(CredentialsInterface $credentials, Client $httpClient)
+    public function __construct(CredentialsInterface $credentials, CurlClientInterface $curl)
     {
+        $curl->setBaseUrl(self::ALLEGRO_OAUTH_URL);
+        $curl->setBasicAuthentication(
+            $credentials->getAllegroApiRestClientId(),
+            $credentials->getAllegroApiRestClientSecret()
+        );
+
         $this->credentials = $credentials;
-        $this->httpClient = $httpClient;
+        $this->curl = $curl;
+    }
+
+    /**
+     * Zwraca instancję Curla z ustawionymi nagłówkami do logowania.
+     *
+     * @return CurlClientInterface
+     */
+    private function getAuthorizedCurl(): CurlClientInterface
+    {
+        if (is_null($this->curl)) {
+            $this->curl = new CurlClient(self::ALLEGRO_OAUTH_URL);
+            $this->curl->setBasicAuthentication(
+                $this->credentials->getAllegroApiRestClientId(),
+                $this->credentials->getAllegroApiRestClientSecret()
+            );
+        }
+
+        return $this->curl;
     }
 
     public function getAuthUrl(): string
     {
-        $query = [
-            'response_type' => 'code',
-            'client_id' => $this->credentials->getRestClientId(),
-            'api-key' => $this->credentials->getRestApiKey(),
-            'redirect_uri' => $this->credentials->getRestRedirectUri(),
-        ];
+        $clientId = $this->credentials->getAllegroApiRestClientId();
+        $apiKey = $this->credentials->getAllegroApiRestApiKey();
+        $redirectUri = $this->credentials->getAllegroApiRestRedirectUri();
 
-        return RestClientInterface::OAUTH_URL.'/authorize?'.http_build_query($query);
+        return self::ALLEGRO_OAUTH_URL . "/authorize?response_type=code&client_id={$clientId}&api-key={$apiKey}&redirect_uri={$redirectUri}";
     }
 
     public function getNewToken(string $authCode): TokenInterface
     {
-        $response = $this->httpClient->post(RestClientInterface::OAUTH_URL.'/token', [
-            'auth' => [
-                $this->credentials->getRestClientId(),
-                $this->credentials->getRestClientSecret(),
-            ],
-            'query' => [
-                'grant_type' => 'authorization_code',
-                'code' => $authCode,
-                'api-key' => $this->credentials->getRestApiKey(),
-                'redirect_uri' => $this->credentials->getRestRedirectUri(),
-            ]
-        ]);
+        $curl = $this->getAuthorizedCurl();
+
+        $response = $curl->post("/token?grant_type=authorization_code&code={$authCode}&api-key={$this->credentials->getAllegroApiRestApiKey()}&redirect_uri={$this->credentials->getAllegroApiRestRedirectUri()}");
 
         return new Token($response);
     }
 
     public function refreshToken(TokenInterface $token): TokenInterface
     {
-        $response = $this->httpClient->post(RestClientInterface::OAUTH_URL.'/token', [
-            'auth' => [
-                $this->credentials->getRestClientId(),
-                $this->credentials->getRestClientSecret(),
-            ],
-            'query' => [
-                'grant_type' => 'refresh_token',
-                'refresh_token' => $token->getRefreshToken(),
-                'redirect_uri' => $this->credentials->getRestRedirectUri(),
-            ]
-        ]);
+        $curl = $this->getAuthorizedCurl();
+
+        $response = $curl->post("/token?grant_type=refresh_token&refresh_token={$token->getRefreshToken()}&redirect_uri={$this->credentials->getAllegroApiRestRedirectUri()}");
 
         return new Token($response);
     }

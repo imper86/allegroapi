@@ -7,8 +7,10 @@
 
 namespace Imper86\AllegroApi\Rest\Model\Auth;
 
-use Lcobucci\JWT\Parser;
-use Psr\Http\Message\ResponseInterface;
+
+use Imper86\AllegroApi\Rest\Exception\IncorrectCurlResponseException;
+use Imper86\Curl\Model\ResponseInterface as CurlResponseInterface;
+use Imper86\Core\DateTime;
 
 class Token implements TokenInterface
 {
@@ -16,48 +18,36 @@ class Token implements TokenInterface
      * @var string
      */
     private $accessToken;
-    /**
-     * @var \Lcobucci\JWT\Token
-     */
-    private $accessTokenDecoded;
+
     /**
      * @var string
      */
     private $refreshToken;
+
     /**
      * @var \DateTime
      */
     private $expirationTime;
-    /**
-     * @var string
-     */
-    private $userId;
 
-    public function __construct(ResponseInterface $apiResponse)
+    public function __construct(CurlResponseInterface $curlResponse)
     {
-        $rawData = (string)$apiResponse->getBody();
-        $data = json_decode($rawData);
+        $data = $curlResponse->getRawResponse();
 
         if (
             empty($data->access_token)
             || empty($data->refresh_token)
             || empty($data->expires_in)
         ) {
-            throw new \Exception('Nieprawidłowa struktura odpowiedzi API, otrzymano: '.$rawData);
+            throw new IncorrectCurlResponseException($curlResponse);
         }
 
         $this->accessToken = $data->access_token;
         $this->refreshToken = $data->refresh_token;
 
-        $expirationTime = new \DateTime();
+        $expirationTime = new DateTime();
         $expirationTime->add(new \DateInterval("PT{$data->expires_in}S"));
 
         $this->expirationTime = $expirationTime;
-
-        $jwtParser = new Parser();
-        $tokenDecoded = $jwtParser->parse($this->accessToken);
-        $this->accessTokenDecoded = $tokenDecoded;
-        $this->userId = $tokenDecoded->getClaim('user_name');
     }
 
 
@@ -75,11 +65,4 @@ class Token implements TokenInterface
     {
         return $this->expirationTime;
     }
-
-    public function getUserId(): string
-    {
-        return $this->userId;
-    }
-
-
 }

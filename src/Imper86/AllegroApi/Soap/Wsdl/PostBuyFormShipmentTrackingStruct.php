@@ -11,11 +11,6 @@ class PostBuyFormShipmentTrackingStruct
     protected $postBuyFormOperatorId = null;
 
     /**
-     * @var string $postBuyFormOperatorName
-     */
-    protected $postBuyFormOperatorName = null;
-
-    /**
      * @var string $postBuyFormPackageId
      */
     protected $postBuyFormPackageId = null;
@@ -27,14 +22,12 @@ class PostBuyFormShipmentTrackingStruct
 
     /**
      * @param int $postBuyFormOperatorId
-     * @param string $postBuyFormOperatorName
      * @param string $postBuyFormPackageId
      * @param string $postBuyFormPackageStatus
      */
-    public function __construct($postBuyFormOperatorId = null, $postBuyFormOperatorName = null, $postBuyFormPackageId = null, $postBuyFormPackageStatus = null)
+    public function __construct($postBuyFormOperatorId = null, $postBuyFormPackageId = null, $postBuyFormPackageStatus = null)
     {
       $this->postBuyFormOperatorId = $postBuyFormOperatorId;
-      $this->postBuyFormOperatorName = $postBuyFormOperatorName;
       $this->postBuyFormPackageId = $postBuyFormPackageId;
       $this->postBuyFormPackageStatus = $postBuyFormPackageStatus;
     }
@@ -54,24 +47,6 @@ class PostBuyFormShipmentTrackingStruct
     public function setPostBuyFormOperatorId($postBuyFormOperatorId)
     {
       $this->postBuyFormOperatorId = $postBuyFormOperatorId;
-      return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPostBuyFormOperatorName()
-    {
-      return $this->postBuyFormOperatorName;
-    }
-
-    /**
-     * @param string $postBuyFormOperatorName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormShipmentTrackingStruct
-     */
-    public function setPostBuyFormOperatorName($postBuyFormOperatorName)
-    {
-      $this->postBuyFormOperatorName = $postBuyFormOperatorName;
       return $this;
     }
 

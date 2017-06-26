@@ -46,7 +46,7 @@ class doShowItemInfoExtResponse
     protected $itemProductInfo = null;
 
     /**
-     * @var string $itemVariants
+     * @var ArrayOfItemvariantstruct $itemVariants
      */
     protected $itemVariants = null;
 
@@ -54,11 +54,6 @@ class doShowItemInfoExtResponse
      * @var AfterSalesServiceConditionsStruct $itemAfterSalesServiceConditions
      */
     protected $itemAfterSalesServiceConditions = null;
-
-    /**
-     * @var string $itemAdditionalServicesGroup
-     */
-    protected $itemAdditionalServicesGroup = null;
 
     /**
      * @param ItemInfoExt $itemListInfoExt
@@ -69,11 +64,10 @@ class doShowItemInfoExtResponse
      * @param ItemPaymentOptions $itemPaymentOptions
      * @param CompanyInfoStruct $itemCompanyInfo
      * @param ProductStruct $itemProductInfo
-     * @param string $itemVariants
+     * @param ArrayOfItemvariantstruct $itemVariants
      * @param AfterSalesServiceConditionsStruct $itemAfterSalesServiceConditions
-     * @param string $itemAdditionalServicesGroup
      */
-    public function __construct($itemListInfoExt = null, $itemCatPath = null, $itemImgList = null, $itemAttribList = null, $itemPostageOptions = null, $itemPaymentOptions = null, $itemCompanyInfo = null, $itemProductInfo = null, $itemVariants = null, $itemAfterSalesServiceConditions = null, $itemAdditionalServicesGroup = null)
+    public function __construct($itemListInfoExt = null, $itemCatPath = null, $itemImgList = null, $itemAttribList = null, $itemPostageOptions = null, $itemPaymentOptions = null, $itemCompanyInfo = null, $itemProductInfo = null, $itemVariants = null, $itemAfterSalesServiceConditions = null)
     {
       $this->itemListInfoExt = $itemListInfoExt;
       $this->itemCatPath = $itemCatPath;
@@ -85,7 +79,6 @@ class doShowItemInfoExtResponse
       $this->itemProductInfo = $itemProductInfo;
       $this->itemVariants = $itemVariants;
       $this->itemAfterSalesServiceConditions = $itemAfterSalesServiceConditions;
-      $this->itemAdditionalServicesGroup = $itemAdditionalServicesGroup;
     }
 
     /**
@@ -233,7 +226,7 @@ class doShowItemInfoExtResponse
     }
 
     /**
-     * @return string
+     * @return ArrayOfItemvariantstruct
      */
     public function getItemVariants()
     {
@@ -241,7 +234,7 @@ class doShowItemInfoExtResponse
     }
 
     /**
-     * @param string $itemVariants
+     * @param ArrayOfItemvariantstruct $itemVariants
      * @return \Imper86\AllegroApi\Soap\Wsdl\doShowItemInfoExtResponse
      */
     public function setItemVariants($itemVariants)
@@ -265,24 +258,6 @@ class doShowItemInfoExtResponse
     public function setItemAfterSalesServiceConditions($itemAfterSalesServiceConditions)
     {
       $this->itemAfterSalesServiceConditions = $itemAfterSalesServiceConditions;
-      return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getItemAdditionalServicesGroup()
-    {
-      return $this->itemAdditionalServicesGroup;
-    }
-
-    /**
-     * @param string $itemAdditionalServicesGroup
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowItemInfoExtResponse
-     */
-    public function setItemAdditionalServicesGroup($itemAdditionalServicesGroup)
-    {
-      $this->itemAdditionalServicesGroup = $itemAdditionalServicesGroup;
       return $this;
     }
 

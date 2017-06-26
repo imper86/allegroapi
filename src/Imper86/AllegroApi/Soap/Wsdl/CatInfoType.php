@@ -31,11 +31,6 @@ class CatInfoType
     protected $catIsProductCatalogueEnabled = null;
 
     /**
-     * @var boolean $catIsLeaf
-     */
-    protected $catIsLeaf = null;
-
-    /**
      * @param int $catId
      * @param string $catName
      * @param int $catParent
@@ -138,24 +133,6 @@ class CatInfoType
     public function setCatIsProductCatalogueEnabled($catIsProductCatalogueEnabled)
     {
       $this->catIsProductCatalogueEnabled = $catIsProductCatalogueEnabled;
-      return $this;
-    }
-
-    /**
-     * @return boolean
-     */
-    public function getCatIsLeaf()
-    {
-      return $this->catIsLeaf;
-    }
-
-    /**
-     * @param boolean $catIsLeaf
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CatInfoType
-     */
-    public function setCatIsLeaf($catIsLeaf)
-    {
-      $this->catIsLeaf = $catIsLeaf;
       return $this;
     }
 

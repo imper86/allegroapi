@@ -31,7 +31,7 @@ class FieldsValue
     protected $fvalueImage = null;
 
     /**
-     * @var int $fvalueDatetime
+     * @var float $fvalueDatetime
      */
     protected $fvalueDatetime = null;
 
@@ -154,7 +154,7 @@ class FieldsValue
     }
 
     /**
-     * @return int
+     * @return float
      */
     public function getFvalueDatetime()
     {
@@ -162,7 +162,7 @@ class FieldsValue
     }
 
     /**
-     * @param int $fvalueDatetime
+     * @param float $fvalueDatetime
      * @return \Imper86\AllegroApi\Soap\Wsdl\FieldsValue
      */
     public function setFvalueDatetime($fvalueDatetime)
