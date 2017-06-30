@@ -18,7 +18,7 @@ class SoapService extends ServiceService
         parent::__construct(['trace' => true]);
     }
 
-    public function __soapCall($function_name, array $arguments, array $options = null, $input_headers = null, array &$output_headers = null)
+    public function __soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null)
     {
         try {
             $response = parent::__soapCall($function_name, $arguments, $options, $input_headers, $output_headers);
