@@ -79,7 +79,10 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
 
     public function refreshToken()
     {
-        if (empty($this->token)) throw new NoTokenException();
+		if (empty($this->token))
+		{
+			throw new NoTokenException();
+		}
 
         $newToken = $this->getAuthService()->refreshToken($this->token);
         $this->token = $newToken;

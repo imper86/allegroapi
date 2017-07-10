@@ -17,6 +17,7 @@ use Imper86\Curl\CurlClient;
 class AuthService implements AuthServiceInterface
 {
     const ALLEGRO_OAUTH_URL = 'https://ssl.allegro.pl/auth/oauth';
+    const ALLEGRO_SANDBOX_OAUTH_URL = 'https://ssl.allegro.pl.webapisandbox.pl/auth/oauth/';
 
     /**
      * @var CredentialsInterface
@@ -30,7 +31,7 @@ class AuthService implements AuthServiceInterface
 
     public function __construct(CredentialsInterface $credentials, CurlClientInterface $curl)
     {
-        $curl->setBaseUrl(self::ALLEGRO_OAUTH_URL);
+        $curl->setBaseUrl($credentials->getAllegroUseSandbox() ? self::ALLEGRO_SANDBOX_OAUTH_URL : self::ALLEGRO_OAUTH_URL);
         $curl->setBasicAuthentication(
             $credentials->getAllegroApiRestClientId(),
             $credentials->getAllegroApiRestClientSecret()
@@ -48,7 +49,7 @@ class AuthService implements AuthServiceInterface
     private function getAuthorizedCurl(): CurlClientInterface
     {
         if (is_null($this->curl)) {
-            $this->curl = new CurlClient(self::ALLEGRO_OAUTH_URL);
+            $this->curl = new CurlClient($this->credentials->getAllegroUseSandbox() ? self::ALLEGRO_SANDBOX_OAUTH_URL : self::ALLEGRO_OAUTH_URL);
             $this->curl->setBasicAuthentication(
                 $this->credentials->getAllegroApiRestClientId(),
                 $this->credentials->getAllegroApiRestClientSecret()
@@ -63,8 +64,9 @@ class AuthService implements AuthServiceInterface
         $clientId = $this->credentials->getAllegroApiRestClientId();
         $apiKey = $this->credentials->getAllegroApiRestApiKey();
         $redirectUri = $this->credentials->getAllegroApiRestRedirectUri();
+        $authUrl = $this->credentials->getAllegroUseSandbox() ? self::ALLEGRO_SANDBOX_OAUTH_URL : self::ALLEGRO_OAUTH_URL;
 
-        return self::ALLEGRO_OAUTH_URL . "/authorize?response_type=code&client_id={$clientId}&api-key={$apiKey}&redirect_uri={$redirectUri}";
+        return $authUrl . "/authorize?response_type=code&client_id={$clientId}&api-key={$apiKey}&redirect_uri={$redirectUri}";
     }
 
     public function getNewToken(string $authCode): TokenInterface

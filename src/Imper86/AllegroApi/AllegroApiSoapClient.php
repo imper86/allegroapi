@@ -11,7 +11,6 @@ namespace Imper86\AllegroApi;
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper86\AllegroApi\Soap\Service\SoapService;
 use Imper86\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest;
-use Imper86\AllegroApi\Soap\Wsdl\ServiceService;
 
 class AllegroApiSoapClient implements AllegroApiSoapClientInterface
 {
@@ -31,7 +30,7 @@ class AllegroApiSoapClient implements AllegroApiSoapClientInterface
     private $credentials;
 
 
-    public function __construct(CredentialsInterface $credentials, string $sessionHandle = null)
+	public function __construct(CredentialsInterface $credentials, string $sessionHandle = null)
     {
         $this->credentials = $credentials;
         $this->sessionHandle = $sessionHandle;
@@ -65,7 +64,7 @@ class AllegroApiSoapClient implements AllegroApiSoapClientInterface
     public function getService(): SoapService
     {
         if (is_null($this->soapService)) {
-            $this->soapService = new SoapService(['trace' => true]);
+            $this->soapService = new SoapService(['trace' => true], $this->credentials->getAllegroSoapWsdl());
         }
 
         return $this->soapService;

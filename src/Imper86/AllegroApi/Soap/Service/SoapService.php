@@ -13,9 +13,9 @@ use Imper86\AllegroApi\Soap\Wsdl\ServiceService;
 
 class SoapService extends ServiceService
 {
-    public function __construct()
+    public function __construct($options, $wsdl)
     {
-        parent::__construct(['trace' => true]);
+        parent::__construct($options, $wsdl);
     }
 
     public function __soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null)
