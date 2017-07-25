@@ -9,8 +9,9 @@ namespace Imper86\AllegroApi\Rest\Model\AfterSalesServiceConditions;
 
 
 use Imper86\AllegroApi\Rest\Exception\IncorrectCurlResponseException;
+use Traversable;
 
-class AfterSalesServiceConditionCollection implements \ArrayAccess
+class AfterSalesServiceConditionCollection implements \ArrayAccess, \IteratorAggregate
 {
     /**
      * @var AfterSalesServiceCondition[]
@@ -49,6 +50,11 @@ class AfterSalesServiceConditionCollection implements \ArrayAccess
     public function offsetUnset($offset)
     {
         unset($this->conditions[$offset]);
+    }
+
+    public function getIterator()
+    {
+        return new \ArrayIterator($this->conditions);
     }
 
 }
