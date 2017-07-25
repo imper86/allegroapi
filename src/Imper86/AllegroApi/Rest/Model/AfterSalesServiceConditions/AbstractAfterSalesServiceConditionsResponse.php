@@ -12,7 +12,7 @@ use Imper86\AllegroApi\Rest\Model\Http\RequestInterface;
 use Imper86\AllegroApi\Rest\Model\Http\ResponseInterface;
 use Imper86\Curl\Model\ResponseInterface as CurlResponseInterface;
 
-abstract class AbstractAfterSalesServiceConditionsResponse implements ResponseInterface
+abstract class AbstractAfterSalesServiceConditionsResponse implements ResponseInterface, AfterSalesServiceConditionsResponseInterface
 {
     /**
      * @var AbstractAfterSalesServiceConditonsRequest
@@ -24,6 +24,13 @@ abstract class AbstractAfterSalesServiceConditionsResponse implements ResponseIn
      */
     private $curlResponse;
 
+    /**
+     * @var AfterSalesServiceConditionCollection
+     */
+    private $conditions;
+
+
+    abstract public function getConditionsArray(): array;
 
     public function __construct(AbstractAfterSalesServiceConditonsRequest $request, CurlResponseInterface $curlResponse)
     {
@@ -41,4 +48,17 @@ abstract class AbstractAfterSalesServiceConditionsResponse implements ResponseIn
         return $this->curlResponse->getRawResponse();
     }
 
+    public function getCount(): int
+    {
+        return (int)$this->getRaw()->count;
+    }
+
+    public function getConditions(): AfterSalesServiceConditionCollection
+    {
+        if (null === $this->conditions) {
+            $this->conditions = new AfterSalesServiceConditionCollection($this);
+        }
+
+        return $this->conditions;
+    }
 }
