@@ -70,5 +70,4 @@ class AllegroApiSoapClient implements AllegroApiSoapClientInterface
 
         return $this->soapService;
     }
-
 }

@@ -18,7 +18,7 @@ class SoapServiceException extends \Exception
 
     private $stringCode;
 
-    public function __construct(SoapService $soapService, \SoapFault $soapFault, $request = null)
+    public function __construct(\SoapClient $soapService, \SoapFault $soapFault, $request = null)
     {
         parent::__construct($soapFault->getMessage(), 0, $soapFault);
         $this->request = $request;
