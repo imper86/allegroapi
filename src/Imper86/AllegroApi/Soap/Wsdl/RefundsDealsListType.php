@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class RefundsDealsListType
 {
@@ -91,7 +91,7 @@ class RefundsDealsListType
 
     /**
      * @param int $dealId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setDealId($dealId)
     {
@@ -117,7 +117,7 @@ class RefundsDealsListType
 
     /**
      * @param \DateTime $dealDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setDealDate(\DateTime $dealDate)
     {
@@ -135,7 +135,7 @@ class RefundsDealsListType
 
     /**
      * @param int $timeLeft
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setTimeLeft($timeLeft)
     {
@@ -153,7 +153,7 @@ class RefundsDealsListType
 
     /**
      * @param int $buyerId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setBuyerId($buyerId)
     {
@@ -171,7 +171,7 @@ class RefundsDealsListType
 
     /**
      * @param string $buyerLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setBuyerLogin($buyerLogin)
     {
@@ -189,7 +189,7 @@ class RefundsDealsListType
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setItemId($itemId)
     {
@@ -207,7 +207,7 @@ class RefundsDealsListType
 
     /**
      * @param string $itemTitle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setItemTitle($itemTitle)
     {
@@ -225,7 +225,7 @@ class RefundsDealsListType
 
     /**
      * @param int $bidsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setBidsCount($bidsCount)
     {
@@ -243,7 +243,7 @@ class RefundsDealsListType
 
     /**
      * @param string $quantityType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setQuantityType($quantityType)
     {
@@ -261,7 +261,7 @@ class RefundsDealsListType
 
     /**
      * @param string $paymentStatus
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundsDealsListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundsDealsListType
      */
     public function setPaymentStatus($paymentStatus)
     {

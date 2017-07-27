@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doFeedbackResponse
 {
@@ -28,7 +28,7 @@ class doFeedbackResponse
 
     /**
      * @param int $feedbackId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doFeedbackResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doFeedbackResponse
      */
     public function setFeedbackId($feedbackId)
     {

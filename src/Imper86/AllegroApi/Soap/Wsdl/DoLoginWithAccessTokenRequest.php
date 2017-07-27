@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoLoginWithAccessTokenRequest
 {
@@ -42,7 +42,7 @@ class DoLoginWithAccessTokenRequest
 
     /**
      * @param string $accessToken
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest
      */
     public function setAccessToken($accessToken)
     {
@@ -60,7 +60,7 @@ class DoLoginWithAccessTokenRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest
      */
     public function setCountryCode($countryCode)
     {
@@ -78,7 +78,7 @@ class DoLoginWithAccessTokenRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginWithAccessTokenRequest
      */
     public function setWebapiKey($webapiKey)
     {

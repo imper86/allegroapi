@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemImagesStruct
 {
@@ -33,7 +33,7 @@ class ItemImagesStruct
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemImagesStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemImagesStruct
      */
     public function setItemId($itemId)
     {
@@ -51,7 +51,7 @@ class ItemImagesStruct
 
     /**
      * @param ArrayOfItemimagelist $itemImages
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemImagesStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemImagesStruct
      */
     public function setItemImages($itemImages)
     {

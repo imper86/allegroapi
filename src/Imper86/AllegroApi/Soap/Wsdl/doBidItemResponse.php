@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doBidItemResponse
 {
@@ -28,7 +28,7 @@ class doBidItemResponse
 
     /**
      * @param string $bidPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doBidItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doBidItemResponse
      */
     public function setBidPrice($bidPrice)
     {

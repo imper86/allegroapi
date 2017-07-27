@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PayoutPaymentsStruct
 {
@@ -70,7 +70,7 @@ class PayoutPaymentsStruct
 
     /**
      * @param int $tranasctionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
      */
     public function setTranasctionId($tranasctionId)
     {
@@ -88,7 +88,7 @@ class PayoutPaymentsStruct
 
     /**
      * @param string $userName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
      */
     public function setUserName($userName)
     {
@@ -106,7 +106,7 @@ class PayoutPaymentsStruct
 
     /**
      * @param int $userId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
      */
     public function setUserId($userId)
     {
@@ -124,7 +124,7 @@ class PayoutPaymentsStruct
 
     /**
      * @param float $amount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
      */
     public function setAmount($amount)
     {
@@ -142,7 +142,7 @@ class PayoutPaymentsStruct
 
     /**
      * @param float $transportAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
      */
     public function setTransportAmount($transportAmount)
     {
@@ -160,7 +160,7 @@ class PayoutPaymentsStruct
 
     /**
      * @param float $totalAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
      */
     public function setTotalAmount($totalAmount)
     {
@@ -178,7 +178,7 @@ class PayoutPaymentsStruct
 
     /**
      * @param string $paidDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutPaymentsStruct
      */
     public function setPaidDate($paidDate)
     {

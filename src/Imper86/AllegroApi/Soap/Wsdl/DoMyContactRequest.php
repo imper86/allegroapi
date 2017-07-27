@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoMyContactRequest
 {
@@ -49,7 +49,7 @@ class DoMyContactRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyContactRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyContactRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -67,7 +67,7 @@ class DoMyContactRequest
 
     /**
      * @param ArrayOfLong $auctionIdList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyContactRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyContactRequest
      */
     public function setAuctionIdList($auctionIdList)
     {
@@ -85,7 +85,7 @@ class DoMyContactRequest
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyContactRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyContactRequest
      */
     public function setOffset($offset)
     {
@@ -103,7 +103,7 @@ class DoMyContactRequest
 
     /**
      * @param int $desc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyContactRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyContactRequest
      */
     public function setDesc($desc)
     {

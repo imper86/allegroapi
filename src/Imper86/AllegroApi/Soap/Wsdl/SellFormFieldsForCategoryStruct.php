@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SellFormFieldsForCategoryStruct
 {
@@ -40,7 +40,7 @@ class SellFormFieldsForCategoryStruct
 
     /**
      * @param ArrayOfSellformtype $sellFormFieldsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFormFieldsForCategoryStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFormFieldsForCategoryStruct
      */
     public function setSellFormFieldsList($sellFormFieldsList)
     {
@@ -58,7 +58,7 @@ class SellFormFieldsForCategoryStruct
 
     /**
      * @param int $sellFormFieldsVersionKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFormFieldsForCategoryStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFormFieldsForCategoryStruct
      */
     public function setSellFormFieldsVersionKey($sellFormFieldsVersionKey)
     {
@@ -76,7 +76,7 @@ class SellFormFieldsForCategoryStruct
 
     /**
      * @param string $sellFormFieldsComponentValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFormFieldsForCategoryStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFormFieldsForCategoryStruct
      */
     public function setSellFormFieldsComponentValue($sellFormFieldsComponentValue)
     {

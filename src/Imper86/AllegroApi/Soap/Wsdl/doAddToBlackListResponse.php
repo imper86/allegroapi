@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doAddToBlackListResponse
 {
@@ -28,7 +28,7 @@ class doAddToBlackListResponse
 
     /**
      * @param ArrayOfUserblacklistaddresultstruct $userBlackListResultsArr
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doAddToBlackListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doAddToBlackListResponse
      */
     public function setUserBlackListResultsArr($userBlackListResultsArr)
     {

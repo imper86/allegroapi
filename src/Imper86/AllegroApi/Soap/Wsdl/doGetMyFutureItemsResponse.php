@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMyFutureItemsResponse
 {
@@ -35,7 +35,7 @@ class doGetMyFutureItemsResponse
 
     /**
      * @param int $futureItemsCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyFutureItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyFutureItemsResponse
      */
     public function setFutureItemsCounter($futureItemsCounter)
     {
@@ -53,7 +53,7 @@ class doGetMyFutureItemsResponse
 
     /**
      * @param ArrayOfFutureitemstruct $futureItemsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyFutureItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyFutureItemsResponse
      */
     public function setFutureItemsList($futureItemsList)
     {

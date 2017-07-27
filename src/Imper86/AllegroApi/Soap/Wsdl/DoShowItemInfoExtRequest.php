@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoShowItemInfoExtRequest
 {
@@ -51,6 +51,11 @@ class DoShowItemInfoExtRequest
     protected $getAfterSalesServiceConditions = null;
 
     /**
+     * @var int $getEan
+     */
+    protected $getEan = null;
+
+    /**
      * @param string $sessionHandle
      * @param int $itemId
      * @param int $getDesc
@@ -60,8 +65,9 @@ class DoShowItemInfoExtRequest
      * @param int $getCompanyInfo
      * @param int $getProductInfo
      * @param int $getAfterSalesServiceConditions
+     * @param int $getEan
      */
-    public function __construct($sessionHandle = null, $itemId = null, $getDesc = null, $getImageUrl = null, $getAttribs = null, $getPostageOptions = null, $getCompanyInfo = null, $getProductInfo = null, $getAfterSalesServiceConditions = null)
+    public function __construct($sessionHandle = null, $itemId = null, $getDesc = null, $getImageUrl = null, $getAttribs = null, $getPostageOptions = null, $getCompanyInfo = null, $getProductInfo = null, $getAfterSalesServiceConditions = null, $getEan = null)
     {
       $this->sessionHandle = $sessionHandle;
       $this->itemId = $itemId;
@@ -72,6 +78,7 @@ class DoShowItemInfoExtRequest
       $this->getCompanyInfo = $getCompanyInfo;
       $this->getProductInfo = $getProductInfo;
       $this->getAfterSalesServiceConditions = $getAfterSalesServiceConditions;
+      $this->getEan = $getEan;
     }
 
     /**
@@ -84,7 +91,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -102,7 +109,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setItemId($itemId)
     {
@@ -120,7 +127,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getDesc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetDesc($getDesc)
     {
@@ -138,7 +145,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getImageUrl
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetImageUrl($getImageUrl)
     {
@@ -156,7 +163,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getAttribs
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetAttribs($getAttribs)
     {
@@ -174,7 +181,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getPostageOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetPostageOptions($getPostageOptions)
     {
@@ -192,7 +199,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getCompanyInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetCompanyInfo($getCompanyInfo)
     {
@@ -210,7 +217,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getProductInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetProductInfo($getProductInfo)
     {
@@ -228,11 +235,29 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getAfterSalesServiceConditions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetAfterSalesServiceConditions($getAfterSalesServiceConditions)
     {
       $this->getAfterSalesServiceConditions = $getAfterSalesServiceConditions;
+      return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getGetEan()
+    {
+      return $this->getEan;
+    }
+
+    /**
+     * @param int $getEan
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     */
+    public function setGetEan($getEan)
+    {
+      $this->getEan = $getEan;
       return $this;
     }
 

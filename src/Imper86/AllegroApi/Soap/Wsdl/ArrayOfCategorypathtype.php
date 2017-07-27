@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfCategorypathtype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfCategorypathtype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param CategoryPathType[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfCategorypathtype
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfCategorypathtype
      */
     public function setItem(array $item = null)
     {

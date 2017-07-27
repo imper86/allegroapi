@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetSellFormFieldsLimitResponse
 {
@@ -49,7 +49,7 @@ class doGetSellFormFieldsLimitResponse
 
     /**
      * @param ArrayOfSellformtype $sellFormFields
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
      */
     public function setSellFormFields($sellFormFields)
     {
@@ -67,7 +67,7 @@ class doGetSellFormFieldsLimitResponse
 
     /**
      * @param int $verKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
      */
     public function setVerKey($verKey)
     {
@@ -85,7 +85,7 @@ class doGetSellFormFieldsLimitResponse
 
     /**
      * @param string $verStr
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
      */
     public function setVerStr($verStr)
     {
@@ -103,7 +103,7 @@ class doGetSellFormFieldsLimitResponse
 
     /**
      * @param int $formFieldsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormFieldsLimitResponse
      */
     public function setFormFieldsCount($formFieldsCount)
     {

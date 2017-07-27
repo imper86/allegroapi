@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FeedbackList
 {
@@ -133,7 +133,7 @@ class FeedbackList
 
     /**
      * @param int $fId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFId($fId)
     {
@@ -151,7 +151,7 @@ class FeedbackList
 
     /**
      * @param int $fItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFItemId($fItemId)
     {
@@ -169,7 +169,7 @@ class FeedbackList
 
     /**
      * @param int $fFromId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFFromId($fFromId)
     {
@@ -187,7 +187,7 @@ class FeedbackList
 
     /**
      * @param int $fToId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFToId($fToId)
     {
@@ -205,7 +205,7 @@ class FeedbackList
 
     /**
      * @param int $fDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFDate($fDate)
     {
@@ -223,7 +223,7 @@ class FeedbackList
 
     /**
      * @param string $fType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFType($fType)
     {
@@ -241,7 +241,7 @@ class FeedbackList
 
     /**
      * @param string $fDesc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFDesc($fDesc)
     {
@@ -259,7 +259,7 @@ class FeedbackList
 
     /**
      * @param int $fCorrectDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFCorrectDate($fCorrectDate)
     {
@@ -277,7 +277,7 @@ class FeedbackList
 
     /**
      * @param string $fCorrectText
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFCorrectText($fCorrectText)
     {
@@ -295,7 +295,7 @@ class FeedbackList
 
     /**
      * @param string $fReceiverType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFReceiverType($fReceiverType)
     {
@@ -313,7 +313,7 @@ class FeedbackList
 
     /**
      * @param string $fUserLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFUserLogin($fUserLogin)
     {
@@ -331,7 +331,7 @@ class FeedbackList
 
     /**
      * @param string $fUserRating
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFUserRating($fUserRating)
     {
@@ -349,7 +349,7 @@ class FeedbackList
 
     /**
      * @param string $fUserCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFUserCountry($fUserCountry)
     {
@@ -367,7 +367,7 @@ class FeedbackList
 
     /**
      * @param int $fUserBlocked
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFUserBlocked($fUserBlocked)
     {
@@ -385,7 +385,7 @@ class FeedbackList
 
     /**
      * @param int $fUserSseller
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFUserSseller($fUserSseller)
     {
@@ -403,7 +403,7 @@ class FeedbackList
 
     /**
      * @param int $fCancelled
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackList
      */
     public function setFCancelled($fCancelled)
     {

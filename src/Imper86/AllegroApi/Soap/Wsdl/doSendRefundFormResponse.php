@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doSendRefundFormResponse
 {
@@ -28,7 +28,7 @@ class doSendRefundFormResponse
 
     /**
      * @param int $refundId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doSendRefundFormResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doSendRefundFormResponse
      */
     public function setRefundId($refundId)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetUserIDRequest
 {
@@ -49,7 +49,7 @@ class DoGetUserIDRequest
 
     /**
      * @param int $countryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
      */
     public function setCountryId($countryId)
     {
@@ -67,7 +67,7 @@ class DoGetUserIDRequest
 
     /**
      * @param string $userLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
      */
     public function setUserLogin($userLogin)
     {
@@ -85,7 +85,7 @@ class DoGetUserIDRequest
 
     /**
      * @param string $userEmail
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
      */
     public function setUserEmail($userEmail)
     {
@@ -103,7 +103,7 @@ class DoGetUserIDRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetUserIDRequest
      */
     public function setWebapiKey($webapiKey)
     {

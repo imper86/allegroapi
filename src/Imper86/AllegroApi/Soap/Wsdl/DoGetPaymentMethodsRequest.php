@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetPaymentMethodsRequest
 {
@@ -35,7 +35,7 @@ class DoGetPaymentMethodsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPaymentMethodsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPaymentMethodsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetPaymentMethodsRequest
 
     /**
      * @param ArrayOfLong $itemIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPaymentMethodsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPaymentMethodsRequest
      */
     public function setItemIds($itemIds)
     {

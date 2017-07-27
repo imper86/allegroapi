@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfItemsurchargestruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfItemsurchargestruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ItemSurchargeStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfItemsurchargestruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfItemsurchargestruct
      */
     public function setItem(array $item = null)
     {

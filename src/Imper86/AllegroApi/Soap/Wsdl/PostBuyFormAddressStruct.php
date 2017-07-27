@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormAddressStruct
 {
@@ -91,7 +91,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param int $postBuyFormAdrCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrCountry($postBuyFormAdrCountry)
     {
@@ -109,7 +109,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormAdrStreet
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrStreet($postBuyFormAdrStreet)
     {
@@ -127,7 +127,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormAdrPostcode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrPostcode($postBuyFormAdrPostcode)
     {
@@ -145,7 +145,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormAdrCity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrCity($postBuyFormAdrCity)
     {
@@ -163,7 +163,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormAdrFullName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrFullName($postBuyFormAdrFullName)
     {
@@ -181,7 +181,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormAdrCompany
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrCompany($postBuyFormAdrCompany)
     {
@@ -199,7 +199,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormAdrPhone
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrPhone($postBuyFormAdrPhone)
     {
@@ -217,7 +217,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormAdrNip
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrNip($postBuyFormAdrNip)
     {
@@ -235,7 +235,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param string $postBuyFormCreatedDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormCreatedDate($postBuyFormCreatedDate)
     {
@@ -253,7 +253,7 @@ class PostBuyFormAddressStruct
 
     /**
      * @param int $postBuyFormAdrType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
      */
     public function setPostBuyFormAdrType($postBuyFormAdrType)
     {

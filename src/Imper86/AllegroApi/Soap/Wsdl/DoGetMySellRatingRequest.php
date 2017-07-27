@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetMySellRatingRequest
 {
@@ -28,7 +28,7 @@ class DoGetMySellRatingRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellRatingRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellRatingRequest
      */
     public function setSessionHandle($sessionHandle)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetPaymentDataRequest
 {
@@ -35,7 +35,7 @@ class DoGetPaymentDataRequest
 
     /**
      * @param int $countryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPaymentDataRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPaymentDataRequest
      */
     public function setCountryId($countryId)
     {
@@ -53,7 +53,7 @@ class DoGetPaymentDataRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPaymentDataRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPaymentDataRequest
      */
     public function setWebapiKey($webapiKey)
     {

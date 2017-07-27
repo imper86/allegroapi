@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfSellformtype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSellformtype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param SellFormType[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfSellformtype
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfSellformtype
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoMyAccount2Request
 {
@@ -56,7 +56,7 @@ class DoMyAccount2Request
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccount2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccount2Request
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoMyAccount2Request
 
     /**
      * @param string $accountType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccount2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccount2Request
      */
     public function setAccountType($accountType)
     {
@@ -92,7 +92,7 @@ class DoMyAccount2Request
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccount2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccount2Request
      */
     public function setOffset($offset)
     {
@@ -110,7 +110,7 @@ class DoMyAccount2Request
 
     /**
      * @param ArrayOfLong $itemsArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccount2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccount2Request
      */
     public function setItemsArray($itemsArray)
     {
@@ -128,7 +128,7 @@ class DoMyAccount2Request
 
     /**
      * @param int $limit
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccount2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccount2Request
      */
     public function setLimit($limit)
     {

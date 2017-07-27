@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class BidListStruct2
 {
@@ -26,7 +26,7 @@ class BidListStruct2
 
     /**
      * @param ArrayOfString $bidsArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidListStruct2
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidListStruct2
      */
     public function setBidsArray($bidsArray)
     {

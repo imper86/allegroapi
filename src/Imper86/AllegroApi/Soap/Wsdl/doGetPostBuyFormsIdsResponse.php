@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetPostBuyFormsIdsResponse
 {
@@ -42,7 +42,7 @@ class doGetPostBuyFormsIdsResponse
 
     /**
      * @param int $formsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetPostBuyFormsIdsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetPostBuyFormsIdsResponse
      */
     public function setFormsCount($formsCount)
     {
@@ -60,7 +60,7 @@ class doGetPostBuyFormsIdsResponse
 
     /**
      * @param ArrayOfLong $formsIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetPostBuyFormsIdsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetPostBuyFormsIdsResponse
      */
     public function setFormsIds($formsIds)
     {
@@ -78,7 +78,7 @@ class doGetPostBuyFormsIdsResponse
 
     /**
      * @param ArrayOfFilterslisttype $filtersList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetPostBuyFormsIdsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetPostBuyFormsIdsResponse
      */
     public function setFiltersList($filtersList)
     {

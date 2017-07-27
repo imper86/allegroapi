@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class VariantStruct
 {
@@ -33,7 +33,7 @@ class VariantStruct
 
     /**
      * @param int $fid
-     * @return \Imper86\AllegroApi\Soap\Wsdl\VariantStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\VariantStruct
      */
     public function setFid($fid)
     {
@@ -51,7 +51,7 @@ class VariantStruct
 
     /**
      * @param ArrayOfVariantquantitystruct $quantities
-     * @return \Imper86\AllegroApi\Soap\Wsdl\VariantStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\VariantStruct
      */
     public function setQuantities($quantities)
     {

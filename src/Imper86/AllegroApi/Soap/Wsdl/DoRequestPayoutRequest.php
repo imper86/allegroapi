@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoRequestPayoutRequest
 {
@@ -28,7 +28,7 @@ class DoRequestPayoutRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestPayoutRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestPayoutRequest
      */
     public function setSessionId($sessionId)
     {

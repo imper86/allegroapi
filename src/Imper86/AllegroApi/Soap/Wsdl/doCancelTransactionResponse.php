@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doCancelTransactionResponse
 {
@@ -28,7 +28,7 @@ class doCancelTransactionResponse
 
     /**
      * @param int $cancellationResult
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doCancelTransactionResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doCancelTransactionResponse
      */
     public function setCancellationResult($cancellationResult)
     {

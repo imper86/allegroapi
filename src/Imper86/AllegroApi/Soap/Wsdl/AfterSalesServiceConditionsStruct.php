@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class AfterSalesServiceConditionsStruct
 {
@@ -42,7 +42,7 @@ class AfterSalesServiceConditionsStruct
 
     /**
      * @param string $impliedWarranty
-     * @return \Imper86\AllegroApi\Soap\Wsdl\AfterSalesServiceConditionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\AfterSalesServiceConditionsStruct
      */
     public function setImpliedWarranty($impliedWarranty)
     {
@@ -60,7 +60,7 @@ class AfterSalesServiceConditionsStruct
 
     /**
      * @param string $returnPolicy
-     * @return \Imper86\AllegroApi\Soap\Wsdl\AfterSalesServiceConditionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\AfterSalesServiceConditionsStruct
      */
     public function setReturnPolicy($returnPolicy)
     {
@@ -78,7 +78,7 @@ class AfterSalesServiceConditionsStruct
 
     /**
      * @param string $warranty
-     * @return \Imper86\AllegroApi\Soap\Wsdl\AfterSalesServiceConditionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\AfterSalesServiceConditionsStruct
      */
     public function setWarranty($warranty)
     {

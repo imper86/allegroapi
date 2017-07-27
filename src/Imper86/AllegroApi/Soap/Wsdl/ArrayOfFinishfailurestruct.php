@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfFinishfailurestruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfFinishfailurestruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param FinishFailureStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfFinishfailurestruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfFinishfailurestruct
      */
     public function setItem(array $item = null)
     {

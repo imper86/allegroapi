@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemInfo
 {
@@ -201,6 +201,11 @@ class ItemInfo
     protected $itIsFulfillmentTimeActive = null;
 
     /**
+     * @var string $itEan
+     */
+    protected $itEan = null;
+
+    /**
      * @param int $itId
      * @param int $itCountry
      * @param string $itName
@@ -286,7 +291,7 @@ class ItemInfo
 
     /**
      * @param int $itId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItId($itId)
     {
@@ -304,7 +309,7 @@ class ItemInfo
 
     /**
      * @param int $itCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItCountry($itCountry)
     {
@@ -322,7 +327,7 @@ class ItemInfo
 
     /**
      * @param string $itName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItName($itName)
     {
@@ -340,7 +345,7 @@ class ItemInfo
 
     /**
      * @param float $itPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItPrice($itPrice)
     {
@@ -358,7 +363,7 @@ class ItemInfo
 
     /**
      * @param int $itBidCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItBidCount($itBidCount)
     {
@@ -376,7 +381,7 @@ class ItemInfo
 
     /**
      * @param int $itEndingTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItEndingTime($itEndingTime)
     {
@@ -394,7 +399,7 @@ class ItemInfo
 
     /**
      * @param int $itSellerId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItSellerId($itSellerId)
     {
@@ -412,7 +417,7 @@ class ItemInfo
 
     /**
      * @param string $itSellerLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItSellerLogin($itSellerLogin)
     {
@@ -430,7 +435,7 @@ class ItemInfo
 
     /**
      * @param int $itSellerRating
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItSellerRating($itSellerRating)
     {
@@ -448,7 +453,7 @@ class ItemInfo
 
     /**
      * @param int $itStartingTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItStartingTime($itStartingTime)
     {
@@ -466,7 +471,7 @@ class ItemInfo
 
     /**
      * @param float $itStartingPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItStartingPrice($itStartingPrice)
     {
@@ -484,7 +489,7 @@ class ItemInfo
 
     /**
      * @param int $itQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItQuantity($itQuantity)
     {
@@ -502,7 +507,7 @@ class ItemInfo
 
     /**
      * @param int $itFotoCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItFotoCount($itFotoCount)
     {
@@ -520,7 +525,7 @@ class ItemInfo
 
     /**
      * @param float $itReservePrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItReservePrice($itReservePrice)
     {
@@ -538,7 +543,7 @@ class ItemInfo
 
     /**
      * @param string $itLocation
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItLocation($itLocation)
     {
@@ -556,7 +561,7 @@ class ItemInfo
 
     /**
      * @param float $itBuyNowPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItBuyNowPrice($itBuyNowPrice)
     {
@@ -574,7 +579,7 @@ class ItemInfo
 
     /**
      * @param int $itBuyNowActive
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItBuyNowActive($itBuyNowActive)
     {
@@ -592,7 +597,7 @@ class ItemInfo
 
     /**
      * @param int $itHighBidder
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItHighBidder($itHighBidder)
     {
@@ -610,7 +615,7 @@ class ItemInfo
 
     /**
      * @param string $itHighBidderLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItHighBidderLogin($itHighBidderLogin)
     {
@@ -628,7 +633,7 @@ class ItemInfo
 
     /**
      * @param string $itDescription
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItDescription($itDescription)
     {
@@ -646,7 +651,7 @@ class ItemInfo
 
     /**
      * @param string $itStandardizedDescription
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItStandardizedDescription($itStandardizedDescription)
     {
@@ -664,7 +669,7 @@ class ItemInfo
 
     /**
      * @param int $itOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItOptions($itOptions)
     {
@@ -682,7 +687,7 @@ class ItemInfo
 
     /**
      * @param int $itState
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItState($itState)
     {
@@ -700,7 +705,7 @@ class ItemInfo
 
     /**
      * @param int $itIsEco
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItIsEco($itIsEco)
     {
@@ -718,7 +723,7 @@ class ItemInfo
 
     /**
      * @param int $itHitCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItHitCount($itHitCount)
     {
@@ -736,7 +741,7 @@ class ItemInfo
 
     /**
      * @param string $itPostcode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItPostcode($itPostcode)
     {
@@ -754,7 +759,7 @@ class ItemInfo
 
     /**
      * @param int $itVatInvoice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItVatInvoice($itVatInvoice)
     {
@@ -772,7 +777,7 @@ class ItemInfo
 
     /**
      * @param string $itBankAccount1
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItBankAccount1($itBankAccount1)
     {
@@ -790,7 +795,7 @@ class ItemInfo
 
     /**
      * @param string $itBankAccount2
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItBankAccount2($itBankAccount2)
     {
@@ -808,7 +813,7 @@ class ItemInfo
 
     /**
      * @param int $itStartingQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItStartingQuantity($itStartingQuantity)
     {
@@ -826,7 +831,7 @@ class ItemInfo
 
     /**
      * @param int $itIsForGuests
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItIsForGuests($itIsForGuests)
     {
@@ -844,7 +849,7 @@ class ItemInfo
 
     /**
      * @param int $itHasProduct
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItHasProduct($itHasProduct)
     {
@@ -862,7 +867,7 @@ class ItemInfo
 
     /**
      * @param int $itOrderFulfillmentTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItOrderFulfillmentTime($itOrderFulfillmentTime)
     {
@@ -880,7 +885,7 @@ class ItemInfo
 
     /**
      * @param int $itEndingInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItEndingInfo($itEndingInfo)
     {
@@ -898,7 +903,7 @@ class ItemInfo
 
     /**
      * @param int $itIsAllegroStandard
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItIsAllegroStandard($itIsAllegroStandard)
     {
@@ -916,7 +921,7 @@ class ItemInfo
 
     /**
      * @param int $itIsNewUsed
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItIsNewUsed($itIsNewUsed)
     {
@@ -934,7 +939,7 @@ class ItemInfo
 
     /**
      * @param int $itIsBrandZone
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItIsBrandZone($itIsBrandZone)
     {
@@ -952,7 +957,7 @@ class ItemInfo
 
     /**
      * @param DurationInfoStruct $itDurationInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItDurationInfo($itDurationInfo)
     {
@@ -970,11 +975,29 @@ class ItemInfo
 
     /**
      * @param int $itIsFulfillmentTimeActive
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
      */
     public function setItIsFulfillmentTimeActive($itIsFulfillmentTimeActive)
     {
       $this->itIsFulfillmentTimeActive = $itIsFulfillmentTimeActive;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItEan()
+    {
+      return $this->itEan;
+    }
+
+    /**
+     * @param string $itEan
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfo
+     */
+    public function setItEan($itEan)
+    {
+      $this->itEan = $itEan;
       return $this;
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doRemoveItemTemplatesResponse
 {
@@ -28,7 +28,7 @@ class doRemoveItemTemplatesResponse
 
     /**
      * @param RemovedItemTemplatesStruct $removedItemTemplates
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doRemoveItemTemplatesResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doRemoveItemTemplatesResponse
      */
     public function setRemovedItemTemplates($removedItemTemplates)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoSendRefundFormRequest
 {
@@ -49,7 +49,7 @@ class DoSendRefundFormRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
      */
     public function setSessionId($sessionId)
     {
@@ -67,7 +67,7 @@ class DoSendRefundFormRequest
 
     /**
      * @param int $dealId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
      */
     public function setDealId($dealId)
     {
@@ -85,7 +85,7 @@ class DoSendRefundFormRequest
 
     /**
      * @param int $reasonId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
      */
     public function setReasonId($reasonId)
     {
@@ -103,7 +103,7 @@ class DoSendRefundFormRequest
 
     /**
      * @param int $refundQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendRefundFormRequest
      */
     public function setRefundQuantity($refundQuantity)
     {

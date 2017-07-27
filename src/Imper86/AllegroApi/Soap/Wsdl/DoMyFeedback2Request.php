@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoMyFeedback2Request
 {
@@ -56,7 +56,7 @@ class DoMyFeedback2Request
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoMyFeedback2Request
 
     /**
      * @param string $feedbackType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
      */
     public function setFeedbackType($feedbackType)
     {
@@ -92,7 +92,7 @@ class DoMyFeedback2Request
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
      */
     public function setOffset($offset)
     {
@@ -110,7 +110,7 @@ class DoMyFeedback2Request
 
     /**
      * @param int $desc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
      */
     public function setDesc($desc)
     {
@@ -128,7 +128,7 @@ class DoMyFeedback2Request
 
     /**
      * @param ArrayOfLong $itemsArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2Request
      */
     public function setItemsArray($itemsArray)
     {

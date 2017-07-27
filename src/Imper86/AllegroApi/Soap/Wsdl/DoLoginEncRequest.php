@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoLoginEncRequest
 {
@@ -56,7 +56,7 @@ class DoLoginEncRequest
 
     /**
      * @param string $userLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginEncRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginEncRequest
      */
     public function setUserLogin($userLogin)
     {
@@ -74,7 +74,7 @@ class DoLoginEncRequest
 
     /**
      * @param string $userHashPassword
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginEncRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginEncRequest
      */
     public function setUserHashPassword($userHashPassword)
     {
@@ -92,7 +92,7 @@ class DoLoginEncRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginEncRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginEncRequest
      */
     public function setCountryCode($countryCode)
     {
@@ -110,7 +110,7 @@ class DoLoginEncRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginEncRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginEncRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -128,7 +128,7 @@ class DoLoginEncRequest
 
     /**
      * @param int $localVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoLoginEncRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoLoginEncRequest
      */
     public function setLocalVersion($localVersion)
     {

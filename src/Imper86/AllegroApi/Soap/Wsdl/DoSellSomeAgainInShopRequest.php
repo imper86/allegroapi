@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoSellSomeAgainInShopRequest
 {
@@ -77,7 +77,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -95,7 +95,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param ArrayOfLong $sellItemsArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setSellItemsArray($sellItemsArray)
     {
@@ -113,7 +113,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param int $sellStartingTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setSellStartingTime($sellStartingTime)
     {
@@ -131,7 +131,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param int $sellShopDuration
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setSellShopDuration($sellShopDuration)
     {
@@ -149,7 +149,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param int $sellShopOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setSellShopOptions($sellShopOptions)
     {
@@ -167,7 +167,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param int $sellProlongOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setSellProlongOptions($sellProlongOptions)
     {
@@ -185,7 +185,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param int $sellShopCategory
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setSellShopCategory($sellShopCategory)
     {
@@ -203,7 +203,7 @@ class DoSellSomeAgainInShopRequest
 
     /**
      * @param ArrayOfInt $localIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainInShopRequest
      */
     public function setLocalIds($localIds)
     {

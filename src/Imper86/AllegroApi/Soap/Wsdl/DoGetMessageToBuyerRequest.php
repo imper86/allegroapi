@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetMessageToBuyerRequest
 {
@@ -35,7 +35,7 @@ class DoGetMessageToBuyerRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMessageToBuyerRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMessageToBuyerRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetMessageToBuyerRequest
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMessageToBuyerRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMessageToBuyerRequest
      */
     public function setItemId($itemId)
     {

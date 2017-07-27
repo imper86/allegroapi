@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfParameterinfotype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfParameterinfotype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ParameterInfoType[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfParameterinfotype
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfParameterinfotype
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SortOptionsStruct
 {
@@ -31,7 +31,7 @@ class SortOptionsStruct
 
     /**
      * @param int $sortType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SortOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SortOptionsStruct
      */
     public function setSortType($sortType)
     {
@@ -49,7 +49,7 @@ class SortOptionsStruct
 
     /**
      * @param int $sortOrder
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SortOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SortOptionsStruct
      */
     public function setSortOrder($sortOrder)
     {

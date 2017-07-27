@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfPriceinfotype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPriceinfotype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param PriceInfoType[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfPriceinfotype
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfPriceinfotype
      */
     public function setItem(array $item = null)
     {

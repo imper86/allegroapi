@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemDescriptionStruct
 {
@@ -28,7 +28,7 @@ class ItemDescriptionStruct
 
     /**
      * @param string $descriptionResult
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemDescriptionStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemDescriptionStruct
      */
     public function setDescriptionResult($descriptionResult)
     {

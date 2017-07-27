@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetFilledPostBuyFormsResponse
 {
@@ -28,7 +28,7 @@ class doGetFilledPostBuyFormsResponse
 
     /**
      * @param FilledPostBuyFormsStruct $filledPostBuyForms
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetFilledPostBuyFormsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetFilledPostBuyFormsResponse
      */
     public function setFilledPostBuyForms($filledPostBuyForms)
     {

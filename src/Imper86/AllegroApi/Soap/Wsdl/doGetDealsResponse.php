@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetDealsResponse
 {
@@ -28,7 +28,7 @@ class doGetDealsResponse
 
     /**
      * @param ArrayOfDealsstruct $dealsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetDealsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetDealsResponse
      */
     public function setDealsList($dealsList)
     {

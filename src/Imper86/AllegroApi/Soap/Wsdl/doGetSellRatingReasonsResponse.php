@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetSellRatingReasonsResponse
 {
@@ -28,7 +28,7 @@ class doGetSellRatingReasonsResponse
 
     /**
      * @param ArrayOfSellratinginfostruct $sellRatingInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellRatingReasonsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellRatingReasonsResponse
      */
     public function setSellRatingInfo($sellRatingInfo)
     {

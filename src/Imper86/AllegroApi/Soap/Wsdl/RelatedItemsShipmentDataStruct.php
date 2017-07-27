@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class RelatedItemsShipmentDataStruct
 {
@@ -26,7 +26,7 @@ class RelatedItemsShipmentDataStruct
 
     /**
      * @param ArrayOfSellershipmentdatastruct $sellerShipmentData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RelatedItemsShipmentDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RelatedItemsShipmentDataStruct
      */
     public function setSellerShipmentData($sellerShipmentData)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PaymentsUserDataStruct
 {
@@ -63,7 +63,7 @@ class PaymentsUserDataStruct
 
     /**
      * @param string $userFullName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
      */
     public function setUserFullName($userFullName)
     {
@@ -81,7 +81,7 @@ class PaymentsUserDataStruct
 
     /**
      * @param string $userAddress
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
      */
     public function setUserAddress($userAddress)
     {
@@ -99,7 +99,7 @@ class PaymentsUserDataStruct
 
     /**
      * @param string $userPostcode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
      */
     public function setUserPostcode($userPostcode)
     {
@@ -117,7 +117,7 @@ class PaymentsUserDataStruct
 
     /**
      * @param string $userCity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
      */
     public function setUserCity($userCity)
     {
@@ -135,7 +135,7 @@ class PaymentsUserDataStruct
 
     /**
      * @param int $userCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
      */
     public function setUserCountry($userCountry)
     {
@@ -153,7 +153,7 @@ class PaymentsUserDataStruct
 
     /**
      * @param string $userPhone
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsUserDataStruct
      */
     public function setUserPhone($userPhone)
     {

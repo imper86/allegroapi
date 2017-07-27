@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetCatsDataCountResponse
 {
@@ -42,7 +42,7 @@ class doGetCatsDataCountResponse
 
     /**
      * @param int $catsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCatsDataCountResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCatsDataCountResponse
      */
     public function setCatsCount($catsCount)
     {
@@ -60,7 +60,7 @@ class doGetCatsDataCountResponse
 
     /**
      * @param int $verKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCatsDataCountResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCatsDataCountResponse
      */
     public function setVerKey($verKey)
     {
@@ -78,7 +78,7 @@ class doGetCatsDataCountResponse
 
     /**
      * @param string $verStr
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCatsDataCountResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCatsDataCountResponse
      */
     public function setVerStr($verStr)
     {

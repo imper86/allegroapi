@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemSurchargeStruct
 {
@@ -35,7 +35,7 @@ class ItemSurchargeStruct
 
     /**
      * @param string $surchargeDescription
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemSurchargeStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemSurchargeStruct
      */
     public function setSurchargeDescription($surchargeDescription)
     {
@@ -53,7 +53,7 @@ class ItemSurchargeStruct
 
     /**
      * @param AmountStruct $surchargeAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemSurchargeStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemSurchargeStruct
      */
     public function setSurchargeAmount($surchargeAmount)
     {

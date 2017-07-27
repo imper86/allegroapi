@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetAdminUserLicenceDateRequest
 {
@@ -35,7 +35,7 @@ class DoGetAdminUserLicenceDateRequest
 
     /**
      * @param string $adminSessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetAdminUserLicenceDateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetAdminUserLicenceDateRequest
      */
     public function setAdminSessionHandle($adminSessionHandle)
     {
@@ -53,7 +53,7 @@ class DoGetAdminUserLicenceDateRequest
 
     /**
      * @param string $userLicLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetAdminUserLicenceDateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetAdminUserLicenceDateRequest
      */
     public function setUserLicLogin($userLicLogin)
     {

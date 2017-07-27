@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class CategoriesListType
 {
@@ -31,7 +31,7 @@ class CategoriesListType
 
     /**
      * @param ArrayOfCategorytreetype $categoriesTree
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoriesListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoriesListType
      */
     public function setCategoriesTree($categoriesTree)
     {
@@ -49,7 +49,7 @@ class CategoriesListType
 
     /**
      * @param ArrayOfCategorypathtype $categoriesPath
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoriesListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoriesListType
      */
     public function setCategoriesPath($categoriesPath)
     {

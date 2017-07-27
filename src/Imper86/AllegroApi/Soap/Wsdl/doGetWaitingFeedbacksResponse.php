@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetWaitingFeedbacksResponse
 {
@@ -28,7 +28,7 @@ class doGetWaitingFeedbacksResponse
 
     /**
      * @param ArrayOfWaitfeedbackstruct $feWaitList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetWaitingFeedbacksResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetWaitingFeedbacksResponse
      */
     public function setFeWaitList($feWaitList)
     {

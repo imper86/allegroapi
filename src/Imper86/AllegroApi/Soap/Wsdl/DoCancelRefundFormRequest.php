@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoCancelRefundFormRequest
 {
@@ -35,7 +35,7 @@ class DoCancelRefundFormRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCancelRefundFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCancelRefundFormRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoCancelRefundFormRequest
 
     /**
      * @param int $refundId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCancelRefundFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCancelRefundFormRequest
      */
     public function setRefundId($refundId)
     {

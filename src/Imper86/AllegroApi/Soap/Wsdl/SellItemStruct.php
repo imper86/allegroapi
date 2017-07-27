@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SellItemStruct
 {
@@ -164,7 +164,7 @@ class SellItemStruct
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemId($itemId)
     {
@@ -182,7 +182,7 @@ class SellItemStruct
 
     /**
      * @param string $itemTitle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemTitle($itemTitle)
     {
@@ -200,7 +200,7 @@ class SellItemStruct
 
     /**
      * @param string $itemThumbnailUrl
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemThumbnailUrl($itemThumbnailUrl)
     {
@@ -218,7 +218,7 @@ class SellItemStruct
 
     /**
      * @param ArrayOfItempricestruct $itemPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemPrice($itemPrice)
     {
@@ -236,7 +236,7 @@ class SellItemStruct
 
     /**
      * @param int $itemStartQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemStartQuantity($itemStartQuantity)
     {
@@ -254,7 +254,7 @@ class SellItemStruct
 
     /**
      * @param int $itemSoldQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemSoldQuantity($itemSoldQuantity)
     {
@@ -272,7 +272,7 @@ class SellItemStruct
 
     /**
      * @param int $itemQuantityType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemQuantityType($itemQuantityType)
     {
@@ -290,7 +290,7 @@ class SellItemStruct
 
     /**
      * @param int $itemStartTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemStartTime($itemStartTime)
     {
@@ -308,7 +308,7 @@ class SellItemStruct
 
     /**
      * @param int $itemEndTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemEndTime($itemEndTime)
     {
@@ -326,7 +326,7 @@ class SellItemStruct
 
     /**
      * @param string $itemEndTimeLeft
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemEndTimeLeft($itemEndTimeLeft)
     {
@@ -344,7 +344,7 @@ class SellItemStruct
 
     /**
      * @param int $itemBiddersCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemBiddersCounter($itemBiddersCounter)
     {
@@ -362,7 +362,7 @@ class SellItemStruct
 
     /**
      * @param UserInfoStruct $itemHighestBidder
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemHighestBidder($itemHighestBidder)
     {
@@ -380,7 +380,7 @@ class SellItemStruct
 
     /**
      * @param int $itemCategoryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemCategoryId($itemCategoryId)
     {
@@ -398,7 +398,7 @@ class SellItemStruct
 
     /**
      * @param int $itemWatchersCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemWatchersCounter($itemWatchersCounter)
     {
@@ -416,7 +416,7 @@ class SellItemStruct
 
     /**
      * @param int $itemViewsCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemViewsCounter($itemViewsCounter)
     {
@@ -434,7 +434,7 @@ class SellItemStruct
 
     /**
      * @param string $itemNote
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemNote($itemNote)
     {
@@ -452,7 +452,7 @@ class SellItemStruct
 
     /**
      * @param int $itemSpecialInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemSpecialInfo($itemSpecialInfo)
     {
@@ -470,7 +470,7 @@ class SellItemStruct
 
     /**
      * @param int $itemShopInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemShopInfo($itemShopInfo)
     {
@@ -488,7 +488,7 @@ class SellItemStruct
 
     /**
      * @param int $itemProductInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemProductInfo($itemProductInfo)
     {
@@ -506,7 +506,7 @@ class SellItemStruct
 
     /**
      * @param int $itemPayuInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemPayuInfo($itemPayuInfo)
     {
@@ -524,7 +524,7 @@ class SellItemStruct
 
     /**
      * @param DurationInfoStruct $itemDurationInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellItemStruct
      */
     public function setItemDurationInfo($itemDurationInfo)
     {

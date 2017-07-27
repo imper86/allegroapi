@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doMyFeedback2Response
 {
@@ -28,7 +28,7 @@ class doMyFeedback2Response
 
     /**
      * @param ArrayOfMyfeedbackliststruct2 $myfeedbackList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doMyFeedback2Response
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doMyFeedback2Response
      */
     public function setMyfeedbackList($myfeedbackList)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetFilledPostBuyFormsRequest
 {
@@ -56,7 +56,7 @@ class DoGetFilledPostBuyFormsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -74,7 +74,7 @@ class DoGetFilledPostBuyFormsRequest
 
     /**
      * @param int $paymentType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
      */
     public function setPaymentType($paymentType)
     {
@@ -92,7 +92,7 @@ class DoGetFilledPostBuyFormsRequest
 
     /**
      * @param int $userRole
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
      */
     public function setUserRole($userRole)
     {
@@ -110,7 +110,7 @@ class DoGetFilledPostBuyFormsRequest
 
     /**
      * @param int $fillingTimeFrom
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
      */
     public function setFillingTimeFrom($fillingTimeFrom)
     {
@@ -128,7 +128,7 @@ class DoGetFilledPostBuyFormsRequest
 
     /**
      * @param int $fillingTimeTo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFilledPostBuyFormsRequest
      */
     public function setFillingTimeTo($fillingTimeTo)
     {

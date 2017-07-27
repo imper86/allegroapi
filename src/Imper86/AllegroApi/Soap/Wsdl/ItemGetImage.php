@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemGetImage
 {
@@ -42,7 +42,7 @@ class ItemGetImage
 
     /**
      * @param int $itId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemGetImage
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemGetImage
      */
     public function setItId($itId)
     {
@@ -60,7 +60,7 @@ class ItemGetImage
 
     /**
      * @param int $itSellerId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemGetImage
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemGetImage
      */
     public function setItSellerId($itSellerId)
     {
@@ -78,7 +78,7 @@ class ItemGetImage
 
     /**
      * @param int $itFotoCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemGetImage
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemGetImage
      */
     public function setItFotoCount($itFotoCount)
     {

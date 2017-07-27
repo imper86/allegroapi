@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoChangeItemFieldsRequest
 {
@@ -77,7 +77,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -95,7 +95,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setItemId($itemId)
     {
@@ -113,7 +113,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param ArrayOfFieldsvalue $fieldsToModify
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setFieldsToModify($fieldsToModify)
     {
@@ -131,7 +131,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param ArrayOfInt $fieldsToRemove
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setFieldsToRemove($fieldsToRemove)
     {
@@ -149,7 +149,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param int $previewOnly
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setPreviewOnly($previewOnly)
     {
@@ -167,7 +167,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param ArrayOfVariantstruct $variants
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setVariants($variants)
     {
@@ -185,7 +185,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param ArrayOfTagnamestruct $tags
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setTags($tags)
     {
@@ -203,7 +203,7 @@ class DoChangeItemFieldsRequest
 
     /**
      * @param AfterSalesServiceConditionsStruct $afterSalesServiceConditions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
      */
     public function setAfterSalesServiceConditions($afterSalesServiceConditions)
     {

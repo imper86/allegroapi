@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMyDataResponse
 {
@@ -70,7 +70,7 @@ class doGetMyDataResponse
 
     /**
      * @param UserDataStruct $userData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyDataResponse
      */
     public function setUserData($userData)
     {
@@ -88,7 +88,7 @@ class doGetMyDataResponse
 
     /**
      * @param InvoiceDataStruct $invoiceData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyDataResponse
      */
     public function setInvoiceData($invoiceData)
     {
@@ -106,7 +106,7 @@ class doGetMyDataResponse
 
     /**
      * @param CompanyExtraDataStruct $companyExtraData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyDataResponse
      */
     public function setCompanyExtraData($companyExtraData)
     {
@@ -124,7 +124,7 @@ class doGetMyDataResponse
 
     /**
      * @param CompanySecondAddressStruct $companySecondAddress
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyDataResponse
      */
     public function setCompanySecondAddress($companySecondAddress)
     {
@@ -142,7 +142,7 @@ class doGetMyDataResponse
 
     /**
      * @param PharmacyDataStruct $pharmacyData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyDataResponse
      */
     public function setPharmacyData($pharmacyData)
     {
@@ -160,7 +160,7 @@ class doGetMyDataResponse
 
     /**
      * @param AlcoholDataStruct $alcoholData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyDataResponse
      */
     public function setAlcoholData($alcoholData)
     {
@@ -178,7 +178,7 @@ class doGetMyDataResponse
 
     /**
      * @param RelatedPersonsStruct $relatedPersons
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyDataResponse
      */
     public function setRelatedPersons($relatedPersons)
     {

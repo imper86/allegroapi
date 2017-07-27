@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class UserDataStruct
 {
@@ -175,7 +175,7 @@ class UserDataStruct
 
     /**
      * @param int $userId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserId($userId)
     {
@@ -193,7 +193,7 @@ class UserDataStruct
 
     /**
      * @param string $userLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserLogin($userLogin)
     {
@@ -211,7 +211,7 @@ class UserDataStruct
 
     /**
      * @param int $userRating
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserRating($userRating)
     {
@@ -229,7 +229,7 @@ class UserDataStruct
 
     /**
      * @param string $userFirstName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserFirstName($userFirstName)
     {
@@ -247,7 +247,7 @@ class UserDataStruct
 
     /**
      * @param string $userLastName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserLastName($userLastName)
     {
@@ -265,7 +265,7 @@ class UserDataStruct
 
     /**
      * @param string $userMaidenName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserMaidenName($userMaidenName)
     {
@@ -283,7 +283,7 @@ class UserDataStruct
 
     /**
      * @param string $userCompany
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserCompany($userCompany)
     {
@@ -301,7 +301,7 @@ class UserDataStruct
 
     /**
      * @param int $userCountryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserCountryId($userCountryId)
     {
@@ -319,7 +319,7 @@ class UserDataStruct
 
     /**
      * @param int $userStateId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserStateId($userStateId)
     {
@@ -337,7 +337,7 @@ class UserDataStruct
 
     /**
      * @param string $userPostcode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserPostcode($userPostcode)
     {
@@ -355,7 +355,7 @@ class UserDataStruct
 
     /**
      * @param string $userCity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserCity($userCity)
     {
@@ -373,7 +373,7 @@ class UserDataStruct
 
     /**
      * @param string $userAddress
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserAddress($userAddress)
     {
@@ -391,7 +391,7 @@ class UserDataStruct
 
     /**
      * @param string $userEmail
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserEmail($userEmail)
     {
@@ -409,7 +409,7 @@ class UserDataStruct
 
     /**
      * @param string $userPhone
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserPhone($userPhone)
     {
@@ -427,7 +427,7 @@ class UserDataStruct
 
     /**
      * @param string $userPhone2
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserPhone2($userPhone2)
     {
@@ -445,7 +445,7 @@ class UserDataStruct
 
     /**
      * @param int $userSsStatus
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserSsStatus($userSsStatus)
     {
@@ -463,7 +463,7 @@ class UserDataStruct
 
     /**
      * @param int $siteCountryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setSiteCountryId($siteCountryId)
     {
@@ -481,7 +481,7 @@ class UserDataStruct
 
     /**
      * @param int $userJuniorStatus
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserJuniorStatus($userJuniorStatus)
     {
@@ -499,7 +499,7 @@ class UserDataStruct
 
     /**
      * @param int $userBirthDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserBirthDate($userBirthDate)
     {
@@ -517,7 +517,7 @@ class UserDataStruct
 
     /**
      * @param int $userHasShop
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserHasShop($userHasShop)
     {
@@ -535,7 +535,7 @@ class UserDataStruct
 
     /**
      * @param int $userCompanyIcon
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserCompanyIcon($userCompanyIcon)
     {
@@ -553,7 +553,7 @@ class UserDataStruct
 
     /**
      * @param int $userIsAllegroStandard
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserDataStruct
      */
     public function setUserIsAllegroStandard($userIsAllegroStandard)
     {

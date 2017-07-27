@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FutureFilterOptionsStruct
 {
@@ -26,7 +26,7 @@ class FutureFilterOptionsStruct
 
     /**
      * @param int $filterFormat
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FutureFilterOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FutureFilterOptionsStruct
      */
     public function setFilterFormat($filterFormat)
     {

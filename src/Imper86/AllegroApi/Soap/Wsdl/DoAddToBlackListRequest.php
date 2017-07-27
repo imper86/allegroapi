@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoAddToBlackListRequest
 {
@@ -35,7 +35,7 @@ class DoAddToBlackListRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoAddToBlackListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoAddToBlackListRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -53,7 +53,7 @@ class DoAddToBlackListRequest
 
     /**
      * @param ArrayOfUserblackliststruct $usersBlackListArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoAddToBlackListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoAddToBlackListRequest
      */
     public function setUsersBlackListArray($usersBlackListArray)
     {

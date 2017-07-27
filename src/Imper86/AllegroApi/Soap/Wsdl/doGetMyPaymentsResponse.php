@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMyPaymentsResponse
 {
@@ -28,7 +28,7 @@ class doGetMyPaymentsResponse
 
     /**
      * @param ArrayOfUserpaymentstruct $payTransPayment
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPaymentsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPaymentsResponse
      */
     public function setPayTransPayment($payTransPayment)
     {

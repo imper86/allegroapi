@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SiteJournalDealsInfoStruct
 {
@@ -35,7 +35,7 @@ class SiteJournalDealsInfoStruct
 
     /**
      * @param int $dealEventsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsInfoStruct
      */
     public function setDealEventsCount($dealEventsCount)
     {
@@ -53,7 +53,7 @@ class SiteJournalDealsInfoStruct
 
     /**
      * @param int $dealLastEventTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsInfoStruct
      */
     public function setDealLastEventTime($dealLastEventTime)
     {

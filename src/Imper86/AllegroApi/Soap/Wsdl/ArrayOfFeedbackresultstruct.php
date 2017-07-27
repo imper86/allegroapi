@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfFeedbackresultstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfFeedbackresultstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param FeedbackResultStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfFeedbackresultstruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfFeedbackresultstruct
      */
     public function setItem(array $item = null)
     {

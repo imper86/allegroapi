@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfRefundlisttype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfRefundlisttype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param RefundListType[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfRefundlisttype
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfRefundlisttype
      */
     public function setItem(array $item = null)
     {

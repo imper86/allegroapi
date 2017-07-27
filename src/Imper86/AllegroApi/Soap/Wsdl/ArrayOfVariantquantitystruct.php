@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfVariantquantitystruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfVariantquantitystruct implements \ArrayAccess, \Iterator, \Countabl
 
     /**
      * @param VariantQuantityStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfVariantquantitystruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfVariantquantitystruct
      */
     public function setItem(array $item = null)
     {

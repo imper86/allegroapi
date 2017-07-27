@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMessageToBuyerResponse
 {
@@ -28,7 +28,7 @@ class doGetMessageToBuyerResponse
 
     /**
      * @param MessageToBuyerStruct $messageToBuyer
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMessageToBuyerResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMessageToBuyerResponse
      */
     public function setMessageToBuyer($messageToBuyer)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoCreateItemTemplateRequest
 {
@@ -42,7 +42,7 @@ class DoCreateItemTemplateRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCreateItemTemplateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCreateItemTemplateRequest
      */
     public function setSessionId($sessionId)
     {
@@ -60,7 +60,7 @@ class DoCreateItemTemplateRequest
 
     /**
      * @param string $itemTemplateName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCreateItemTemplateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCreateItemTemplateRequest
      */
     public function setItemTemplateName($itemTemplateName)
     {
@@ -78,7 +78,7 @@ class DoCreateItemTemplateRequest
 
     /**
      * @param ArrayOfFieldsvalue $itemTemplateFields
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCreateItemTemplateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCreateItemTemplateRequest
      */
     public function setItemTemplateFields($itemTemplateFields)
     {

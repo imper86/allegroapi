@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfReasoninfotype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfReasoninfotype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ReasonInfoType[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfReasoninfotype
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfReasoninfotype
      */
     public function setItem(array $item = null)
     {

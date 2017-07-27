@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetFavouriteSellersResponse
 {
@@ -28,7 +28,7 @@ class doGetFavouriteSellersResponse
 
     /**
      * @param ArrayOfFavouritessellersstruct $sFavouriteSellersList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetFavouriteSellersResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetFavouriteSellersResponse
      */
     public function setSFavouriteSellersList($sFavouriteSellersList)
     {

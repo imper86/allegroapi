@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class NewPostBuyFormCommonStruct
 {
@@ -57,7 +57,7 @@ class NewPostBuyFormCommonStruct
 
     /**
      * @param string $paymentMethodId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
      */
     public function setPaymentMethodId($paymentMethodId)
     {
@@ -75,7 +75,7 @@ class NewPostBuyFormCommonStruct
 
     /**
      * @param int $shipmentAddressType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
      */
     public function setShipmentAddressType($shipmentAddressType)
     {
@@ -93,7 +93,7 @@ class NewPostBuyFormCommonStruct
 
     /**
      * @param AddressUserDataStruct $shipmentAddressData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
      */
     public function setShipmentAddressData($shipmentAddressData)
     {
@@ -111,7 +111,7 @@ class NewPostBuyFormCommonStruct
 
     /**
      * @param string $contactPhone
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
      */
     public function setContactPhone($contactPhone)
     {
@@ -129,7 +129,7 @@ class NewPostBuyFormCommonStruct
 
     /**
      * @param int $invoiceOption
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
      */
     public function setInvoiceOption($invoiceOption)
     {
@@ -147,7 +147,7 @@ class NewPostBuyFormCommonStruct
 
     /**
      * @param InvoiceInfoStruct $invoiceInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormCommonStruct
      */
     public function setInvoiceInfo($invoiceInfo)
     {

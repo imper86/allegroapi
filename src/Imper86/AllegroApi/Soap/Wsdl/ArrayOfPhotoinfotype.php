@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfPhotoinfotype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPhotoinfotype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param PhotoInfoType[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfPhotoinfotype
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfPhotoinfotype
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetShipmentDataForRelatedItemsResponse
 {
@@ -28,7 +28,7 @@ class doGetShipmentDataForRelatedItemsResponse
 
     /**
      * @param RelatedItemsShipmentDataStruct $relatedItemsShipmentData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetShipmentDataForRelatedItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetShipmentDataForRelatedItemsResponse
      */
     public function setRelatedItemsShipmentData($relatedItemsShipmentData)
     {

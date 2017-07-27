@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PhotoInfoType
 {
@@ -42,7 +42,7 @@ class PhotoInfoType
 
     /**
      * @param string $photoSize
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PhotoInfoType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PhotoInfoType
      */
     public function setPhotoSize($photoSize)
     {
@@ -60,7 +60,7 @@ class PhotoInfoType
 
     /**
      * @param string $photoUrl
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PhotoInfoType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PhotoInfoType
      */
     public function setPhotoUrl($photoUrl)
     {
@@ -78,7 +78,7 @@ class PhotoInfoType
 
     /**
      * @param boolean $photoIsMain
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PhotoInfoType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PhotoInfoType
      */
     public function setPhotoIsMain($photoIsMain)
     {

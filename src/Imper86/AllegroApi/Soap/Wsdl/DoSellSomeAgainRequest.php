@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoSellSomeAgainRequest
 {
@@ -70,7 +70,7 @@ class DoSellSomeAgainRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -88,7 +88,7 @@ class DoSellSomeAgainRequest
 
     /**
      * @param ArrayOfLong $sellItemsArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
      */
     public function setSellItemsArray($sellItemsArray)
     {
@@ -106,7 +106,7 @@ class DoSellSomeAgainRequest
 
     /**
      * @param int $sellStartingTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
      */
     public function setSellStartingTime($sellStartingTime)
     {
@@ -124,7 +124,7 @@ class DoSellSomeAgainRequest
 
     /**
      * @param int $sellAuctionDuration
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
      */
     public function setSellAuctionDuration($sellAuctionDuration)
     {
@@ -142,7 +142,7 @@ class DoSellSomeAgainRequest
 
     /**
      * @param int $sellOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
      */
     public function setSellOptions($sellOptions)
     {
@@ -160,7 +160,7 @@ class DoSellSomeAgainRequest
 
     /**
      * @param ArrayOfInt $localIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
      */
     public function setLocalIds($localIds)
     {
@@ -178,7 +178,7 @@ class DoSellSomeAgainRequest
 
     /**
      * @param int $sellProlongOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSellSomeAgainRequest
      */
     public function setSellProlongOptions($sellProlongOptions)
     {

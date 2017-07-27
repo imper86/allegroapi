@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormItemDealsAdditionalServiceStruct
 {
@@ -49,7 +49,7 @@ class PostBuyFormItemDealsAdditionalServiceStruct
 
     /**
      * @param string $additionalServiceDefinitionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
      */
     public function setAdditionalServiceDefinitionId($additionalServiceDefinitionId)
     {
@@ -67,7 +67,7 @@ class PostBuyFormItemDealsAdditionalServiceStruct
 
     /**
      * @param string $additionalServiceName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
      */
     public function setAdditionalServiceName($additionalServiceName)
     {
@@ -85,7 +85,7 @@ class PostBuyFormItemDealsAdditionalServiceStruct
 
     /**
      * @param int $additionalServiceQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
      */
     public function setAdditionalServiceQuantity($additionalServiceQuantity)
     {
@@ -103,7 +103,7 @@ class PostBuyFormItemDealsAdditionalServiceStruct
 
     /**
      * @param float $additionalServicePrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsAdditionalServiceStruct
      */
     public function setAdditionalServicePrice($additionalServicePrice)
     {

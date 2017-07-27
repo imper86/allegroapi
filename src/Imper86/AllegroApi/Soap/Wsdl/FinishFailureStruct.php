@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FinishFailureStruct
 {
@@ -42,7 +42,7 @@ class FinishFailureStruct
 
     /**
      * @param int $finishItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FinishFailureStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FinishFailureStruct
      */
     public function setFinishItemId($finishItemId)
     {
@@ -60,7 +60,7 @@ class FinishFailureStruct
 
     /**
      * @param string $finishErrorCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FinishFailureStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FinishFailureStruct
      */
     public function setFinishErrorCode($finishErrorCode)
     {
@@ -78,7 +78,7 @@ class FinishFailureStruct
 
     /**
      * @param string $finishErrorMessage
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FinishFailureStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FinishFailureStruct
      */
     public function setFinishErrorMessage($finishErrorMessage)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class RelatedPersonsStruct
 {
@@ -35,7 +35,7 @@ class RelatedPersonsStruct
 
     /**
      * @param string $spouseFirstName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RelatedPersonsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RelatedPersonsStruct
      */
     public function setSpouseFirstName($spouseFirstName)
     {
@@ -53,7 +53,7 @@ class RelatedPersonsStruct
 
     /**
      * @param string $spouseLastName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RelatedPersonsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RelatedPersonsStruct
      */
     public function setSpouseLastName($spouseLastName)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetWaitingFeedbacksRequest
 {
@@ -42,7 +42,7 @@ class DoGetWaitingFeedbacksRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -60,7 +60,7 @@ class DoGetWaitingFeedbacksRequest
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksRequest
      */
     public function setOffset($offset)
     {
@@ -78,7 +78,7 @@ class DoGetWaitingFeedbacksRequest
 
     /**
      * @param int $packageSize
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksRequest
      */
     public function setPackageSize($packageSize)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class StructSellAgain
 {
@@ -42,7 +42,7 @@ class StructSellAgain
 
     /**
      * @param int $sellItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\StructSellAgain
+     * @return \Imper69\AllegroApi\Soap\Wsdl\StructSellAgain
      */
     public function setSellItemId($sellItemId)
     {
@@ -60,7 +60,7 @@ class StructSellAgain
 
     /**
      * @param string $sellItemInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\StructSellAgain
+     * @return \Imper69\AllegroApi\Soap\Wsdl\StructSellAgain
      */
     public function setSellItemInfo($sellItemInfo)
     {
@@ -78,7 +78,7 @@ class StructSellAgain
 
     /**
      * @param int $sellItemLocalId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\StructSellAgain
+     * @return \Imper69\AllegroApi\Soap\Wsdl\StructSellAgain
      */
     public function setSellItemLocalId($sellItemLocalId)
     {

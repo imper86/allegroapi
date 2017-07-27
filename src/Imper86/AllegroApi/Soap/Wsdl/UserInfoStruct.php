@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class UserInfoStruct
 {
@@ -56,7 +56,7 @@ class UserInfoStruct
 
     /**
      * @param int $userId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserInfoStruct
      */
     public function setUserId($userId)
     {
@@ -74,7 +74,7 @@ class UserInfoStruct
 
     /**
      * @param string $userLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserInfoStruct
      */
     public function setUserLogin($userLogin)
     {
@@ -92,7 +92,7 @@ class UserInfoStruct
 
     /**
      * @param int $userRating
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserInfoStruct
      */
     public function setUserRating($userRating)
     {
@@ -110,7 +110,7 @@ class UserInfoStruct
 
     /**
      * @param int $userIcons
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserInfoStruct
      */
     public function setUserIcons($userIcons)
     {
@@ -128,7 +128,7 @@ class UserInfoStruct
 
     /**
      * @param int $userCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserInfoStruct
      */
     public function setUserCountry($userCountry)
     {

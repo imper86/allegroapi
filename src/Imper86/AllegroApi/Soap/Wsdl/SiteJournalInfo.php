@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SiteJournalInfo
 {
@@ -35,7 +35,7 @@ class SiteJournalInfo
 
     /**
      * @param int $itemsNumber
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalInfo
      */
     public function setItemsNumber($itemsNumber)
     {
@@ -53,7 +53,7 @@ class SiteJournalInfo
 
     /**
      * @param int $lastItemDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalInfo
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalInfo
      */
     public function setLastItemDate($lastItemDate)
     {

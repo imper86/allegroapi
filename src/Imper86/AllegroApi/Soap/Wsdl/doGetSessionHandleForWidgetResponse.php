@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetSessionHandleForWidgetResponse
 {
@@ -35,7 +35,7 @@ class doGetSessionHandleForWidgetResponse
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSessionHandleForWidgetResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSessionHandleForWidgetResponse
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -53,7 +53,7 @@ class doGetSessionHandleForWidgetResponse
 
     /**
      * @param int $serverTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSessionHandleForWidgetResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSessionHandleForWidgetResponse
      */
     public function setServerTime($serverTime)
     {

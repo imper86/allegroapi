@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class UserBlackListAddResultStruct
 {
@@ -49,7 +49,7 @@ class UserBlackListAddResultStruct
 
     /**
      * @param int $userId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
      */
     public function setUserId($userId)
     {
@@ -67,7 +67,7 @@ class UserBlackListAddResultStruct
 
     /**
      * @param int $addToBlackListResult
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
      */
     public function setAddToBlackListResult($addToBlackListResult)
     {
@@ -85,7 +85,7 @@ class UserBlackListAddResultStruct
 
     /**
      * @param string $addToBlackListErrCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
      */
     public function setAddToBlackListErrCode($addToBlackListErrCode)
     {
@@ -103,7 +103,7 @@ class UserBlackListAddResultStruct
 
     /**
      * @param string $addToBlackListErrMsg
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserBlackListAddResultStruct
      */
     public function setAddToBlackListErrMsg($addToBlackListErrMsg)
     {

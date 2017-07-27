@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class RangeDateValueStruct
 {
@@ -31,7 +31,7 @@ class RangeDateValueStruct
 
     /**
      * @param string $fvalueRangeDateMin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeDateValueStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeDateValueStruct
      */
     public function setFvalueRangeDateMin($fvalueRangeDateMin)
     {
@@ -49,7 +49,7 @@ class RangeDateValueStruct
 
     /**
      * @param string $fvalueRangeDateMax
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeDateValueStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeDateValueStruct
      */
     public function setFvalueRangeDateMax($fvalueRangeDateMax)
     {

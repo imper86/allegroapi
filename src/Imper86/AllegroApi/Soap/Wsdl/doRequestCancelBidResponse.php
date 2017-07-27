@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doRequestCancelBidResponse
 {
@@ -28,7 +28,7 @@ class doRequestCancelBidResponse
 
     /**
      * @param int $requestValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doRequestCancelBidResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doRequestCancelBidResponse
      */
     public function setRequestValue($requestValue)
     {

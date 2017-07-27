@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetSellFormFieldsExtLimitRequest
 {
@@ -56,7 +56,7 @@ class DoGetSellFormFieldsExtLimitRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
      */
     public function setCountryCode($countryCode)
     {
@@ -74,7 +74,7 @@ class DoGetSellFormFieldsExtLimitRequest
 
     /**
      * @param int $localVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
      */
     public function setLocalVersion($localVersion)
     {
@@ -92,7 +92,7 @@ class DoGetSellFormFieldsExtLimitRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -110,7 +110,7 @@ class DoGetSellFormFieldsExtLimitRequest
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
      */
     public function setOffset($offset)
     {
@@ -128,7 +128,7 @@ class DoGetSellFormFieldsExtLimitRequest
 
     /**
      * @param int $packageElement
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsExtLimitRequest
      */
     public function setPackageElement($packageElement)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemCatList
 {
@@ -42,7 +42,7 @@ class ItemCatList
 
     /**
      * @param int $catLevel
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemCatList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemCatList
      */
     public function setCatLevel($catLevel)
     {
@@ -60,7 +60,7 @@ class ItemCatList
 
     /**
      * @param int $catId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemCatList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemCatList
      */
     public function setCatId($catId)
     {
@@ -78,7 +78,7 @@ class ItemCatList
 
     /**
      * @param string $catName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemCatList
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemCatList
      */
     public function setCatName($catName)
     {

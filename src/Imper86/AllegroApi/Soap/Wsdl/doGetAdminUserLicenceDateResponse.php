@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetAdminUserLicenceDateResponse
 {
@@ -28,7 +28,7 @@ class doGetAdminUserLicenceDateResponse
 
     /**
      * @param float $getDateValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetAdminUserLicenceDateResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetAdminUserLicenceDateResponse
      */
     public function setGetDateValue($getDateValue)
     {

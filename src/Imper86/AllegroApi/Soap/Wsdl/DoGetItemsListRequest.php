@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetItemsListRequest
 {
@@ -70,7 +70,7 @@ class DoGetItemsListRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -88,7 +88,7 @@ class DoGetItemsListRequest
 
     /**
      * @param int $countryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
      */
     public function setCountryId($countryId)
     {
@@ -106,7 +106,7 @@ class DoGetItemsListRequest
 
     /**
      * @param ArrayOfFilteroptionstype $filterOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
      */
     public function setFilterOptions($filterOptions)
     {
@@ -124,7 +124,7 @@ class DoGetItemsListRequest
 
     /**
      * @param SortOptionsType $sortOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
      */
     public function setSortOptions($sortOptions)
     {
@@ -142,7 +142,7 @@ class DoGetItemsListRequest
 
     /**
      * @param int $resultSize
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
      */
     public function setResultSize($resultSize)
     {
@@ -160,7 +160,7 @@ class DoGetItemsListRequest
 
     /**
      * @param int $resultOffset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
      */
     public function setResultOffset($resultOffset)
     {
@@ -178,7 +178,7 @@ class DoGetItemsListRequest
 
     /**
      * @param int $resultScope
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsListRequest
      */
     public function setResultScope($resultScope)
     {

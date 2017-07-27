@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormStruct
 {
@@ -40,7 +40,7 @@ class PostBuyFormStruct
 
     /**
      * @param int $transactionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormStruct
      */
     public function setTransactionId($transactionId)
     {
@@ -58,7 +58,7 @@ class PostBuyFormStruct
 
     /**
      * @param ArrayOfLong $transactionPackageIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormStruct
      */
     public function setTransactionPackageIds($transactionPackageIds)
     {
@@ -76,7 +76,7 @@ class PostBuyFormStruct
 
     /**
      * @param TransactionPayByLinkStruct $transactionPayByLink
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormStruct
      */
     public function setTransactionPayByLink($transactionPayByLink)
     {

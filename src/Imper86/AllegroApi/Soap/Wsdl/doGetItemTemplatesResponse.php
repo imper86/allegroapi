@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetItemTemplatesResponse
 {
@@ -28,7 +28,7 @@ class doGetItemTemplatesResponse
 
     /**
      * @param ItemTemplatesStruct $itemTemplates
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemTemplatesResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemTemplatesResponse
      */
     public function setItemTemplates($itemTemplates)
     {

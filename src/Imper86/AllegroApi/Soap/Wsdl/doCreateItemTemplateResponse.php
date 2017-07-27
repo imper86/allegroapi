@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doCreateItemTemplateResponse
 {
@@ -28,7 +28,7 @@ class doCreateItemTemplateResponse
 
     /**
      * @param CreatedItemTemplateStruct $createdItemTemplate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doCreateItemTemplateResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doCreateItemTemplateResponse
      */
     public function setCreatedItemTemplate($createdItemTemplate)
     {

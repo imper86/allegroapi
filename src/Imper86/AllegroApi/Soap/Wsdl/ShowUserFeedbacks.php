@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ShowUserFeedbacks
 {
@@ -56,7 +56,7 @@ class ShowUserFeedbacks
 
     /**
      * @param int $userFLastWeek
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
      */
     public function setUserFLastWeek($userFLastWeek)
     {
@@ -74,7 +74,7 @@ class ShowUserFeedbacks
 
     /**
      * @param int $userFLastMonth
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
      */
     public function setUserFLastMonth($userFLastMonth)
     {
@@ -92,7 +92,7 @@ class ShowUserFeedbacks
 
     /**
      * @param int $userFAll
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
      */
     public function setUserFAll($userFAll)
     {
@@ -110,7 +110,7 @@ class ShowUserFeedbacks
 
     /**
      * @param int $userFSoldItems
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
      */
     public function setUserFSoldItems($userFSoldItems)
     {
@@ -128,7 +128,7 @@ class ShowUserFeedbacks
 
     /**
      * @param int $userFBuyItems
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShowUserFeedbacks
      */
     public function setUserFBuyItems($userFBuyItems)
     {

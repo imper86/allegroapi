@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoNewAuctionExtRequest
 {
@@ -77,7 +77,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -95,7 +95,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param ArrayOfFieldsvalue $fields
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setFields($fields)
     {
@@ -113,7 +113,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param int $itemTemplateId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setItemTemplateId($itemTemplateId)
     {
@@ -131,7 +131,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param int $localId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setLocalId($localId)
     {
@@ -149,7 +149,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param ItemTemplateCreateStruct $itemTemplateCreate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setItemTemplateCreate($itemTemplateCreate)
     {
@@ -167,7 +167,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param ArrayOfVariantstruct $variants
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setVariants($variants)
     {
@@ -185,7 +185,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param ArrayOfTagnamestruct $tags
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setTags($tags)
     {
@@ -203,7 +203,7 @@ class DoNewAuctionExtRequest
 
     /**
      * @param AfterSalesServiceConditionsStruct $afterSalesServiceConditions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
      */
     public function setAfterSalesServiceConditions($afterSalesServiceConditions)
     {

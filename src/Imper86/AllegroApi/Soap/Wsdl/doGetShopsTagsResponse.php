@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetShopsTagsResponse
 {
@@ -35,7 +35,7 @@ class doGetShopsTagsResponse
 
     /**
      * @param int $shopsTagsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetShopsTagsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetShopsTagsResponse
      */
     public function setShopsTagsCount($shopsTagsCount)
     {
@@ -53,7 +53,7 @@ class doGetShopsTagsResponse
 
     /**
      * @param ArrayOfShopstagtypestruct $shopsTags
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetShopsTagsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetShopsTagsResponse
      */
     public function setShopsTags($shopsTags)
     {

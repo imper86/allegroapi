@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class VariantQuantityStruct
 {
@@ -35,7 +35,7 @@ class VariantQuantityStruct
 
     /**
      * @param int $mask
-     * @return \Imper86\AllegroApi\Soap\Wsdl\VariantQuantityStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\VariantQuantityStruct
      */
     public function setMask($mask)
     {
@@ -53,7 +53,7 @@ class VariantQuantityStruct
 
     /**
      * @param int $quantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\VariantQuantityStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\VariantQuantityStruct
      */
     public function setQuantity($quantity)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class RangeValueType
 {
@@ -31,7 +31,7 @@ class RangeValueType
 
     /**
      * @param string $rangeValueMin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeValueType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeValueType
      */
     public function setRangeValueMin($rangeValueMin)
     {
@@ -49,7 +49,7 @@ class RangeValueType
 
     /**
      * @param string $rangeValueMax
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeValueType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeValueType
      */
     public function setRangeValueMax($rangeValueMax)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class NewPostBuyFormSellerStruct
 {
@@ -55,7 +55,7 @@ class NewPostBuyFormSellerStruct
 
     /**
      * @param int $sellerId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
      */
     public function setSellerId($sellerId)
     {
@@ -73,7 +73,7 @@ class NewPostBuyFormSellerStruct
 
     /**
      * @param ArrayOfLong $sellerItemIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
      */
     public function setSellerItemIds($sellerItemIds)
     {
@@ -91,7 +91,7 @@ class NewPostBuyFormSellerStruct
 
     /**
      * @param int $sellerShipmentId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
      */
     public function setSellerShipmentId($sellerShipmentId)
     {
@@ -109,7 +109,7 @@ class NewPostBuyFormSellerStruct
 
     /**
      * @param int $sellerGdId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
      */
     public function setSellerGdId($sellerGdId)
     {
@@ -127,7 +127,7 @@ class NewPostBuyFormSellerStruct
 
     /**
      * @param float $sellerShipmentAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
      */
     public function setSellerShipmentAmount($sellerShipmentAmount)
     {
@@ -145,7 +145,7 @@ class NewPostBuyFormSellerStruct
 
     /**
      * @param string $sellerMessageTo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NewPostBuyFormSellerStruct
      */
     public function setSellerMessageTo($sellerMessageTo)
     {

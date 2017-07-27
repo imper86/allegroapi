@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doRemoveFromBlackListResponse
 {
@@ -28,7 +28,7 @@ class doRemoveFromBlackListResponse
 
     /**
      * @param ArrayOfBlacklistresstruct $blackListResult
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doRemoveFromBlackListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doRemoveFromBlackListResponse
      */
     public function setBlackListResult($blackListResult)
     {

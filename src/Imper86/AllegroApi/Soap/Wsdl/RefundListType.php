@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class RefundListType
 {
@@ -84,7 +84,7 @@ class RefundListType
 
     /**
      * @param int $dealId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setDealId($dealId)
     {
@@ -110,7 +110,7 @@ class RefundListType
 
     /**
      * @param \DateTime $dealDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setDealDate(\DateTime $dealDate)
     {
@@ -128,7 +128,7 @@ class RefundListType
 
     /**
      * @param int $buyerId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setBuyerId($buyerId)
     {
@@ -146,7 +146,7 @@ class RefundListType
 
     /**
      * @param string $buyerLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setBuyerLogin($buyerLogin)
     {
@@ -164,7 +164,7 @@ class RefundListType
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setItemId($itemId)
     {
@@ -182,7 +182,7 @@ class RefundListType
 
     /**
      * @param string $itemTitle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setItemTitle($itemTitle)
     {
@@ -200,7 +200,7 @@ class RefundListType
 
     /**
      * @param int $bidsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setBidsCount($bidsCount)
     {
@@ -218,7 +218,7 @@ class RefundListType
 
     /**
      * @param string $quantityType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setQuantityType($quantityType)
     {
@@ -236,7 +236,7 @@ class RefundListType
 
     /**
      * @param RefundDetailsType $refundDetails
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundListType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundListType
      */
     public function setRefundDetails($refundDetails)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormItemDealsStruct
 {
@@ -66,7 +66,7 @@ class PostBuyFormItemDealsStruct
 
     /**
      * @param int $dealId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
      */
     public function setDealId($dealId)
     {
@@ -84,7 +84,7 @@ class PostBuyFormItemDealsStruct
 
     /**
      * @param float $dealFinalPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
      */
     public function setDealFinalPrice($dealFinalPrice)
     {
@@ -102,7 +102,7 @@ class PostBuyFormItemDealsStruct
 
     /**
      * @param int $dealQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
      */
     public function setDealQuantity($dealQuantity)
     {
@@ -128,7 +128,7 @@ class PostBuyFormItemDealsStruct
 
     /**
      * @param \DateTime $dealDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
      */
     public function setDealDate(\DateTime $dealDate)
     {
@@ -146,7 +146,7 @@ class PostBuyFormItemDealsStruct
 
     /**
      * @param boolean $dealWasDiscounted
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
      */
     public function setDealWasDiscounted($dealWasDiscounted)
     {
@@ -164,7 +164,7 @@ class PostBuyFormItemDealsStruct
 
     /**
      * @param PostBuyFormItemDealsVariantStruct $dealVariant
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
      */
     public function setDealVariant($dealVariant)
     {
@@ -182,7 +182,7 @@ class PostBuyFormItemDealsStruct
 
     /**
      * @param ArrayOfPostbuyformitemdealsadditionalservicestruct $dealAdditionalServices
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsStruct
      */
     public function setDealAdditionalServices($dealAdditionalServices)
     {

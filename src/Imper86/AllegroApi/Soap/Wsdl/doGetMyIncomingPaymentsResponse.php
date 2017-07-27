@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMyIncomingPaymentsResponse
 {
@@ -28,7 +28,7 @@ class doGetMyIncomingPaymentsResponse
 
     /**
      * @param ArrayOfUserincomingpaymentstruct $payTransIncome
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyIncomingPaymentsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyIncomingPaymentsResponse
      */
     public function setPayTransIncome($payTransIncome)
     {

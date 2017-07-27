@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doSetFreeDeliveryAmountResponse
 {
@@ -28,7 +28,7 @@ class doSetFreeDeliveryAmountResponse
 
     /**
      * @param boolean $responseStatus
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doSetFreeDeliveryAmountResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doSetFreeDeliveryAmountResponse
      */
     public function setResponseStatus($responseStatus)
     {

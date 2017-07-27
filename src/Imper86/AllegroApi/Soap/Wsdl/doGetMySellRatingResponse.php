@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMySellRatingResponse
 {
@@ -49,7 +49,7 @@ class doGetMySellRatingResponse
 
     /**
      * @param int $sellRatingTotalCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
      */
     public function setSellRatingTotalCount($sellRatingTotalCount)
     {
@@ -67,7 +67,7 @@ class doGetMySellRatingResponse
 
     /**
      * @param ArrayOfSellratingaveragestruct $sellRatingAverage
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
      */
     public function setSellRatingAverage($sellRatingAverage)
     {
@@ -85,7 +85,7 @@ class doGetMySellRatingResponse
 
     /**
      * @param ArrayOfSellratingdetailstruct $sellRatingDetails
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
      */
     public function setSellRatingDetails($sellRatingDetails)
     {
@@ -103,7 +103,7 @@ class doGetMySellRatingResponse
 
     /**
      * @param ArrayOfSellratingaveragepermonthstruct $sellRatingStatsPerMonth
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMySellRatingResponse
      */
     public function setSellRatingStatsPerMonth($sellRatingStatsPerMonth)
     {

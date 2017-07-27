@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMyBidItemsResponse
 {
@@ -35,7 +35,7 @@ class doGetMyBidItemsResponse
 
     /**
      * @param int $bidItemsCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyBidItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyBidItemsResponse
      */
     public function setBidItemsCounter($bidItemsCounter)
     {
@@ -53,7 +53,7 @@ class doGetMyBidItemsResponse
 
     /**
      * @param ArrayOfBiditemstruct $bidItemsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyBidItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyBidItemsResponse
      */
     public function setBidItemsList($bidItemsList)
     {

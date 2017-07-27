@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doSetUserLicenceDateResponse
 {
@@ -28,7 +28,7 @@ class doSetUserLicenceDateResponse
 
     /**
      * @param int $setDateValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doSetUserLicenceDateResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doSetUserLicenceDateResponse
      */
     public function setSetDateValue($setDateValue)
     {

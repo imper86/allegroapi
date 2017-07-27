@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doCheckNewAuctionExtResponse
 {
@@ -42,7 +42,7 @@ class doCheckNewAuctionExtResponse
 
     /**
      * @param string $itemPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doCheckNewAuctionExtResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doCheckNewAuctionExtResponse
      */
     public function setItemPrice($itemPrice)
     {
@@ -60,7 +60,7 @@ class doCheckNewAuctionExtResponse
 
     /**
      * @param string $itemPriceDesc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doCheckNewAuctionExtResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doCheckNewAuctionExtResponse
      */
     public function setItemPriceDesc($itemPriceDesc)
     {
@@ -78,7 +78,7 @@ class doCheckNewAuctionExtResponse
 
     /**
      * @param int $itemIsAllegroStandard
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doCheckNewAuctionExtResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doCheckNewAuctionExtResponse
      */
     public function setItemIsAllegroStandard($itemIsAllegroStandard)
     {

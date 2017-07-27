@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetMyPayoutsDetailsRequest
 {
@@ -49,7 +49,7 @@ class DoGetMyPayoutsDetailsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -67,7 +67,7 @@ class DoGetMyPayoutsDetailsRequest
 
     /**
      * @param int $payoutId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
      */
     public function setPayoutId($payoutId)
     {
@@ -85,7 +85,7 @@ class DoGetMyPayoutsDetailsRequest
 
     /**
      * @param int $limit
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
      */
     public function setLimit($limit)
     {
@@ -103,7 +103,7 @@ class DoGetMyPayoutsDetailsRequest
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsDetailsRequest
      */
     public function setOffset($offset)
     {

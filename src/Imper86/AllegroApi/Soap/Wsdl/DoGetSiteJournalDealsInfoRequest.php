@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetSiteJournalDealsInfoRequest
 {
@@ -35,7 +35,7 @@ class DoGetSiteJournalDealsInfoRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSiteJournalDealsInfoRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSiteJournalDealsInfoRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetSiteJournalDealsInfoRequest
 
     /**
      * @param int $journalStart
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSiteJournalDealsInfoRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSiteJournalDealsInfoRequest
      */
     public function setJournalStart($journalStart)
     {

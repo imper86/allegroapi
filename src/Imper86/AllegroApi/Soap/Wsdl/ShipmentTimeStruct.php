@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ShipmentTimeStruct
 {
@@ -35,7 +35,7 @@ class ShipmentTimeStruct
 
     /**
      * @param int $shipmentTimeFrom
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentTimeStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentTimeStruct
      */
     public function setShipmentTimeFrom($shipmentTimeFrom)
     {
@@ -53,7 +53,7 @@ class ShipmentTimeStruct
 
     /**
      * @param int $shipmentTimeTo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentTimeStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentTimeStruct
      */
     public function setShipmentTimeTo($shipmentTimeTo)
     {

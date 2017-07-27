@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doChangeItemFieldsResponse
 {
@@ -28,7 +28,7 @@ class doChangeItemFieldsResponse
 
     /**
      * @param ChangedItemStruct $changedItem
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doChangeItemFieldsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doChangeItemFieldsResponse
      */
     public function setChangedItem($changedItem)
     {

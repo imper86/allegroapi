@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class BidItemStruct
 {
@@ -152,7 +152,7 @@ class BidItemStruct
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemId($itemId)
     {
@@ -170,7 +170,7 @@ class BidItemStruct
 
     /**
      * @param string $itemTitle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemTitle($itemTitle)
     {
@@ -188,7 +188,7 @@ class BidItemStruct
 
     /**
      * @param string $itemThumbnailUrl
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemThumbnailUrl($itemThumbnailUrl)
     {
@@ -206,7 +206,7 @@ class BidItemStruct
 
     /**
      * @param ArrayOfItempricestruct $itemPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemPrice($itemPrice)
     {
@@ -224,7 +224,7 @@ class BidItemStruct
 
     /**
      * @param int $itemBidQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemBidQuantity($itemBidQuantity)
     {
@@ -242,7 +242,7 @@ class BidItemStruct
 
     /**
      * @param int $itemLeftQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemLeftQuantity($itemLeftQuantity)
     {
@@ -260,7 +260,7 @@ class BidItemStruct
 
     /**
      * @param int $itemQuantityType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemQuantityType($itemQuantityType)
     {
@@ -278,7 +278,7 @@ class BidItemStruct
 
     /**
      * @param int $itemEndTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemEndTime($itemEndTime)
     {
@@ -296,7 +296,7 @@ class BidItemStruct
 
     /**
      * @param string $itemEndTimeLeft
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemEndTimeLeft($itemEndTimeLeft)
     {
@@ -314,7 +314,7 @@ class BidItemStruct
 
     /**
      * @param UserInfoStruct $itemSeller
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemSeller($itemSeller)
     {
@@ -332,7 +332,7 @@ class BidItemStruct
 
     /**
      * @param int $itemBiddersCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemBiddersCounter($itemBiddersCounter)
     {
@@ -350,7 +350,7 @@ class BidItemStruct
 
     /**
      * @param UserInfoStruct $itemHighestBidder
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemHighestBidder($itemHighestBidder)
     {
@@ -368,7 +368,7 @@ class BidItemStruct
 
     /**
      * @param int $itemCategoryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemCategoryId($itemCategoryId)
     {
@@ -386,7 +386,7 @@ class BidItemStruct
 
     /**
      * @param int $itemViewsCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemViewsCounter($itemViewsCounter)
     {
@@ -404,7 +404,7 @@ class BidItemStruct
 
     /**
      * @param string $itemNote
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemNote($itemNote)
     {
@@ -422,7 +422,7 @@ class BidItemStruct
 
     /**
      * @param int $itemSpecialInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemSpecialInfo($itemSpecialInfo)
     {
@@ -440,7 +440,7 @@ class BidItemStruct
 
     /**
      * @param int $itemShopInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemShopInfo($itemShopInfo)
     {
@@ -458,7 +458,7 @@ class BidItemStruct
 
     /**
      * @param int $itemProductInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemProductInfo($itemProductInfo)
     {
@@ -476,7 +476,7 @@ class BidItemStruct
 
     /**
      * @param int $itemPayuInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BidItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BidItemStruct
      */
     public function setItemPayuInfo($itemPayuInfo)
     {

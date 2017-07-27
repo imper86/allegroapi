@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetCatsDataLimitRequest
 {
@@ -56,7 +56,7 @@ class DoGetCatsDataLimitRequest
 
     /**
      * @param int $countryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
      */
     public function setCountryId($countryId)
     {
@@ -74,7 +74,7 @@ class DoGetCatsDataLimitRequest
 
     /**
      * @param int $localVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
      */
     public function setLocalVersion($localVersion)
     {
@@ -92,7 +92,7 @@ class DoGetCatsDataLimitRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -110,7 +110,7 @@ class DoGetCatsDataLimitRequest
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
      */
     public function setOffset($offset)
     {
@@ -128,7 +128,7 @@ class DoGetCatsDataLimitRequest
 
     /**
      * @param int $packageElement
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
      */
     public function setPackageElement($packageElement)
     {

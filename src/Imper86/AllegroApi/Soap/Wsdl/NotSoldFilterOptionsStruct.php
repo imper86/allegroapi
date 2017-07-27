@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class NotSoldFilterOptionsStruct
 {
@@ -46,7 +46,7 @@ class NotSoldFilterOptionsStruct
 
     /**
      * @param int $filterFormat
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
      */
     public function setFilterFormat($filterFormat)
     {
@@ -64,7 +64,7 @@ class NotSoldFilterOptionsStruct
 
     /**
      * @param int $filterFromEnd
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
      */
     public function setFilterFromEnd($filterFromEnd)
     {
@@ -82,7 +82,7 @@ class NotSoldFilterOptionsStruct
 
     /**
      * @param int $filterAutoListing
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
      */
     public function setFilterAutoListing($filterAutoListing)
     {
@@ -100,7 +100,7 @@ class NotSoldFilterOptionsStruct
 
     /**
      * @param FilterPriceStruct $filterPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
      */
     public function setFilterPrice($filterPrice)
     {
@@ -118,7 +118,7 @@ class NotSoldFilterOptionsStruct
 
     /**
      * @param int $filterDurationType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\NotSoldFilterOptionsStruct
      */
     public function setFilterDurationType($filterDurationType)
     {

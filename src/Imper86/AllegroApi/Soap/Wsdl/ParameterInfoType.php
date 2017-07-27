@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ParameterInfoType
 {
@@ -47,7 +47,7 @@ class ParameterInfoType
 
     /**
      * @param string $parameterName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ParameterInfoType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ParameterInfoType
      */
     public function setParameterName($parameterName)
     {
@@ -65,7 +65,7 @@ class ParameterInfoType
 
     /**
      * @param ArrayOfString $parameterValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ParameterInfoType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ParameterInfoType
      */
     public function setParameterValue($parameterValue)
     {
@@ -83,7 +83,7 @@ class ParameterInfoType
 
     /**
      * @param string $parameterUnit
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ParameterInfoType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ParameterInfoType
      */
     public function setParameterUnit($parameterUnit)
     {
@@ -101,7 +101,7 @@ class ParameterInfoType
 
     /**
      * @param boolean $parameterIsRange
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ParameterInfoType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ParameterInfoType
      */
     public function setParameterIsRange($parameterIsRange)
     {

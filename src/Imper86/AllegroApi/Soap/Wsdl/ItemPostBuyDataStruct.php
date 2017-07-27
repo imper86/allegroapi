@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemPostBuyDataStruct
 {
@@ -33,7 +33,7 @@ class ItemPostBuyDataStruct
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPostBuyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPostBuyDataStruct
      */
     public function setItemId($itemId)
     {
@@ -51,7 +51,7 @@ class ItemPostBuyDataStruct
 
     /**
      * @param ArrayOfUserpostbuydatastruct $usersPostBuyData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPostBuyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPostBuyDataStruct
      */
     public function setUsersPostBuyData($usersPostBuyData)
     {

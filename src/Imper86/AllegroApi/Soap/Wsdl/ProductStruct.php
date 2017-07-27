@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ProductStruct
 {
@@ -52,7 +52,7 @@ class ProductStruct
 
     /**
      * @param int $productId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductStruct
      */
     public function setProductId($productId)
     {
@@ -70,7 +70,7 @@ class ProductStruct
 
     /**
      * @param string $productName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductStruct
      */
     public function setProductName($productName)
     {
@@ -88,7 +88,7 @@ class ProductStruct
 
     /**
      * @param string $productDescription
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductStruct
      */
     public function setProductDescription($productDescription)
     {
@@ -106,7 +106,7 @@ class ProductStruct
 
     /**
      * @param ArrayOfString $productImagesList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductStruct
      */
     public function setProductImagesList($productImagesList)
     {
@@ -124,7 +124,7 @@ class ProductStruct
 
     /**
      * @param ArrayOfProductparametersgroupstruct $productParametersGroupList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductStruct
      */
     public function setProductParametersGroupList($productParametersGroupList)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FeedbackManyStruct
 {
@@ -64,7 +64,7 @@ class FeedbackManyStruct
 
     /**
      * @param int $feItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackManyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackManyStruct
      */
     public function setFeItemId($feItemId)
     {
@@ -82,7 +82,7 @@ class FeedbackManyStruct
 
     /**
      * @param int $feUseCommentTemplate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackManyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackManyStruct
      */
     public function setFeUseCommentTemplate($feUseCommentTemplate)
     {
@@ -100,7 +100,7 @@ class FeedbackManyStruct
 
     /**
      * @param int $feToUserId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackManyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackManyStruct
      */
     public function setFeToUserId($feToUserId)
     {
@@ -118,7 +118,7 @@ class FeedbackManyStruct
 
     /**
      * @param string $feComment
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackManyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackManyStruct
      */
     public function setFeComment($feComment)
     {
@@ -136,7 +136,7 @@ class FeedbackManyStruct
 
     /**
      * @param string $feCommentType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackManyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackManyStruct
      */
     public function setFeCommentType($feCommentType)
     {
@@ -154,7 +154,7 @@ class FeedbackManyStruct
 
     /**
      * @param int $feOp
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackManyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackManyStruct
      */
     public function setFeOp($feOp)
     {
@@ -172,7 +172,7 @@ class FeedbackManyStruct
 
     /**
      * @param ArrayOfSellratingestimationstruct $feRating
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackManyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackManyStruct
      */
     public function setFeRating($feRating)
     {

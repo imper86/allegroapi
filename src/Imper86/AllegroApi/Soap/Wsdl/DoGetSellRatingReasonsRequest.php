@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetSellRatingReasonsRequest
 {
@@ -35,7 +35,7 @@ class DoGetSellRatingReasonsRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellRatingReasonsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellRatingReasonsRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -53,7 +53,7 @@ class DoGetSellRatingReasonsRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellRatingReasonsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellRatingReasonsRequest
      */
     public function setCountryCode($countryCode)
     {

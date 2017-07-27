@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doMyBillingItemResponse
 {
@@ -35,7 +35,7 @@ class doMyBillingItemResponse
 
     /**
      * @param ArrayOfItembilling $entryFees
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doMyBillingItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doMyBillingItemResponse
      */
     public function setEntryFees($entryFees)
     {
@@ -53,7 +53,7 @@ class doMyBillingItemResponse
 
     /**
      * @param ArrayOfItembilling $endingFees
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doMyBillingItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doMyBillingItemResponse
      */
     public function setEndingFees($endingFees)
     {

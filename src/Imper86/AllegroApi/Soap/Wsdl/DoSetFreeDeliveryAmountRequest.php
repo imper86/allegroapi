@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoSetFreeDeliveryAmountRequest
 {
@@ -42,7 +42,7 @@ class DoSetFreeDeliveryAmountRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetFreeDeliveryAmountRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetFreeDeliveryAmountRequest
      */
     public function setSessionId($sessionId)
     {
@@ -60,7 +60,7 @@ class DoSetFreeDeliveryAmountRequest
 
     /**
      * @param int $activeFlag
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetFreeDeliveryAmountRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetFreeDeliveryAmountRequest
      */
     public function setActiveFlag($activeFlag)
     {
@@ -78,7 +78,7 @@ class DoSetFreeDeliveryAmountRequest
 
     /**
      * @param float $freeDeliveryAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetFreeDeliveryAmountRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetFreeDeliveryAmountRequest
      */
     public function setFreeDeliveryAmount($freeDeliveryAmount)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class UserPaymentStruct
 {
@@ -82,7 +82,7 @@ class UserPaymentStruct
 
     /**
      * @param int $payTransId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransId($payTransId)
     {
@@ -100,7 +100,7 @@ class UserPaymentStruct
 
     /**
      * @param ArrayOfPaymentsellersstruct $payTransSellers
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransSellers($payTransSellers)
     {
@@ -118,7 +118,7 @@ class UserPaymentStruct
 
     /**
      * @param string $payTransType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransType($payTransType)
     {
@@ -136,7 +136,7 @@ class UserPaymentStruct
 
     /**
      * @param string $payTransStatus
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransStatus($payTransStatus)
     {
@@ -154,7 +154,7 @@ class UserPaymentStruct
 
     /**
      * @param float $payTransAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransAmount($payTransAmount)
     {
@@ -172,7 +172,7 @@ class UserPaymentStruct
 
     /**
      * @param int $payTransCreateDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransCreateDate($payTransCreateDate)
     {
@@ -190,7 +190,7 @@ class UserPaymentStruct
 
     /**
      * @param float $payTransPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransPrice($payTransPrice)
     {
@@ -208,7 +208,7 @@ class UserPaymentStruct
 
     /**
      * @param float $payTransPostageAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransPostageAmount($payTransPostageAmount)
     {
@@ -226,7 +226,7 @@ class UserPaymentStruct
 
     /**
      * @param int $payTransIncomplete
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentStruct
      */
     public function setPayTransIncomplete($payTransIncomplete)
     {

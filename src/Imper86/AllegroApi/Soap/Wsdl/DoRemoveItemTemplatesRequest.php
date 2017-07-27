@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoRemoveItemTemplatesRequest
 {
@@ -35,7 +35,7 @@ class DoRemoveItemTemplatesRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRemoveItemTemplatesRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRemoveItemTemplatesRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoRemoveItemTemplatesRequest
 
     /**
      * @param ArrayOfInt $itemTemplateIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRemoveItemTemplatesRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRemoveItemTemplatesRequest
      */
     public function setItemTemplateIds($itemTemplateIds)
     {

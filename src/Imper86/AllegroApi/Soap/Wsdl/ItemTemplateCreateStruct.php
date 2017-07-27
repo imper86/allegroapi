@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ItemTemplateCreateStruct
 {
@@ -35,7 +35,7 @@ class ItemTemplateCreateStruct
 
     /**
      * @param int $itemTemplateOption
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemTemplateCreateStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemTemplateCreateStruct
      */
     public function setItemTemplateOption($itemTemplateOption)
     {
@@ -53,7 +53,7 @@ class ItemTemplateCreateStruct
 
     /**
      * @param string $itemTemplateName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemTemplateCreateStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemTemplateCreateStruct
      */
     public function setItemTemplateName($itemTemplateName)
     {

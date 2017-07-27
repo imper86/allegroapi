@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormItemStruct
 {
@@ -68,7 +68,7 @@ class PostBuyFormItemStruct
 
     /**
      * @param int $postBuyFormItQuantity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
      */
     public function setPostBuyFormItQuantity($postBuyFormItQuantity)
     {
@@ -86,7 +86,7 @@ class PostBuyFormItemStruct
 
     /**
      * @param float $postBuyFormItAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
      */
     public function setPostBuyFormItAmount($postBuyFormItAmount)
     {
@@ -104,7 +104,7 @@ class PostBuyFormItemStruct
 
     /**
      * @param int $postBuyFormItId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
      */
     public function setPostBuyFormItId($postBuyFormItId)
     {
@@ -122,7 +122,7 @@ class PostBuyFormItemStruct
 
     /**
      * @param string $postBuyFormItTitle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
      */
     public function setPostBuyFormItTitle($postBuyFormItTitle)
     {
@@ -140,7 +140,7 @@ class PostBuyFormItemStruct
 
     /**
      * @param int $postBuyFormItCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
      */
     public function setPostBuyFormItCountry($postBuyFormItCountry)
     {
@@ -158,7 +158,7 @@ class PostBuyFormItemStruct
 
     /**
      * @param float $postBuyFormItPrice
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
      */
     public function setPostBuyFormItPrice($postBuyFormItPrice)
     {
@@ -176,7 +176,7 @@ class PostBuyFormItemStruct
 
     /**
      * @param ArrayOfPostbuyformitemdealsstruct $postBuyFormItDeals
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemStruct
      */
     public function setPostBuyFormItDeals($postBuyFormItDeals)
     {

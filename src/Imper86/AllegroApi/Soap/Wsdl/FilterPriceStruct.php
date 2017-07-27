@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FilterPriceStruct
 {
@@ -31,7 +31,7 @@ class FilterPriceStruct
 
     /**
      * @param float $filterPriceFrom
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterPriceStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterPriceStruct
      */
     public function setFilterPriceFrom($filterPriceFrom)
     {
@@ -49,7 +49,7 @@ class FilterPriceStruct
 
     /**
      * @param float $filterPriceTo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterPriceStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterPriceStruct
      */
     public function setFilterPriceTo($filterPriceTo)
     {

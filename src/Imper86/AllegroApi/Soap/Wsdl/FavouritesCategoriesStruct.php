@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FavouritesCategoriesStruct
 {
@@ -49,7 +49,7 @@ class FavouritesCategoriesStruct
 
     /**
      * @param int $sCategoryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
      */
     public function setSCategoryId($sCategoryId)
     {
@@ -67,7 +67,7 @@ class FavouritesCategoriesStruct
 
     /**
      * @param int $sSubscriptionStatus
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
      */
     public function setSSubscriptionStatus($sSubscriptionStatus)
     {
@@ -85,7 +85,7 @@ class FavouritesCategoriesStruct
 
     /**
      * @param int $sPosition
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
      */
     public function setSPosition($sPosition)
     {
@@ -103,7 +103,7 @@ class FavouritesCategoriesStruct
 
     /**
      * @param int $sBuyNowOnly
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct
      */
     public function setSBuyNowOnly($sBuyNowOnly)
     {

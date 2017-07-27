@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoMyFeedback2LimitRequest
 {
@@ -63,7 +63,7 @@ class DoMyFeedback2LimitRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -81,7 +81,7 @@ class DoMyFeedback2LimitRequest
 
     /**
      * @param string $feedbackType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
      */
     public function setFeedbackType($feedbackType)
     {
@@ -99,7 +99,7 @@ class DoMyFeedback2LimitRequest
 
     /**
      * @param int $offset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
      */
     public function setOffset($offset)
     {
@@ -117,7 +117,7 @@ class DoMyFeedback2LimitRequest
 
     /**
      * @param int $desc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
      */
     public function setDesc($desc)
     {
@@ -135,7 +135,7 @@ class DoMyFeedback2LimitRequest
 
     /**
      * @param ArrayOfLong $itemsArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
      */
     public function setItemsArray($itemsArray)
     {
@@ -153,7 +153,7 @@ class DoMyFeedback2LimitRequest
 
     /**
      * @param int $packageElement
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyFeedback2LimitRequest
      */
     public function setPackageElement($packageElement)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doCancelRefundFormResponse
 {
@@ -28,7 +28,7 @@ class doCancelRefundFormResponse
 
     /**
      * @param boolean $cancellationResult
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doCancelRefundFormResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doCancelRefundFormResponse
      */
     public function setCancellationResult($cancellationResult)
     {

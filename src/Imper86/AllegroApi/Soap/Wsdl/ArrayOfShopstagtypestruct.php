@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfShopstagtypestruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfShopstagtypestruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ShopsTagTypeStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfShopstagtypestruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfShopstagtypestruct
      */
     public function setItem(array $item = null)
     {

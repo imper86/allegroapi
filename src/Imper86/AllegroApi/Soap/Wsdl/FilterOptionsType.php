@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FilterOptionsType
 {
@@ -38,7 +38,7 @@ class FilterOptionsType
 
     /**
      * @param string $filterId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterOptionsType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterOptionsType
      */
     public function setFilterId($filterId)
     {
@@ -56,7 +56,7 @@ class FilterOptionsType
 
     /**
      * @param ArrayOfString $filterValueId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterOptionsType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterOptionsType
      */
     public function setFilterValueId($filterValueId)
     {
@@ -74,7 +74,7 @@ class FilterOptionsType
 
     /**
      * @param RangeValueType $filterValueRange
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterOptionsType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterOptionsType
      */
     public function setFilterValueRange($filterValueRange)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoRequestCancelBidRequest
 {
@@ -42,7 +42,7 @@ class DoRequestCancelBidRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestCancelBidRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestCancelBidRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -60,7 +60,7 @@ class DoRequestCancelBidRequest
 
     /**
      * @param int $requestItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestCancelBidRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestCancelBidRequest
      */
     public function setRequestItemId($requestItemId)
     {
@@ -78,7 +78,7 @@ class DoRequestCancelBidRequest
 
     /**
      * @param string $requestCancelReason
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestCancelBidRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestCancelBidRequest
      */
     public function setRequestCancelReason($requestCancelReason)
     {

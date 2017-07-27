@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class CategoryData
 {
@@ -70,7 +70,7 @@ class CategoryData
 
     /**
      * @param int $catId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryData
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryData
      */
     public function setCatId($catId)
     {
@@ -88,7 +88,7 @@ class CategoryData
 
     /**
      * @param int $catParent
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryData
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryData
      */
     public function setCatParent($catParent)
     {
@@ -106,7 +106,7 @@ class CategoryData
 
     /**
      * @param int $catCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryData
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryData
      */
     public function setCatCountry($catCountry)
     {
@@ -124,7 +124,7 @@ class CategoryData
 
     /**
      * @param int $catLevel
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryData
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryData
      */
     public function setCatLevel($catLevel)
     {
@@ -142,7 +142,7 @@ class CategoryData
 
     /**
      * @param int $catIsLeaf
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryData
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryData
      */
     public function setCatIsLeaf($catIsLeaf)
     {
@@ -160,7 +160,7 @@ class CategoryData
 
     /**
      * @param string $catName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryData
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryData
      */
     public function setCatName($catName)
     {
@@ -178,7 +178,7 @@ class CategoryData
 
     /**
      * @param int $catOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryData
+     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryData
      */
     public function setCatOptions($catOptions)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfSitejournal implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSitejournal implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param SiteJournal[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfSitejournal
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfSitejournal
      */
     public function setItem(array $item = null)
     {

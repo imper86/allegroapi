@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class RangeIntValueStruct
 {
@@ -31,7 +31,7 @@ class RangeIntValueStruct
 
     /**
      * @param int $fvalueRangeIntMin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeIntValueStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeIntValueStruct
      */
     public function setFvalueRangeIntMin($fvalueRangeIntMin)
     {
@@ -49,7 +49,7 @@ class RangeIntValueStruct
 
     /**
      * @param int $fvalueRangeIntMax
-     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeIntValueStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeIntValueStruct
      */
     public function setFvalueRangeIntMax($fvalueRangeIntMax)
     {

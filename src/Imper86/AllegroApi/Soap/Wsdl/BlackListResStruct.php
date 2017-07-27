@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class BlackListResStruct
 {
@@ -35,7 +35,7 @@ class BlackListResStruct
 
     /**
      * @param int $userId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BlackListResStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BlackListResStruct
      */
     public function setUserId($userId)
     {
@@ -53,7 +53,7 @@ class BlackListResStruct
 
     /**
      * @param int $result
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BlackListResStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BlackListResStruct
      */
     public function setResult($result)
     {

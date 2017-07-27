@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetMyNotWonItemsRequest
 {
@@ -70,7 +70,7 @@ class DoGetMyNotWonItemsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -88,7 +88,7 @@ class DoGetMyNotWonItemsRequest
 
     /**
      * @param SortOptionsStruct $sortOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
      */
     public function setSortOptions($sortOptions)
     {
@@ -106,7 +106,7 @@ class DoGetMyNotWonItemsRequest
 
     /**
      * @param string $searchValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
      */
     public function setSearchValue($searchValue)
     {
@@ -124,7 +124,7 @@ class DoGetMyNotWonItemsRequest
 
     /**
      * @param int $categoryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
      */
     public function setCategoryId($categoryId)
     {
@@ -142,7 +142,7 @@ class DoGetMyNotWonItemsRequest
 
     /**
      * @param ArrayOfLong $itemIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
      */
     public function setItemIds($itemIds)
     {
@@ -160,7 +160,7 @@ class DoGetMyNotWonItemsRequest
 
     /**
      * @param int $pageSize
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
      */
     public function setPageSize($pageSize)
     {
@@ -178,7 +178,7 @@ class DoGetMyNotWonItemsRequest
 
     /**
      * @param int $pageNumber
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyNotWonItemsRequest
      */
     public function setPageNumber($pageNumber)
     {

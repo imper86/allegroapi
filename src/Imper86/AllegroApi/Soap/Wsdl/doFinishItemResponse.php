@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doFinishItemResponse
 {
@@ -28,7 +28,7 @@ class doFinishItemResponse
 
     /**
      * @param int $finishValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doFinishItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doFinishItemResponse
      */
     public function setFinishValue($finishValue)
     {

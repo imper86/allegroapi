@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class BillingDataType
 {
@@ -84,7 +84,7 @@ class BillingDataType
 
     /**
      * @param int $billingId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingId($billingId)
     {
@@ -102,7 +102,7 @@ class BillingDataType
 
     /**
      * @param string $billingType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingType($billingType)
     {
@@ -120,7 +120,7 @@ class BillingDataType
 
     /**
      * @param string $billingFixperc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingFixperc($billingFixperc)
     {
@@ -138,7 +138,7 @@ class BillingDataType
 
     /**
      * @param string $billingName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingName($billingName)
     {
@@ -156,7 +156,7 @@ class BillingDataType
 
     /**
      * @param string $billingRangeFrom
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingRangeFrom($billingRangeFrom)
     {
@@ -174,7 +174,7 @@ class BillingDataType
 
     /**
      * @param string $billingRangeTo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingRangeTo($billingRangeTo)
     {
@@ -192,7 +192,7 @@ class BillingDataType
 
     /**
      * @param string $billingCat
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingCat($billingCat)
     {
@@ -210,7 +210,7 @@ class BillingDataType
 
     /**
      * @param string $billingRate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingRate($billingRate)
     {
@@ -228,7 +228,7 @@ class BillingDataType
 
     /**
      * @param int $billingAuctionType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\BillingDataType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\BillingDataType
      */
     public function setBillingAuctionType($billingAuctionType)
     {

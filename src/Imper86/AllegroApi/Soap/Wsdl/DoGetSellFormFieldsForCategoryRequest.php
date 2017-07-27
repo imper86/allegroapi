@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetSellFormFieldsForCategoryRequest
 {
@@ -42,7 +42,7 @@ class DoGetSellFormFieldsForCategoryRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsForCategoryRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsForCategoryRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -60,7 +60,7 @@ class DoGetSellFormFieldsForCategoryRequest
 
     /**
      * @param int $countryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsForCategoryRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsForCategoryRequest
      */
     public function setCountryId($countryId)
     {
@@ -78,7 +78,7 @@ class DoGetSellFormFieldsForCategoryRequest
 
     /**
      * @param int $categoryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsForCategoryRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsForCategoryRequest
      */
     public function setCategoryId($categoryId)
     {

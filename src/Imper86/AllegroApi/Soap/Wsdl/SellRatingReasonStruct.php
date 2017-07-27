@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SellRatingReasonStruct
 {
@@ -35,7 +35,7 @@ class SellRatingReasonStruct
 
     /**
      * @param int $sellRatingReasonId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellRatingReasonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellRatingReasonStruct
      */
     public function setSellRatingReasonId($sellRatingReasonId)
     {
@@ -53,7 +53,7 @@ class SellRatingReasonStruct
 
     /**
      * @param string $sellRatingReasonTitle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellRatingReasonStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellRatingReasonStruct
      */
     public function setSellRatingReasonTitle($sellRatingReasonTitle)
     {

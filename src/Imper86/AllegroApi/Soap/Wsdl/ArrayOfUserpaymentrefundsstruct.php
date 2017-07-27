@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfUserpaymentrefundsstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfUserpaymentrefundsstruct implements \ArrayAccess, \Iterator, \Count
 
     /**
      * @param UserPaymentRefundsStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfUserpaymentrefundsstruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfUserpaymentrefundsstruct
      */
     public function setItem(array $item = null)
     {

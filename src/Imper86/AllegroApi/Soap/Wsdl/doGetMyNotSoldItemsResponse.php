@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMyNotSoldItemsResponse
 {
@@ -35,7 +35,7 @@ class doGetMyNotSoldItemsResponse
 
     /**
      * @param int $notSoldItemsCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyNotSoldItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyNotSoldItemsResponse
      */
     public function setNotSoldItemsCounter($notSoldItemsCounter)
     {
@@ -53,7 +53,7 @@ class doGetMyNotSoldItemsResponse
 
     /**
      * @param ArrayOfNotsolditemstruct $notSoldItemsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyNotSoldItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyNotSoldItemsResponse
      */
     public function setNotSoldItemsList($notSoldItemsList)
     {

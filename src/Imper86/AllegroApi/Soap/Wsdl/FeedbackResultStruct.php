@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FeedbackResultStruct
 {
@@ -49,7 +49,7 @@ class FeedbackResultStruct
 
     /**
      * @param int $feItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackResultStruct
      */
     public function setFeItemId($feItemId)
     {
@@ -67,7 +67,7 @@ class FeedbackResultStruct
 
     /**
      * @param int $feId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackResultStruct
      */
     public function setFeId($feId)
     {
@@ -85,7 +85,7 @@ class FeedbackResultStruct
 
     /**
      * @param string $feFaultCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackResultStruct
      */
     public function setFeFaultCode($feFaultCode)
     {
@@ -103,7 +103,7 @@ class FeedbackResultStruct
 
     /**
      * @param string $feFaultDesc
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FeedbackResultStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FeedbackResultStruct
      */
     public function setFeFaultDesc($feFaultDesc)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetSellFormAttribsResponse
 {
@@ -42,7 +42,7 @@ class doGetSellFormAttribsResponse
 
     /**
      * @param ArrayOfSellformtype $sellFormFields
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormAttribsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormAttribsResponse
      */
     public function setSellFormFields($sellFormFields)
     {
@@ -60,7 +60,7 @@ class doGetSellFormAttribsResponse
 
     /**
      * @param int $verKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormAttribsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormAttribsResponse
      */
     public function setVerKey($verKey)
     {
@@ -78,7 +78,7 @@ class doGetSellFormAttribsResponse
 
     /**
      * @param string $verStr
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormAttribsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormAttribsResponse
      */
     public function setVerStr($verStr)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetUserIDResponse
 {
@@ -28,7 +28,7 @@ class doGetUserIDResponse
 
     /**
      * @param int $userId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetUserIDResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetUserIDResponse
      */
     public function setUserId($userId)
     {

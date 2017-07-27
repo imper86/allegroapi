@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfTagnamestruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfTagnamestruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param TagNameStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfTagnamestruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfTagnamestruct
      */
     public function setItem(array $item = null)
     {

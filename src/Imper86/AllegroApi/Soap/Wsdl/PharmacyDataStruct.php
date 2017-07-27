@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PharmacyDataStruct
 {
@@ -105,7 +105,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyOpeningDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyOpeningDate($pharmacyOpeningDate)
     {
@@ -123,7 +123,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyExpirationDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyExpirationDate($pharmacyExpirationDate)
     {
@@ -141,7 +141,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyName($pharmacyName)
     {
@@ -159,7 +159,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyPharmacistFullName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyPharmacistFullName($pharmacyPharmacistFullName)
     {
@@ -177,7 +177,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyAddress
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyAddress($pharmacyAddress)
     {
@@ -195,7 +195,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyPostcode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyPostcode($pharmacyPostcode)
     {
@@ -213,7 +213,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyCity
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyCity($pharmacyCity)
     {
@@ -231,7 +231,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyCommune
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyCommune($pharmacyCommune)
     {
@@ -249,7 +249,7 @@ class PharmacyDataStruct
 
     /**
      * @param int $pharmacyCountryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyCountryId($pharmacyCountryId)
     {
@@ -267,7 +267,7 @@ class PharmacyDataStruct
 
     /**
      * @param int $pharmacyStateId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyStateId($pharmacyStateId)
     {
@@ -285,7 +285,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyPermitNumber
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyPermitNumber($pharmacyPermitNumber)
     {
@@ -303,7 +303,7 @@ class PharmacyDataStruct
 
     /**
      * @param string $pharmacyPermitInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyDataStruct
      */
     public function setPharmacyPermitInfo($pharmacyPermitInfo)
     {

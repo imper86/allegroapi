@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class WaitFeedbackStruct
 {
@@ -63,7 +63,7 @@ class WaitFeedbackStruct
 
     /**
      * @param int $feItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
      */
     public function setFeItemId($feItemId)
     {
@@ -81,7 +81,7 @@ class WaitFeedbackStruct
 
     /**
      * @param string $feItemName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
      */
     public function setFeItemName($feItemName)
     {
@@ -99,7 +99,7 @@ class WaitFeedbackStruct
 
     /**
      * @param int $feToUserId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
      */
     public function setFeToUserId($feToUserId)
     {
@@ -117,7 +117,7 @@ class WaitFeedbackStruct
 
     /**
      * @param int $feOp
-     * @return \Imper86\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
      */
     public function setFeOp($feOp)
     {
@@ -135,7 +135,7 @@ class WaitFeedbackStruct
 
     /**
      * @param string $feAnsCommentType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
      */
     public function setFeAnsCommentType($feAnsCommentType)
     {
@@ -153,7 +153,7 @@ class WaitFeedbackStruct
 
     /**
      * @param int $fePossibilityToAdd
-     * @return \Imper86\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\WaitFeedbackStruct
      */
     public function setFePossibilityToAdd($fePossibilityToAdd)
     {

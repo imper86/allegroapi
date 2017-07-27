@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetPostBuyFormsDataForSellersRequest
 {
@@ -35,7 +35,7 @@ class DoGetPostBuyFormsDataForSellersRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsDataForSellersRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsDataForSellersRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetPostBuyFormsDataForSellersRequest
 
     /**
      * @param ArrayOfLong $transactionsIdsArray
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsDataForSellersRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsDataForSellersRequest
      */
     public function setTransactionsIdsArray($transactionsIdsArray)
     {

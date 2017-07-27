@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetUserLoginResponse
 {
@@ -28,7 +28,7 @@ class doGetUserLoginResponse
 
     /**
      * @param string $userLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetUserLoginResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetUserLoginResponse
      */
     public function setUserLogin($userLogin)
     {

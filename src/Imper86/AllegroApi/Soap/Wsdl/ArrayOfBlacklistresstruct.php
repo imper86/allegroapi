@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfBlacklistresstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfBlacklistresstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param BlackListResStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfBlacklistresstruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfBlacklistresstruct
      */
     public function setItem(array $item = null)
     {

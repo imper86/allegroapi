@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doMyAccountItemsCountResponse
 {
@@ -28,7 +28,7 @@ class doMyAccountItemsCountResponse
 
     /**
      * @param int $myaccountItemsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doMyAccountItemsCountResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doMyAccountItemsCountResponse
      */
     public function setMyaccountItemsCount($myaccountItemsCount)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doChangeQuantityItemResponse
 {
@@ -49,7 +49,7 @@ class doChangeQuantityItemResponse
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
      */
     public function setItemId($itemId)
     {
@@ -67,7 +67,7 @@ class doChangeQuantityItemResponse
 
     /**
      * @param string $itemInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
      */
     public function setItemInfo($itemInfo)
     {
@@ -85,7 +85,7 @@ class doChangeQuantityItemResponse
 
     /**
      * @param int $itemQuantityLeft
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
      */
     public function setItemQuantityLeft($itemQuantityLeft)
     {
@@ -103,7 +103,7 @@ class doChangeQuantityItemResponse
 
     /**
      * @param int $itemQuantitySold
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doChangeQuantityItemResponse
      */
     public function setItemQuantitySold($itemQuantitySold)
     {

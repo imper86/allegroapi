@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoSendEmailToUserRequest
 {
@@ -63,7 +63,7 @@ class DoSendEmailToUserRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -81,7 +81,7 @@ class DoSendEmailToUserRequest
 
     /**
      * @param int $mailToUserItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
      */
     public function setMailToUserItemId($mailToUserItemId)
     {
@@ -99,7 +99,7 @@ class DoSendEmailToUserRequest
 
     /**
      * @param int $mailToUserReceiverId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
      */
     public function setMailToUserReceiverId($mailToUserReceiverId)
     {
@@ -117,7 +117,7 @@ class DoSendEmailToUserRequest
 
     /**
      * @param int $mailToUserSubjectId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
      */
     public function setMailToUserSubjectId($mailToUserSubjectId)
     {
@@ -135,7 +135,7 @@ class DoSendEmailToUserRequest
 
     /**
      * @param int $mailToUserOption
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
      */
     public function setMailToUserOption($mailToUserOption)
     {
@@ -153,7 +153,7 @@ class DoSendEmailToUserRequest
 
     /**
      * @param string $mailToUserMessage
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendEmailToUserRequest
      */
     public function setMailToUserMessage($mailToUserMessage)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfItempricestruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfItempricestruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ItemPriceStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfItempricestruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfItempricestruct
      */
     public function setItem(array $item = null)
     {

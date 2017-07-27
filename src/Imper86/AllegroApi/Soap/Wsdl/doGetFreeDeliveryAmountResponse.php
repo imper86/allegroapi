@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetFreeDeliveryAmountResponse
 {
@@ -35,7 +35,7 @@ class doGetFreeDeliveryAmountResponse
 
     /**
      * @param float $freeDeliveryAmount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetFreeDeliveryAmountResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetFreeDeliveryAmountResponse
      */
     public function setFreeDeliveryAmount($freeDeliveryAmount)
     {
@@ -53,7 +53,7 @@ class doGetFreeDeliveryAmountResponse
 
     /**
      * @param int $activeFlag
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetFreeDeliveryAmountResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetFreeDeliveryAmountResponse
      */
     public function setActiveFlag($activeFlag)
     {

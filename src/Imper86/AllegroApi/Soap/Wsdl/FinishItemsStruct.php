@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class FinishItemsStruct
 {
@@ -38,7 +38,7 @@ class FinishItemsStruct
 
     /**
      * @param int $finishItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FinishItemsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FinishItemsStruct
      */
     public function setFinishItemId($finishItemId)
     {
@@ -56,7 +56,7 @@ class FinishItemsStruct
 
     /**
      * @param int $finishCancelAllBids
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FinishItemsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FinishItemsStruct
      */
     public function setFinishCancelAllBids($finishCancelAllBids)
     {
@@ -74,7 +74,7 @@ class FinishItemsStruct
 
     /**
      * @param string $finishCancelReason
-     * @return \Imper86\AllegroApi\Soap\Wsdl\FinishItemsStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\FinishItemsStruct
      */
     public function setFinishCancelReason($finishCancelReason)
     {

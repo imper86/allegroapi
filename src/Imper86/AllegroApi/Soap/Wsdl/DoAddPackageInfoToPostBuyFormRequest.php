@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoAddPackageInfoToPostBuyFormRequest
 {
@@ -42,7 +42,7 @@ class DoAddPackageInfoToPostBuyFormRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoAddPackageInfoToPostBuyFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoAddPackageInfoToPostBuyFormRequest
      */
     public function setSessionId($sessionId)
     {
@@ -60,7 +60,7 @@ class DoAddPackageInfoToPostBuyFormRequest
 
     /**
      * @param int $transactionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoAddPackageInfoToPostBuyFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoAddPackageInfoToPostBuyFormRequest
      */
     public function setTransactionId($transactionId)
     {
@@ -78,7 +78,7 @@ class DoAddPackageInfoToPostBuyFormRequest
 
     /**
      * @param ArrayOfPackageinfostruct $packageInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoAddPackageInfoToPostBuyFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoAddPackageInfoToPostBuyFormRequest
      */
     public function setPackageInfo($packageInfo)
     {

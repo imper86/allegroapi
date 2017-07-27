@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetItemFieldsResponse
 {
@@ -35,7 +35,7 @@ class doGetItemFieldsResponse
 
     /**
      * @param ArrayOfFieldsvalue $itemFields
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemFieldsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemFieldsResponse
      */
     public function setItemFields($itemFields)
     {
@@ -53,7 +53,7 @@ class doGetItemFieldsResponse
 
     /**
      * @param AfterSalesServiceConditionsStruct $afterSalesServiceConditions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemFieldsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemFieldsResponse
      */
     public function setAfterSalesServiceConditions($afterSalesServiceConditions)
     {

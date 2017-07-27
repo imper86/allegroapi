@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoSendPostBuyFormRequest
 {
@@ -42,7 +42,7 @@ class DoSendPostBuyFormRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendPostBuyFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendPostBuyFormRequest
      */
     public function setSessionId($sessionId)
     {
@@ -60,7 +60,7 @@ class DoSendPostBuyFormRequest
 
     /**
      * @param ArrayOfNewpostbuyformsellerstruct $newPostBuyFormSeller
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendPostBuyFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendPostBuyFormRequest
      */
     public function setNewPostBuyFormSeller($newPostBuyFormSeller)
     {
@@ -78,7 +78,7 @@ class DoSendPostBuyFormRequest
 
     /**
      * @param NewPostBuyFormCommonStruct $newPostBuyFormCommon
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSendPostBuyFormRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSendPostBuyFormRequest
      */
     public function setNewPostBuyFormCommon($newPostBuyFormCommon)
     {

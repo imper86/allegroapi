@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfRelateditemstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfRelateditemstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param RelatedItemStruct[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfRelateditemstruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfRelateditemstruct
      */
     public function setItem(array $item = null)
     {

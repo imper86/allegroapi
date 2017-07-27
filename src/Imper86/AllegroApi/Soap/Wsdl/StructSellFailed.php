@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class StructSellFailed
 {
@@ -42,7 +42,7 @@ class StructSellFailed
 
     /**
      * @param int $sellItemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\StructSellFailed
+     * @return \Imper69\AllegroApi\Soap\Wsdl\StructSellFailed
      */
     public function setSellItemId($sellItemId)
     {
@@ -60,7 +60,7 @@ class StructSellFailed
 
     /**
      * @param string $sellFaultCode
-     * @return \Imper86\AllegroApi\Soap\Wsdl\StructSellFailed
+     * @return \Imper69\AllegroApi\Soap\Wsdl\StructSellFailed
      */
     public function setSellFaultCode($sellFaultCode)
     {
@@ -78,7 +78,7 @@ class StructSellFailed
 
     /**
      * @param string $sellFaultString
-     * @return \Imper86\AllegroApi\Soap\Wsdl\StructSellFailed
+     * @return \Imper69\AllegroApi\Soap\Wsdl\StructSellFailed
      */
     public function setSellFaultString($sellFaultString)
     {

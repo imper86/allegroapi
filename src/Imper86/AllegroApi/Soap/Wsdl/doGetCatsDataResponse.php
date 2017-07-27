@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetCatsDataResponse
 {
@@ -42,7 +42,7 @@ class doGetCatsDataResponse
 
     /**
      * @param ArrayOfCatinfotype $catsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCatsDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCatsDataResponse
      */
     public function setCatsList($catsList)
     {
@@ -60,7 +60,7 @@ class doGetCatsDataResponse
 
     /**
      * @param int $verKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCatsDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCatsDataResponse
      */
     public function setVerKey($verKey)
     {
@@ -78,7 +78,7 @@ class doGetCatsDataResponse
 
     /**
      * @param string $verStr
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCatsDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCatsDataResponse
      */
     public function setVerStr($verStr)
     {

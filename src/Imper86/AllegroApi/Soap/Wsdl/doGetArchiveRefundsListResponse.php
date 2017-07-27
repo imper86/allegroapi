@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetArchiveRefundsListResponse
 {
@@ -35,7 +35,7 @@ class doGetArchiveRefundsListResponse
 
     /**
      * @param int $refundsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetArchiveRefundsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetArchiveRefundsListResponse
      */
     public function setRefundsCount($refundsCount)
     {
@@ -53,7 +53,7 @@ class doGetArchiveRefundsListResponse
 
     /**
      * @param ArrayOfArchiverefundslisttypestruct $refundsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetArchiveRefundsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetArchiveRefundsListResponse
      */
     public function setRefundsList($refundsList)
     {

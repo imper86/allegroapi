@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoQueryAllSysStatusRequest
 {
@@ -35,7 +35,7 @@ class DoQueryAllSysStatusRequest
 
     /**
      * @param int $countryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoQueryAllSysStatusRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoQueryAllSysStatusRequest
      */
     public function setCountryId($countryId)
     {
@@ -53,7 +53,7 @@ class DoQueryAllSysStatusRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoQueryAllSysStatusRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoQueryAllSysStatusRequest
      */
     public function setWebapiKey($webapiKey)
     {

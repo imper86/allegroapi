@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doVerifyItemResponse
 {
@@ -42,7 +42,7 @@ class doVerifyItemResponse
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doVerifyItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doVerifyItemResponse
      */
     public function setItemId($itemId)
     {
@@ -60,7 +60,7 @@ class doVerifyItemResponse
 
     /**
      * @param int $itemListed
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doVerifyItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doVerifyItemResponse
      */
     public function setItemListed($itemListed)
     {
@@ -78,7 +78,7 @@ class doVerifyItemResponse
 
     /**
      * @param int $itemStartingTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doVerifyItemResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doVerifyItemResponse
      */
     public function setItemStartingTime($itemStartingTime)
     {

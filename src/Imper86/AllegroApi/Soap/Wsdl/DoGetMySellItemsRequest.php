@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetMySellItemsRequest
 {
@@ -77,7 +77,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -95,7 +95,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param SortOptionsStruct $sortOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setSortOptions($sortOptions)
     {
@@ -113,7 +113,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param SellFilterOptionsStruct $filterOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setFilterOptions($filterOptions)
     {
@@ -131,7 +131,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param string $searchValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setSearchValue($searchValue)
     {
@@ -149,7 +149,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param int $categoryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setCategoryId($categoryId)
     {
@@ -167,7 +167,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param ArrayOfLong $itemIds
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setItemIds($itemIds)
     {
@@ -185,7 +185,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param int $pageSize
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setPageSize($pageSize)
     {
@@ -203,7 +203,7 @@ class DoGetMySellItemsRequest
 
     /**
      * @param int $pageNumber
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMySellItemsRequest
      */
     public function setPageNumber($pageNumber)
     {

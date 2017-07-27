@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doSetShipmentPriceTypeResponse
 {
@@ -28,7 +28,7 @@ class doSetShipmentPriceTypeResponse
 
     /**
      * @param int $operationResult
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doSetShipmentPriceTypeResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doSetShipmentPriceTypeResponse
      */
     public function setOperationResult($operationResult)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormPackageInfoStruct
 {
@@ -36,7 +36,7 @@ class PostBuyFormPackageInfoStruct
 
     /**
      * @param ArrayOfString $packageIdsAdded
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormPackageInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormPackageInfoStruct
      */
     public function setPackageIdsAdded($packageIdsAdded)
     {
@@ -54,7 +54,7 @@ class PostBuyFormPackageInfoStruct
 
     /**
      * @param ArrayOfString $packageIdsNotAddedIncorrectOperatorId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormPackageInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormPackageInfoStruct
      */
     public function setPackageIdsNotAddedIncorrectOperatorId($packageIdsNotAddedIncorrectOperatorId)
     {
@@ -72,7 +72,7 @@ class PostBuyFormPackageInfoStruct
 
     /**
      * @param ArrayOfString $packageIdsNotAddedIncorrectPackageId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormPackageInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormPackageInfoStruct
      */
     public function setPackageIdsNotAddedIncorrectPackageId($packageIdsNotAddedIncorrectPackageId)
     {

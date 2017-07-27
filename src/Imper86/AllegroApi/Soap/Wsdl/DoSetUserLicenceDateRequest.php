@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoSetUserLicenceDateRequest
 {
@@ -49,7 +49,7 @@ class DoSetUserLicenceDateRequest
 
     /**
      * @param string $adminSessionHandle
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
      */
     public function setAdminSessionHandle($adminSessionHandle)
     {
@@ -67,7 +67,7 @@ class DoSetUserLicenceDateRequest
 
     /**
      * @param string $userLicLogin
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
      */
     public function setUserLicLogin($userLicLogin)
     {
@@ -85,7 +85,7 @@ class DoSetUserLicenceDateRequest
 
     /**
      * @param int $userLicCountry
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
      */
     public function setUserLicCountry($userLicCountry)
     {
@@ -103,7 +103,7 @@ class DoSetUserLicenceDateRequest
 
     /**
      * @param float $userLicDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetUserLicenceDateRequest
      */
     public function setUserLicDate($userLicDate)
     {

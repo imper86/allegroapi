@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetShipmentDataResponse
 {
@@ -35,7 +35,7 @@ class doGetShipmentDataResponse
 
     /**
      * @param ArrayOfShipmentdatastruct $shipmentDataList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetShipmentDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetShipmentDataResponse
      */
     public function setShipmentDataList($shipmentDataList)
     {
@@ -53,7 +53,7 @@ class doGetShipmentDataResponse
 
     /**
      * @param int $localVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetShipmentDataResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetShipmentDataResponse
      */
     public function setLocalVersion($localVersion)
     {

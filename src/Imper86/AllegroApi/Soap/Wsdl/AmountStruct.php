@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class AmountStruct
 {
@@ -35,7 +35,7 @@ class AmountStruct
 
     /**
      * @param float $amountValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\AmountStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\AmountStruct
      */
     public function setAmountValue($amountValue)
     {
@@ -53,7 +53,7 @@ class AmountStruct
 
     /**
      * @param string $amountCurrencySign
-     * @return \Imper86\AllegroApi\Soap\Wsdl\AmountStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\AmountStruct
      */
     public function setAmountCurrencySign($amountCurrencySign)
     {

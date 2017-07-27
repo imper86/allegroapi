@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetItemsListResponse
 {
@@ -63,7 +63,7 @@ class doGetItemsListResponse
 
     /**
      * @param int $itemsCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsListResponse
      */
     public function setItemsCount($itemsCount)
     {
@@ -81,7 +81,7 @@ class doGetItemsListResponse
 
     /**
      * @param int $itemsFeaturedCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsListResponse
      */
     public function setItemsFeaturedCount($itemsFeaturedCount)
     {
@@ -99,7 +99,7 @@ class doGetItemsListResponse
 
     /**
      * @param ArrayOfItemslisttype $itemsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsListResponse
      */
     public function setItemsList($itemsList)
     {
@@ -117,7 +117,7 @@ class doGetItemsListResponse
 
     /**
      * @param CategoriesListType $categoriesList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsListResponse
      */
     public function setCategoriesList($categoriesList)
     {
@@ -135,7 +135,7 @@ class doGetItemsListResponse
 
     /**
      * @param ArrayOfFilterslisttype $filtersList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsListResponse
      */
     public function setFiltersList($filtersList)
     {
@@ -153,7 +153,7 @@ class doGetItemsListResponse
 
     /**
      * @param ArrayOfString $filtersRejected
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsListResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsListResponse
      */
     public function setFiltersRejected($filtersRejected)
     {

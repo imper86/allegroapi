@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMyAddressesResponse
 {
@@ -28,7 +28,7 @@ class doGetMyAddressesResponse
 
     /**
      * @param ArrayOfAddressinfostruct $addressesInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyAddressesResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyAddressesResponse
      */
     public function setAddressesInfo($addressesInfo)
     {

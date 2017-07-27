@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ArrayOfFeedbacklist implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfFeedbacklist implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param FeedbackList[] $item
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfFeedbacklist
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfFeedbacklist
      */
     public function setItem(array $item = null)
     {

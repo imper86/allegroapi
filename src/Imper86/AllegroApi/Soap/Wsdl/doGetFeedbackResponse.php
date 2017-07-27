@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetFeedbackResponse
 {
@@ -35,7 +35,7 @@ class doGetFeedbackResponse
 
     /**
      * @param ArrayOfFeedbacklist $feedbackList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetFeedbackResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetFeedbackResponse
      */
     public function setFeedbackList($feedbackList)
     {
@@ -53,7 +53,7 @@ class doGetFeedbackResponse
 
     /**
      * @param int $feedbackCount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetFeedbackResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetFeedbackResponse
      */
     public function setFeedbackCount($feedbackCount)
     {

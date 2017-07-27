@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PayoutAutoFrequencyStruct
 {
@@ -42,7 +42,7 @@ class PayoutAutoFrequencyStruct
 
     /**
      * @param int $frequencyType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutAutoFrequencyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutAutoFrequencyStruct
      */
     public function setFrequencyType($frequencyType)
     {
@@ -60,7 +60,7 @@ class PayoutAutoFrequencyStruct
 
     /**
      * @param int $frequencyWeekValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutAutoFrequencyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutAutoFrequencyStruct
      */
     public function setFrequencyWeekValue($frequencyWeekValue)
     {
@@ -78,7 +78,7 @@ class PayoutAutoFrequencyStruct
 
     /**
      * @param int $frequencyMonthValue
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutAutoFrequencyStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutAutoFrequencyStruct
      */
     public function setFrequencyMonthValue($frequencyMonthValue)
     {

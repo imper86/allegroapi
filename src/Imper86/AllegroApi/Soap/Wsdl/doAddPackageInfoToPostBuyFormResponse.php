@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doAddPackageInfoToPostBuyFormResponse
 {
@@ -28,7 +28,7 @@ class doAddPackageInfoToPostBuyFormResponse
 
     /**
      * @param PostBuyFormPackageInfoStruct $postBuyFormPackageInfo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doAddPackageInfoToPostBuyFormResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doAddPackageInfoToPostBuyFormResponse
      */
     public function setPostBuyFormPackageInfo($postBuyFormPackageInfo)
     {

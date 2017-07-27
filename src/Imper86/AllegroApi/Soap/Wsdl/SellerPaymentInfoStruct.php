@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SellerPaymentInfoStruct
 {
@@ -31,7 +31,7 @@ class SellerPaymentInfoStruct
 
     /**
      * @param ArrayOfShipmentpaymentinfostruct $shipmentPaymentInfoPza
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellerPaymentInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellerPaymentInfoStruct
      */
     public function setShipmentPaymentInfoPza($shipmentPaymentInfoPza)
     {
@@ -49,7 +49,7 @@ class SellerPaymentInfoStruct
 
     /**
      * @param ArrayOfShipmentpaymentinfostruct $shipmentPaymentInfoNonPza
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SellerPaymentInfoStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SellerPaymentInfoStruct
      */
     public function setShipmentPaymentInfoNonPza($shipmentPaymentInfoNonPza)
     {

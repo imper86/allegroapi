@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class PayoutRefundToStruct
 {
@@ -70,7 +70,7 @@ class PayoutRefundToStruct
 
     /**
      * @param int $tranasctionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
      */
     public function setTranasctionId($tranasctionId)
     {
@@ -88,7 +88,7 @@ class PayoutRefundToStruct
 
     /**
      * @param int $refundId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
      */
     public function setRefundId($refundId)
     {
@@ -106,7 +106,7 @@ class PayoutRefundToStruct
 
     /**
      * @param string $refundReason
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
      */
     public function setRefundReason($refundReason)
     {
@@ -124,7 +124,7 @@ class PayoutRefundToStruct
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
      */
     public function setItemId($itemId)
     {
@@ -142,7 +142,7 @@ class PayoutRefundToStruct
 
     /**
      * @param int $toUserId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
      */
     public function setToUserId($toUserId)
     {
@@ -160,7 +160,7 @@ class PayoutRefundToStruct
 
     /**
      * @param float $amount
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
      */
     public function setAmount($amount)
     {
@@ -178,7 +178,7 @@ class PayoutRefundToStruct
 
     /**
      * @param string $paidDate
-     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundToStruct
      */
     public function setPaidDate($paidDate)
     {

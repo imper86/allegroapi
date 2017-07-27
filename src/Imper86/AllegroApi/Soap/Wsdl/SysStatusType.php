@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class SysStatusType
 {
@@ -77,7 +77,7 @@ class SysStatusType
 
     /**
      * @param int $countryId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setCountryId($countryId)
     {
@@ -95,7 +95,7 @@ class SysStatusType
 
     /**
      * @param string $programVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setProgramVersion($programVersion)
     {
@@ -113,7 +113,7 @@ class SysStatusType
 
     /**
      * @param string $catsVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setCatsVersion($catsVersion)
     {
@@ -131,7 +131,7 @@ class SysStatusType
 
     /**
      * @param string $apiVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setApiVersion($apiVersion)
     {
@@ -149,7 +149,7 @@ class SysStatusType
 
     /**
      * @param string $attribVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setAttribVersion($attribVersion)
     {
@@ -167,7 +167,7 @@ class SysStatusType
 
     /**
      * @param string $formSellVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setFormSellVersion($formSellVersion)
     {
@@ -185,7 +185,7 @@ class SysStatusType
 
     /**
      * @param string $siteVersion
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setSiteVersion($siteVersion)
     {
@@ -203,7 +203,7 @@ class SysStatusType
 
     /**
      * @param int $verKey
-     * @return \Imper86\AllegroApi\Soap\Wsdl\SysStatusType
+     * @return \Imper69\AllegroApi\Soap\Wsdl\SysStatusType
      */
     public function setVerKey($verKey)
     {

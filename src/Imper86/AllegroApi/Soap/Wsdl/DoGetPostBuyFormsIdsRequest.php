@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetPostBuyFormsIdsRequest
 {
@@ -49,7 +49,7 @@ class DoGetPostBuyFormsIdsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -67,7 +67,7 @@ class DoGetPostBuyFormsIdsRequest
 
     /**
      * @param ArrayOfFilteroptionstype $filterOptions
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
      */
     public function setFilterOptions($filterOptions)
     {
@@ -85,7 +85,7 @@ class DoGetPostBuyFormsIdsRequest
 
     /**
      * @param int $resultSize
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
      */
     public function setResultSize($resultSize)
     {
@@ -103,7 +103,7 @@ class DoGetPostBuyFormsIdsRequest
 
     /**
      * @param int $resultOffset
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyFormsIdsRequest
      */
     public function setResultOffset($resultOffset)
     {

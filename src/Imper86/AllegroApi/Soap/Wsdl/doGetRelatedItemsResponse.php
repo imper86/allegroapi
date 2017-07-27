@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetRelatedItemsResponse
 {
@@ -28,7 +28,7 @@ class doGetRelatedItemsResponse
 
     /**
      * @param RelatedItemsStruct $relatedItems
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetRelatedItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetRelatedItemsResponse
      */
     public function setRelatedItems($relatedItems)
     {

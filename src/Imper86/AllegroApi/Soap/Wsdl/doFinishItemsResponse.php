@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doFinishItemsResponse
 {
@@ -35,7 +35,7 @@ class doFinishItemsResponse
 
     /**
      * @param ArrayOfLong $finishItemsSucceed
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doFinishItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doFinishItemsResponse
      */
     public function setFinishItemsSucceed($finishItemsSucceed)
     {
@@ -53,7 +53,7 @@ class doFinishItemsResponse
 
     /**
      * @param ArrayOfFinishfailurestruct $finishItemsFailed
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doFinishItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doFinishItemsResponse
      */
     public function setFinishItemsFailed($finishItemsFailed)
     {

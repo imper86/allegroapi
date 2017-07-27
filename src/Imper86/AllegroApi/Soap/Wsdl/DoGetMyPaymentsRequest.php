@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class DoGetMyPaymentsRequest
 {
@@ -77,7 +77,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -95,7 +95,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param int $sellerId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setSellerId($sellerId)
     {
@@ -113,7 +113,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param int $itemId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setItemId($itemId)
     {
@@ -131,7 +131,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param int $paymentTimeFrom
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setPaymentTimeFrom($paymentTimeFrom)
     {
@@ -149,7 +149,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param int $paymentTimeTo
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setPaymentTimeTo($paymentTimeTo)
     {
@@ -167,7 +167,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param int $pageSize
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setPageSize($pageSize)
     {
@@ -185,7 +185,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param int $pageNumber
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setPageNumber($pageNumber)
     {
@@ -203,7 +203,7 @@ class DoGetMyPaymentsRequest
 
     /**
      * @param int $strictedSearch
-     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
+     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRequest
      */
     public function setStrictedSearch($strictedSearch)
     {

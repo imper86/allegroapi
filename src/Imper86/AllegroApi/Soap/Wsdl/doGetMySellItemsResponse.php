@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetMySellItemsResponse
 {
@@ -35,7 +35,7 @@ class doGetMySellItemsResponse
 
     /**
      * @param int $sellItemsCounter
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMySellItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMySellItemsResponse
      */
     public function setSellItemsCounter($sellItemsCounter)
     {
@@ -53,7 +53,7 @@ class doGetMySellItemsResponse
 
     /**
      * @param ArrayOfSellitemstruct $sellItemsList
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMySellItemsResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMySellItemsResponse
      */
     public function setSellItemsList($sellItemsList)
     {

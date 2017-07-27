@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class UserPostBuyDataStruct
 {
@@ -47,7 +47,7 @@ class UserPostBuyDataStruct
 
     /**
      * @param UserDataStruct $userData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
      */
     public function setUserData($userData)
     {
@@ -65,7 +65,7 @@ class UserPostBuyDataStruct
 
     /**
      * @param UserSentToDataStruct $userSentToData
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
      */
     public function setUserSentToData($userSentToData)
     {
@@ -83,7 +83,7 @@ class UserPostBuyDataStruct
 
     /**
      * @param ArrayOfString $userBankAccounts
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
      */
     public function setUserBankAccounts($userBankAccounts)
     {
@@ -101,7 +101,7 @@ class UserPostBuyDataStruct
 
     /**
      * @param CompanySecondAddressStruct $companySecondAddress
-     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPostBuyDataStruct
      */
     public function setCompanySecondAddress($companySecondAddress)
     {

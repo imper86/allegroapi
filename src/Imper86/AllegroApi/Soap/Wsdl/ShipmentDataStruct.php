@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class ShipmentDataStruct
 {
@@ -49,7 +49,7 @@ class ShipmentDataStruct
 
     /**
      * @param int $shipmentId
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentDataStruct
      */
     public function setShipmentId($shipmentId)
     {
@@ -67,7 +67,7 @@ class ShipmentDataStruct
 
     /**
      * @param string $shipmentName
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentDataStruct
      */
     public function setShipmentName($shipmentName)
     {
@@ -85,7 +85,7 @@ class ShipmentDataStruct
 
     /**
      * @param int $shipmentType
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentDataStruct
      */
     public function setShipmentType($shipmentType)
     {
@@ -103,7 +103,7 @@ class ShipmentDataStruct
 
     /**
      * @param ShipmentTimeStruct $shipmentTime
-     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentDataStruct
+     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentDataStruct
      */
     public function setShipmentTime($shipmentTime)
     {

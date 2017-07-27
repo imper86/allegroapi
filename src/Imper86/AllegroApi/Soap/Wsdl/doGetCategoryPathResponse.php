@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper86\AllegroApi\Soap\Wsdl;
+namespace Imper69\AllegroApi\Soap\Wsdl;
 
 class doGetCategoryPathResponse
 {
@@ -28,7 +28,7 @@ class doGetCategoryPathResponse
 
     /**
      * @param ArrayOfCategorydata $categoryPath
-     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCategoryPathResponse
+     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCategoryPathResponse
      */
     public function setCategoryPath($categoryPath)
     {
