@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class FiltersListType
 {
@@ -78,7 +78,7 @@ class FiltersListType
 
     /**
      * @param string $filterId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterId($filterId)
     {
@@ -96,7 +96,7 @@ class FiltersListType
 
     /**
      * @param string $filterName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterName($filterName)
     {
@@ -114,7 +114,7 @@ class FiltersListType
 
     /**
      * @param string $filterType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterType($filterType)
     {
@@ -132,7 +132,7 @@ class FiltersListType
 
     /**
      * @param string $filterControlType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterControlType($filterControlType)
     {
@@ -150,7 +150,7 @@ class FiltersListType
 
     /**
      * @param string $filterDataType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterDataType($filterDataType)
     {
@@ -168,7 +168,7 @@ class FiltersListType
 
     /**
      * @param boolean $filterIsRange
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterIsRange($filterIsRange)
     {
@@ -186,7 +186,7 @@ class FiltersListType
 
     /**
      * @param int $filterArraySize
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterArraySize($filterArraySize)
     {
@@ -204,7 +204,7 @@ class FiltersListType
 
     /**
      * @param ArrayOfFiltervaluetype $filterValues
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterValues($filterValues)
     {
@@ -222,7 +222,7 @@ class FiltersListType
 
     /**
      * @param FilterRelationType $filterRelations
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FiltersListType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FiltersListType
      */
     public function setFilterRelations($filterRelations)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfPostbuyformshipmenttrackingstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPostbuyformshipmenttrackingstruct implements \ArrayAccess, \Iterato
 
     /**
      * @param PostBuyFormShipmentTrackingStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfPostbuyformshipmenttrackingstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfPostbuyformshipmenttrackingstruct
      */
     public function setItem(array $item = null)
     {

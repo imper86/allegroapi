@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetSystemTimeRequest
 {
@@ -35,7 +35,7 @@ class DoGetSystemTimeRequest
 
     /**
      * @param int $countryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSystemTimeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSystemTimeRequest
      */
     public function setCountryId($countryId)
     {
@@ -53,7 +53,7 @@ class DoGetSystemTimeRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSystemTimeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSystemTimeRequest
      */
     public function setWebapiKey($webapiKey)
     {

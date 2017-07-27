@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class RangeFloatValueStruct
 {
@@ -31,7 +31,7 @@ class RangeFloatValueStruct
 
     /**
      * @param float $fvalueRangeFloatMin
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeFloatValueStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeFloatValueStruct
      */
     public function setFvalueRangeFloatMin($fvalueRangeFloatMin)
     {
@@ -49,7 +49,7 @@ class RangeFloatValueStruct
 
     /**
      * @param float $fvalueRangeFloatMax
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RangeFloatValueStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RangeFloatValueStruct
      */
     public function setFvalueRangeFloatMax($fvalueRangeFloatMax)
     {

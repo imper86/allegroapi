@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfFutureitemstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfFutureitemstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param FutureItemStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfFutureitemstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfFutureitemstruct
      */
     public function setItem(array $item = null)
     {

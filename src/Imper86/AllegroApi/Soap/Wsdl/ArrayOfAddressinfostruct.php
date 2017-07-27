@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfAddressinfostruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAddressinfostruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param AddressInfoStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfAddressinfostruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfAddressinfostruct
      */
     public function setItem(array $item = null)
     {

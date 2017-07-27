@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfItemcatlist implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfItemcatlist implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ItemCatList[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfItemcatlist
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfItemcatlist
      */
     public function setItem(array $item = null)
     {

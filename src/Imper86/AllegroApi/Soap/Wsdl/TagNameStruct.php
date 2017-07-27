@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class TagNameStruct
 {
@@ -28,7 +28,7 @@ class TagNameStruct
 
     /**
      * @param string $tagName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\TagNameStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\TagNameStruct
      */
     public function setTagName($tagName)
     {

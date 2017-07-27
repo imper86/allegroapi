@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ProductParametersStruct
 {
@@ -40,7 +40,7 @@ class ProductParametersStruct
 
     /**
      * @param string $productParameterName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductParametersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductParametersStruct
      */
     public function setProductParameterName($productParameterName)
     {
@@ -58,7 +58,7 @@ class ProductParametersStruct
 
     /**
      * @param ArrayOfString $productParameterValues
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductParametersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductParametersStruct
      */
     public function setProductParameterValues($productParameterValues)
     {
@@ -76,7 +76,7 @@ class ProductParametersStruct
 
     /**
      * @param string $productParameterDescription
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductParametersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductParametersStruct
      */
     public function setProductParameterDescription($productParameterDescription)
     {

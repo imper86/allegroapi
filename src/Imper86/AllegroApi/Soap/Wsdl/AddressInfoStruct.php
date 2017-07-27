@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class AddressInfoStruct
 {
@@ -35,7 +35,7 @@ class AddressInfoStruct
 
     /**
      * @param int $addressType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AddressInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AddressInfoStruct
      */
     public function setAddressType($addressType)
     {
@@ -53,7 +53,7 @@ class AddressInfoStruct
 
     /**
      * @param AddressUserDataStruct $addressUserData
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AddressInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AddressInfoStruct
      */
     public function setAddressUserData($addressUserData)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PostBuyItemInfoStruct
 {
@@ -35,7 +35,7 @@ class PostBuyItemInfoStruct
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyItemInfoStruct
      */
     public function setItemId($itemId)
     {
@@ -53,7 +53,7 @@ class PostBuyItemInfoStruct
 
     /**
      * @param int $itemPostBuyFormInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyItemInfoStruct
      */
     public function setItemPostBuyFormInfo($itemPostBuyFormInfo)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PostageStruct
 {
@@ -68,7 +68,7 @@ class PostageStruct
 
     /**
      * @param float $postageAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostageStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostageStruct
      */
     public function setPostageAmount($postageAmount)
     {
@@ -86,7 +86,7 @@ class PostageStruct
 
     /**
      * @param float $postageAmountAdd
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostageStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostageStruct
      */
     public function setPostageAmountAdd($postageAmountAdd)
     {
@@ -104,7 +104,7 @@ class PostageStruct
 
     /**
      * @param int $postagePackSize
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostageStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostageStruct
      */
     public function setPostagePackSize($postagePackSize)
     {
@@ -122,7 +122,7 @@ class PostageStruct
 
     /**
      * @param int $postageId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostageStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostageStruct
      */
     public function setPostageId($postageId)
     {
@@ -140,7 +140,7 @@ class PostageStruct
 
     /**
      * @param int $postageFreeShipping
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostageStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostageStruct
      */
     public function setPostageFreeShipping($postageFreeShipping)
     {
@@ -158,7 +158,7 @@ class PostageStruct
 
     /**
      * @param int $postageFreeReturn
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostageStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostageStruct
      */
     public function setPostageFreeReturn($postageFreeReturn)
     {
@@ -176,7 +176,7 @@ class PostageStruct
 
     /**
      * @param FulfillmentTimeStruct $postageFulfillmentTime
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostageStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostageStruct
      */
     public function setPostageFulfillmentTime($postageFulfillmentTime)
     {

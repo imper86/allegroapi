@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class AddressUserDataStruct
 {
@@ -54,7 +54,7 @@ class AddressUserDataStruct
 
     /**
      * @param string $userCompany
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AddressUserDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AddressUserDataStruct
      */
     public function setUserCompany($userCompany)
     {
@@ -72,7 +72,7 @@ class AddressUserDataStruct
 
     /**
      * @param string $userFullName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AddressUserDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AddressUserDataStruct
      */
     public function setUserFullName($userFullName)
     {
@@ -90,7 +90,7 @@ class AddressUserDataStruct
 
     /**
      * @param string $userAddress
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AddressUserDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AddressUserDataStruct
      */
     public function setUserAddress($userAddress)
     {
@@ -108,7 +108,7 @@ class AddressUserDataStruct
 
     /**
      * @param string $userPostcode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AddressUserDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AddressUserDataStruct
      */
     public function setUserPostcode($userPostcode)
     {
@@ -126,7 +126,7 @@ class AddressUserDataStruct
 
     /**
      * @param string $userCity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AddressUserDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AddressUserDataStruct
      */
     public function setUserCity($userCity)
     {

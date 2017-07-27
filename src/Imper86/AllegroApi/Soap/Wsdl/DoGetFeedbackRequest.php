@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetFeedbackRequest
 {
@@ -56,7 +56,7 @@ class DoGetFeedbackRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoGetFeedbackRequest
 
     /**
      * @param int $feedbackFrom
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
      */
     public function setFeedbackFrom($feedbackFrom)
     {
@@ -92,7 +92,7 @@ class DoGetFeedbackRequest
 
     /**
      * @param int $feedbackTo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
      */
     public function setFeedbackTo($feedbackTo)
     {
@@ -110,7 +110,7 @@ class DoGetFeedbackRequest
 
     /**
      * @param int $feedbackOffset
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
      */
     public function setFeedbackOffset($feedbackOffset)
     {
@@ -128,7 +128,7 @@ class DoGetFeedbackRequest
 
     /**
      * @param string $feedbackKindList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest
      */
     public function setFeedbackKindList($feedbackKindList)
     {

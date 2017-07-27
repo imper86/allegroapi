@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetCategoryPathRequest
 {
@@ -35,7 +35,7 @@ class DoGetCategoryPathRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCategoryPathRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCategoryPathRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetCategoryPathRequest
 
     /**
      * @param int $categoryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCategoryPathRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCategoryPathRequest
      */
     public function setCategoryId($categoryId)
     {

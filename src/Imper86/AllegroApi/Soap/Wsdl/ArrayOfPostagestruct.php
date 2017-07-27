@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfPostagestruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPostagestruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param PostageStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfPostagestruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfPostagestruct
      */
     public function setItem(array $item = null)
     {

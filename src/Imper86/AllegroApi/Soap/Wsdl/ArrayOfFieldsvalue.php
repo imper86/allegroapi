@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfFieldsvalue implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfFieldsvalue implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param FieldsValue[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfFieldsvalue
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfFieldsvalue
      */
     public function setItem(array $item = null)
     {

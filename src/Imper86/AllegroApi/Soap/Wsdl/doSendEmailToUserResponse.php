@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doSendEmailToUserResponse
 {
@@ -35,7 +35,7 @@ class doSendEmailToUserResponse
 
     /**
      * @param int $mailToUserReceiverId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doSendEmailToUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doSendEmailToUserResponse
      */
     public function setMailToUserReceiverId($mailToUserReceiverId)
     {
@@ -53,7 +53,7 @@ class doSendEmailToUserResponse
 
     /**
      * @param string $mailToUserResult
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doSendEmailToUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doSendEmailToUserResponse
      */
     public function setMailToUserResult($mailToUserResult)
     {

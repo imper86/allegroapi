@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class RefundDetailsType
 {
@@ -56,7 +56,7 @@ class RefundDetailsType
 
     /**
      * @param int $refundId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundDetailsType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundDetailsType
      */
     public function setRefundId($refundId)
     {
@@ -74,7 +74,7 @@ class RefundDetailsType
 
     /**
      * @param string $refundStatus
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundDetailsType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundDetailsType
      */
     public function setRefundStatus($refundStatus)
     {
@@ -92,7 +92,7 @@ class RefundDetailsType
 
     /**
      * @param int $refundQuantity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundDetailsType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundDetailsType
      */
     public function setRefundQuantity($refundQuantity)
     {
@@ -118,7 +118,7 @@ class RefundDetailsType
 
     /**
      * @param \DateTime $createdDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundDetailsType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundDetailsType
      */
     public function setCreatedDate(\DateTime $createdDate)
     {
@@ -144,7 +144,7 @@ class RefundDetailsType
 
     /**
      * @param \DateTime $considerDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RefundDetailsType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RefundDetailsType
      */
     public function setConsiderDate(\DateTime $considerDate)
     {

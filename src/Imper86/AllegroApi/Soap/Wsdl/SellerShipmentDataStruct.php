@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class SellerShipmentDataStruct
 {
@@ -47,7 +47,7 @@ class SellerShipmentDataStruct
 
     /**
      * @param int $sellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
      */
     public function setSellerId($sellerId)
     {
@@ -65,7 +65,7 @@ class SellerShipmentDataStruct
 
     /**
      * @param SellerPaymentInfoStruct $sellerPaymentInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
      */
     public function setSellerPaymentInfo($sellerPaymentInfo)
     {
@@ -83,7 +83,7 @@ class SellerShipmentDataStruct
 
     /**
      * @param int $sellerOtherShipmentIsActive
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
      */
     public function setSellerOtherShipmentIsActive($sellerOtherShipmentIsActive)
     {
@@ -101,7 +101,7 @@ class SellerShipmentDataStruct
 
     /**
      * @param ArrayOfShipmentpaymentinfostruct $generalDeliveryPaymentInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellerShipmentDataStruct
      */
     public function setGeneralDeliveryPaymentInfo($generalDeliveryPaymentInfo)
     {

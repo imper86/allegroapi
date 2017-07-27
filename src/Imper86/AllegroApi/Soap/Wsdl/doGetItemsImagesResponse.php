@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetItemsImagesResponse
 {
@@ -28,7 +28,7 @@ class doGetItemsImagesResponse
 
     /**
      * @param ArrayOfItemimagesstruct $get_items_images_result
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsImagesResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsImagesResponse
      */
     public function setGet_items_images_result($get_items_images_result)
     {

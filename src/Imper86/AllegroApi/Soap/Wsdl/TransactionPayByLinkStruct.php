@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class TransactionPayByLinkStruct
 {
@@ -40,7 +40,7 @@ class TransactionPayByLinkStruct
 
     /**
      * @param string $actionHttpMethod
-     * @return \Imper69\AllegroApi\Soap\Wsdl\TransactionPayByLinkStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\TransactionPayByLinkStruct
      */
     public function setActionHttpMethod($actionHttpMethod)
     {
@@ -58,7 +58,7 @@ class TransactionPayByLinkStruct
 
     /**
      * @param string $actionUrl
-     * @return \Imper69\AllegroApi\Soap\Wsdl\TransactionPayByLinkStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\TransactionPayByLinkStruct
      */
     public function setActionUrl($actionUrl)
     {
@@ -76,7 +76,7 @@ class TransactionPayByLinkStruct
 
     /**
      * @param ArrayOfActiondatastruct $actionData
-     * @return \Imper69\AllegroApi\Soap\Wsdl\TransactionPayByLinkStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\TransactionPayByLinkStruct
      */
     public function setActionData($actionData)
     {

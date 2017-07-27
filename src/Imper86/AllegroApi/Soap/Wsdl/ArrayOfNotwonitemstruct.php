@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfNotwonitemstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfNotwonitemstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param NotWonItemStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfNotwonitemstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfNotwonitemstruct
      */
     public function setItem(array $item = null)
     {

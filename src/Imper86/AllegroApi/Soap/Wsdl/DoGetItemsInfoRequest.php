@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetItemsInfoRequest
 {
@@ -91,7 +91,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -109,7 +109,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param ArrayOfLong $itemsIdArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setItemsIdArray($itemsIdArray)
     {
@@ -127,7 +127,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getDesc
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetDesc($getDesc)
     {
@@ -145,7 +145,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getImageUrl
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetImageUrl($getImageUrl)
     {
@@ -163,7 +163,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getAttribs
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetAttribs($getAttribs)
     {
@@ -181,7 +181,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getPostageOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetPostageOptions($getPostageOptions)
     {
@@ -199,7 +199,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getCompanyInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetCompanyInfo($getCompanyInfo)
     {
@@ -217,7 +217,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getProductInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetProductInfo($getProductInfo)
     {
@@ -235,7 +235,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getAfterSalesServiceConditions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetAfterSalesServiceConditions($getAfterSalesServiceConditions)
     {
@@ -253,7 +253,7 @@ class DoGetItemsInfoRequest
 
     /**
      * @param int $getEan
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
      */
     public function setGetEan($getEan)
     {

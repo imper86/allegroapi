@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ProductParametersGroupStruct
 {
@@ -33,7 +33,7 @@ class ProductParametersGroupStruct
 
     /**
      * @param string $productParametersGroupName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductParametersGroupStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductParametersGroupStruct
      */
     public function setProductParametersGroupName($productParametersGroupName)
     {
@@ -51,7 +51,7 @@ class ProductParametersGroupStruct
 
     /**
      * @param ArrayOfProductparametersstruct $productParametersList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ProductParametersGroupStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ProductParametersGroupStruct
      */
     public function setProductParametersList($productParametersList)
     {

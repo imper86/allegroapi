@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfWonitemstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfWonitemstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param WonItemStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfWonitemstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfWonitemstruct
      */
     public function setItem(array $item = null)
     {

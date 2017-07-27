@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class BlackListStruct
 {
@@ -49,7 +49,7 @@ class BlackListStruct
 
     /**
      * @param int $userId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\BlackListStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\BlackListStruct
      */
     public function setUserId($userId)
     {
@@ -67,7 +67,7 @@ class BlackListStruct
 
     /**
      * @param string $userLogin
-     * @return \Imper69\AllegroApi\Soap\Wsdl\BlackListStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\BlackListStruct
      */
     public function setUserLogin($userLogin)
     {
@@ -85,7 +85,7 @@ class BlackListStruct
 
     /**
      * @param int $userRating
-     * @return \Imper69\AllegroApi\Soap\Wsdl\BlackListStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\BlackListStruct
      */
     public function setUserRating($userRating)
     {
@@ -103,7 +103,7 @@ class BlackListStruct
 
     /**
      * @param int $userCountry
-     * @return \Imper69\AllegroApi\Soap\Wsdl\BlackListStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\BlackListStruct
      */
     public function setUserCountry($userCountry)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doFeedbackManyResponse
 {
@@ -28,7 +28,7 @@ class doFeedbackManyResponse
 
     /**
      * @param ArrayOfFeedbackresultstruct $feResults
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doFeedbackManyResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doFeedbackManyResponse
      */
     public function setFeResults($feResults)
     {

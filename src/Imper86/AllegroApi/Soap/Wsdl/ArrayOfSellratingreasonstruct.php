@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfSellratingreasonstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSellratingreasonstruct implements \ArrayAccess, \Iterator, \Countab
 
     /**
      * @param SellRatingReasonStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfSellratingreasonstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfSellratingreasonstruct
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class UserPaymentRefundsStruct
 {
@@ -63,7 +63,7 @@ class UserPaymentRefundsStruct
 
     /**
      * @param int $payRefundTransId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
      */
     public function setPayRefundTransId($payRefundTransId)
     {
@@ -81,7 +81,7 @@ class UserPaymentRefundsStruct
 
     /**
      * @param int $payRefundItId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
      */
     public function setPayRefundItId($payRefundItId)
     {
@@ -99,7 +99,7 @@ class UserPaymentRefundsStruct
 
     /**
      * @param int $payRefundSellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
      */
     public function setPayRefundSellerId($payRefundSellerId)
     {
@@ -117,7 +117,7 @@ class UserPaymentRefundsStruct
 
     /**
      * @param float $payRefundValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
      */
     public function setPayRefundValue($payRefundValue)
     {
@@ -135,7 +135,7 @@ class UserPaymentRefundsStruct
 
     /**
      * @param string $payRefundReason
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
      */
     public function setPayRefundReason($payRefundReason)
     {
@@ -153,7 +153,7 @@ class UserPaymentRefundsStruct
 
     /**
      * @param int $payRefundDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPaymentRefundsStruct
      */
     public function setPayRefundDate($payRefundDate)
     {

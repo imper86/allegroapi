@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetSellFormFieldsRequest
 {
@@ -42,7 +42,7 @@ class DoGetSellFormFieldsRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsRequest
      */
     public function setCountryCode($countryCode)
     {
@@ -60,7 +60,7 @@ class DoGetSellFormFieldsRequest
 
     /**
      * @param int $localVersion
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsRequest
      */
     public function setLocalVersion($localVersion)
     {
@@ -78,7 +78,7 @@ class DoGetSellFormFieldsRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormFieldsRequest
      */
     public function setWebapiKey($webapiKey)
     {

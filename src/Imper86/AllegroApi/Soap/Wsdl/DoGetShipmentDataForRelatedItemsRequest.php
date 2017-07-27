@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetShipmentDataForRelatedItemsRequest
 {
@@ -35,7 +35,7 @@ class DoGetShipmentDataForRelatedItemsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetShipmentDataForRelatedItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetShipmentDataForRelatedItemsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetShipmentDataForRelatedItemsRequest
 
     /**
      * @param ArrayOfLong $itemIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetShipmentDataForRelatedItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetShipmentDataForRelatedItemsRequest
      */
     public function setItemIds($itemIds)
     {

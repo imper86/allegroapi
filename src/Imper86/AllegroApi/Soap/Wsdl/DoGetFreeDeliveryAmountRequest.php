@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetFreeDeliveryAmountRequest
 {
@@ -42,7 +42,7 @@ class DoGetFreeDeliveryAmountRequest
 
     /**
      * @param int $userId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFreeDeliveryAmountRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFreeDeliveryAmountRequest
      */
     public function setUserId($userId)
     {
@@ -60,7 +60,7 @@ class DoGetFreeDeliveryAmountRequest
 
     /**
      * @param int $countryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFreeDeliveryAmountRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFreeDeliveryAmountRequest
      */
     public function setCountryId($countryId)
     {
@@ -78,7 +78,7 @@ class DoGetFreeDeliveryAmountRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFreeDeliveryAmountRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFreeDeliveryAmountRequest
      */
     public function setWebapiKey($webapiKey)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfInt implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfInt implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param int[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfInt
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfInt
      */
     public function setItem(array $item = null)
     {

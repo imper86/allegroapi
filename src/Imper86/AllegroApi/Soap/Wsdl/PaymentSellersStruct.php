@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PaymentSellersStruct
 {
@@ -47,7 +47,7 @@ class PaymentSellersStruct
 
     /**
      * @param int $payTransSellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentSellersStruct
      */
     public function setPayTransSellerId($payTransSellerId)
     {
@@ -65,7 +65,7 @@ class PaymentSellersStruct
 
     /**
      * @param string $payTransSellerName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentSellersStruct
      */
     public function setPayTransSellerName($payTransSellerName)
     {
@@ -83,7 +83,7 @@ class PaymentSellersStruct
 
     /**
      * @param ArrayOfPaymentitemsstruct $payTransItems
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentSellersStruct
      */
     public function setPayTransItems($payTransItems)
     {
@@ -101,7 +101,7 @@ class PaymentSellersStruct
 
     /**
      * @param float $payTransSellerPostageAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentSellersStruct
      */
     public function setPayTransSellerPostageAmount($payTransSellerPostageAmount)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetSiteJournalResponse
 {
@@ -28,7 +28,7 @@ class doGetSiteJournalResponse
 
     /**
      * @param ArrayOfSitejournal $siteJournalArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSiteJournalResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSiteJournalResponse
      */
     public function setSiteJournalArray($siteJournalArray)
     {

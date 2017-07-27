@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doMyAccount2Response
 {
@@ -28,7 +28,7 @@ class doMyAccount2Response
 
     /**
      * @param ArrayOfMyaccountstruct2 $myaccountList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doMyAccount2Response
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doMyAccount2Response
      */
     public function setMyaccountList($myaccountList)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ShipmentPriceTypeStruct
 {
@@ -35,7 +35,7 @@ class ShipmentPriceTypeStruct
 
     /**
      * @param int $shipmentPriceTypeId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentPriceTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentPriceTypeStruct
      */
     public function setShipmentPriceTypeId($shipmentPriceTypeId)
     {
@@ -53,7 +53,7 @@ class ShipmentPriceTypeStruct
 
     /**
      * @param string $shipmentPriceTypeName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentPriceTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentPriceTypeStruct
      */
     public function setShipmentPriceTypeName($shipmentPriceTypeName)
     {

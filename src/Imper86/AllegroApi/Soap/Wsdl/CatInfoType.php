@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CatInfoType
 {
@@ -56,7 +56,7 @@ class CatInfoType
 
     /**
      * @param int $catId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CatInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CatInfoType
      */
     public function setCatId($catId)
     {
@@ -74,7 +74,7 @@ class CatInfoType
 
     /**
      * @param string $catName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CatInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CatInfoType
      */
     public function setCatName($catName)
     {
@@ -92,7 +92,7 @@ class CatInfoType
 
     /**
      * @param int $catParent
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CatInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CatInfoType
      */
     public function setCatParent($catParent)
     {
@@ -110,7 +110,7 @@ class CatInfoType
 
     /**
      * @param int $catPosition
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CatInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CatInfoType
      */
     public function setCatPosition($catPosition)
     {
@@ -128,7 +128,7 @@ class CatInfoType
 
     /**
      * @param int $catIsProductCatalogueEnabled
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CatInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CatInfoType
      */
     public function setCatIsProductCatalogueEnabled($catIsProductCatalogueEnabled)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ItemBilling
 {
@@ -35,7 +35,7 @@ class ItemBilling
 
     /**
      * @param string $biName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemBilling
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemBilling
      */
     public function setBiName($biName)
     {
@@ -53,7 +53,7 @@ class ItemBilling
 
     /**
      * @param string $biValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemBilling
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemBilling
      */
     public function setBiValue($biValue)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class RelatedItemsStruct
 {
@@ -33,7 +33,7 @@ class RelatedItemsStruct
 
     /**
      * @param ArrayOfRelateditemstruct $relatedItemsInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RelatedItemsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RelatedItemsStruct
      */
     public function setRelatedItemsInfo($relatedItemsInfo)
     {
@@ -51,7 +51,7 @@ class RelatedItemsStruct
 
     /**
      * @param float $relatedItemsAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RelatedItemsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RelatedItemsStruct
      */
     public function setRelatedItemsAmount($relatedItemsAmount)
     {

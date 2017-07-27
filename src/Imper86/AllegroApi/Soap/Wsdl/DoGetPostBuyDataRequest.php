@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetPostBuyDataRequest
 {
@@ -42,7 +42,7 @@ class DoGetPostBuyDataRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyDataRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyDataRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -60,7 +60,7 @@ class DoGetPostBuyDataRequest
 
     /**
      * @param ArrayOfLong $itemsArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyDataRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyDataRequest
      */
     public function setItemsArray($itemsArray)
     {
@@ -78,7 +78,7 @@ class DoGetPostBuyDataRequest
 
     /**
      * @param ArrayOfLong $buyerFilterArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetPostBuyDataRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetPostBuyDataRequest
      */
     public function setBuyerFilterArray($buyerFilterArray)
     {

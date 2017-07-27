@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doShowUserResponse
 {
@@ -189,7 +189,7 @@ class doShowUserResponse
 
     /**
      * @param int $userId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserId($userId)
     {
@@ -207,7 +207,7 @@ class doShowUserResponse
 
     /**
      * @param string $userLogin
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserLogin($userLogin)
     {
@@ -225,7 +225,7 @@ class doShowUserResponse
 
     /**
      * @param int $userCountry
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserCountry($userCountry)
     {
@@ -243,7 +243,7 @@ class doShowUserResponse
 
     /**
      * @param int $userCreateDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserCreateDate($userCreateDate)
     {
@@ -261,7 +261,7 @@ class doShowUserResponse
 
     /**
      * @param int $userLoginDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserLoginDate($userLoginDate)
     {
@@ -279,7 +279,7 @@ class doShowUserResponse
 
     /**
      * @param int $userRating
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserRating($userRating)
     {
@@ -297,7 +297,7 @@ class doShowUserResponse
 
     /**
      * @param int $userIsNewUser
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserIsNewUser($userIsNewUser)
     {
@@ -315,7 +315,7 @@ class doShowUserResponse
 
     /**
      * @param int $userNotActivated
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserNotActivated($userNotActivated)
     {
@@ -333,7 +333,7 @@ class doShowUserResponse
 
     /**
      * @param int $userClosed
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserClosed($userClosed)
     {
@@ -351,7 +351,7 @@ class doShowUserResponse
 
     /**
      * @param int $userBlocked
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserBlocked($userBlocked)
     {
@@ -369,7 +369,7 @@ class doShowUserResponse
 
     /**
      * @param int $userTerminated
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserTerminated($userTerminated)
     {
@@ -387,7 +387,7 @@ class doShowUserResponse
 
     /**
      * @param int $userHasPage
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserHasPage($userHasPage)
     {
@@ -405,7 +405,7 @@ class doShowUserResponse
 
     /**
      * @param int $userIsSseller
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserIsSseller($userIsSseller)
     {
@@ -423,7 +423,7 @@ class doShowUserResponse
 
     /**
      * @param int $userIsEco
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserIsEco($userIsEco)
     {
@@ -441,7 +441,7 @@ class doShowUserResponse
 
     /**
      * @param ShowUserFeedbacks $userPositiveFeedback
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserPositiveFeedback($userPositiveFeedback)
     {
@@ -459,7 +459,7 @@ class doShowUserResponse
 
     /**
      * @param ShowUserFeedbacks $userNegativeFeedback
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserNegativeFeedback($userNegativeFeedback)
     {
@@ -477,7 +477,7 @@ class doShowUserResponse
 
     /**
      * @param ShowUserFeedbacks $userNeutralFeedback
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserNeutralFeedback($userNeutralFeedback)
     {
@@ -495,7 +495,7 @@ class doShowUserResponse
 
     /**
      * @param int $userJuniorStatus
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserJuniorStatus($userJuniorStatus)
     {
@@ -513,7 +513,7 @@ class doShowUserResponse
 
     /**
      * @param int $userHasShop
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserHasShop($userHasShop)
     {
@@ -531,7 +531,7 @@ class doShowUserResponse
 
     /**
      * @param int $userCompanyIcon
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserCompanyIcon($userCompanyIcon)
     {
@@ -549,7 +549,7 @@ class doShowUserResponse
 
     /**
      * @param int $userSellRatingCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserSellRatingCount($userSellRatingCount)
     {
@@ -567,7 +567,7 @@ class doShowUserResponse
 
     /**
      * @param ArrayOfSellratingaveragestruct $userSellRatingAverage
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserSellRatingAverage($userSellRatingAverage)
     {
@@ -585,7 +585,7 @@ class doShowUserResponse
 
     /**
      * @param int $userIsAllegroStandard
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserIsAllegroStandard($userIsAllegroStandard)
     {
@@ -603,7 +603,7 @@ class doShowUserResponse
 
     /**
      * @param int $userIsB2cSeller
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doShowUserResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowUserResponse
      */
     public function setUserIsB2cSeller($userIsB2cSeller)
     {

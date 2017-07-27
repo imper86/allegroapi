@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoMyBillingRequest
 {
@@ -28,7 +28,7 @@ class DoMyBillingRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyBillingRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyBillingRequest
      */
     public function setSessionHandle($sessionHandle)
     {

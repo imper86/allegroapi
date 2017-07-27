@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoFeedbackManyRequest
 {
@@ -35,7 +35,7 @@ class DoFeedbackManyRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackManyRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackManyRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -53,7 +53,7 @@ class DoFeedbackManyRequest
 
     /**
      * @param ArrayOfFeedbackmanystruct $feedbacksList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackManyRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackManyRequest
      */
     public function setFeedbacksList($feedbacksList)
     {

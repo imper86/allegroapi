@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PaymentsInfoStruct
 {
@@ -56,7 +56,7 @@ class PaymentsInfoStruct
 
     /**
      * @param float $paymentsBalance
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
      */
     public function setPaymentsBalance($paymentsBalance)
     {
@@ -74,7 +74,7 @@ class PaymentsInfoStruct
 
     /**
      * @param string $paymentsBankAccount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
      */
     public function setPaymentsBankAccount($paymentsBankAccount)
     {
@@ -92,7 +92,7 @@ class PaymentsInfoStruct
 
     /**
      * @param PaymentsUserDataStruct $paymentsUserData
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
      */
     public function setPaymentsUserData($paymentsUserData)
     {
@@ -110,7 +110,7 @@ class PaymentsInfoStruct
 
     /**
      * @param PaymentsPayoutStruct $paymentsPayout
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
      */
     public function setPaymentsPayout($paymentsPayout)
     {
@@ -128,7 +128,7 @@ class PaymentsInfoStruct
 
     /**
      * @param int $paymentsNotifications
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsInfoStruct
      */
     public function setPaymentsNotifications($paymentsNotifications)
     {

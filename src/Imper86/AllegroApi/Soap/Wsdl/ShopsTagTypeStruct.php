@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ShopsTagTypeStruct
 {
@@ -42,7 +42,7 @@ class ShopsTagTypeStruct
 
     /**
      * @param int $id
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShopsTagTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShopsTagTypeStruct
      */
     public function setId($id)
     {
@@ -60,7 +60,7 @@ class ShopsTagTypeStruct
 
     /**
      * @param string $code
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShopsTagTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShopsTagTypeStruct
      */
     public function setCode($code)
     {
@@ -78,7 +78,7 @@ class ShopsTagTypeStruct
 
     /**
      * @param string $name
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShopsTagTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShopsTagTypeStruct
      */
     public function setName($name)
     {

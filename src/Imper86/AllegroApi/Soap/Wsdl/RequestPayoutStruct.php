@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class RequestPayoutStruct
 {
@@ -42,7 +42,7 @@ class RequestPayoutStruct
 
     /**
      * @param int $payoutId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RequestPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RequestPayoutStruct
      */
     public function setPayoutId($payoutId)
     {
@@ -60,7 +60,7 @@ class RequestPayoutStruct
 
     /**
      * @param float $payoutAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RequestPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RequestPayoutStruct
      */
     public function setPayoutAmount($payoutAmount)
     {
@@ -78,7 +78,7 @@ class RequestPayoutStruct
 
     /**
      * @param int $payoutTime
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RequestPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RequestPayoutStruct
      */
     public function setPayoutTime($payoutTime)
     {

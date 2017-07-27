@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ActionDataStruct
 {
@@ -35,7 +35,7 @@ class ActionDataStruct
 
     /**
      * @param string $actionKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ActionDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ActionDataStruct
      */
     public function setActionKey($actionKey)
     {
@@ -53,7 +53,7 @@ class ActionDataStruct
 
     /**
      * @param string $actionValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ActionDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ActionDataStruct
      */
     public function setActionValue($actionValue)
     {

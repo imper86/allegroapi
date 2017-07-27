@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class FilterRelationType
 {
@@ -36,7 +36,7 @@ class FilterRelationType
 
     /**
      * @param ArrayOfString $relationAnd
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterRelationType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterRelationType
      */
     public function setRelationAnd($relationAnd)
     {
@@ -54,7 +54,7 @@ class FilterRelationType
 
     /**
      * @param ArrayOfString $relationOr
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterRelationType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterRelationType
      */
     public function setRelationOr($relationOr)
     {
@@ -72,7 +72,7 @@ class FilterRelationType
 
     /**
      * @param ArrayOfString $relationExclude
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FilterRelationType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FilterRelationType
      */
     public function setRelationExclude($relationExclude)
     {

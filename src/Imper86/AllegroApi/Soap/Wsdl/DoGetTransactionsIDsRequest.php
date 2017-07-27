@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetTransactionsIDsRequest
 {
@@ -49,7 +49,7 @@ class DoGetTransactionsIDsRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -67,7 +67,7 @@ class DoGetTransactionsIDsRequest
 
     /**
      * @param ArrayOfLong $itemsIdArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
      */
     public function setItemsIdArray($itemsIdArray)
     {
@@ -85,7 +85,7 @@ class DoGetTransactionsIDsRequest
 
     /**
      * @param string $userRole
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
      */
     public function setUserRole($userRole)
     {
@@ -103,7 +103,7 @@ class DoGetTransactionsIDsRequest
 
     /**
      * @param ArrayOfLong $shipmentIdArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetTransactionsIDsRequest
      */
     public function setShipmentIdArray($shipmentIdArray)
     {

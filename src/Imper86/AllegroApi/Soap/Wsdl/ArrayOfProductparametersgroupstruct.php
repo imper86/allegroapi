@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfProductparametersgroupstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfProductparametersgroupstruct implements \ArrayAccess, \Iterator, \C
 
     /**
      * @param ProductParametersGroupStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfProductparametersgroupstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfProductparametersgroupstruct
      */
     public function setItem(array $item = null)
     {

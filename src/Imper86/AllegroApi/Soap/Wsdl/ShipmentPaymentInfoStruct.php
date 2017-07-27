@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ShipmentPaymentInfoStruct
 {
@@ -54,7 +54,7 @@ class ShipmentPaymentInfoStruct
 
     /**
      * @param int $shipmentId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
      */
     public function setShipmentId($shipmentId)
     {
@@ -72,7 +72,7 @@ class ShipmentPaymentInfoStruct
 
     /**
      * @param string $shipmentName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
      */
     public function setShipmentName($shipmentName)
     {
@@ -90,7 +90,7 @@ class ShipmentPaymentInfoStruct
 
     /**
      * @param float $shipmentAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
      */
     public function setShipmentAmount($shipmentAmount)
     {
@@ -108,7 +108,7 @@ class ShipmentPaymentInfoStruct
 
     /**
      * @param int $shipmentPaymentType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
      */
     public function setShipmentPaymentType($shipmentPaymentType)
     {
@@ -126,7 +126,7 @@ class ShipmentPaymentInfoStruct
 
     /**
      * @param ArrayOfLong $shipmentItemIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ShipmentPaymentInfoStruct
      */
     public function setShipmentItemIds($shipmentItemIds)
     {

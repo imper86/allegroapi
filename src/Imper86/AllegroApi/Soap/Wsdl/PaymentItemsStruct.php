@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PaymentItemsStruct
 {
@@ -49,7 +49,7 @@ class PaymentItemsStruct
 
     /**
      * @param int $payTransItId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentItemsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentItemsStruct
      */
     public function setPayTransItId($payTransItId)
     {
@@ -67,7 +67,7 @@ class PaymentItemsStruct
 
     /**
      * @param string $payTransItName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentItemsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentItemsStruct
      */
     public function setPayTransItName($payTransItName)
     {
@@ -85,7 +85,7 @@ class PaymentItemsStruct
 
     /**
      * @param int $payTransItCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentItemsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentItemsStruct
      */
     public function setPayTransItCount($payTransItCount)
     {
@@ -103,7 +103,7 @@ class PaymentItemsStruct
 
     /**
      * @param float $payTransItPrice
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentItemsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentItemsStruct
      */
     public function setPayTransItPrice($payTransItPrice)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoMyBillingItemRequest
 {
@@ -42,7 +42,7 @@ class DoMyBillingItemRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyBillingItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyBillingItemRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -60,7 +60,7 @@ class DoMyBillingItemRequest
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyBillingItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyBillingItemRequest
      */
     public function setItemId($itemId)
     {
@@ -78,7 +78,7 @@ class DoMyBillingItemRequest
 
     /**
      * @param string $option
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyBillingItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyBillingItemRequest
      */
     public function setOption($option)
     {

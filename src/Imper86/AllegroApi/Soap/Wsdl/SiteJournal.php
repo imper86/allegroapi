@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class SiteJournal
 {
@@ -63,7 +63,7 @@ class SiteJournal
 
     /**
      * @param int $rowId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournal
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournal
      */
     public function setRowId($rowId)
     {
@@ -81,7 +81,7 @@ class SiteJournal
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournal
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournal
      */
     public function setItemId($itemId)
     {
@@ -99,7 +99,7 @@ class SiteJournal
 
     /**
      * @param string $changeType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournal
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournal
      */
     public function setChangeType($changeType)
     {
@@ -117,7 +117,7 @@ class SiteJournal
 
     /**
      * @param int $changeDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournal
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournal
      */
     public function setChangeDate($changeDate)
     {
@@ -135,7 +135,7 @@ class SiteJournal
 
     /**
      * @param float $currentPrice
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournal
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournal
      */
     public function setCurrentPrice($currentPrice)
     {
@@ -153,7 +153,7 @@ class SiteJournal
 
     /**
      * @param int $itemSellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournal
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournal
      */
     public function setItemSellerId($itemSellerId)
     {

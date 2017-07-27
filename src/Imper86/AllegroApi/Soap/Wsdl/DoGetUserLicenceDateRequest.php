@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetUserLicenceDateRequest
 {
@@ -28,7 +28,7 @@ class DoGetUserLicenceDateRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetUserLicenceDateRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetUserLicenceDateRequest
      */
     public function setSessionHandle($sessionHandle)
     {

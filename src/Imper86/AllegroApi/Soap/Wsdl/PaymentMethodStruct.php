@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PaymentMethodStruct
 {
@@ -49,7 +49,7 @@ class PaymentMethodStruct
 
     /**
      * @param string $paymentMethodId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentMethodStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentMethodStruct
      */
     public function setPaymentMethodId($paymentMethodId)
     {
@@ -67,7 +67,7 @@ class PaymentMethodStruct
 
     /**
      * @param string $paymentMethodName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentMethodStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentMethodStruct
      */
     public function setPaymentMethodName($paymentMethodName)
     {
@@ -85,7 +85,7 @@ class PaymentMethodStruct
 
     /**
      * @param string $paymentMethodImage
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentMethodStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentMethodStruct
      */
     public function setPaymentMethodImage($paymentMethodImage)
     {
@@ -103,7 +103,7 @@ class PaymentMethodStruct
 
     /**
      * @param int $paymentMethodUsage
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentMethodStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentMethodStruct
      */
     public function setPaymentMethodUsage($paymentMethodUsage)
     {

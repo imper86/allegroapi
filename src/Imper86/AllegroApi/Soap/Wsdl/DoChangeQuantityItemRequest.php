@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoChangeQuantityItemRequest
 {
@@ -42,7 +42,7 @@ class DoChangeQuantityItemRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeQuantityItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeQuantityItemRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -60,7 +60,7 @@ class DoChangeQuantityItemRequest
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeQuantityItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeQuantityItemRequest
      */
     public function setItemId($itemId)
     {
@@ -78,7 +78,7 @@ class DoChangeQuantityItemRequest
 
     /**
      * @param int $newItemQuantity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangeQuantityItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeQuantityItemRequest
      */
     public function setNewItemQuantity($newItemQuantity)
     {

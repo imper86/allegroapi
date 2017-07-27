@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfArchiverefundslisttypestruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfArchiverefundslisttypestruct implements \ArrayAccess, \Iterator, \C
 
     /**
      * @param ArchiveRefundsListTypeStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfArchiverefundslisttypestruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfArchiverefundslisttypestruct
      */
     public function setItem(array $item = null)
     {

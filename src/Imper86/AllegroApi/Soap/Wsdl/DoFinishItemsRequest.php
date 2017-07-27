@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoFinishItemsRequest
 {
@@ -35,7 +35,7 @@ class DoFinishItemsRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFinishItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFinishItemsRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -53,7 +53,7 @@ class DoFinishItemsRequest
 
     /**
      * @param ArrayOfFinishitemsstruct $finishItemsList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFinishItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFinishItemsRequest
      */
     public function setFinishItemsList($finishItemsList)
     {

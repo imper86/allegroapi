@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetPostBuyFormsDataForSellersResponse
 {
@@ -28,7 +28,7 @@ class doGetPostBuyFormsDataForSellersResponse
 
     /**
      * @param ArrayOfPostbuyformdatastruct $postBuyFormData
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetPostBuyFormsDataForSellersResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetPostBuyFormsDataForSellersResponse
      */
     public function setPostBuyFormData($postBuyFormData)
     {

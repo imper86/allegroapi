@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetPaymentDataResponse
 {
@@ -28,7 +28,7 @@ class doGetPaymentDataResponse
 
     /**
      * @param ArrayOfBillingdatatype $paymentList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetPaymentDataResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetPaymentDataResponse
      */
     public function setPaymentList($paymentList)
     {

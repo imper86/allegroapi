@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class SiteJournalDealsStruct
 {
@@ -84,7 +84,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealEventId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealEventId($dealEventId)
     {
@@ -102,7 +102,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealEventType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealEventType($dealEventType)
     {
@@ -120,7 +120,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealEventTime
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealEventTime($dealEventTime)
     {
@@ -138,7 +138,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealId($dealId)
     {
@@ -156,7 +156,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealTransactionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealTransactionId($dealTransactionId)
     {
@@ -174,7 +174,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealSellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealSellerId($dealSellerId)
     {
@@ -192,7 +192,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealItemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealItemId($dealItemId)
     {
@@ -210,7 +210,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealBuyerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealBuyerId($dealBuyerId)
     {
@@ -228,7 +228,7 @@ class SiteJournalDealsStruct
 
     /**
      * @param int $dealQuantity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SiteJournalDealsStruct
      */
     public function setDealQuantity($dealQuantity)
     {

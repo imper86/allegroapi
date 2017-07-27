@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class FulfillmentTimeStruct
 {
@@ -35,7 +35,7 @@ class FulfillmentTimeStruct
 
     /**
      * @param int $fulfillmentTimeFrom
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FulfillmentTimeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FulfillmentTimeStruct
      */
     public function setFulfillmentTimeFrom($fulfillmentTimeFrom)
     {
@@ -53,7 +53,7 @@ class FulfillmentTimeStruct
 
     /**
      * @param int $fulfillmentTimeTo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FulfillmentTimeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FulfillmentTimeStruct
      */
     public function setFulfillmentTimeTo($fulfillmentTimeTo)
     {

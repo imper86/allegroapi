@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CompanySecondAddressStruct
 {
@@ -70,7 +70,7 @@ class CompanySecondAddressStruct
 
     /**
      * @param string $companyWorkerFirstName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
      */
     public function setCompanyWorkerFirstName($companyWorkerFirstName)
     {
@@ -88,7 +88,7 @@ class CompanySecondAddressStruct
 
     /**
      * @param string $companyWorkerLastName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
      */
     public function setCompanyWorkerLastName($companyWorkerLastName)
     {
@@ -106,7 +106,7 @@ class CompanySecondAddressStruct
 
     /**
      * @param string $companyAddress
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
      */
     public function setCompanyAddress($companyAddress)
     {
@@ -124,7 +124,7 @@ class CompanySecondAddressStruct
 
     /**
      * @param string $companyPostcode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
      */
     public function setCompanyPostcode($companyPostcode)
     {
@@ -142,7 +142,7 @@ class CompanySecondAddressStruct
 
     /**
      * @param string $companyCity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
      */
     public function setCompanyCity($companyCity)
     {
@@ -160,7 +160,7 @@ class CompanySecondAddressStruct
 
     /**
      * @param int $companyCountryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
      */
     public function setCompanyCountryId($companyCountryId)
     {
@@ -178,7 +178,7 @@ class CompanySecondAddressStruct
 
     /**
      * @param int $companyStateId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanySecondAddressStruct
      */
     public function setCompanyStateId($companyStateId)
     {

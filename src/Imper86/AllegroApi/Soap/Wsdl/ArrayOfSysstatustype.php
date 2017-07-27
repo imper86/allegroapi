@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfSysstatustype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSysstatustype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param SysStatusType[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfSysstatustype
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfSysstatustype
      */
     public function setItem(array $item = null)
     {

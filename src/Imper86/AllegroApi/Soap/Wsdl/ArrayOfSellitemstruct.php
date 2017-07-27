@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfSellitemstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSellitemstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param SellItemStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfSellitemstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfSellitemstruct
      */
     public function setItem(array $item = null)
     {

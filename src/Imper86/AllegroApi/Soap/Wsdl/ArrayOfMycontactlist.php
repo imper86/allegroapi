@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfMycontactlist implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfMycontactlist implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param MyContactList[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfMycontactlist
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfMycontactlist
      */
     public function setItem(array $item = null)
     {

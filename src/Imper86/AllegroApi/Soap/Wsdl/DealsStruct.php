@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DealsStruct
 {
@@ -56,7 +56,7 @@ class DealsStruct
 
     /**
      * @param int $dealId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DealsStruct
      */
     public function setDealId($dealId)
     {
@@ -74,7 +74,7 @@ class DealsStruct
 
     /**
      * @param int $dealDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DealsStruct
      */
     public function setDealDate($dealDate)
     {
@@ -92,7 +92,7 @@ class DealsStruct
 
     /**
      * @param int $dealQuantity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DealsStruct
      */
     public function setDealQuantity($dealQuantity)
     {
@@ -110,7 +110,7 @@ class DealsStruct
 
     /**
      * @param float $dealAmountOriginal
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DealsStruct
      */
     public function setDealAmountOriginal($dealAmountOriginal)
     {
@@ -128,7 +128,7 @@ class DealsStruct
 
     /**
      * @param float $dealAmountDiscounted
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DealsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DealsStruct
      */
     public function setDealAmountDiscounted($dealAmountDiscounted)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CreatedItemTemplateStruct
 {
@@ -28,7 +28,7 @@ class CreatedItemTemplateStruct
 
     /**
      * @param int $itemTemplateId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CreatedItemTemplateStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CreatedItemTemplateStruct
      */
     public function setItemTemplateId($itemTemplateId)
     {

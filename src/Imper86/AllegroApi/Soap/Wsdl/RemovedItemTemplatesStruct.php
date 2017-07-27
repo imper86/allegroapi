@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class RemovedItemTemplatesStruct
 {
@@ -31,7 +31,7 @@ class RemovedItemTemplatesStruct
 
     /**
      * @param ArrayOfInt $itemTemplateIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RemovedItemTemplatesStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RemovedItemTemplatesStruct
      */
     public function setItemTemplateIds($itemTemplateIds)
     {
@@ -49,7 +49,7 @@ class RemovedItemTemplatesStruct
 
     /**
      * @param ArrayOfInt $itemTemplateIncorrectIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\RemovedItemTemplatesStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\RemovedItemTemplatesStruct
      */
     public function setItemTemplateIncorrectIds($itemTemplateIncorrectIds)
     {

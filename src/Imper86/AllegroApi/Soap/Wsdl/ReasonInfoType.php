@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ReasonInfoType
 {
@@ -40,7 +40,7 @@ class ReasonInfoType
 
     /**
      * @param int $reasonId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ReasonInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ReasonInfoType
      */
     public function setReasonId($reasonId)
     {
@@ -58,7 +58,7 @@ class ReasonInfoType
 
     /**
      * @param string $reasonName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ReasonInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ReasonInfoType
      */
     public function setReasonName($reasonName)
     {
@@ -76,7 +76,7 @@ class ReasonInfoType
 
     /**
      * @param int $maxQuantity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ReasonInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ReasonInfoType
      */
     public function setMaxQuantity($maxQuantity)
     {

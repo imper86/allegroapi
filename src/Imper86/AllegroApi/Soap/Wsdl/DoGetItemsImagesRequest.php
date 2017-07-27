@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetItemsImagesRequest
 {
@@ -42,7 +42,7 @@ class DoGetItemsImagesRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsImagesRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsImagesRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -60,7 +60,7 @@ class DoGetItemsImagesRequest
 
     /**
      * @param ArrayOfItemgetimage $itemsArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsImagesRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsImagesRequest
      */
     public function setItemsArray($itemsArray)
     {
@@ -78,7 +78,7 @@ class DoGetItemsImagesRequest
 
     /**
      * @param int $imageType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemsImagesRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsImagesRequest
      */
     public function setImageType($imageType)
     {

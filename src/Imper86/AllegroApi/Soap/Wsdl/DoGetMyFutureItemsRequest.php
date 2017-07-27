@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetMyFutureItemsRequest
 {
@@ -70,7 +70,7 @@ class DoGetMyFutureItemsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -88,7 +88,7 @@ class DoGetMyFutureItemsRequest
 
     /**
      * @param SortOptionsStruct $sortOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
      */
     public function setSortOptions($sortOptions)
     {
@@ -106,7 +106,7 @@ class DoGetMyFutureItemsRequest
 
     /**
      * @param FutureFilterOptionsStruct $filterOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
      */
     public function setFilterOptions($filterOptions)
     {
@@ -124,7 +124,7 @@ class DoGetMyFutureItemsRequest
 
     /**
      * @param int $categoryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
      */
     public function setCategoryId($categoryId)
     {
@@ -142,7 +142,7 @@ class DoGetMyFutureItemsRequest
 
     /**
      * @param ArrayOfLong $itemIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
      */
     public function setItemIds($itemIds)
     {
@@ -160,7 +160,7 @@ class DoGetMyFutureItemsRequest
 
     /**
      * @param int $pageSize
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
      */
     public function setPageSize($pageSize)
     {
@@ -178,7 +178,7 @@ class DoGetMyFutureItemsRequest
 
     /**
      * @param int $pageNumber
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyFutureItemsRequest
      */
     public function setPageNumber($pageNumber)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CompanyInfoStruct
 {
@@ -70,7 +70,7 @@ class CompanyInfoStruct
 
     /**
      * @param string $companyFirstName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyInfoStruct
      */
     public function setCompanyFirstName($companyFirstName)
     {
@@ -88,7 +88,7 @@ class CompanyInfoStruct
 
     /**
      * @param string $companyLastName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyInfoStruct
      */
     public function setCompanyLastName($companyLastName)
     {
@@ -106,7 +106,7 @@ class CompanyInfoStruct
 
     /**
      * @param string $companyName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyInfoStruct
      */
     public function setCompanyName($companyName)
     {
@@ -124,7 +124,7 @@ class CompanyInfoStruct
 
     /**
      * @param string $companyAddress
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyInfoStruct
      */
     public function setCompanyAddress($companyAddress)
     {
@@ -142,7 +142,7 @@ class CompanyInfoStruct
 
     /**
      * @param string $companyPostcode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyInfoStruct
      */
     public function setCompanyPostcode($companyPostcode)
     {
@@ -160,7 +160,7 @@ class CompanyInfoStruct
 
     /**
      * @param string $companyCity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyInfoStruct
      */
     public function setCompanyCity($companyCity)
     {
@@ -178,7 +178,7 @@ class CompanyInfoStruct
 
     /**
      * @param string $companyNip
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyInfoStruct
      */
     public function setCompanyNip($companyNip)
     {

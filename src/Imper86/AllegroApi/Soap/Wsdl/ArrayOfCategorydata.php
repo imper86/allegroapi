@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfCategorydata implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfCategorydata implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param CategoryData[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfCategorydata
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfCategorydata
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PharmacyRecipientDataStruct
 {
@@ -46,7 +46,7 @@ class PharmacyRecipientDataStruct
 
     /**
      * @param string $recipientFirstName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
      */
     public function setRecipientFirstName($recipientFirstName)
     {
@@ -64,7 +64,7 @@ class PharmacyRecipientDataStruct
 
     /**
      * @param string $recipientLastName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
      */
     public function setRecipientLastName($recipientLastName)
     {
@@ -82,7 +82,7 @@ class PharmacyRecipientDataStruct
 
     /**
      * @param string $recipientAddress
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
      */
     public function setRecipientAddress($recipientAddress)
     {
@@ -100,7 +100,7 @@ class PharmacyRecipientDataStruct
 
     /**
      * @param string $recipientPostcode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
      */
     public function setRecipientPostcode($recipientPostcode)
     {
@@ -118,7 +118,7 @@ class PharmacyRecipientDataStruct
 
     /**
      * @param string $recipientCity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PharmacyRecipientDataStruct
      */
     public function setRecipientCity($recipientCity)
     {

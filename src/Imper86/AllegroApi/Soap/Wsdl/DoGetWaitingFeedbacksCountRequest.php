@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetWaitingFeedbacksCountRequest
 {
@@ -28,7 +28,7 @@ class DoGetWaitingFeedbacksCountRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksCountRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetWaitingFeedbacksCountRequest
      */
     public function setSessionHandle($sessionHandle)
     {

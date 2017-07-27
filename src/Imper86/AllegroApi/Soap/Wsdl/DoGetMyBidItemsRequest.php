@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetMyBidItemsRequest
 {
@@ -70,7 +70,7 @@ class DoGetMyBidItemsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
      */
     public function setSessionId($sessionId)
     {
@@ -88,7 +88,7 @@ class DoGetMyBidItemsRequest
 
     /**
      * @param SortOptionsStruct $sortOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
      */
     public function setSortOptions($sortOptions)
     {
@@ -106,7 +106,7 @@ class DoGetMyBidItemsRequest
 
     /**
      * @param string $searchValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
      */
     public function setSearchValue($searchValue)
     {
@@ -124,7 +124,7 @@ class DoGetMyBidItemsRequest
 
     /**
      * @param int $categoryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
      */
     public function setCategoryId($categoryId)
     {
@@ -142,7 +142,7 @@ class DoGetMyBidItemsRequest
 
     /**
      * @param ArrayOfLong $itemIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
      */
     public function setItemIds($itemIds)
     {
@@ -160,7 +160,7 @@ class DoGetMyBidItemsRequest
 
     /**
      * @param int $pageSize
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
      */
     public function setPageSize($pageSize)
     {
@@ -178,7 +178,7 @@ class DoGetMyBidItemsRequest
 
     /**
      * @param int $pageNumber
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyBidItemsRequest
      */
     public function setPageNumber($pageNumber)
     {

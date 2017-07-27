@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetRefundsListRequest
 {
@@ -49,7 +49,7 @@ class DoGetRefundsListRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
      */
     public function setSessionId($sessionId)
     {
@@ -67,7 +67,7 @@ class DoGetRefundsListRequest
 
     /**
      * @param ArrayOfFilteroptionstype $filterOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
      */
     public function setFilterOptions($filterOptions)
     {
@@ -85,7 +85,7 @@ class DoGetRefundsListRequest
 
     /**
      * @param int $resultSize
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
      */
     public function setResultSize($resultSize)
     {
@@ -103,7 +103,7 @@ class DoGetRefundsListRequest
 
     /**
      * @param int $resultOffset
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetRefundsListRequest
      */
     public function setResultOffset($resultOffset)
     {

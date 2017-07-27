@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doMyBillingResponse
 {
@@ -28,7 +28,7 @@ class doMyBillingResponse
 
     /**
      * @param string $myBilling
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doMyBillingResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doMyBillingResponse
      */
     public function setMyBilling($myBilling)
     {

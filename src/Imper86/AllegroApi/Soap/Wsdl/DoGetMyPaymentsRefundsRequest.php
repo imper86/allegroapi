@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetMyPaymentsRefundsRequest
 {
@@ -56,7 +56,7 @@ class DoGetMyPaymentsRefundsRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoGetMyPaymentsRefundsRequest
 
     /**
      * @param int $sellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
      */
     public function setSellerId($sellerId)
     {
@@ -92,7 +92,7 @@ class DoGetMyPaymentsRefundsRequest
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
      */
     public function setItemId($itemId)
     {
@@ -110,7 +110,7 @@ class DoGetMyPaymentsRefundsRequest
 
     /**
      * @param int $limit
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
      */
     public function setLimit($limit)
     {
@@ -128,7 +128,7 @@ class DoGetMyPaymentsRefundsRequest
 
     /**
      * @param int $offset
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPaymentsRefundsRequest
      */
     public function setOffset($offset)
     {

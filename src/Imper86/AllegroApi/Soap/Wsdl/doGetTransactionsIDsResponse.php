@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetTransactionsIDsResponse
 {
@@ -28,7 +28,7 @@ class doGetTransactionsIDsResponse
 
     /**
      * @param ArrayOfLong $transactionsIdsArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetTransactionsIDsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetTransactionsIDsResponse
      */
     public function setTransactionsIdsArray($transactionsIdsArray)
     {

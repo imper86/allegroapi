@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class SellRatingInfoStruct
 {
@@ -40,7 +40,7 @@ class SellRatingInfoStruct
 
     /**
      * @param int $sellRatingGroupId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellRatingInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellRatingInfoStruct
      */
     public function setSellRatingGroupId($sellRatingGroupId)
     {
@@ -58,7 +58,7 @@ class SellRatingInfoStruct
 
     /**
      * @param string $sellRatingGroupTitle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellRatingInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellRatingInfoStruct
      */
     public function setSellRatingGroupTitle($sellRatingGroupTitle)
     {
@@ -76,7 +76,7 @@ class SellRatingInfoStruct
 
     /**
      * @param ArrayOfSellratingreasonstruct $sellRatingReasons
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellRatingInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellRatingInfoStruct
      */
     public function setSellRatingReasons($sellRatingReasons)
     {

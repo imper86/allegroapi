@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfSellratingaveragepermonthstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSellratingaveragepermonthstruct implements \ArrayAccess, \Iterator,
 
     /**
      * @param SellRatingAveragePerMonthStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfSellratingaveragepermonthstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfSellratingaveragepermonthstruct
      */
     public function setItem(array $item = null)
     {

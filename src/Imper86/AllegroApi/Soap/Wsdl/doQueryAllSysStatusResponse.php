@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doQueryAllSysStatusResponse
 {
@@ -28,7 +28,7 @@ class doQueryAllSysStatusResponse
 
     /**
      * @param ArrayOfSysstatustype $sysCountryStatus
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doQueryAllSysStatusResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doQueryAllSysStatusResponse
      */
     public function setSysCountryStatus($sysCountryStatus)
     {

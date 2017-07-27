@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DurationInfoStruct
 {
@@ -26,7 +26,7 @@ class DurationInfoStruct
 
     /**
      * @param int $durationType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DurationInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DurationInfoStruct
      */
     public function setDurationType($durationType)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetBidItem2Response
 {
@@ -28,7 +28,7 @@ class doGetBidItem2Response
 
     /**
      * @param ArrayOfBidliststruct2 $biditemList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetBidItem2Response
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetBidItem2Response
      */
     public function setBiditemList($biditemList)
     {

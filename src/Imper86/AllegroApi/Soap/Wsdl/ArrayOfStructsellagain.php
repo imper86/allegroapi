@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfStructsellagain implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfStructsellagain implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param StructSellAgain[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfStructsellagain
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfStructsellagain
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetSellFormAttribsRequest
 {
@@ -49,7 +49,7 @@ class DoGetSellFormAttribsRequest
 
     /**
      * @param int $countryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
      */
     public function setCountryId($countryId)
     {
@@ -67,7 +67,7 @@ class DoGetSellFormAttribsRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -85,7 +85,7 @@ class DoGetSellFormAttribsRequest
 
     /**
      * @param int $localVersion
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
      */
     public function setLocalVersion($localVersion)
     {
@@ -103,7 +103,7 @@ class DoGetSellFormAttribsRequest
 
     /**
      * @param int $catId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSellFormAttribsRequest
      */
     public function setCatId($catId)
     {

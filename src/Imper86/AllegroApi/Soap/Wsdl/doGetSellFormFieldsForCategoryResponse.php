@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetSellFormFieldsForCategoryResponse
 {
@@ -28,7 +28,7 @@ class doGetSellFormFieldsForCategoryResponse
 
     /**
      * @param SellFormFieldsForCategoryStruct $sellFormFieldsForCategory
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSellFormFieldsForCategoryResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSellFormFieldsForCategoryResponse
      */
     public function setSellFormFieldsForCategory($sellFormFieldsForCategory)
     {

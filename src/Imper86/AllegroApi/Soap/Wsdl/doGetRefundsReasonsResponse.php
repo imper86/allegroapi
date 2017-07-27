@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetRefundsReasonsResponse
 {
@@ -35,7 +35,7 @@ class doGetRefundsReasonsResponse
 
     /**
      * @param int $reasonsCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetRefundsReasonsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetRefundsReasonsResponse
      */
     public function setReasonsCount($reasonsCount)
     {
@@ -53,7 +53,7 @@ class doGetRefundsReasonsResponse
 
     /**
      * @param ArrayOfReasoninfotype $reasonsList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetRefundsReasonsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetRefundsReasonsResponse
      */
     public function setReasonsList($reasonsList)
     {

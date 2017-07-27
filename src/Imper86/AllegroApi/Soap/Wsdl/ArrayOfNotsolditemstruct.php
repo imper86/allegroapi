@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfNotsolditemstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfNotsolditemstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param NotSoldItemStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfNotsolditemstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfNotsolditemstruct
      */
     public function setItem(array $item = null)
     {

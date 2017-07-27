@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfItemtemplateliststruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfItemtemplateliststruct implements \ArrayAccess, \Iterator, \Countab
 
     /**
      * @param ItemTemplateListStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfItemtemplateliststruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfItemtemplateliststruct
      */
     public function setItem(array $item = null)
     {

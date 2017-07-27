@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetItemsInfoResponse
 {
@@ -42,7 +42,7 @@ class doGetItemsInfoResponse
 
     /**
      * @param ArrayOfIteminfostruct $arrayItemListInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsInfoResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsInfoResponse
      */
     public function setArrayItemListInfo($arrayItemListInfo)
     {
@@ -60,7 +60,7 @@ class doGetItemsInfoResponse
 
     /**
      * @param ArrayOfLong $arrayItemsNotFound
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsInfoResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsInfoResponse
      */
     public function setArrayItemsNotFound($arrayItemsNotFound)
     {
@@ -78,7 +78,7 @@ class doGetItemsInfoResponse
 
     /**
      * @param ArrayOfLong $arrayItemsAdminKilled
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetItemsInfoResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetItemsInfoResponse
      */
     public function setArrayItemsAdminKilled($arrayItemsAdminKilled)
     {

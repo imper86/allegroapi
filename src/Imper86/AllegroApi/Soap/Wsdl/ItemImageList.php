@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ItemImageList
 {
@@ -35,7 +35,7 @@ class ItemImageList
 
     /**
      * @param int $imageType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemImageList
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemImageList
      */
     public function setImageType($imageType)
     {
@@ -53,7 +53,7 @@ class ItemImageList
 
     /**
      * @param string $imageUrl
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemImageList
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemImageList
      */
     public function setImageUrl($imageUrl)
     {

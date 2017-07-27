@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PackageInfoStruct
 {
@@ -35,7 +35,7 @@ class PackageInfoStruct
 
     /**
      * @param int $operatorId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PackageInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PackageInfoStruct
      */
     public function setOperatorId($operatorId)
     {
@@ -53,7 +53,7 @@ class PackageInfoStruct
 
     /**
      * @param string $packageId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PackageInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PackageInfoStruct
      */
     public function setPackageId($packageId)
     {

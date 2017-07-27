@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfItemimagelist implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfItemimagelist implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ItemImageList[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfItemimagelist
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfItemimagelist
      */
     public function setItem(array $item = null)
     {

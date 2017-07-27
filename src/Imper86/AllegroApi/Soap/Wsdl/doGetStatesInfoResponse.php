@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetStatesInfoResponse
 {
@@ -28,7 +28,7 @@ class doGetStatesInfoResponse
 
     /**
      * @param ArrayOfStateinfostruct $statesInfoArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetStatesInfoResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetStatesInfoResponse
      */
     public function setStatesInfoArray($statesInfoArray)
     {

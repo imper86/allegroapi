@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class MessageToBuyerStruct
 {
@@ -35,7 +35,7 @@ class MessageToBuyerStruct
 
     /**
      * @param int $messageSellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\MessageToBuyerStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\MessageToBuyerStruct
      */
     public function setMessageSellerId($messageSellerId)
     {
@@ -53,7 +53,7 @@ class MessageToBuyerStruct
 
     /**
      * @param string $messageContent
-     * @return \Imper69\AllegroApi\Soap\Wsdl\MessageToBuyerStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\MessageToBuyerStruct
      */
     public function setMessageContent($messageContent)
     {

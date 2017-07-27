@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetStatesInfoRequest
 {
@@ -35,7 +35,7 @@ class DoGetStatesInfoRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetStatesInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetStatesInfoRequest
      */
     public function setCountryCode($countryCode)
     {
@@ -53,7 +53,7 @@ class DoGetStatesInfoRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetStatesInfoRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetStatesInfoRequest
      */
     public function setWebapiKey($webapiKey)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetMyPaymentsInfoResponse
 {
@@ -28,7 +28,7 @@ class doGetMyPaymentsInfoResponse
 
     /**
      * @param PaymentsInfoStruct $paymentsInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPaymentsInfoResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPaymentsInfoResponse
      */
     public function setPaymentsInfo($paymentsInfo)
     {

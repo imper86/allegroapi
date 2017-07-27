@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfBidliststruct2 implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfBidliststruct2 implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param BidListStruct2[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfBidliststruct2
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfBidliststruct2
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class InvoiceDataStruct
 {
@@ -35,7 +35,7 @@ class InvoiceDataStruct
 
     /**
      * @param string $companyName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\InvoiceDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\InvoiceDataStruct
      */
     public function setCompanyName($companyName)
     {
@@ -53,7 +53,7 @@ class InvoiceDataStruct
 
     /**
      * @param string $companyNip
-     * @return \Imper69\AllegroApi\Soap\Wsdl\InvoiceDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\InvoiceDataStruct
      */
     public function setCompanyNip($companyNip)
     {

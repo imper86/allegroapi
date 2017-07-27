@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetMyIncomingPaymentsRequest
 {
@@ -77,7 +77,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -95,7 +95,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param int $buyerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setBuyerId($buyerId)
     {
@@ -113,7 +113,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setItemId($itemId)
     {
@@ -131,7 +131,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param int $transRecvDateFrom
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setTransRecvDateFrom($transRecvDateFrom)
     {
@@ -149,7 +149,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param int $transRecvDateTo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setTransRecvDateTo($transRecvDateTo)
     {
@@ -167,7 +167,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param int $transPageLimit
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setTransPageLimit($transPageLimit)
     {
@@ -185,7 +185,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param int $transOffset
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setTransOffset($transOffset)
     {
@@ -203,7 +203,7 @@ class DoGetMyIncomingPaymentsRequest
 
     /**
      * @param int $strictedSearch
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyIncomingPaymentsRequest
      */
     public function setStrictedSearch($strictedSearch)
     {

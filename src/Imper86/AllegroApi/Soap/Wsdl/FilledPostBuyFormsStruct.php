@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class FilledPostBuyFormsStruct
 {
@@ -26,7 +26,7 @@ class FilledPostBuyFormsStruct
 
     /**
      * @param ArrayOfLong $transactionIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\FilledPostBuyFormsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\FilledPostBuyFormsStruct
      */
     public function setTransactionIds($transactionIds)
     {

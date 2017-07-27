@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetCountriesResponse
 {
@@ -28,7 +28,7 @@ class doGetCountriesResponse
 
     /**
      * @param ArrayOfCountryinfotype $countryArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetCountriesResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetCountriesResponse
      */
     public function setCountryArray($countryArray)
     {

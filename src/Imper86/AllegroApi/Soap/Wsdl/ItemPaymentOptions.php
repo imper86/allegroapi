@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ItemPaymentOptions
 {
@@ -70,7 +70,7 @@ class ItemPaymentOptions
 
     /**
      * @param int $payOptionTransfer
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPaymentOptions
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPaymentOptions
      */
     public function setPayOptionTransfer($payOptionTransfer)
     {
@@ -88,7 +88,7 @@ class ItemPaymentOptions
 
     /**
      * @param int $payOptionOnDelivery
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPaymentOptions
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPaymentOptions
      */
     public function setPayOptionOnDelivery($payOptionOnDelivery)
     {
@@ -106,7 +106,7 @@ class ItemPaymentOptions
 
     /**
      * @param int $payOptionAllegroPay
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPaymentOptions
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPaymentOptions
      */
     public function setPayOptionAllegroPay($payOptionAllegroPay)
     {
@@ -124,7 +124,7 @@ class ItemPaymentOptions
 
     /**
      * @param int $payOptionSeeDesc
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPaymentOptions
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPaymentOptions
      */
     public function setPayOptionSeeDesc($payOptionSeeDesc)
     {
@@ -142,7 +142,7 @@ class ItemPaymentOptions
 
     /**
      * @param int $payOptionPayu
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPaymentOptions
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPaymentOptions
      */
     public function setPayOptionPayu($payOptionPayu)
     {
@@ -160,7 +160,7 @@ class ItemPaymentOptions
 
     /**
      * @param int $payOptionEscrow
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPaymentOptions
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPaymentOptions
      */
     public function setPayOptionEscrow($payOptionEscrow)
     {
@@ -178,7 +178,7 @@ class ItemPaymentOptions
 
     /**
      * @param int $payOptionQiwi
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemPaymentOptions
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemPaymentOptions
      */
     public function setPayOptionQiwi($payOptionQiwi)
     {

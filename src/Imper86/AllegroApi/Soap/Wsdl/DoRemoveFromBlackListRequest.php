@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoRemoveFromBlackListRequest
 {
@@ -35,7 +35,7 @@ class DoRemoveFromBlackListRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRemoveFromBlackListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRemoveFromBlackListRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -53,7 +53,7 @@ class DoRemoveFromBlackListRequest
 
     /**
      * @param ArrayOfLong $usersIdArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRemoveFromBlackListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRemoveFromBlackListRequest
      */
     public function setUsersIdArray($usersIdArray)
     {

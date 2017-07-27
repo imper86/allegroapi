@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoCheckItemDescriptionRequest
 {
@@ -35,7 +35,7 @@ class DoCheckItemDescriptionRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCheckItemDescriptionRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCheckItemDescriptionRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoCheckItemDescriptionRequest
 
     /**
      * @param string $descriptionContent
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCheckItemDescriptionRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCheckItemDescriptionRequest
      */
     public function setDescriptionContent($descriptionContent)
     {

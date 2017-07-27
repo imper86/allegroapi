@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PayoutRefundFromStruct
 {
@@ -70,7 +70,7 @@ class PayoutRefundFromStruct
 
     /**
      * @param int $tranasctionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
      */
     public function setTranasctionId($tranasctionId)
     {
@@ -88,7 +88,7 @@ class PayoutRefundFromStruct
 
     /**
      * @param int $refundId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
      */
     public function setRefundId($refundId)
     {
@@ -106,7 +106,7 @@ class PayoutRefundFromStruct
 
     /**
      * @param string $refundReason
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
      */
     public function setRefundReason($refundReason)
     {
@@ -124,7 +124,7 @@ class PayoutRefundFromStruct
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
      */
     public function setItemId($itemId)
     {
@@ -142,7 +142,7 @@ class PayoutRefundFromStruct
 
     /**
      * @param int $fromUserId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
      */
     public function setFromUserId($fromUserId)
     {
@@ -160,7 +160,7 @@ class PayoutRefundFromStruct
 
     /**
      * @param float $amount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
      */
     public function setAmount($amount)
     {
@@ -178,7 +178,7 @@ class PayoutRefundFromStruct
 
     /**
      * @param string $paidDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutRefundFromStruct
      */
     public function setPaidDate($paidDate)
     {

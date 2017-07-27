@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetBlackListUsersRequest
 {
@@ -28,7 +28,7 @@ class DoGetBlackListUsersRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetBlackListUsersRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetBlackListUsersRequest
      */
     public function setSessionHandle($sessionHandle)
     {

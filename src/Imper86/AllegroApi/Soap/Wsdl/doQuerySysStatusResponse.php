@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doQuerySysStatusResponse
 {
@@ -35,7 +35,7 @@ class doQuerySysStatusResponse
 
     /**
      * @param string $info
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doQuerySysStatusResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doQuerySysStatusResponse
      */
     public function setInfo($info)
     {
@@ -53,7 +53,7 @@ class doQuerySysStatusResponse
 
     /**
      * @param int $verKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doQuerySysStatusResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doQuerySysStatusResponse
      */
     public function setVerKey($verKey)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetShipmentPriceTypesResponse
 {
@@ -28,7 +28,7 @@ class doGetShipmentPriceTypesResponse
 
     /**
      * @param ArrayOfShipmentpricetypestruct $shipmentPriceTypes
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetShipmentPriceTypesResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetShipmentPriceTypesResponse
      */
     public function setShipmentPriceTypes($shipmentPriceTypes)
     {

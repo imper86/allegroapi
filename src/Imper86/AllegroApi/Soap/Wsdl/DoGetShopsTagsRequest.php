@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetShopsTagsRequest
 {
@@ -28,7 +28,7 @@ class DoGetShopsTagsRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetShopsTagsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetShopsTagsRequest
      */
     public function setSessionId($sessionId)
     {

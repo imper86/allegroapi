@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormShipmentTrackingStruct
 {
@@ -42,7 +42,7 @@ class PostBuyFormShipmentTrackingStruct
 
     /**
      * @param int $postBuyFormOperatorId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormShipmentTrackingStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormShipmentTrackingStruct
      */
     public function setPostBuyFormOperatorId($postBuyFormOperatorId)
     {
@@ -60,7 +60,7 @@ class PostBuyFormShipmentTrackingStruct
 
     /**
      * @param string $postBuyFormPackageId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormShipmentTrackingStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormShipmentTrackingStruct
      */
     public function setPostBuyFormPackageId($postBuyFormPackageId)
     {
@@ -78,7 +78,7 @@ class PostBuyFormShipmentTrackingStruct
 
     /**
      * @param string $postBuyFormPackageStatus
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormShipmentTrackingStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormShipmentTrackingStruct
      */
     public function setPostBuyFormPackageStatus($postBuyFormPackageStatus)
     {

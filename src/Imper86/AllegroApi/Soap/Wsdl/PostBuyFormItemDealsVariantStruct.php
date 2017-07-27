@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormItemDealsVariantStruct
 {
@@ -35,7 +35,7 @@ class PostBuyFormItemDealsVariantStruct
 
     /**
      * @param string $variantName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsVariantStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsVariantStruct
      */
     public function setVariantName($variantName)
     {
@@ -53,7 +53,7 @@ class PostBuyFormItemDealsVariantStruct
 
     /**
      * @param string $variantValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsVariantStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormItemDealsVariantStruct
      */
     public function setVariantValue($variantValue)
     {

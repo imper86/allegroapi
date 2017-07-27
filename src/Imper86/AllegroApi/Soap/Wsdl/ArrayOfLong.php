@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfLong implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfLong implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param long[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfLong
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfLong
      */
     public function setItem(array $item = null)
     {

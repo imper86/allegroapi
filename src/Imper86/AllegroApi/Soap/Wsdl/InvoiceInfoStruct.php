@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class InvoiceInfoStruct
 {
@@ -40,7 +40,7 @@ class InvoiceInfoStruct
 
     /**
      * @param int $invoiceAddressType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\InvoiceInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\InvoiceInfoStruct
      */
     public function setInvoiceAddressType($invoiceAddressType)
     {
@@ -58,7 +58,7 @@ class InvoiceInfoStruct
 
     /**
      * @param AddressUserDataStruct $invoiceAddressData
-     * @return \Imper69\AllegroApi\Soap\Wsdl\InvoiceInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\InvoiceInfoStruct
      */
     public function setInvoiceAddressData($invoiceAddressData)
     {
@@ -76,7 +76,7 @@ class InvoiceInfoStruct
 
     /**
      * @param string $invoiceNip
-     * @return \Imper69\AllegroApi\Soap\Wsdl\InvoiceInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\InvoiceInfoStruct
      */
     public function setInvoiceNip($invoiceNip)
     {

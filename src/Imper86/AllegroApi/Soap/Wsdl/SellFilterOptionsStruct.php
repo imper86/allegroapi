@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class SellFilterOptionsStruct
 {
@@ -56,7 +56,7 @@ class SellFilterOptionsStruct
 
     /**
      * @param int $filterFormat
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
      */
     public function setFilterFormat($filterFormat)
     {
@@ -74,7 +74,7 @@ class SellFilterOptionsStruct
 
     /**
      * @param int $filterBids
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
      */
     public function setFilterBids($filterBids)
     {
@@ -92,7 +92,7 @@ class SellFilterOptionsStruct
 
     /**
      * @param int $filterToEnd
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
      */
     public function setFilterToEnd($filterToEnd)
     {
@@ -110,7 +110,7 @@ class SellFilterOptionsStruct
 
     /**
      * @param int $filterFromStart
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
      */
     public function setFilterFromStart($filterFromStart)
     {
@@ -128,7 +128,7 @@ class SellFilterOptionsStruct
 
     /**
      * @param int $filterAutoListing
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
      */
     public function setFilterAutoListing($filterAutoListing)
     {
@@ -146,7 +146,7 @@ class SellFilterOptionsStruct
 
     /**
      * @param FilterPriceStruct $filterPrice
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
      */
     public function setFilterPrice($filterPrice)
     {
@@ -164,7 +164,7 @@ class SellFilterOptionsStruct
 
     /**
      * @param int $filterDurationType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellFilterOptionsStruct
      */
     public function setFilterDurationType($filterDurationType)
     {

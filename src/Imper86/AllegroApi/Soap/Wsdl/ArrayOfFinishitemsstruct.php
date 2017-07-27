@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfFinishitemsstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfFinishitemsstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param FinishItemsStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfFinishitemsstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfFinishitemsstruct
      */
     public function setItem(array $item = null)
     {

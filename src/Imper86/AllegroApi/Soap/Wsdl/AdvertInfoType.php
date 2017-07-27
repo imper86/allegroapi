@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class AdvertInfoType
 {
@@ -35,7 +35,7 @@ class AdvertInfoType
 
     /**
      * @param string $serviceId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AdvertInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AdvertInfoType
      */
     public function setServiceId($serviceId)
     {
@@ -53,7 +53,7 @@ class AdvertInfoType
 
     /**
      * @param string $advertId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AdvertInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AdvertInfoType
      */
     public function setAdvertId($advertId)
     {

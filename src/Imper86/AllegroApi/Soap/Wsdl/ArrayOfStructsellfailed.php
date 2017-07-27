@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfStructsellfailed implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfStructsellfailed implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param StructSellFailed[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfStructsellfailed
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfStructsellfailed
      */
     public function setItem(array $item = null)
     {

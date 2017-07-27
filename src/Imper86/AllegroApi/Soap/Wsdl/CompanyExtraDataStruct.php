@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CompanyExtraDataStruct
 {
@@ -56,7 +56,7 @@ class CompanyExtraDataStruct
 
     /**
      * @param string $companyType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
      */
     public function setCompanyType($companyType)
     {
@@ -74,7 +74,7 @@ class CompanyExtraDataStruct
 
     /**
      * @param string $companyNip
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
      */
     public function setCompanyNip($companyNip)
     {
@@ -92,7 +92,7 @@ class CompanyExtraDataStruct
 
     /**
      * @param string $companyRegon
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
      */
     public function setCompanyRegon($companyRegon)
     {
@@ -110,7 +110,7 @@ class CompanyExtraDataStruct
 
     /**
      * @param string $companyKrs
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
      */
     public function setCompanyKrs($companyKrs)
     {
@@ -128,7 +128,7 @@ class CompanyExtraDataStruct
 
     /**
      * @param string $companyActivitySort
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CompanyExtraDataStruct
      */
     public function setCompanyActivitySort($companyActivitySort)
     {

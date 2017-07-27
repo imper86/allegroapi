@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ItemInfoStruct
 {
@@ -74,7 +74,7 @@ class ItemInfoStruct
 
     /**
      * @param ItemInfo $itemInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemInfo($itemInfo)
     {
@@ -92,7 +92,7 @@ class ItemInfoStruct
 
     /**
      * @param ArrayOfItemcatlist $itemCats
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemCats($itemCats)
     {
@@ -110,7 +110,7 @@ class ItemInfoStruct
 
     /**
      * @param ArrayOfItemimagelist $itemImages
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemImages($itemImages)
     {
@@ -128,7 +128,7 @@ class ItemInfoStruct
 
     /**
      * @param ArrayOfAttribstruct $itemAttribs
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemAttribs($itemAttribs)
     {
@@ -146,7 +146,7 @@ class ItemInfoStruct
 
     /**
      * @param ArrayOfPostagestruct $itemPostageOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemPostageOptions($itemPostageOptions)
     {
@@ -164,7 +164,7 @@ class ItemInfoStruct
 
     /**
      * @param ItemPaymentOptions $itemPaymentOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemPaymentOptions($itemPaymentOptions)
     {
@@ -182,7 +182,7 @@ class ItemInfoStruct
 
     /**
      * @param CompanyInfoStruct $itemCompanyInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemCompanyInfo($itemCompanyInfo)
     {
@@ -200,7 +200,7 @@ class ItemInfoStruct
 
     /**
      * @param ProductStruct $itemProductInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemProductInfo($itemProductInfo)
     {
@@ -218,7 +218,7 @@ class ItemInfoStruct
 
     /**
      * @param AfterSalesServiceConditionsStruct $itemAfterSalesServiceConditions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
      */
     public function setItemAfterSalesServiceConditions($itemAfterSalesServiceConditions)
     {

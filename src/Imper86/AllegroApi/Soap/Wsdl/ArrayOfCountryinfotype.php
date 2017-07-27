@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfCountryinfotype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfCountryinfotype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param CountryInfoType[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfCountryinfotype
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfCountryinfotype
      */
     public function setItem(array $item = null)
     {

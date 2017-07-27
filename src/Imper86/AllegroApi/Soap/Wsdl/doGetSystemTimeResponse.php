@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetSystemTimeResponse
 {
@@ -28,7 +28,7 @@ class doGetSystemTimeResponse
 
     /**
      * @param int $serverTime
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetSystemTimeResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetSystemTimeResponse
      */
     public function setServerTime($serverTime)
     {

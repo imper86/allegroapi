@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoRequestSurchargeRequest
 {
@@ -49,7 +49,7 @@ class DoRequestSurchargeRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -67,7 +67,7 @@ class DoRequestSurchargeRequest
 
     /**
      * @param int $transactionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
      */
     public function setTransactionId($transactionId)
     {
@@ -85,7 +85,7 @@ class DoRequestSurchargeRequest
 
     /**
      * @param float $surchargeValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
      */
     public function setSurchargeValue($surchargeValue)
     {
@@ -103,7 +103,7 @@ class DoRequestSurchargeRequest
 
     /**
      * @param string $surchargeMessageToBuyer
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoRequestSurchargeRequest
      */
     public function setSurchargeMessageToBuyer($surchargeMessageToBuyer)
     {

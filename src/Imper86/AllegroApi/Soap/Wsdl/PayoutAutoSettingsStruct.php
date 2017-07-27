@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PayoutAutoSettingsStruct
 {
@@ -35,7 +35,7 @@ class PayoutAutoSettingsStruct
 
     /**
      * @param float $payoutAutoAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutAutoSettingsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutAutoSettingsStruct
      */
     public function setPayoutAutoAmount($payoutAutoAmount)
     {
@@ -53,7 +53,7 @@ class PayoutAutoSettingsStruct
 
     /**
      * @param PayoutAutoFrequencyStruct $payoutAutoFrequency
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PayoutAutoSettingsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PayoutAutoSettingsStruct
      */
     public function setPayoutAutoFrequency($payoutAutoFrequency)
     {

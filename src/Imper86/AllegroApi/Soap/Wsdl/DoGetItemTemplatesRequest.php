@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetItemTemplatesRequest
 {
@@ -35,7 +35,7 @@ class DoGetItemTemplatesRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemTemplatesRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemTemplatesRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetItemTemplatesRequest
 
     /**
      * @param ArrayOfInt $itemTemplateIds
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetItemTemplatesRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemTemplatesRequest
      */
     public function setItemTemplateIds($itemTemplateIds)
     {

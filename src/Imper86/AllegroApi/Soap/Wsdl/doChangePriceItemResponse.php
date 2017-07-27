@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doChangePriceItemResponse
 {
@@ -35,7 +35,7 @@ class doChangePriceItemResponse
 
     /**
      * @param string $itemInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doChangePriceItemResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doChangePriceItemResponse
      */
     public function setItemInfo($itemInfo)
     {
@@ -53,7 +53,7 @@ class doChangePriceItemResponse
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doChangePriceItemResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doChangePriceItemResponse
      */
     public function setItemId($itemId)
     {

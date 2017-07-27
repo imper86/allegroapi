@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoVerifyItemRequest
 {
@@ -35,7 +35,7 @@ class DoVerifyItemRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoVerifyItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoVerifyItemRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -53,7 +53,7 @@ class DoVerifyItemRequest
 
     /**
      * @param int $localId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoVerifyItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoVerifyItemRequest
      */
     public function setLocalId($localId)
     {

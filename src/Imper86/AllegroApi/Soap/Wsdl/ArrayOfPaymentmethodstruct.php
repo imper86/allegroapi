@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfPaymentmethodstruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPaymentmethodstruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param PaymentMethodStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfPaymentmethodstruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfPaymentmethodstruct
      */
     public function setItem(array $item = null)
     {

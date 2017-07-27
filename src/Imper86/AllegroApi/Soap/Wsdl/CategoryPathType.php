@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CategoryPathType
 {
@@ -42,7 +42,7 @@ class CategoryPathType
 
     /**
      * @param int $categoryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryPathType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryPathType
      */
     public function setCategoryId($categoryId)
     {
@@ -60,7 +60,7 @@ class CategoryPathType
 
     /**
      * @param string $categoryName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryPathType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryPathType
      */
     public function setCategoryName($categoryName)
     {
@@ -78,7 +78,7 @@ class CategoryPathType
 
     /**
      * @param int $categoryParentId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryPathType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryPathType
      */
     public function setCategoryParentId($categoryParentId)
     {

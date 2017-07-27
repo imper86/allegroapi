@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CountryInfoType
 {
@@ -35,7 +35,7 @@ class CountryInfoType
 
     /**
      * @param int $countryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CountryInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CountryInfoType
      */
     public function setCountryId($countryId)
     {
@@ -53,7 +53,7 @@ class CountryInfoType
 
     /**
      * @param string $countryName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CountryInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CountryInfoType
      */
     public function setCountryName($countryName)
     {

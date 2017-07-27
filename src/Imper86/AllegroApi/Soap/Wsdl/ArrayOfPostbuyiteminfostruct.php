@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfPostbuyiteminfostruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPostbuyiteminfostruct implements \ArrayAccess, \Iterator, \Countabl
 
     /**
      * @param PostBuyItemInfoStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfPostbuyiteminfostruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfPostbuyiteminfostruct
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetArchiveRefundsListRequest
 {
@@ -35,7 +35,7 @@ class DoGetArchiveRefundsListRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetArchiveRefundsListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetArchiveRefundsListRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoGetArchiveRefundsListRequest
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetArchiveRefundsListRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetArchiveRefundsListRequest
      */
     public function setItemId($itemId)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PriceInfoType
 {
@@ -35,7 +35,7 @@ class PriceInfoType
 
     /**
      * @param string $priceType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PriceInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PriceInfoType
      */
     public function setPriceType($priceType)
     {
@@ -53,7 +53,7 @@ class PriceInfoType
 
     /**
      * @param float $priceValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PriceInfoType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PriceInfoType
      */
     public function setPriceValue($priceValue)
     {

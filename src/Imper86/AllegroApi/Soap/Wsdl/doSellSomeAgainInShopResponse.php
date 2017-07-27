@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doSellSomeAgainInShopResponse
 {
@@ -42,7 +42,7 @@ class doSellSomeAgainInShopResponse
 
     /**
      * @param ArrayOfStructsellagain $itemsSellAgain
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doSellSomeAgainInShopResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doSellSomeAgainInShopResponse
      */
     public function setItemsSellAgain($itemsSellAgain)
     {
@@ -60,7 +60,7 @@ class doSellSomeAgainInShopResponse
 
     /**
      * @param ArrayOfStructsellfailed $itemsSellFailed
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doSellSomeAgainInShopResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doSellSomeAgainInShopResponse
      */
     public function setItemsSellFailed($itemsSellFailed)
     {
@@ -78,7 +78,7 @@ class doSellSomeAgainInShopResponse
 
     /**
      * @param ArrayOfLong $itemsSellNotFound
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doSellSomeAgainInShopResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doSellSomeAgainInShopResponse
      */
     public function setItemsSellNotFound($itemsSellNotFound)
     {

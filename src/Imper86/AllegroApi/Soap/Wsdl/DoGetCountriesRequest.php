@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetCountriesRequest
 {
@@ -35,7 +35,7 @@ class DoGetCountriesRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCountriesRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCountriesRequest
      */
     public function setCountryCode($countryCode)
     {
@@ -53,7 +53,7 @@ class DoGetCountriesRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCountriesRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCountriesRequest
      */
     public function setWebapiKey($webapiKey)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class AttribStruct
 {
@@ -33,7 +33,7 @@ class AttribStruct
 
     /**
      * @param string $attribName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AttribStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AttribStruct
      */
     public function setAttribName($attribName)
     {
@@ -51,7 +51,7 @@ class AttribStruct
 
     /**
      * @param ArrayOfString $attribValues
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AttribStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AttribStruct
      */
     public function setAttribValues($attribValues)
     {

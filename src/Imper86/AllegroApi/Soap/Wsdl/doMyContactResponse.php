@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doMyContactResponse
 {
@@ -28,7 +28,7 @@ class doMyContactResponse
 
     /**
      * @param ArrayOfMycontactlist $mycontactList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doMyContactResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doMyContactResponse
      */
     public function setMycontactList($mycontactList)
     {

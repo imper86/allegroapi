@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetWaitingFeedbacksCountResponse
 {
@@ -28,7 +28,7 @@ class doGetWaitingFeedbacksCountResponse
 
     /**
      * @param int $feedbackCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetWaitingFeedbacksCountResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetWaitingFeedbacksCountResponse
      */
     public function setFeedbackCount($feedbackCount)
     {

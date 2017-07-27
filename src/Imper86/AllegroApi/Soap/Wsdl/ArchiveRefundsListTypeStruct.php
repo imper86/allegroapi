@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArchiveRefundsListTypeStruct
 {
@@ -42,7 +42,7 @@ class ArchiveRefundsListTypeStruct
 
     /**
      * @param int $refundId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArchiveRefundsListTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArchiveRefundsListTypeStruct
      */
     public function setRefundId($refundId)
     {
@@ -60,7 +60,7 @@ class ArchiveRefundsListTypeStruct
 
     /**
      * @param int $buyerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArchiveRefundsListTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArchiveRefundsListTypeStruct
      */
     public function setBuyerId($buyerId)
     {
@@ -78,7 +78,7 @@ class ArchiveRefundsListTypeStruct
 
     /**
      * @param string $buyerLogin
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArchiveRefundsListTypeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArchiveRefundsListTypeStruct
      */
     public function setBuyerLogin($buyerLogin)
     {

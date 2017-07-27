@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doCancelBidItemResponse
 {
@@ -42,7 +42,7 @@ class doCancelBidItemResponse
 
     /**
      * @param int $cancelBidValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doCancelBidItemResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doCancelBidItemResponse
      */
     public function setCancelBidValue($cancelBidValue)
     {
@@ -60,7 +60,7 @@ class doCancelBidItemResponse
 
     /**
      * @param ArrayOfInt $cancelledBids
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doCancelBidItemResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doCancelBidItemResponse
      */
     public function setCancelledBids($cancelledBids)
     {
@@ -78,7 +78,7 @@ class doCancelBidItemResponse
 
     /**
      * @param ArrayOfInt $notCancelledBids
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doCancelBidItemResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doCancelBidItemResponse
      */
     public function setNotCancelledBids($notCancelledBids)
     {

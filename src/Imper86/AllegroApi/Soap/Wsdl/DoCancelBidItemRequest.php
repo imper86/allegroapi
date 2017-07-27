@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoCancelBidItemRequest
 {
@@ -56,7 +56,7 @@ class DoCancelBidItemRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoCancelBidItemRequest
 
     /**
      * @param int $cancelItemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
      */
     public function setCancelItemId($cancelItemId)
     {
@@ -92,7 +92,7 @@ class DoCancelBidItemRequest
 
     /**
      * @param ArrayOfInt $cancelBidsArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
      */
     public function setCancelBidsArray($cancelBidsArray)
     {
@@ -110,7 +110,7 @@ class DoCancelBidItemRequest
 
     /**
      * @param string $cancelBidsReason
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
      */
     public function setCancelBidsReason($cancelBidsReason)
     {
@@ -128,7 +128,7 @@ class DoCancelBidItemRequest
 
     /**
      * @param int $cancelAddToBlackList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCancelBidItemRequest
      */
     public function setCancelAddToBlackList($cancelAddToBlackList)
     {

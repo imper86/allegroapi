@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetCatsDataRequest
 {
@@ -42,7 +42,7 @@ class DoGetCatsDataRequest
 
     /**
      * @param int $countryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataRequest
      */
     public function setCountryId($countryId)
     {
@@ -60,7 +60,7 @@ class DoGetCatsDataRequest
 
     /**
      * @param int $localVersion
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataRequest
      */
     public function setLocalVersion($localVersion)
     {
@@ -78,7 +78,7 @@ class DoGetCatsDataRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetCatsDataRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataRequest
      */
     public function setWebapiKey($webapiKey)
     {

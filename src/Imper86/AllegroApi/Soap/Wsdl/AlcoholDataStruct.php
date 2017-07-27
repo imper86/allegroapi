@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class AlcoholDataStruct
 {
@@ -105,7 +105,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholOpeningDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholOpeningDate($alcoholOpeningDate)
     {
@@ -123,7 +123,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholExpirationDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholExpirationDate($alcoholExpirationDate)
     {
@@ -141,7 +141,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholShopName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholShopName($alcoholShopName)
     {
@@ -159,7 +159,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholShopAddress
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholShopAddress($alcoholShopAddress)
     {
@@ -177,7 +177,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholShopPostcode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholShopPostcode($alcoholShopPostcode)
     {
@@ -195,7 +195,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholShopCity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholShopCity($alcoholShopCity)
     {
@@ -213,7 +213,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholShopCommune
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholShopCommune($alcoholShopCommune)
     {
@@ -231,7 +231,7 @@ class AlcoholDataStruct
 
     /**
      * @param int $alcoholShopCountryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholShopCountryId($alcoholShopCountryId)
     {
@@ -249,7 +249,7 @@ class AlcoholDataStruct
 
     /**
      * @param int $alcoholShopStateId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholShopStateId($alcoholShopStateId)
     {
@@ -267,7 +267,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholPermitNumber
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholPermitNumber($alcoholPermitNumber)
     {
@@ -285,7 +285,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholPermitAuthority
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholPermitAuthority($alcoholPermitAuthority)
     {
@@ -303,7 +303,7 @@ class AlcoholDataStruct
 
     /**
      * @param string $alcoholPermitInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\AlcoholDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\AlcoholDataStruct
      */
     public function setAlcoholPermitInfo($alcoholPermitInfo)
     {

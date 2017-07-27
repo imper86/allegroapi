@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoCheckNewAuctionExtRequest
 {
@@ -56,7 +56,7 @@ class DoCheckNewAuctionExtRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoCheckNewAuctionExtRequest
 
     /**
      * @param ArrayOfFieldsvalue $fields
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
      */
     public function setFields($fields)
     {
@@ -92,7 +92,7 @@ class DoCheckNewAuctionExtRequest
 
     /**
      * @param ArrayOfVariantstruct $variants
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
      */
     public function setVariants($variants)
     {
@@ -110,7 +110,7 @@ class DoCheckNewAuctionExtRequest
 
     /**
      * @param ArrayOfTagnamestruct $tags
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
      */
     public function setTags($tags)
     {
@@ -128,7 +128,7 @@ class DoCheckNewAuctionExtRequest
 
     /**
      * @param AfterSalesServiceConditionsStruct $afterSalesServiceConditions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoCheckNewAuctionExtRequest
      */
     public function setAfterSalesServiceConditions($afterSalesServiceConditions)
     {

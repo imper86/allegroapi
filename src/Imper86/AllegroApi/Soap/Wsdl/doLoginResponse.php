@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doLoginResponse
 {
@@ -42,7 +42,7 @@ class doLoginResponse
 
     /**
      * @param string $sessionHandlePart
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doLoginResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doLoginResponse
      */
     public function setSessionHandlePart($sessionHandlePart)
     {
@@ -60,7 +60,7 @@ class doLoginResponse
 
     /**
      * @param int $userId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doLoginResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doLoginResponse
      */
     public function setUserId($userId)
     {
@@ -78,7 +78,7 @@ class doLoginResponse
 
     /**
      * @param int $serverTime
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doLoginResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doLoginResponse
      */
     public function setServerTime($serverTime)
     {

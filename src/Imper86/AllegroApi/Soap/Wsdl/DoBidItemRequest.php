@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoBidItemRequest
 {
@@ -70,7 +70,7 @@ class DoBidItemRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoBidItemRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -88,7 +88,7 @@ class DoBidItemRequest
 
     /**
      * @param int $bidItId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoBidItemRequest
      */
     public function setBidItId($bidItId)
     {
@@ -106,7 +106,7 @@ class DoBidItemRequest
 
     /**
      * @param float $bidUserPrice
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoBidItemRequest
      */
     public function setBidUserPrice($bidUserPrice)
     {
@@ -124,7 +124,7 @@ class DoBidItemRequest
 
     /**
      * @param int $bidQuantity
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoBidItemRequest
      */
     public function setBidQuantity($bidQuantity)
     {
@@ -142,7 +142,7 @@ class DoBidItemRequest
 
     /**
      * @param int $bidBuyNow
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoBidItemRequest
      */
     public function setBidBuyNow($bidBuyNow)
     {
@@ -160,7 +160,7 @@ class DoBidItemRequest
 
     /**
      * @param PharmacyRecipientDataStruct $pharmacyRecipientData
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoBidItemRequest
      */
     public function setPharmacyRecipientData($pharmacyRecipientData)
     {
@@ -178,7 +178,7 @@ class DoBidItemRequest
 
     /**
      * @param string $variantId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoBidItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoBidItemRequest
      */
     public function setVariantId($variantId)
     {

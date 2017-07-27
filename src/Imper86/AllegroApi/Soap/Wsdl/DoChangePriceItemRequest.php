@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoChangePriceItemRequest
 {
@@ -56,7 +56,7 @@ class DoChangePriceItemRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoChangePriceItemRequest
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
      */
     public function setItemId($itemId)
     {
@@ -92,7 +92,7 @@ class DoChangePriceItemRequest
 
     /**
      * @param float $newStartingPrice
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
      */
     public function setNewStartingPrice($newStartingPrice)
     {
@@ -110,7 +110,7 @@ class DoChangePriceItemRequest
 
     /**
      * @param float $newReservePrice
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
      */
     public function setNewReservePrice($newReservePrice)
     {
@@ -128,7 +128,7 @@ class DoChangePriceItemRequest
 
     /**
      * @param float $newBuyNowPrice
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
      */
     public function setNewBuyNowPrice($newBuyNowPrice)
     {

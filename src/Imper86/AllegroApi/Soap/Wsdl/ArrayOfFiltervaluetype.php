@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfFiltervaluetype implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfFiltervaluetype implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param FilterValueType[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfFiltervaluetype
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfFiltervaluetype
      */
     public function setItem(array $item = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class UserIncomingPaymentRefundsStruct
 {
@@ -63,7 +63,7 @@ class UserIncomingPaymentRefundsStruct
 
     /**
      * @param int $payRefundTransId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
      */
     public function setPayRefundTransId($payRefundTransId)
     {
@@ -81,7 +81,7 @@ class UserIncomingPaymentRefundsStruct
 
     /**
      * @param int $payRefundItId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
      */
     public function setPayRefundItId($payRefundItId)
     {
@@ -99,7 +99,7 @@ class UserIncomingPaymentRefundsStruct
 
     /**
      * @param int $payRefundBuyerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
      */
     public function setPayRefundBuyerId($payRefundBuyerId)
     {
@@ -117,7 +117,7 @@ class UserIncomingPaymentRefundsStruct
 
     /**
      * @param float $payRefundValue
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
      */
     public function setPayRefundValue($payRefundValue)
     {
@@ -135,7 +135,7 @@ class UserIncomingPaymentRefundsStruct
 
     /**
      * @param string $payRefundReason
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
      */
     public function setPayRefundReason($payRefundReason)
     {
@@ -153,7 +153,7 @@ class UserIncomingPaymentRefundsStruct
 
     /**
      * @param int $payRefundDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserIncomingPaymentRefundsStruct
      */
     public function setPayRefundDate($payRefundDate)
     {

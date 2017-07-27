@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class MyAccountStruct2
 {
@@ -26,7 +26,7 @@ class MyAccountStruct2
 
     /**
      * @param ArrayOfString $myAccountArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\MyAccountStruct2
+     * @return \Imper86\AllegroApi\Soap\Wsdl\MyAccountStruct2
      */
     public function setMyAccountArray($myAccountArray)
     {

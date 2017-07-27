@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class UserPayoutStruct
 {
@@ -70,7 +70,7 @@ class UserPayoutStruct
 
     /**
      * @param int $payTransId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPayoutStruct
      */
     public function setPayTransId($payTransId)
     {
@@ -88,7 +88,7 @@ class UserPayoutStruct
 
     /**
      * @param string $payTransStatus
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPayoutStruct
      */
     public function setPayTransStatus($payTransStatus)
     {
@@ -106,7 +106,7 @@ class UserPayoutStruct
 
     /**
      * @param float $payTransAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPayoutStruct
      */
     public function setPayTransAmount($payTransAmount)
     {
@@ -124,7 +124,7 @@ class UserPayoutStruct
 
     /**
      * @param int $payTransCreateDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPayoutStruct
      */
     public function setPayTransCreateDate($payTransCreateDate)
     {
@@ -142,7 +142,7 @@ class UserPayoutStruct
 
     /**
      * @param int $payTransRecvDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPayoutStruct
      */
     public function setPayTransRecvDate($payTransRecvDate)
     {
@@ -160,7 +160,7 @@ class UserPayoutStruct
 
     /**
      * @param int $payTransCancelDate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPayoutStruct
      */
     public function setPayTransCancelDate($payTransCancelDate)
     {
@@ -178,7 +178,7 @@ class UserPayoutStruct
 
     /**
      * @param string $payTransReport
-     * @return \Imper69\AllegroApi\Soap\Wsdl\UserPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\UserPayoutStruct
      */
     public function setPayTransReport($payTransReport)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoSetShipmentPriceTypeRequest
 {
@@ -35,7 +35,7 @@ class DoSetShipmentPriceTypeRequest
 
     /**
      * @param string $sessionId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetShipmentPriceTypeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetShipmentPriceTypeRequest
      */
     public function setSessionId($sessionId)
     {
@@ -53,7 +53,7 @@ class DoSetShipmentPriceTypeRequest
 
     /**
      * @param int $shipmentPriceTypeId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoSetShipmentPriceTypeRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoSetShipmentPriceTypeRequest
      */
     public function setShipmentPriceTypeId($shipmentPriceTypeId)
     {

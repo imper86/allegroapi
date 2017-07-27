@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfActiondatastruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfActiondatastruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ActionDataStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfActiondatastruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfActiondatastruct
      */
     public function setItem(array $item = null)
     {

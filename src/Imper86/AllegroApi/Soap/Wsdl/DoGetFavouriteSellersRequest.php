@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetFavouriteSellersRequest
 {
@@ -28,7 +28,7 @@ class DoGetFavouriteSellersRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetFavouriteSellersRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetFavouriteSellersRequest
      */
     public function setSessionHandle($sessionHandle)
     {

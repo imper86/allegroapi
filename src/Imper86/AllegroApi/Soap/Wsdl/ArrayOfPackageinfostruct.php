@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ArrayOfPackageinfostruct implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPackageinfostruct implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param PackageInfoStruct[] $item
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ArrayOfPackageinfostruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ArrayOfPackageinfostruct
      */
     public function setItem(array $item = null)
     {

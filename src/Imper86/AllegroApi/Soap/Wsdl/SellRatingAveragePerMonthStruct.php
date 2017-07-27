@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class SellRatingAveragePerMonthStruct
 {
@@ -33,7 +33,7 @@ class SellRatingAveragePerMonthStruct
 
     /**
      * @param string $sellRatingMonth
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellRatingAveragePerMonthStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellRatingAveragePerMonthStruct
      */
     public function setSellRatingMonth($sellRatingMonth)
     {
@@ -51,7 +51,7 @@ class SellRatingAveragePerMonthStruct
 
     /**
      * @param ArrayOfSellratingstatsstruct $sellRatingAverageValues
-     * @return \Imper69\AllegroApi\Soap\Wsdl\SellRatingAveragePerMonthStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\SellRatingAveragePerMonthStruct
      */
     public function setSellRatingAverageValues($sellRatingAverageValues)
     {

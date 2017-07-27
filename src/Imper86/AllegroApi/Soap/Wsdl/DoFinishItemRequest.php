@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoFinishItemRequest
 {
@@ -49,7 +49,7 @@ class DoFinishItemRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFinishItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFinishItemRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -67,7 +67,7 @@ class DoFinishItemRequest
 
     /**
      * @param int $finishItemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFinishItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFinishItemRequest
      */
     public function setFinishItemId($finishItemId)
     {
@@ -85,7 +85,7 @@ class DoFinishItemRequest
 
     /**
      * @param int $finishCancelAllBids
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFinishItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFinishItemRequest
      */
     public function setFinishCancelAllBids($finishCancelAllBids)
     {
@@ -103,7 +103,7 @@ class DoFinishItemRequest
 
     /**
      * @param string $finishCancelReason
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFinishItemRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFinishItemRequest
      */
     public function setFinishCancelReason($finishCancelReason)
     {

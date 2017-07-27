@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetMyPayoutsDetailsResponse
 {
@@ -63,7 +63,7 @@ class doGetMyPayoutsDetailsResponse
 
     /**
      * @param int $paymentsCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
      */
     public function setPaymentsCount($paymentsCount)
     {
@@ -81,7 +81,7 @@ class doGetMyPayoutsDetailsResponse
 
     /**
      * @param ArrayOfPayoutpaymentsstruct $payments
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
      */
     public function setPayments($payments)
     {
@@ -99,7 +99,7 @@ class doGetMyPayoutsDetailsResponse
 
     /**
      * @param int $refundsFromCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
      */
     public function setRefundsFromCount($refundsFromCount)
     {
@@ -117,7 +117,7 @@ class doGetMyPayoutsDetailsResponse
 
     /**
      * @param ArrayOfPayoutrefundfromstruct $refundFrom
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
      */
     public function setRefundFrom($refundFrom)
     {
@@ -135,7 +135,7 @@ class doGetMyPayoutsDetailsResponse
 
     /**
      * @param int $refundsToCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
      */
     public function setRefundsToCount($refundsToCount)
     {
@@ -153,7 +153,7 @@ class doGetMyPayoutsDetailsResponse
 
     /**
      * @param ArrayOfPayoutrefundtostruct $refundTo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetMyPayoutsDetailsResponse
      */
     public function setRefundTo($refundTo)
     {

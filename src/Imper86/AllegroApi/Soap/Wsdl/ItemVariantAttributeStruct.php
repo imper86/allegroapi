@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ItemVariantAttributeStruct
 {
@@ -35,7 +35,7 @@ class ItemVariantAttributeStruct
 
     /**
      * @param string $name
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemVariantAttributeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemVariantAttributeStruct
      */
     public function setName($name)
     {
@@ -53,7 +53,7 @@ class ItemVariantAttributeStruct
 
     /**
      * @param string $value
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ItemVariantAttributeStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemVariantAttributeStruct
      */
     public function setValue($value)
     {

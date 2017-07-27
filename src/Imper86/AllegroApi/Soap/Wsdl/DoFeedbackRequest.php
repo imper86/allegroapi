@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoFeedbackRequest
 {
@@ -77,7 +77,7 @@ class DoFeedbackRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -95,7 +95,7 @@ class DoFeedbackRequest
 
     /**
      * @param int $feItemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setFeItemId($feItemId)
     {
@@ -113,7 +113,7 @@ class DoFeedbackRequest
 
     /**
      * @param int $feUseCommentTemplate
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setFeUseCommentTemplate($feUseCommentTemplate)
     {
@@ -131,7 +131,7 @@ class DoFeedbackRequest
 
     /**
      * @param int $feToUserId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setFeToUserId($feToUserId)
     {
@@ -149,7 +149,7 @@ class DoFeedbackRequest
 
     /**
      * @param string $feComment
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setFeComment($feComment)
     {
@@ -167,7 +167,7 @@ class DoFeedbackRequest
 
     /**
      * @param string $feCommentType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setFeCommentType($feCommentType)
     {
@@ -185,7 +185,7 @@ class DoFeedbackRequest
 
     /**
      * @param int $feOp
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setFeOp($feOp)
     {
@@ -203,7 +203,7 @@ class DoFeedbackRequest
 
     /**
      * @param ArrayOfSellratingestimationstruct $feRating
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoFeedbackRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoFeedbackRequest
      */
     public function setFeRating($feRating)
     {

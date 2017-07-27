@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormSellersStruct
 {
@@ -99,7 +99,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param int $postBuyFormSellerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormSellerId($postBuyFormSellerId)
     {
@@ -117,7 +117,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param string $postBuyFormSellerName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormSellerName($postBuyFormSellerName)
     {
@@ -135,7 +135,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param ArrayOfPostbuyformitemstruct $postBuyFormItems
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormItems($postBuyFormItems)
     {
@@ -153,7 +153,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param int $postBuyFormShipmentId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormShipmentId($postBuyFormShipmentId)
     {
@@ -171,7 +171,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param float $postBuyFormPostageAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormPostageAmount($postBuyFormPostageAmount)
     {
@@ -189,7 +189,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param string $postBuyFormMsgToSeller
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormMsgToSeller($postBuyFormMsgToSeller)
     {
@@ -207,7 +207,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param float $postBuyFormAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormAmount($postBuyFormAmount)
     {
@@ -225,7 +225,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param ArrayOfLong $postBuyFormSurchargesList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormSurchargesList($postBuyFormSurchargesList)
     {
@@ -243,7 +243,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param ArrayOfPostbuyformshipmenttrackingstruct $postBuyFormShipmentTracking
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormShipmentTracking($postBuyFormShipmentTracking)
     {
@@ -261,7 +261,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param PostBuyFormAddressStruct $postBuyFormGdAddress
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormGdAddress($postBuyFormGdAddress)
     {
@@ -279,7 +279,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param string $postBuyFormGdAdditionalInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormGdAdditionalInfo($postBuyFormGdAdditionalInfo)
     {
@@ -297,7 +297,7 @@ class PostBuyFormSellersStruct
 
     /**
      * @param int $postBuyFormSentBySeller
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormSellersStruct
      */
     public function setPostBuyFormSentBySeller($postBuyFormSentBySeller)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class StateInfoStruct
 {
@@ -35,7 +35,7 @@ class StateInfoStruct
 
     /**
      * @param int $stateId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\StateInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\StateInfoStruct
      */
     public function setStateId($stateId)
     {
@@ -53,7 +53,7 @@ class StateInfoStruct
 
     /**
      * @param string $stateName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\StateInfoStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\StateInfoStruct
      */
     public function setStateName($stateName)
     {

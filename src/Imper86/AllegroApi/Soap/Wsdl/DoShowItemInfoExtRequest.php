@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoShowItemInfoExtRequest
 {
@@ -91,7 +91,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -109,7 +109,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setItemId($itemId)
     {
@@ -127,7 +127,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getDesc
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetDesc($getDesc)
     {
@@ -145,7 +145,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getImageUrl
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetImageUrl($getImageUrl)
     {
@@ -163,7 +163,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getAttribs
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetAttribs($getAttribs)
     {
@@ -181,7 +181,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getPostageOptions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetPostageOptions($getPostageOptions)
     {
@@ -199,7 +199,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getCompanyInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetCompanyInfo($getCompanyInfo)
     {
@@ -217,7 +217,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getProductInfo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetProductInfo($getProductInfo)
     {
@@ -235,7 +235,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getAfterSalesServiceConditions
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetAfterSalesServiceConditions($getAfterSalesServiceConditions)
     {
@@ -253,7 +253,7 @@ class DoShowItemInfoExtRequest
 
     /**
      * @param int $getEan
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
      */
     public function setGetEan($getEan)
     {

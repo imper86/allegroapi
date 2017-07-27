@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class ChangedItemStruct
 {
@@ -38,7 +38,7 @@ class ChangedItemStruct
 
     /**
      * @param int $itemId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ChangedItemStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ChangedItemStruct
      */
     public function setItemId($itemId)
     {
@@ -56,7 +56,7 @@ class ChangedItemStruct
 
     /**
      * @param ArrayOfFieldsvalue $itemFields
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ChangedItemStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ChangedItemStruct
      */
     public function setItemFields($itemFields)
     {
@@ -74,7 +74,7 @@ class ChangedItemStruct
 
     /**
      * @param ArrayOfItemsurchargestruct $itemSurcharge
-     * @return \Imper69\AllegroApi\Soap\Wsdl\ChangedItemStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ChangedItemStruct
      */
     public function setItemSurcharge($itemSurcharge)
     {

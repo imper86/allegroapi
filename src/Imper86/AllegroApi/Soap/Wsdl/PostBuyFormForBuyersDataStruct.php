@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PostBuyFormForBuyersDataStruct
 {
@@ -115,7 +115,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param int $postBuyFormId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormId($postBuyFormId)
     {
@@ -133,7 +133,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param int $postBuyFormBuyerId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormBuyerId($postBuyFormBuyerId)
     {
@@ -151,7 +151,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param ArrayOfPostbuyformsellersstruct $postBuyFormSellers
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormSellers($postBuyFormSellers)
     {
@@ -169,7 +169,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param float $postBuyFormTotalAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormTotalAmount($postBuyFormTotalAmount)
     {
@@ -187,7 +187,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param int $postBuyFormInvoiceOption
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormInvoiceOption($postBuyFormInvoiceOption)
     {
@@ -205,7 +205,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param PostBuyFormAddressStruct $postBuyFormInvoiceData
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormInvoiceData($postBuyFormInvoiceData)
     {
@@ -223,7 +223,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param PostBuyFormAddressStruct $postBuyFormShipmentAddress
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormShipmentAddress($postBuyFormShipmentAddress)
     {
@@ -241,7 +241,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param string $postBuyFormPayType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormPayType($postBuyFormPayType)
     {
@@ -259,7 +259,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param int $postBuyFormPayId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormPayId($postBuyFormPayId)
     {
@@ -277,7 +277,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param string $postBuyFormPayStatus
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormPayStatus($postBuyFormPayStatus)
     {
@@ -295,7 +295,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param string $postBuyFormDateInit
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormDateInit($postBuyFormDateInit)
     {
@@ -313,7 +313,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param string $postBuyFormDateRecv
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormDateRecv($postBuyFormDateRecv)
     {
@@ -331,7 +331,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param string $postBuyFormDateCancel
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormDateCancel($postBuyFormDateCancel)
     {
@@ -349,7 +349,7 @@ class PostBuyFormForBuyersDataStruct
 
     /**
      * @param float $postBuyFormPaymentAmount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormForBuyersDataStruct
      */
     public function setPostBuyFormPaymentAmount($postBuyFormPaymentAmount)
     {

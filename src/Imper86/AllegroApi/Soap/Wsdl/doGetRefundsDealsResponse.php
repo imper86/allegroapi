@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doGetRefundsDealsResponse
 {
@@ -42,7 +42,7 @@ class doGetRefundsDealsResponse
 
     /**
      * @param int $dealsCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetRefundsDealsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetRefundsDealsResponse
      */
     public function setDealsCount($dealsCount)
     {
@@ -60,7 +60,7 @@ class doGetRefundsDealsResponse
 
     /**
      * @param ArrayOfRefundsdealslisttype $dealsList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetRefundsDealsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetRefundsDealsResponse
      */
     public function setDealsList($dealsList)
     {
@@ -78,7 +78,7 @@ class doGetRefundsDealsResponse
 
     /**
      * @param ArrayOfFilterslisttype $filtersList
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doGetRefundsDealsResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doGetRefundsDealsResponse
      */
     public function setFiltersList($filtersList)
     {

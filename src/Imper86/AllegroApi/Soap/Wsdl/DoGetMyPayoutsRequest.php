@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetMyPayoutsRequest
 {
@@ -56,7 +56,7 @@ class DoGetMyPayoutsRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -74,7 +74,7 @@ class DoGetMyPayoutsRequest
 
     /**
      * @param int $transCreateDateFrom
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
      */
     public function setTransCreateDateFrom($transCreateDateFrom)
     {
@@ -92,7 +92,7 @@ class DoGetMyPayoutsRequest
 
     /**
      * @param int $transCreateDateTo
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
      */
     public function setTransCreateDateTo($transCreateDateTo)
     {
@@ -110,7 +110,7 @@ class DoGetMyPayoutsRequest
 
     /**
      * @param int $transPageLimit
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
      */
     public function setTransPageLimit($transPageLimit)
     {
@@ -128,7 +128,7 @@ class DoGetMyPayoutsRequest
 
     /**
      * @param int $transOffset
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetMyPayoutsRequest
      */
     public function setTransOffset($transOffset)
     {

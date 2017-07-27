@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class PaymentsPayoutStruct
 {
@@ -35,7 +35,7 @@ class PaymentsPayoutStruct
 
     /**
      * @param int $payoutType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsPayoutStruct
      */
     public function setPayoutType($payoutType)
     {
@@ -53,7 +53,7 @@ class PaymentsPayoutStruct
 
     /**
      * @param PayoutAutoSettingsStruct $payoutAutoSettings
-     * @return \Imper69\AllegroApi\Soap\Wsdl\PaymentsPayoutStruct
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PaymentsPayoutStruct
      */
     public function setPayoutAutoSettings($payoutAutoSettings)
     {

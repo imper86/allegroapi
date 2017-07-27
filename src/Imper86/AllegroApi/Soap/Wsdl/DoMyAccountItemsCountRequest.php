@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoMyAccountItemsCountRequest
 {
@@ -42,7 +42,7 @@ class DoMyAccountItemsCountRequest
 
     /**
      * @param string $sessionHandle
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccountItemsCountRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccountItemsCountRequest
      */
     public function setSessionHandle($sessionHandle)
     {
@@ -60,7 +60,7 @@ class DoMyAccountItemsCountRequest
 
     /**
      * @param string $accountType
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccountItemsCountRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccountItemsCountRequest
      */
     public function setAccountType($accountType)
     {
@@ -78,7 +78,7 @@ class DoMyAccountItemsCountRequest
 
     /**
      * @param ArrayOfLong $itemsArray
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoMyAccountItemsCountRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoMyAccountItemsCountRequest
      */
     public function setItemsArray($itemsArray)
     {

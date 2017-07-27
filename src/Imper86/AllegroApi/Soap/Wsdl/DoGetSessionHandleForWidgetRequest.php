@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class DoGetSessionHandleForWidgetRequest
 {
@@ -35,7 +35,7 @@ class DoGetSessionHandleForWidgetRequest
 
     /**
      * @param string $webapiKey
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSessionHandleForWidgetRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSessionHandleForWidgetRequest
      */
     public function setWebapiKey($webapiKey)
     {
@@ -53,7 +53,7 @@ class DoGetSessionHandleForWidgetRequest
 
     /**
      * @param int $countryCode
-     * @return \Imper69\AllegroApi\Soap\Wsdl\DoGetSessionHandleForWidgetRequest
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetSessionHandleForWidgetRequest
      */
     public function setCountryCode($countryCode)
     {

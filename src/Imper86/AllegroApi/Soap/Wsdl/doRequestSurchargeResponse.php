@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class doRequestSurchargeResponse
 {
@@ -28,7 +28,7 @@ class doRequestSurchargeResponse
 
     /**
      * @param int $surchargeResult
-     * @return \Imper69\AllegroApi\Soap\Wsdl\doRequestSurchargeResponse
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doRequestSurchargeResponse
      */
     public function setSurchargeResult($surchargeResult)
     {

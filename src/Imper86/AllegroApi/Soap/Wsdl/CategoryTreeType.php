@@ -1,6 +1,6 @@
 <?php
 
-namespace Imper69\AllegroApi\Soap\Wsdl;
+namespace Imper86\AllegroApi\Soap\Wsdl;
 
 class CategoryTreeType
 {
@@ -49,7 +49,7 @@ class CategoryTreeType
 
     /**
      * @param int $categoryId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryTreeType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryTreeType
      */
     public function setCategoryId($categoryId)
     {
@@ -67,7 +67,7 @@ class CategoryTreeType
 
     /**
      * @param string $categoryName
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryTreeType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryTreeType
      */
     public function setCategoryName($categoryName)
     {
@@ -85,7 +85,7 @@ class CategoryTreeType
 
     /**
      * @param int $categoryParentId
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryTreeType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryTreeType
      */
     public function setCategoryParentId($categoryParentId)
     {
@@ -103,7 +103,7 @@ class CategoryTreeType
 
     /**
      * @param int $categoryItemsCount
-     * @return \Imper69\AllegroApi\Soap\Wsdl\CategoryTreeType
+     * @return \Imper86\AllegroApi\Soap\Wsdl\CategoryTreeType
      */
     public function setCategoryItemsCount($categoryItemsCount)
     {
