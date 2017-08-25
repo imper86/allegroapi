@@ -10,10 +10,12 @@ class ArrayOfFieldsvalue implements \ArrayAccess, \Iterator, \Countable
      */
     protected $item = null;
 
-    
-    public function __construct()
+    /**
+     * @param FieldsValue[] $item
+     */
+    public function __construct(array $item = [])
     {
-    
+        $this->item = $item;
     }
 
     /**
