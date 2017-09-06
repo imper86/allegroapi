@@ -1,5 +1,5 @@
 {
-    "name": "marrek13/allegroapi",
+    "name": "imper86/allegroapi",
     "description": "library making allegro rest and soap api using easier",
     "type": "library",
     "require": {
@@ -16,10 +16,6 @@
         {
             "name": "imper",
             "email": "me@imper.info"
-        },
-        {
-            "name": "Mariusz Sołtysiak",
-            "email": "marrek13@gmail.com"
         }
     ],
     "minimum-stability": "stable",
