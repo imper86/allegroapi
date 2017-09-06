@@ -201,6 +201,11 @@ class ItemInfo
     protected $itIsFulfillmentTimeActive = null;
 
     /**
+     * @var string $itEan
+     */
+    protected $itEan = null;
+
+    /**
      * @param int $itId
      * @param int $itCountry
      * @param string $itName
@@ -975,6 +980,24 @@ class ItemInfo
     public function setItIsFulfillmentTimeActive($itIsFulfillmentTimeActive)
     {
       $this->itIsFulfillmentTimeActive = $itIsFulfillmentTimeActive;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItEan()
+    {
+      return $this->itEan;
+    }
+
+    /**
+     * @param string $itEan
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfo
+     */
+    public function setItEan($itEan)
+    {
+      $this->itEan = $itEan;
       return $this;
     }
 

@@ -8,19 +8,10 @@
 namespace Imper86\AllegroApi\Rest\Model\AfterSalesServiceConditions;
 
 
-use Imper86\AllegroApi\Rest\Model\Http\ResponseInterface;
-
-class ImpliedWarrantiesResponse
-    extends AbstractAfterSalesServiceConditionsResponse
-    implements ResponseInterface, AfterSalesServiceConditionsResponseInterface
+class ImpliedWarrantiesResponse extends AbstractAfterSalesServiceConditionsResponse
 {
     public function getConditionsArray(): array
     {
         return $this->getRaw()->impliedWarranties;
-    }
-
-    public function getCount(): int
-    {
-        return (int)$this->getRaw()->count;
     }
 }

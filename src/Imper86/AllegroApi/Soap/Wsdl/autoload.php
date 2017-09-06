@@ -1,7 +1,7 @@
 <?php
 
 
- function autoload_317dfb77a4ae2b709e54707ee54d8470($class)
+ function autoload_6bdc701999e8fe3f8835771f2e0b1d92($class)
 {
     $classes = array(
         'Imper86\AllegroApi\Soap\Wsdl\ServiceService' => __DIR__ .'/ServiceService.php',
@@ -533,7 +533,7 @@
     };
 }
 
-spl_autoload_register('autoload_317dfb77a4ae2b709e54707ee54d8470');
+spl_autoload_register('autoload_6bdc701999e8fe3f8835771f2e0b1d92');
 
 // Do nothing. The rest is just leftovers from the code generation.
 {

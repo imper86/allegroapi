@@ -18,6 +18,15 @@ class SoapService extends ServiceService
         parent::__construct($options, $wsdl);
     }
 
+    public function getSimpleSoapClient(): \SoapClient
+    {
+        if (null === $this->simpleSoapClient) {
+            $this->simpleSoapClient = new \SoapClient('https://webapi.allegro.pl/service.php?wsdl', ['trace' => 1]);
+        }
+
+        return $this->simpleSoapClient;
+    }
+
     public function __soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null)
     {
         try {

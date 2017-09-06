@@ -51,6 +51,11 @@ class DoShowItemInfoExtRequest
     protected $getAfterSalesServiceConditions = null;
 
     /**
+     * @var int $getEan
+     */
+    protected $getEan = null;
+
+    /**
      * @param string $sessionHandle
      * @param int $itemId
      * @param int $getDesc
@@ -60,8 +65,9 @@ class DoShowItemInfoExtRequest
      * @param int $getCompanyInfo
      * @param int $getProductInfo
      * @param int $getAfterSalesServiceConditions
+     * @param int $getEan
      */
-    public function __construct($sessionHandle = null, $itemId = null, $getDesc = null, $getImageUrl = null, $getAttribs = null, $getPostageOptions = null, $getCompanyInfo = null, $getProductInfo = null, $getAfterSalesServiceConditions = null)
+    public function __construct($sessionHandle = null, $itemId = null, $getDesc = null, $getImageUrl = null, $getAttribs = null, $getPostageOptions = null, $getCompanyInfo = null, $getProductInfo = null, $getAfterSalesServiceConditions = null, $getEan = null)
     {
       $this->sessionHandle = $sessionHandle;
       $this->itemId = $itemId;
@@ -72,6 +78,7 @@ class DoShowItemInfoExtRequest
       $this->getCompanyInfo = $getCompanyInfo;
       $this->getProductInfo = $getProductInfo;
       $this->getAfterSalesServiceConditions = $getAfterSalesServiceConditions;
+      $this->getEan = $getEan;
     }
 
     /**
@@ -233,6 +240,24 @@ class DoShowItemInfoExtRequest
     public function setGetAfterSalesServiceConditions($getAfterSalesServiceConditions)
     {
       $this->getAfterSalesServiceConditions = $getAfterSalesServiceConditions;
+      return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getGetEan()
+    {
+      return $this->getEan;
+    }
+
+    /**
+     * @param int $getEan
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest
+     */
+    public function setGetEan($getEan)
+    {
+      $this->getEan = $getEan;
       return $this;
     }
 
