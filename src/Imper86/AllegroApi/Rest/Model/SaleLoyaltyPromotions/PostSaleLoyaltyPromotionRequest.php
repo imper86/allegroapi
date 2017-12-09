@@ -8,7 +8,6 @@
 namespace Imper86\AllegroApi\Rest\Model\SaleLoyaltyPromotions;
 
 
-use Imper86\AllegroApi\CredentialsInterface;
 use Imper86\AllegroApi\Rest\Model\Http\RequestInterface;
 use Imper86\AllegroApi\Rest\Model\SaleLoyaltyPromotions\Exception\NegativeDiscountException;
 use Imper86\AllegroApi\Rest\Model\SaleLoyaltyPromotions\Exception\TooFewOffersException;
@@ -16,10 +15,6 @@ use Imper86\AllegroApi\Rest\Model\SaleLoyaltyPromotions\Post\OfferCollection;
 
 class PostSaleLoyaltyPromotionRequest implements RequestInterface
 {
-    /**
-     * @var CredentialsInterface
-     */
-    private $credentials;
     /**
      * @var float
      */
@@ -29,9 +24,8 @@ class PostSaleLoyaltyPromotionRequest implements RequestInterface
      */
     private $offerCollection;
 
-    public function __construct(CredentialsInterface $credentials, float $discountAmount, OfferCollection $offerCollection)
+    public function __construct(float $discountAmount, OfferCollection $offerCollection)
     {
-        $this->credentials = $credentials;
         $this->discountAmount = $discountAmount;
         $this->offerCollection = $offerCollection;
 

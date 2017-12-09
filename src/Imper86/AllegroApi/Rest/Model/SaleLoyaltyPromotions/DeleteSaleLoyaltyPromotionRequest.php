@@ -8,23 +8,17 @@
 namespace Imper86\AllegroApi\Rest\Model\SaleLoyaltyPromotions;
 
 
-use Imper86\AllegroApi\CredentialsInterface;
 use Imper86\AllegroApi\Rest\Model\Http\RequestInterface;
 
 class DeleteSaleLoyaltyPromotionRequest implements RequestInterface
 {
     /**
-     * @var CredentialsInterface
-     */
-    private $credentials;
-    /**
      * @var string
      */
     private $promotionId;
 
-    public function __construct(CredentialsInterface $credentials, string $promotionId)
+    public function __construct(string $promotionId)
     {
-        $this->credentials = $credentials;
         $this->promotionId = $promotionId;
     }
 
