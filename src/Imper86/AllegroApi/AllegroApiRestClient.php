@@ -20,6 +20,8 @@ use Imper86\AllegroApi\Rest\Service\HttpClient\HttpClientService;
 use Imper86\AllegroApi\Rest\Service\HttpClient\HttpClientServiceInterface;
 use Imper86\AllegroApi\Rest\Service\Ratings\SellersRatingsService;
 use Imper86\AllegroApi\Rest\Service\Ratings\SellersRatingsServiceInterface;
+use Imper86\AllegroApi\Rest\Service\SaleLoyaltyPromotions\SaleLoyaltyPromotionsServiceInterface;
+use Imper86\AllegroApi\Rest\Service\SaleLoyaltyPromotions\SaleLoyaltyPromotionsService;
 use Imper86\Curl\CurlClient;
 use Imper86\Curl\CurlClientInterface;
 
@@ -59,6 +61,11 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
      * @var SellersRatingsServiceInterface
      */
     private $sellersRatingsService;
+
+    /**
+     * @var SaleLoyaltyPromotionsServiceInterface
+     */
+    private $saleLoyaltyPromotionsService;
 
 
     public function __construct(CredentialsInterface $credentials, TokenInterface $token = null)
@@ -137,5 +144,12 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
         return $this->sellersRatingsService;
     }
 
+    public function getSaleLoyaltyPromotionsService(): SaleLoyaltyPromotionsServiceInterface
+    {
+        if (is_null($this->saleLoyaltyPromotionsService)) {
+            $this->saleLoyaltyPromotionsService = new SaleLoyaltyPromotionsService($this->getHttpClient());
+        }
 
+        return $this->saleLoyaltyPromotionsService;
+    }
 }
