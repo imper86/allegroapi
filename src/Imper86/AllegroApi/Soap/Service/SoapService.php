@@ -15,7 +15,10 @@ class SoapService extends ServiceService
 {
     public function __construct()
     {
-        parent::__construct(['trace' => true]);
+        $options['trace'] = true;
+//        $options['classmap']['ArrayOfLong'] = ArrayOfLong::class;
+
+        parent::__construct($options);
     }
 
     public function __soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null)
