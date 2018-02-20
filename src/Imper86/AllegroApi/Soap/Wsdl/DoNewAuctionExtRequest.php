@@ -46,6 +46,11 @@ class DoNewAuctionExtRequest
     protected $afterSalesServiceConditions = null;
 
     /**
+     * @var string $additionalServicesGroup
+     */
+    protected $additionalServicesGroup = null;
+
+    /**
      * @param string $sessionHandle
      * @param ArrayOfFieldsvalue $fields
      * @param int $itemTemplateId
@@ -54,8 +59,9 @@ class DoNewAuctionExtRequest
      * @param ArrayOfVariantstruct $variants
      * @param ArrayOfTagnamestruct $tags
      * @param AfterSalesServiceConditionsStruct $afterSalesServiceConditions
+     * @param string $additionalServicesGroup
      */
-    public function __construct($sessionHandle = null, $fields = null, $itemTemplateId = null, $localId = null, $itemTemplateCreate = null, $variants = null, $tags = null, $afterSalesServiceConditions = null)
+    public function __construct($sessionHandle = null, $fields = null, $itemTemplateId = null, $localId = null, $itemTemplateCreate = null, $variants = null, $tags = null, $afterSalesServiceConditions = null, $additionalServicesGroup = null)
     {
       $this->sessionHandle = $sessionHandle;
       $this->fields = $fields;
@@ -65,6 +71,7 @@ class DoNewAuctionExtRequest
       $this->variants = $variants;
       $this->tags = $tags;
       $this->afterSalesServiceConditions = $afterSalesServiceConditions;
+      $this->additionalServicesGroup = $additionalServicesGroup;
     }
 
     /**
@@ -208,6 +215,24 @@ class DoNewAuctionExtRequest
     public function setAfterSalesServiceConditions($afterSalesServiceConditions)
     {
       $this->afterSalesServiceConditions = $afterSalesServiceConditions;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAdditionalServicesGroup()
+    {
+      return $this->additionalServicesGroup;
+    }
+
+    /**
+     * @param string $additionalServicesGroup
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoNewAuctionExtRequest
+     */
+    public function setAdditionalServicesGroup($additionalServicesGroup)
+    {
+      $this->additionalServicesGroup = $additionalServicesGroup;
       return $this;
     }
 

@@ -46,6 +46,11 @@ class DoChangeItemFieldsRequest
     protected $afterSalesServiceConditions = null;
 
     /**
+     * @var string $additionalServicesGroup
+     */
+    protected $additionalServicesGroup = null;
+
+    /**
      * @param string $sessionId
      * @param int $itemId
      * @param ArrayOfFieldsvalue $fieldsToModify
@@ -54,8 +59,9 @@ class DoChangeItemFieldsRequest
      * @param ArrayOfVariantstruct $variants
      * @param ArrayOfTagnamestruct $tags
      * @param AfterSalesServiceConditionsStruct $afterSalesServiceConditions
+     * @param string $additionalServicesGroup
      */
-    public function __construct($sessionId = null, $itemId = null, $fieldsToModify = null, $fieldsToRemove = null, $previewOnly = null, $variants = null, $tags = null, $afterSalesServiceConditions = null)
+    public function __construct($sessionId = null, $itemId = null, $fieldsToModify = null, $fieldsToRemove = null, $previewOnly = null, $variants = null, $tags = null, $afterSalesServiceConditions = null, $additionalServicesGroup = null)
     {
       $this->sessionId = $sessionId;
       $this->itemId = $itemId;
@@ -65,6 +71,7 @@ class DoChangeItemFieldsRequest
       $this->variants = $variants;
       $this->tags = $tags;
       $this->afterSalesServiceConditions = $afterSalesServiceConditions;
+      $this->additionalServicesGroup = $additionalServicesGroup;
     }
 
     /**
@@ -208,6 +215,24 @@ class DoChangeItemFieldsRequest
     public function setAfterSalesServiceConditions($afterSalesServiceConditions)
     {
       $this->afterSalesServiceConditions = $afterSalesServiceConditions;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAdditionalServicesGroup()
+    {
+      return $this->additionalServicesGroup;
+    }
+
+    /**
+     * @param string $additionalServicesGroup
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangeItemFieldsRequest
+     */
+    public function setAdditionalServicesGroup($additionalServicesGroup)
+    {
+      $this->additionalServicesGroup = $additionalServicesGroup;
       return $this;
     }
 

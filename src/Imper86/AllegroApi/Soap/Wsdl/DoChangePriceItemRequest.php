@@ -31,19 +31,26 @@ class DoChangePriceItemRequest
     protected $newBuyNowPrice = null;
 
     /**
+     * @var float $newAdvertisementPrice
+     */
+    protected $newAdvertisementPrice = null;
+
+    /**
      * @param string $sessionHandle
      * @param int $itemId
      * @param float $newStartingPrice
      * @param float $newReservePrice
      * @param float $newBuyNowPrice
+     * @param float $newAdvertisementPrice
      */
-    public function __construct($sessionHandle = null, $itemId = null, $newStartingPrice = null, $newReservePrice = null, $newBuyNowPrice = null)
+    public function __construct($sessionHandle = null, $itemId = null, $newStartingPrice = null, $newReservePrice = null, $newBuyNowPrice = null, $newAdvertisementPrice = null)
     {
       $this->sessionHandle = $sessionHandle;
       $this->itemId = $itemId;
       $this->newStartingPrice = $newStartingPrice;
       $this->newReservePrice = $newReservePrice;
       $this->newBuyNowPrice = $newBuyNowPrice;
+      $this->newAdvertisementPrice = $newAdvertisementPrice;
     }
 
     /**
@@ -133,6 +140,24 @@ class DoChangePriceItemRequest
     public function setNewBuyNowPrice($newBuyNowPrice)
     {
       $this->newBuyNowPrice = $newBuyNowPrice;
+      return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getNewAdvertisementPrice()
+    {
+      return $this->newAdvertisementPrice;
+    }
+
+    /**
+     * @param float $newAdvertisementPrice
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoChangePriceItemRequest
+     */
+    public function setNewAdvertisementPrice($newAdvertisementPrice)
+    {
+      $this->newAdvertisementPrice = $newAdvertisementPrice;
       return $this;
     }
 

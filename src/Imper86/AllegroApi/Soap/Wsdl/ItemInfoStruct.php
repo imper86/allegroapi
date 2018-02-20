@@ -51,6 +51,11 @@ class ItemInfoStruct
     protected $itemAfterSalesServiceConditions = null;
 
     /**
+     * @var string $itemAdditionalServicesGroup
+     */
+    protected $itemAdditionalServicesGroup = null;
+
+    /**
      * @param ItemInfo $itemInfo
      * @param ItemPaymentOptions $itemPaymentOptions
      * @param CompanyInfoStruct $itemCompanyInfo
@@ -223,6 +228,24 @@ class ItemInfoStruct
     public function setItemAfterSalesServiceConditions($itemAfterSalesServiceConditions)
     {
       $this->itemAfterSalesServiceConditions = $itemAfterSalesServiceConditions;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemAdditionalServicesGroup()
+    {
+      return $this->itemAdditionalServicesGroup;
+    }
+
+    /**
+     * @param string $itemAdditionalServicesGroup
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoStruct
+     */
+    public function setItemAdditionalServicesGroup($itemAdditionalServicesGroup)
+    {
+      $this->itemAdditionalServicesGroup = $itemAdditionalServicesGroup;
       return $this;
     }
 

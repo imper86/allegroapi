@@ -91,6 +91,16 @@ class ItemInfoExt
     protected $itBuyNowActive = null;
 
     /**
+     * @var float $itAdvertisementPrice
+     */
+    protected $itAdvertisementPrice = null;
+
+    /**
+     * @var int $itAdvertisementActive
+     */
+    protected $itAdvertisementActive = null;
+
+    /**
      * @var int $itHighBidder
      */
     protected $itHighBidder = null;
@@ -161,6 +171,16 @@ class ItemInfoExt
     protected $itVatInvoice = null;
 
     /**
+     * @var int $itVatMarginInvoice
+     */
+    protected $itVatMarginInvoice = null;
+
+    /**
+     * @var int $itWithoutVatInvoice
+     */
+    protected $itWithoutVatInvoice = null;
+
+    /**
      * @var string $itBankAccount1
      */
     protected $itBankAccount1 = null;
@@ -221,6 +241,11 @@ class ItemInfoExt
     protected $itEan = null;
 
     /**
+     * @var string $itContact
+     */
+    protected $itContact = null;
+
+    /**
      * @param int $itId
      * @param int $itCountry
      * @param string $itName
@@ -251,6 +276,8 @@ class ItemInfoExt
      * @param int $itHitCount
      * @param string $itPostcode
      * @param int $itVatInvoice
+     * @param int $itVatMarginInvoice
+     * @param int $itWithoutVatInvoice
      * @param string $itBankAccount1
      * @param string $itBankAccount2
      * @param int $itStartingQuantity
@@ -261,7 +288,7 @@ class ItemInfoExt
      * @param int $itIsAllegroStandard
      * @param int $itIsNewUsed
      */
-    public function __construct($itId = null, $itCountry = null, $itName = null, $itPrice = null, $itBidCount = null, $itEndingTime = null, $itSellerId = null, $itSellerLogin = null, $itSellerRating = null, $itStartingTime = null, $itStartingPrice = null, $itQuantity = null, $itFotoCount = null, $itReservePrice = null, $itLocation = null, $itBuyNowPrice = null, $itBuyNowActive = null, $itHighBidder = null, $itHighBidderLogin = null, $itDescription = null, $itOptions = null, $itState = null, $itWireTransfer = null, $itPostDelivery = null, $itPostInfo = null, $itQuantityType = null, $itIsEco = null, $itHitCount = null, $itPostcode = null, $itVatInvoice = null, $itBankAccount1 = null, $itBankAccount2 = null, $itStartingQuantity = null, $itIsForGuests = null, $itHasProduct = null, $itOrderFulfillmentTime = null, $itEndingInfo = null, $itIsAllegroStandard = null, $itIsNewUsed = null)
+    public function __construct($itId = null, $itCountry = null, $itName = null, $itPrice = null, $itBidCount = null, $itEndingTime = null, $itSellerId = null, $itSellerLogin = null, $itSellerRating = null, $itStartingTime = null, $itStartingPrice = null, $itQuantity = null, $itFotoCount = null, $itReservePrice = null, $itLocation = null, $itBuyNowPrice = null, $itBuyNowActive = null, $itHighBidder = null, $itHighBidderLogin = null, $itDescription = null, $itOptions = null, $itState = null, $itWireTransfer = null, $itPostDelivery = null, $itPostInfo = null, $itQuantityType = null, $itIsEco = null, $itHitCount = null, $itPostcode = null, $itVatInvoice = null, $itVatMarginInvoice = null, $itWithoutVatInvoice = null, $itBankAccount1 = null, $itBankAccount2 = null, $itStartingQuantity = null, $itIsForGuests = null, $itHasProduct = null, $itOrderFulfillmentTime = null, $itEndingInfo = null, $itIsAllegroStandard = null, $itIsNewUsed = null)
     {
       $this->itId = $itId;
       $this->itCountry = $itCountry;
@@ -293,6 +320,8 @@ class ItemInfoExt
       $this->itHitCount = $itHitCount;
       $this->itPostcode = $itPostcode;
       $this->itVatInvoice = $itVatInvoice;
+      $this->itVatMarginInvoice = $itVatMarginInvoice;
+      $this->itWithoutVatInvoice = $itWithoutVatInvoice;
       $this->itBankAccount1 = $itBankAccount1;
       $this->itBankAccount2 = $itBankAccount2;
       $this->itStartingQuantity = $itStartingQuantity;
@@ -611,6 +640,42 @@ class ItemInfoExt
     }
 
     /**
+     * @return float
+     */
+    public function getItAdvertisementPrice()
+    {
+      return $this->itAdvertisementPrice;
+    }
+
+    /**
+     * @param float $itAdvertisementPrice
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItAdvertisementPrice($itAdvertisementPrice)
+    {
+      $this->itAdvertisementPrice = $itAdvertisementPrice;
+      return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getItAdvertisementActive()
+    {
+      return $this->itAdvertisementActive;
+    }
+
+    /**
+     * @param int $itAdvertisementActive
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItAdvertisementActive($itAdvertisementActive)
+    {
+      $this->itAdvertisementActive = $itAdvertisementActive;
+      return $this;
+    }
+
+    /**
      * @return int
      */
     public function getItHighBidder()
@@ -863,6 +928,42 @@ class ItemInfoExt
     }
 
     /**
+     * @return int
+     */
+    public function getItVatMarginInvoice()
+    {
+      return $this->itVatMarginInvoice;
+    }
+
+    /**
+     * @param int $itVatMarginInvoice
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItVatMarginInvoice($itVatMarginInvoice)
+    {
+      $this->itVatMarginInvoice = $itVatMarginInvoice;
+      return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getItWithoutVatInvoice()
+    {
+      return $this->itWithoutVatInvoice;
+    }
+
+    /**
+     * @param int $itWithoutVatInvoice
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItWithoutVatInvoice($itWithoutVatInvoice)
+    {
+      $this->itWithoutVatInvoice = $itWithoutVatInvoice;
+      return $this;
+    }
+
+    /**
      * @return string
      */
     public function getItBankAccount1()
@@ -1075,6 +1176,24 @@ class ItemInfoExt
     public function setItEan($itEan)
     {
       $this->itEan = $itEan;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItContact()
+    {
+      return $this->itContact;
+    }
+
+    /**
+     * @param string $itContact
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItContact($itContact)
+    {
+      $this->itContact = $itContact;
       return $this;
     }
 

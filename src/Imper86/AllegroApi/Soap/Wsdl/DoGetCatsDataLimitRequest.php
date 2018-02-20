@@ -31,19 +31,26 @@ class DoGetCatsDataLimitRequest
     protected $packageElement = null;
 
     /**
+     * @var boolean $onlyLeaf
+     */
+    protected $onlyLeaf = null;
+
+    /**
      * @param int $countryId
      * @param int $localVersion
      * @param string $webapiKey
      * @param int $offset
      * @param int $packageElement
+     * @param boolean $onlyLeaf
      */
-    public function __construct($countryId = null, $localVersion = null, $webapiKey = null, $offset = null, $packageElement = null)
+    public function __construct($countryId = null, $localVersion = null, $webapiKey = null, $offset = null, $packageElement = null, $onlyLeaf = null)
     {
       $this->countryId = $countryId;
       $this->localVersion = $localVersion;
       $this->webapiKey = $webapiKey;
       $this->offset = $offset;
       $this->packageElement = $packageElement;
+      $this->onlyLeaf = $onlyLeaf;
     }
 
     /**
@@ -133,6 +140,24 @@ class DoGetCatsDataLimitRequest
     public function setPackageElement($packageElement)
     {
       $this->packageElement = $packageElement;
+      return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getOnlyLeaf()
+    {
+      return $this->onlyLeaf;
+    }
+
+    /**
+     * @param boolean $onlyLeaf
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetCatsDataLimitRequest
+     */
+    public function setOnlyLeaf($onlyLeaf)
+    {
+      $this->onlyLeaf = $onlyLeaf;
       return $this;
     }
 

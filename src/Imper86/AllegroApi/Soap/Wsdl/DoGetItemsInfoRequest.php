@@ -56,6 +56,11 @@ class DoGetItemsInfoRequest
     protected $getEan = null;
 
     /**
+     * @var int $getAdditionalServicesGroup
+     */
+    protected $getAdditionalServicesGroup = null;
+
+    /**
      * @param string $sessionHandle
      * @param ArrayOfLong $itemsIdArray
      * @param int $getDesc
@@ -66,8 +71,9 @@ class DoGetItemsInfoRequest
      * @param int $getProductInfo
      * @param int $getAfterSalesServiceConditions
      * @param int $getEan
+     * @param int $getAdditionalServicesGroup
      */
-    public function __construct($sessionHandle = null, $itemsIdArray = null, $getDesc = null, $getImageUrl = null, $getAttribs = null, $getPostageOptions = null, $getCompanyInfo = null, $getProductInfo = null, $getAfterSalesServiceConditions = null, $getEan = null)
+    public function __construct($sessionHandle = null, $itemsIdArray = null, $getDesc = null, $getImageUrl = null, $getAttribs = null, $getPostageOptions = null, $getCompanyInfo = null, $getProductInfo = null, $getAfterSalesServiceConditions = null, $getEan = null, $getAdditionalServicesGroup = null)
     {
       $this->sessionHandle = $sessionHandle;
       $this->itemsIdArray = $itemsIdArray;
@@ -79,6 +85,7 @@ class DoGetItemsInfoRequest
       $this->getProductInfo = $getProductInfo;
       $this->getAfterSalesServiceConditions = $getAfterSalesServiceConditions;
       $this->getEan = $getEan;
+      $this->getAdditionalServicesGroup = $getAdditionalServicesGroup;
     }
 
     /**
@@ -258,6 +265,24 @@ class DoGetItemsInfoRequest
     public function setGetEan($getEan)
     {
       $this->getEan = $getEan;
+      return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getGetAdditionalServicesGroup()
+    {
+      return $this->getAdditionalServicesGroup;
+    }
+
+    /**
+     * @param int $getAdditionalServicesGroup
+     * @return \Imper86\AllegroApi\Soap\Wsdl\DoGetItemsInfoRequest
+     */
+    public function setGetAdditionalServicesGroup($getAdditionalServicesGroup)
+    {
+      $this->getAdditionalServicesGroup = $getAdditionalServicesGroup;
       return $this;
     }
 
