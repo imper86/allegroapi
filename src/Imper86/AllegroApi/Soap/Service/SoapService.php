@@ -16,6 +16,7 @@ class SoapService extends ServiceService
     public function __construct()
     {
         $options['trace'] = true;
+        $options['keep_alive'] = false;
 //        $options['classmap']['ArrayOfLong'] = ArrayOfLong::class;
 
         parent::__construct($options);
