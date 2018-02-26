@@ -16,7 +16,7 @@ use Imper86\Curl\CurlClient;
 
 class AuthService implements AuthServiceInterface
 {
-    const ALLEGRO_OAUTH_URL = 'https://ssl.allegro.pl/auth/oauth';
+    const ALLEGRO_OAUTH_URL = 'https://allegro.pl/auth/oauth';
 
     /**
      * @var CredentialsInterface

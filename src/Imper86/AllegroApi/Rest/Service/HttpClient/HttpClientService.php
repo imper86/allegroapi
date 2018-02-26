@@ -34,7 +34,7 @@ class HttpClientService implements HttpClientServiceInterface
 
     public function __construct(CurlClientInterface $curlClient, TokenInterface $token, CredentialsInterface $credentials)
     {
-        $curlClient->setBaseUrl('https://allegroapi.io');
+        $curlClient->setBaseUrl('https://api.allegro.pl');
         $curlClient->setHeader('Authorization', "Bearer {$token->getAccessToken()}");
         $curlClient->setHeader('Api-Key', $credentials->getAllegroApiRestApiKey());
 
