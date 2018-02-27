@@ -8,22 +8,13 @@
 namespace Imper86\AllegroApi;
 
 
-use Imper86\AllegroApi\Rest\Exception\NoTokenException;
+use GuzzleHttp\Client;
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
-use Imper86\AllegroApi\Rest\Service\AfterSalesServiceConditons\AfterSalesServicesConditionsService;
-use Imper86\AllegroApi\Rest\Service\AfterSalesServiceConditons\AfterSalesServicesConditionsServiceInterface;
 use Imper86\AllegroApi\Rest\Service\Auth\AuthService;
 use Imper86\AllegroApi\Rest\Service\Auth\AuthServiceInterface;
-use Imper86\AllegroApi\Rest\Service\ChangePrice\ChangePriceService;
-use Imper86\AllegroApi\Rest\Service\ChangePrice\ChangePriceServiceInterface;
-use Imper86\AllegroApi\Rest\Service\HttpClient\HttpClientService;
-use Imper86\AllegroApi\Rest\Service\HttpClient\HttpClientServiceInterface;
-use Imper86\AllegroApi\Rest\Service\Ratings\SellersRatingsService;
-use Imper86\AllegroApi\Rest\Service\Ratings\SellersRatingsServiceInterface;
-use Imper86\AllegroApi\Rest\Service\SaleLoyaltyPromotions\SaleLoyaltyPromotionsServiceInterface;
-use Imper86\AllegroApi\Rest\Service\SaleLoyaltyPromotions\SaleLoyaltyPromotionsService;
 use Imper86\Curl\CurlClient;
 use Imper86\Curl\CurlClientInterface;
+use Psr\Http\Message\ResponseInterface;
 
 class AllegroApiRestClient implements AllegroApiRestClientInterface
 {
@@ -31,65 +22,18 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
      * @var CredentialsInterface
      */
     private $credentials;
-
-    /**
-     * @var TokenInterface
-     */
-    private $token;
-
-    /**
-     * @var HttpClientServiceInterface
-     */
-    private $httpClient;
-
     /**
      * @var AuthServiceInterface
      */
     private $authService;
-
     /**
-     * @var ChangePriceServiceInterface
+     * @var Client
      */
-    private $changePriceService;
+    private $httpClient;
 
-    /**
-     * @var AfterSalesServicesConditionsServiceInterface
-     */
-    private $afterSalesServiceConditionsService;
-
-    /**
-     * @var SellersRatingsServiceInterface
-     */
-    private $sellersRatingsService;
-
-    /**
-     * @var SaleLoyaltyPromotionsServiceInterface
-     */
-    private $saleLoyaltyPromotionsService;
-
-
-    public function __construct(CredentialsInterface $credentials, TokenInterface $token = null)
+    public function __construct(CredentialsInterface $credentials)
     {
         $this->credentials = $credentials;
-        $this->token = $token;
-    }
-
-    public function getToken(): ?TokenInterface
-    {
-        return $this->token;
-    }
-
-    public function setToken(TokenInterface $token)
-    {
-        $this->token = $token;
-    }
-
-    public function refreshToken()
-    {
-        if (empty($this->token)) throw new NoTokenException();
-
-        $newToken = $this->getAuthService()->refreshToken($this->token);
-        $this->token = $newToken;
     }
 
     private function getCurlClient(): CurlClientInterface
@@ -97,12 +41,12 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
         return new CurlClient();
     }
 
-    private function getHttpClient(): HttpClientServiceInterface
+    private function getHttpClient(): Client
     {
-        if (empty($this->token)) throw new NoTokenException();
-
-        if (is_null($this->httpClient)) {
-            $this->httpClient = new HttpClientService($this->getCurlClient(), $this->token, $this->credentials);
+        if (null === $this->httpClient) {
+            $this->httpClient = new Client([
+                'base_uri' => 'https://api.allegro.pl',
+            ]);
         }
 
         return $this->httpClient;
@@ -117,39 +61,69 @@ class AllegroApiRestClient implements AllegroApiRestClientInterface
         return $this->authService;
     }
 
-    public function getChangePriceService(): ChangePriceServiceInterface
+    public function get(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface
     {
-        if (is_null($this->changePriceService)) {
-            $this->changePriceService = new ChangePriceService($this->getHttpClient());
-        }
+        $httpClient = $this->getHttpClient();
 
-        return $this->changePriceService;
+        return $httpClient->get($this->prepareUri($uri), [
+            'headers' => $this->prepareHeaders($token),
+            'query' => $parameters,
+        ]);
     }
 
-    public function getAfterSalesServiceConditionsService(): AfterSalesServicesConditionsServiceInterface
+    public function post(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface
     {
-        if (is_null($this->afterSalesServiceConditionsService)) {
-            $this->afterSalesServiceConditionsService = new AfterSalesServicesConditionsService($this->getHttpClient());
-        }
-
-        return $this->afterSalesServiceConditionsService;
+        return $this->getHttpClient()->post(
+            $this->prepareUri($uri),
+            [
+                'headers' => $this->prepareHeaders($token),
+                'json' => $parameters,
+            ]
+        );
     }
 
-    public function getSellersRatingsService(): SellersRatingsServiceInterface
+    public function put(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface
     {
-        if (is_null($this->sellersRatingsService)) {
-            $this->sellersRatingsService = new SellersRatingsService($this->getHttpClient());
-        }
-
-        return $this->sellersRatingsService;
+        return $this->getHttpClient()->put(
+            $this->prepareUri($uri),
+            [
+                'headers' => $this->prepareHeaders($token),
+                'json' => $parameters,
+            ]
+        );
     }
 
-    public function getSaleLoyaltyPromotionsService(): SaleLoyaltyPromotionsServiceInterface
+    public function delete(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface
     {
-        if (is_null($this->saleLoyaltyPromotionsService)) {
-            $this->saleLoyaltyPromotionsService = new SaleLoyaltyPromotionsService($this->getHttpClient());
+        return $this->getHttpClient()->delete(
+            $this->prepareUri($uri),
+            [
+                'headers' => $this->prepareHeaders($token),
+                'query' => $parameters,
+            ]
+        );
+    }
+
+    private function prepareUri(string $uri): string
+    {
+        if ('/' === substr($uri, 0, 1)) {
+            return substr($uri, 1);
         }
 
-        return $this->saleLoyaltyPromotionsService;
+        if ('http' === substr($uri, 0, 4)) {
+            throw new \Exception('Please provide just URI, eg. sale/offer-additional-services/groups');
+        }
+
+        return $uri;
+    }
+
+    private function prepareHeaders(TokenInterface $token)
+    {
+        return [
+            'Authorization' => 'Bearer '.$token->getAccessToken(),
+            'Api-Key' => $this->credentials->getAllegroApiRestApiKey(),
+            'Accept' => 'application/vnd.allegro.public.v1+json',
+            'Content-Type' => 'application/vnd.allegro.public.v1+json',
+        ];
     }
 }

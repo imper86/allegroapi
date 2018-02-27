@@ -9,27 +9,18 @@ namespace Imper86\AllegroApi;
 
 
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
-use Imper86\AllegroApi\Rest\Service\AfterSalesServiceConditons\AfterSalesServicesConditionsServiceInterface;
 use Imper86\AllegroApi\Rest\Service\Auth\AuthServiceInterface;
-use Imper86\AllegroApi\Rest\Service\ChangePrice\ChangePriceServiceInterface;
-use Imper86\AllegroApi\Rest\Service\Ratings\SellersRatingsServiceInterface;
-use Imper86\AllegroApi\Rest\Service\SaleLoyaltyPromotions\SaleLoyaltyPromotionsServiceInterface;
+use Psr\Http\Message\ResponseInterface;
 
 interface AllegroApiRestClientInterface
 {
-    public function getToken(): ?TokenInterface;
-
-    public function setToken(TokenInterface $token);
-
-    public function refreshToken();
-
     public function getAuthService(): AuthServiceInterface;
 
-    public function getChangePriceService(): ChangePriceServiceInterface;
+    public function get(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface;
 
-    public function getAfterSalesServiceConditionsService(): AfterSalesServicesConditionsServiceInterface;
+    public function post(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface;
 
-    public function getSellersRatingsService(): SellersRatingsServiceInterface;
+    public function put(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface;
 
-    public function getSaleLoyaltyPromotionsService(): SaleLoyaltyPromotionsServiceInterface;
+    public function delete(TokenInterface $token, string $uri, array $parameters = []): ResponseInterface;
 }
