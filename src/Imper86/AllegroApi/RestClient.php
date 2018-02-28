@@ -9,9 +9,6 @@ namespace Imper86\AllegroApi;
 
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroApi\Rest\Exception\UnauthorizedClientException;
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 use Imper86\AllegroApi\Rest\Service\Auth\AuthService;
@@ -32,23 +29,21 @@ class RestClient implements RestClientInterface
      * @var Client
      */
     private $httpClient;
-    /**
-     * @var \finfo
-     */
-    private $finfo;
-    /**
-     * @var \Psr\Http\Message\RequestInterface
-     */
-    private $lastHttpRequest;
-    /**
-     * @var ResponseInterface
-     */
-    private $lastHttpResponse;
 
     public function __construct(CredentialsInterface $credentials)
     {
         $this->credentials = $credentials;
-        $this->finfo = new \finfo(FILEINFO_MIME_TYPE);
+    }
+
+    private function getHttpClient(): Client
+    {
+        if (null === $this->httpClient) {
+            $this->httpClient = new Client([
+                'base_uri' => 'https://api.allegro.pl',
+            ]);
+        }
+
+        return $this->httpClient;
     }
 
     public function getAuthService(): AuthServiceInterface
@@ -60,99 +55,51 @@ class RestClient implements RestClientInterface
         return $this->authService;
     }
 
-    public function sendRequest(
-        TokenInterface $token,
-        RequestInterface $request,
-        array $guzzleOptions = []
-    ): ResponseInterface {
-        try {
-            $httpRequest = new Request(
-                $request->getMethod(),
-                $request->getUri().'?'.http_build_query($request->getQuery() ?? []),
-                $this->prepareHeaders($token, $request),
-                empty($request->getBody()) ? null : json_encode($request->getBody())
-            );
+    public function get(TokenInterface $token, RequestInterface $request): ResponseInterface
+    {
+        $httpClient = $this->getHttpClient();
 
-            $this->lastHttpRequest = $httpRequest;
-
-            $response = $this->getHttpClient()->send($httpRequest, $guzzleOptions);
-
-            $this->lastHttpResponse = $response;
-
-            return $response;
-        } catch (ClientException $clientException) {
-            $this->lastHttpResponse = $clientException->getResponse();
-
-            if (401 == $clientException->getCode()) {
-                throw new UnauthorizedClientException($clientException);
-            }
-
-            throw $clientException;
-        }
+        return $httpClient->get($request->getRequestUri(), [
+            'headers' => $this->prepareHeaders($token, $request),
+            'query' => $request->getRequestArray(),
+        ]);
     }
 
-    public function uploadImage(TokenInterface $token, string $imageBody): ResponseInterface
+    public function post(TokenInterface $token, RequestInterface $request): ResponseInterface
     {
-        try {
-            $imageMime = $this->finfo->buffer($imageBody);
-
-            $httpRequest = new Request(
-                'POST',
-                RestClientInterface::UPLOAD_URL.'/sale/images',
-                [
-                    'Authorization' => 'Bearer '.$token->getAccessToken(),
-                    'Accept' => RestClientInterface::CONTENT_TYPE_PUBLIC,
-                    'Content-Type' => $imageMime,
-                ],
-                $imageBody
-            );
-
-            $this->lastHttpRequest = $httpRequest;
-            $this->lastHttpResponse = $this->getHttpClient()->send($httpRequest);
-
-            return $this->lastHttpResponse;
-        } catch (ClientException $clientException) {
-            $this->lastHttpResponse = $clientException->getResponse();
-
-            if (401 == $clientException->getCode()) {
-                throw new UnauthorizedClientException($clientException);
-            }
-
-            throw $clientException;
-        }
+        return $this->getHttpClient()->post($request->getRequestUri(), [
+            'headers' => $this->prepareHeaders($token, $request),
+            'json' => $request->getRequestArray(),
+        ]);
     }
 
-    public function getLastHttpRequest(): ?\Psr\Http\Message\RequestInterface
+    public function put(TokenInterface $token, RequestInterface $request): ResponseInterface
     {
-        return $this->lastHttpRequest;
+        return $this->getHttpClient()->put($request->getRequestUri(), [
+            'headers' => $this->prepareHeaders($token, $request),
+            'json' => $request->getRequestArray(),
+        ]);
     }
 
-    public function getLastHttpResponse(): ?ResponseInterface
+    public function delete(TokenInterface $token, RequestInterface $request): ResponseInterface
     {
-        return $this->lastHttpResponse;
-    }
-
-    private function getHttpClient(): Client
-    {
-        if (null === $this->httpClient) {
-            $this->httpClient = new Client(['base_uri' => RestClientInterface::REST_API_URL]);
-        }
-
-        return $this->httpClient;
+        return $this->getHttpClient()->delete($request->getRequestUri(), [
+            'headers' => $this->prepareHeaders($token, $request),
+            'query' => $request->getRequestArray(),
+        ]);
     }
 
     private function prepareHeaders(TokenInterface $token, RequestInterface $request)
     {
         $contentType = null === $request->getContentType()
-            ? RestClientInterface::CONTENT_TYPE_PUBLIC
+            ? 'application/vnd.allegro.public.v1+json'
             : $request->getContentType();
 
         return [
             'Authorization' => 'Bearer '.$token->getAccessToken(),
+            'Api-Key' => $this->credentials->getAllegroApiRestApiKey(),
             'Accept' => $contentType,
             'Content-Type' => $contentType,
         ];
     }
-
-
 }

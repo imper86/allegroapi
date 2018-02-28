@@ -7,10 +7,7 @@
 
 namespace Imper86\AllegroApi\Rest\Model\Auth;
 
-
-use Imper86\AllegroApi\Rest\Exception\IncorrectCurlResponseException;
-use Imper86\Curl\Model\ResponseInterface as CurlResponseInterface;
-use Imper86\Core\DateTime;
+use Psr\Http\Message\ResponseInterface;
 
 class Token implements TokenInterface
 {
@@ -29,22 +26,22 @@ class Token implements TokenInterface
      */
     private $expirationTime;
 
-    public function __construct(CurlResponseInterface $curlResponse)
+    public function __construct(ResponseInterface $apiResponse)
     {
-        $data = $curlResponse->getRawResponse();
+        $data = json_decode($apiResponse->getBody()->getContents());
 
         if (
             empty($data->access_token)
             || empty($data->refresh_token)
             || empty($data->expires_in)
         ) {
-            throw new IncorrectCurlResponseException($curlResponse);
+            throw new \Exception('Nieprawidłowa struktura odpowiedzi API, otrzymano: '.$apiResponse->getBody()->getContents());
         }
 
         $this->accessToken = $data->access_token;
         $this->refreshToken = $data->refresh_token;
 
-        $expirationTime = new DateTime();
+        $expirationTime = new \DateTime();
         $expirationTime->add(new \DateInterval("PT{$data->expires_in}S"));
 
         $this->expirationTime = $expirationTime;

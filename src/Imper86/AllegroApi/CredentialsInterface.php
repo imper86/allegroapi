@@ -18,7 +18,5 @@ interface CredentialsInterface
 
     public function getAllegroApiRestRedirectUri(): string;
 
-    public function getAllegroSellerId(): int;
-
     public function getAllegroSoapApiKey(): string;
 }

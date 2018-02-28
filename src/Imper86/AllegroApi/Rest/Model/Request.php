@@ -8,8 +8,6 @@
 namespace Imper86\AllegroApi\Rest\Model;
 
 
-use Imper86\AllegroApi\Rest\Exception\InvalidRequestMethodException;
-
 class Request implements RequestInterface
 {
     /**
@@ -17,46 +15,27 @@ class Request implements RequestInterface
      */
     private $uri;
     /**
-     * @var array|null
+     * @var array
      */
-    private $body;
-    /**
-     * @var array|null
-     */
-    private $query;
+    private $request;
     /**
      * @var string
      */
     private $contentType;
-    /**
-     * @var string
-     */
-    private $method;
 
-    public function __construct(
-        string $uri,
-        string $method = 'GET',
-        ?array $body = null,
-        ?array $query = null,
-        ?string $contentType = null
-    ) {
-        if (!in_array($method, RequestInterface::ALLOWED_METHODS)) {
-            throw new InvalidRequestMethodException();
-        }
-
-        $this->uri = $this->prepareUri($uri);
-        $this->body = $body;
-        $this->query = $query;
-        $this->contentType = $contentType;
-        $this->method = strtoupper($method);
-    }
-
-    public function getMethod(): string
+    public function __construct(string $uri, array $request = [], string $contentType = 'application/vnd.allegro.public.v1+json')
     {
-        return $this->method;
+        $this->uri = $this->prepareUri($uri);
+        $this->request = $request;
+        $this->contentType = $contentType;
     }
 
-    public function getUri(): string
+    public function getRequestArray(): array
+    {
+        return $this->request;
+    }
+
+    public function getRequestUri(): string
     {
         return $this->uri;
     }
@@ -64,16 +43,6 @@ class Request implements RequestInterface
     public function getContentType(): ?string
     {
         return $this->contentType;
-    }
-
-    public function getBody(): ?array
-    {
-        return $this->body;
-    }
-
-    public function getQuery(): ?array
-    {
-        return $this->query;
     }
 
     private function prepareUri(string $uri): string

@@ -8,7 +8,6 @@
 namespace Imper86\AllegroApi;
 
 
-
 class Credentials implements CredentialsInterface
 {
     /**
@@ -35,33 +34,33 @@ class Credentials implements CredentialsInterface
     public function __construct(array $credentials)
     {
         foreach ($credentials as $field => $value) {
-            if (property_exists($this, $field)) {
+            if (isset($this->{$field})) {
                 $this->{$field} = $value;
             }
         }
     }
 
-    public function getRestClientId(): string
+    public function getAllegroApiRestClientId(): string
     {
         return $this->restClientId;
     }
 
-    public function getRestClientSecret(): string
+    public function getAllegroApiRestClientSecret(): string
     {
         return $this->restClientSecret;
     }
 
-    public function getRestApiKey(): string
+    public function getAllegroApiRestApiKey(): string
     {
         return $this->restApiKey;
     }
 
-    public function getRestRedirectUri(): string
+    public function getAllegroApiRestRedirectUri(): string
     {
         return $this->restRedirectUri;
     }
 
-    public function getSoapApiKey(): string
+    public function getAllegroSoapApiKey(): string
     {
         return $this->soapApiKey;
     }
