@@ -1,5 +1,5 @@
-# allegroapi
-library making allegro rest and soap api using easier
+# allegroapi PHP SDK
+Library that makes allegro rest and soap api using easier
 
 ## Installation
 This lib should be installed with composer
@@ -65,6 +65,7 @@ var_dump(json_decode($response->getBody()->getContents()));
 With that simple way you can use all api methods. Alternative method is use prepared request classes. Currently available are:
 * Imper86\AllegroApi\Rest\Model\Request\Offers\ChangePriceRequest
 * Imper86\AllegroApi\Rest\Model\Request\Pricing\OfferQuotesRequest
+* Imper86\AllegroApi\Rest\Model\Request\Sale\UserRatingsRequest
 * Imper86\AllegroApi\Rest\Model\Request\AfterSakesServiceConditionsRequest
 
 Of course you can create your own, just implement RequestInterface. It's very simple.
