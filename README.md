@@ -56,8 +56,8 @@ $newToken = $authService->refreshToken($token);
 The best explanation how to use it will be some example, so here it is:
 
 ```php
-$request = new Request('pricing/offer-quotes', ['offer.id' => '123123123']);
-$response = $client->get($token, $request);
+$request = new Request('GET', 'pricing/offer-quotes', ['offer.id' => '123123123']);
+$response = $client->sendRequest($token, $request);
 
 var_dump(json_decode($response->getBody()->getContents()));
 ```
@@ -73,10 +73,15 @@ Of course you can create your own, just implement RequestInterface. It's very si
 Example:
 ```php
 $request = new ChangePriceRequest('123123123', 10000);
-$response = $client->post($token, $request);
+$response = $client->sendRequest($token, $request);
 
 var_dump(json_decode($response->getBody()->getContents()));
 ```
+
+## Exceptions
+I've created two Exception classes:
+InvalidRequestMethodException - just means that you used wrong HTTP method name in your request.
+UnauthorizedClientException - you should catch it just to know when refreshing token is necessary.
 
 ## SOAP API
 There is a class AllegroApiSoapClient inside this lib, and you can use it, by so far I got no time to finish it.

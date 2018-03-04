@@ -1,11 +1,11 @@
 <?php
 /**
  * Copyright: IMPER.INFO Adrian Szuszkiewicz
- * Date: 28.02.2018
- * Time: 11:11
+ * Date: 04.03.2018
+ * Time: 16:56
  */
 
-namespace Imper86\AllegroApi\Rest\Model\Request;
+namespace Imper86\AllegroApi\Rest\Model\Request\Get;
 
 
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
@@ -56,4 +56,8 @@ class AfterSalesServiceConditionsRequest implements RequestInterface
         return null;
     }
 
+    public function getRequestMethod(): string
+    {
+        return 'GET';
+    }
 }

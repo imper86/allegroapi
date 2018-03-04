@@ -1,11 +1,11 @@
 <?php
 /**
  * Copyright: IMPER.INFO Adrian Szuszkiewicz
- * Date: 01.03.2018
- * Time: 13:54
+ * Date: 04.03.2018
+ * Time: 16:57
  */
 
-namespace Imper86\AllegroApi\Rest\Model\Request\Sale;
+namespace Imper86\AllegroApi\Rest\Model\Request\Get\Sale;
 
 
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
@@ -62,6 +62,11 @@ class UserRatingsRequest implements RequestInterface
     public function getContentType(): ?string
     {
         return null;
+    }
+
+    public function getRequestMethod(): string
+    {
+        return 'GET';
     }
 
 }

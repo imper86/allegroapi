@@ -9,6 +9,9 @@ namespace Imper86\AllegroApi;
 
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use Imper86\AllegroApi\Rest\Exception\InvalidRequestMethodException;
+use Imper86\AllegroApi\Rest\Exception\UnauthorizedClientException;
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 use Imper86\AllegroApi\Rest\Service\Auth\AuthService;
@@ -55,38 +58,34 @@ class RestClient implements RestClientInterface
         return $this->authService;
     }
 
-    public function get(TokenInterface $token, RequestInterface $request): ResponseInterface
+    public function sendRequest(TokenInterface $token, RequestInterface $request): ResponseInterface
     {
-        $httpClient = $this->getHttpClient();
+        switch ($request->getRequestMethod()) {
+            case 'GET': $requestKey = 'query'; break;
+            case 'POST': $requestKey = 'json'; break;
+            case 'PUT': $requestKey = 'json'; break;
+            case 'DELETE': $requestKey = 'query'; break;
+            default: throw new InvalidRequestMethodException();
+        }
 
-        return $httpClient->get($request->getRequestUri(), [
-            'headers' => $this->prepareHeaders($token, $request),
-            'query' => $request->getRequestArray(),
-        ]);
-    }
+        try {
+            $response = $this->getHttpClient()->request(
+                $request->getRequestMethod(),
+                $request->getRequestUri(),
+                [
+                    'headers' => $this->prepareHeaders($token, $request),
+                    $requestKey => $request->getRequestArray()
+                ]
+            );
 
-    public function post(TokenInterface $token, RequestInterface $request): ResponseInterface
-    {
-        return $this->getHttpClient()->post($request->getRequestUri(), [
-            'headers' => $this->prepareHeaders($token, $request),
-            'json' => $request->getRequestArray(),
-        ]);
-    }
+            return $response;
+        } catch (ClientException $clientException) {
+            if (401 == $clientException->getCode()) {
+                throw new UnauthorizedClientException($clientException);
+            }
 
-    public function put(TokenInterface $token, RequestInterface $request): ResponseInterface
-    {
-        return $this->getHttpClient()->put($request->getRequestUri(), [
-            'headers' => $this->prepareHeaders($token, $request),
-            'json' => $request->getRequestArray(),
-        ]);
-    }
-
-    public function delete(TokenInterface $token, RequestInterface $request): ResponseInterface
-    {
-        return $this->getHttpClient()->delete($request->getRequestUri(), [
-            'headers' => $this->prepareHeaders($token, $request),
-            'query' => $request->getRequestArray(),
-        ]);
+            throw $clientException;
+        }
     }
 
     private function prepareHeaders(TokenInterface $token, RequestInterface $request)

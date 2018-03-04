@@ -17,11 +17,5 @@ interface RestClientInterface
 {
     public function getAuthService(): AuthServiceInterface;
 
-    public function get(TokenInterface $token, RequestInterface $request): ResponseInterface;
-
-    public function post(TokenInterface $token, RequestInterface $request): ResponseInterface;
-
-    public function put(TokenInterface $token, RequestInterface $request): ResponseInterface;
-
-    public function delete(TokenInterface $token, RequestInterface $request): ResponseInterface;
+    public function sendRequest(TokenInterface $token, RequestInterface $request): ResponseInterface;
 }
