@@ -1,16 +1,14 @@
 <?php
 /**
  * Copyright: IMPER.INFO Adrian Szuszkiewicz
- * Date: 28.02.2018
- * Time: 10:54
+ * Date: 04.03.2018
+ * Time: 16:59
  */
 
-namespace Imper86\AllegroApi\Rest\Model\Request\Offers;
+namespace Imper86\AllegroApi\Rest\Model\Request\Put\Offers;
 
 
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
-use Ramsey\Uuid\Uuid;
-use Ramsey\Uuid\UuidInterface;
 
 class ChangePriceRequest implements RequestInterface
 {
@@ -59,6 +57,11 @@ class ChangePriceRequest implements RequestInterface
     public function getContentType(): ?string
     {
         return null;
+    }
+
+    public function getRequestMethod(): string
+    {
+        return 'PUT';
     }
 
 }

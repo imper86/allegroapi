@@ -22,12 +22,17 @@ class Request implements RequestInterface
      * @var string
      */
     private $contentType;
+    /**
+     * @var string
+     */
+    private $method;
 
-    public function __construct(string $uri, array $request = [], string $contentType = 'application/vnd.allegro.public.v1+json')
+    public function __construct(string $method = 'GET', string $uri, array $request = [], string $contentType = 'application/vnd.allegro.public.v1+json')
     {
         $this->uri = $this->prepareUri($uri);
         $this->request = $request;
         $this->contentType = $contentType;
+        $this->method = strtoupper($method);
     }
 
     public function getRequestArray(): array
@@ -43,6 +48,11 @@ class Request implements RequestInterface
     public function getContentType(): ?string
     {
         return $this->contentType;
+    }
+
+    public function getRequestMethod(): string
+    {
+        return $this->method;
     }
 
     private function prepareUri(string $uri): string

@@ -10,6 +10,8 @@ namespace Imper86\AllegroApi\Rest\Model;
 
 interface RequestInterface
 {
+    public function getRequestMethod(): string;
+
     public function getRequestArray(): array;
 
     public function getRequestUri(): string;

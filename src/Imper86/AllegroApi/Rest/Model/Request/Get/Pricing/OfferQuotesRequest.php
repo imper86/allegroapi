@@ -1,11 +1,11 @@
 <?php
 /**
  * Copyright: IMPER.INFO Adrian Szuszkiewicz
- * Date: 28.02.2018
- * Time: 11:17
+ * Date: 04.03.2018
+ * Time: 16:58
  */
 
-namespace Imper86\AllegroApi\Rest\Model\Request\Pricing;
+namespace Imper86\AllegroApi\Rest\Model\Request\Get\Pricing;
 
 
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
@@ -37,6 +37,11 @@ class OfferQuotesRequest implements RequestInterface
     public function getContentType(): ?string
     {
         return null;
+    }
+
+    public function getRequestMethod(): string
+    {
+        return 'GET';
     }
 
 }
