@@ -63,10 +63,10 @@ var_dump(json_decode($response->getBody()->getContents()));
 ```
 
 With that simple way you can use all api methods. Alternative method is use prepared request classes. Currently available are:
-* Imper86\AllegroApi\Rest\Model\Request\Offers\ChangePriceRequest
-* Imper86\AllegroApi\Rest\Model\Request\Pricing\OfferQuotesRequest
-* Imper86\AllegroApi\Rest\Model\Request\Sale\UserRatingsRequest
-* Imper86\AllegroApi\Rest\Model\Request\AfterSakesServiceConditionsRequest
+* Imper86\AllegroApi\Rest\Model\Request\Get\Pricing\OfferQuotesRequest
+* Imper86\AllegroApi\Rest\Model\Request\Get\Sale\UserRatingsRequest
+* Imper86\AllegroApi\Rest\Model\Request\Get\AfterSalesServiceConditionsRequest
+* Imper86\AllegroApi\Rest\Model\Request\Put\Offers\ChangePriceRequest
 
 Of course you can create your own, just implement RequestInterface. It's very simple.
 
