@@ -66,4 +66,28 @@ class ChangePriceRequest implements RequestInterface
         return 'PUT';
     }
 
+    /**
+     * @return string
+     */
+    public function getOfferId(): string
+    {
+        return $this->offerId;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBuyNowPrice(): float
+    {
+        return $this->buyNowPrice;
+    }
+
+    /**
+     * @return UuidInterface
+     */
+    public function getUuid(): UuidInterface
+    {
+        return $this->uuid;
+    }
+
 }
