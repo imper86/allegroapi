@@ -9,6 +9,8 @@ namespace Imper86\AllegroApi\Rest\Model\Request\Put\Offers;
 
 
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
+use Ramsey\Uuid\Uuid;
+use Ramsey\Uuid\UuidInterface;
 
 class ChangePriceRequest implements RequestInterface
 {
