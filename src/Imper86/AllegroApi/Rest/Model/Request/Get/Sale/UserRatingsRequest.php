@@ -8,10 +8,13 @@
 namespace Imper86\AllegroApi\Rest\Model\Request\Get\Sale;
 
 
+use Imper86\AllegroApi\Rest\Model\Request\RequestToolsTrait;
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 
 class UserRatingsRequest implements RequestInterface
 {
+    use RequestToolsTrait;
+
     /**
      * @var string
      */
@@ -39,12 +42,7 @@ class UserRatingsRequest implements RequestInterface
 
     public function getRequestArray(): array
     {
-        switch ($this->recommended) {
-            case null: $recommended = null; break;
-            case true: $recommended = 'true'; break;
-            case false: $recommended = 'false'; break;
-            default: $recommended = null; break;
-        }
+        $recommended = $this->stringifyBoolean($this->recommended);
 
         return [
             'user.id' => $this->userId,
