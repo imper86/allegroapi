@@ -64,6 +64,9 @@ var_dump(json_decode((string) $response->getBody()));
 
 With that simple way you can use all api methods. Alternative method is use prepared request classes.
 
+Ready-to-use request classes location: [here](src/Imper86/AllegroApi/Rest/Model/Request)
+I already covered almost all rest api methods. I'll try to create all to cover 100%.
+
 Of course you can create your own, just implement RequestInterface. It's very simple.
 
 Example:
