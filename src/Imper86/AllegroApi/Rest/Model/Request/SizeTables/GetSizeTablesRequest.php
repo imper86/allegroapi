@@ -36,7 +36,7 @@ class GetSizeTablesRequest implements RequestInterface
 
     public function getContentType(): ?string
     {
-        return RestClientInterface::CONTENT_TYPE_PUBLIC;
+        return RestClientInterface::CONTENT_TYPE_BETA;
     }
 
     public function getBody(): ?array
@@ -47,22 +47,6 @@ class GetSizeTablesRequest implements RequestInterface
     public function getQuery(): ?array
     {
         return ['user.id' => $this->token->getUserId()];
-    }
-
-    /**
-     * @return TokenInterface
-     */
-    public function getToken(): TokenInterface
-    {
-        return $this->token;
-    }
-
-    /**
-     * @param TokenInterface $token
-     */
-    public function setToken(TokenInterface $token): void
-    {
-        $this->token = $token;
     }
 
 

@@ -35,7 +35,7 @@ class GetSizeTableRequest implements RequestInterface
 
     public function getContentType(): ?string
     {
-        return RestClientInterface::CONTENT_TYPE_PUBLIC;
+        return RestClientInterface::CONTENT_TYPE_BETA;
     }
 
     public function getBody(): ?array
@@ -46,22 +46,6 @@ class GetSizeTableRequest implements RequestInterface
     public function getQuery(): ?array
     {
         return null;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTableId(): string
-    {
-        return $this->tableId;
-    }
-
-    /**
-     * @param string $tableId
-     */
-    public function setTableId(string $tableId): void
-    {
-        $this->tableId = $tableId;
     }
 
 

@@ -48,21 +48,5 @@ class GetUserRatingsSummaryRequest implements RequestInterface
         return null;
     }
 
-    /**
-     * @return TokenInterface
-     */
-    public function getToken(): TokenInterface
-    {
-        return $this->token;
-    }
-
-    /**
-     * @param TokenInterface $token
-     */
-    public function setToken(TokenInterface $token): void
-    {
-        $this->token = $token;
-    }
-
 
 }

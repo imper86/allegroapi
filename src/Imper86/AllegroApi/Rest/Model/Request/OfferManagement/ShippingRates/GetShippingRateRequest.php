@@ -35,7 +35,7 @@ class GetShippingRateRequest implements RequestInterface
 
     public function getContentType(): ?string
     {
-        return RestClientInterface::CONTENT_TYPE_PUBLIC;
+        return RestClientInterface::CONTENT_TYPE_BETA;
     }
 
     public function getBody(): ?array
@@ -46,22 +46,6 @@ class GetShippingRateRequest implements RequestInterface
     public function getQuery(): ?array
     {
         return null;
-    }
-
-    /**
-     * @return string
-     */
-    public function getId(): string
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param string $id
-     */
-    public function setId(string $id): void
-    {
-        $this->id = $id;
     }
 
 

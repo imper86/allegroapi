@@ -15,4 +15,6 @@ interface TokenInterface
     public function getRefreshToken(): string;
 
     public function getExpirationTime(): \DateTime;
+
+    public function getUserId(): string;
 }

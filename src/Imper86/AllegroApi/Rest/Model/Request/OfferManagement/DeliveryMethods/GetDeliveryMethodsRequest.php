@@ -25,7 +25,7 @@ class GetDeliveryMethodsRequest implements RequestInterface
 
     public function getContentType(): ?string
     {
-        return RestClientInterface::CONTENT_TYPE_PUBLIC;
+        return RestClientInterface::CONTENT_TYPE_BETA;
     }
 
     public function getBody(): ?array

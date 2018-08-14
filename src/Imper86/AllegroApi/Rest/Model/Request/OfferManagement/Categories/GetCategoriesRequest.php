@@ -35,7 +35,7 @@ class GetCategoriesRequest implements RequestInterface
 
     public function getContentType(): ?string
     {
-        return RestClientInterface::CONTENT_TYPE_PUBLIC;
+        return RestClientInterface::CONTENT_TYPE_BETA;
     }
 
     public function getBody(): ?array
@@ -46,22 +46,6 @@ class GetCategoriesRequest implements RequestInterface
     public function getQuery(): ?array
     {
         return ['parent.id' => $this->parentId];
-    }
-
-    /**
-     * @return null|string
-     */
-    public function getParentId(): ?string
-    {
-        return $this->parentId;
-    }
-
-    /**
-     * @param null|string $parentId
-     */
-    public function setParentId(?string $parentId): void
-    {
-        $this->parentId = $parentId;
     }
 
 }

@@ -57,38 +57,4 @@ class PostShippingRatesRequest implements RequestInterface
     {
         return null;
     }
-
-    /**
-     * @return string
-     */
-    public function getName(): string
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param string $name
-     */
-    public function setName(string $name): void
-    {
-        $this->name = $name;
-    }
-
-    /**
-     * @return ShippingRateCollection
-     */
-    public function getRates(): ShippingRateCollection
-    {
-        return $this->rates;
-    }
-
-    /**
-     * @param ShippingRateCollection $rates
-     */
-    public function setRates(ShippingRateCollection $rates): void
-    {
-        $this->rates = $rates;
-    }
-
-
 }

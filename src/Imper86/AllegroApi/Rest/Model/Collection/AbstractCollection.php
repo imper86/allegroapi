@@ -66,9 +66,4 @@ abstract class AbstractCollection implements \Countable, \IteratorAggregate, \Ar
         return count($this->items);
     }
 
-    public function contains($element, bool $strict = true): bool
-    {
-        return in_array($element, $this->items, $strict);
-    }
-
 }

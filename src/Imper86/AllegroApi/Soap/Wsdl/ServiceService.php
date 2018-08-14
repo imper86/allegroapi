@@ -194,9 +194,6 @@ class ServiceService extends \SoapClient
       'FiltersListType' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FiltersListType',
       'ArrayOfFilterslisttype' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFilterslisttype',
       'doGetItemsListResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetItemsListResponse',
-      'DoGetMessageToBuyerRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMessageToBuyerRequest',
-      'MessageToBuyerStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\MessageToBuyerStruct',
-      'doGetMessageToBuyerResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetMessageToBuyerResponse',
       'DoGetMyAddressesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMyAddressesRequest',
       'AddressUserDataStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\AddressUserDataStruct',
       'AddressInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\AddressInfoStruct',
@@ -402,10 +399,6 @@ class ServiceService extends \SoapClient
       'ShipmentPriceTypeStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ShipmentPriceTypeStruct',
       'ArrayOfShipmentpricetypestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfShipmentpricetypestruct',
       'doGetShipmentPriceTypesResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetShipmentPriceTypesResponse',
-      'DoGetShopsTagsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetShopsTagsRequest',
-      'ShopsTagTypeStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ShopsTagTypeStruct',
-      'ArrayOfShopstagtypestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfShopstagtypestruct',
-      'doGetShopsTagsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetShopsTagsResponse',
       'DoGetSiteJournalRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSiteJournalRequest',
       'SiteJournal' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SiteJournal',
       'ArrayOfSitejournal' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSitejournal',
@@ -887,15 +880,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoGetMessageToBuyerRequest $parameters
-     * @return doGetMessageToBuyerResponse
-     */
-    public function doGetMessageToBuyer(DoGetMessageToBuyerRequest $parameters)
-    {
-      return $this->__soapCall('doGetMessageToBuyer', array($parameters));
-    }
-
-    /**
      * @param DoGetMyAddressesRequest $parameters
      * @return doGetMyAddressesResponse
      */
@@ -1253,15 +1237,6 @@ class ServiceService extends \SoapClient
     public function doGetShipmentPriceTypes(DoGetShipmentPriceTypesRequest $parameters)
     {
       return $this->__soapCall('doGetShipmentPriceTypes', array($parameters));
-    }
-
-    /**
-     * @param DoGetShopsTagsRequest $parameters
-     * @return doGetShopsTagsResponse
-     */
-    public function doGetShopsTags(DoGetShopsTagsRequest $parameters)
-    {
-      return $this->__soapCall('doGetShopsTags', array($parameters));
     }
 
     /**

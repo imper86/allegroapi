@@ -13,7 +13,7 @@ use Imper86\AllegroApi\Soap\Wsdl\ServiceService;
 
 class SoapService extends ServiceService
 {
-    public function __construct()
+    public function __construct(array $options = [])
     {
         parent::__construct(['trace' => true]);
     }

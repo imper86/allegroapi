@@ -12,13 +12,12 @@ use GuzzleHttp\Client;
 use Imper86\AllegroApi\CredentialsInterface;
 use Imper86\AllegroApi\Rest\Model\Auth\Token;
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
-use Imper86\Curl\CurlClientInterface;
+use Imper86\AllegroApi\RestClientInterface;
 use Imper86\Curl\CurlClient;
+use Imper86\Curl\CurlClientInterface;
 
 class AuthService implements AuthServiceInterface
 {
-    const ALLEGRO_OAUTH_URL = 'https://ssl.allegro.pl/auth/oauth';
-
     /**
      * @var CredentialsInterface
      */
@@ -39,26 +38,26 @@ class AuthService implements AuthServiceInterface
     {
         $query = [
             'response_type' => 'code',
-            'client_id' => $this->credentials->getAllegroApiRestClientId(),
-            'api-key' => $this->credentials->getAllegroApiRestApiKey(),
-            'redirect_uri' => $this->credentials->getAllegroApiRestRedirectUri(),
+            'client_id' => $this->credentials->getRestClientId(),
+            'api-key' => $this->credentials->getRestApiKey(),
+            'redirect_uri' => $this->credentials->getRestRedirectUri(),
         ];
 
-        return self::ALLEGRO_OAUTH_URL.'/authorize?'.http_build_query($query);
+        return RestClientInterface::OAUTH_URL.'/authorize?'.http_build_query($query);
     }
 
     public function getNewToken(string $authCode): TokenInterface
     {
-        $response = $this->httpClient->post(self::ALLEGRO_OAUTH_URL.'/token', [
+        $response = $this->httpClient->post(RestClientInterface::OAUTH_URL.'/token', [
             'auth' => [
-                $this->credentials->getAllegroApiRestClientId(),
-                $this->credentials->getAllegroApiRestClientSecret(),
+                $this->credentials->getRestClientId(),
+                $this->credentials->getRestClientSecret(),
             ],
             'query' => [
                 'grant_type' => 'authorization_code',
                 'code' => $authCode,
-                'api-key' => $this->credentials->getAllegroApiRestApiKey(),
-                'redirect_uri' => $this->credentials->getAllegroApiRestRedirectUri(),
+                'api-key' => $this->credentials->getRestApiKey(),
+                'redirect_uri' => $this->credentials->getRestRedirectUri(),
             ]
         ]);
 
@@ -67,15 +66,15 @@ class AuthService implements AuthServiceInterface
 
     public function refreshToken(TokenInterface $token): TokenInterface
     {
-        $response = $this->httpClient->post(self::ALLEGRO_OAUTH_URL.'/token', [
+        $response = $this->httpClient->post(RestClientInterface::OAUTH_URL.'/token', [
             'auth' => [
-                $this->credentials->getAllegroApiRestClientId(),
-                $this->credentials->getAllegroApiRestClientSecret(),
+                $this->credentials->getRestClientId(),
+                $this->credentials->getRestClientSecret(),
             ],
             'query' => [
                 'grant_type' => 'refresh_token',
                 'refresh_token' => $token->getRefreshToken(),
-                'redirect_uri' => $this->credentials->getAllegroApiRestRedirectUri(),
+                'redirect_uri' => $this->credentials->getRestRedirectUri(),
             ]
         ]);
 

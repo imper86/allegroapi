@@ -8,6 +8,8 @@
 namespace Imper86\AllegroApi\Rest\Model;
 
 
+use Imper86\AllegroApi\Rest\Exception\InvalidRequestMethodException;
+
 class Request implements RequestInterface
 {
     /**
@@ -15,9 +17,13 @@ class Request implements RequestInterface
      */
     private $uri;
     /**
-     * @var array
+     * @var array|null
      */
-    private $request;
+    private $body;
+    /**
+     * @var array|null
+     */
+    private $query;
     /**
      * @var string
      */
@@ -27,20 +33,30 @@ class Request implements RequestInterface
      */
     private $method;
 
-    public function __construct(string $method = 'GET', string $uri, array $request = [], string $contentType = 'application/vnd.allegro.public.v1+json')
-    {
+    public function __construct(
+        string $uri,
+        string $method = 'GET',
+        ?array $body = null,
+        ?array $query = null,
+        ?string $contentType = null
+    ) {
+        if (!in_array($method, RequestInterface::ALLOWED_METHODS)) {
+            throw new InvalidRequestMethodException();
+        }
+
         $this->uri = $this->prepareUri($uri);
-        $this->request = $request;
+        $this->body = $body;
+        $this->query = $query;
         $this->contentType = $contentType;
         $this->method = strtoupper($method);
     }
 
-    public function getRequestArray(): array
+    public function getMethod(): string
     {
-        return $this->request;
+        return $this->method;
     }
 
-    public function getRequestUri(): string
+    public function getUri(): string
     {
         return $this->uri;
     }
@@ -50,9 +66,14 @@ class Request implements RequestInterface
         return $this->contentType;
     }
 
-    public function getRequestMethod(): string
+    public function getBody(): ?array
     {
-        return $this->method;
+        return $this->body;
+    }
+
+    public function getQuery(): ?array
+    {
+        return $this->query;
     }
 
     private function prepareUri(string $uri): string

@@ -10,7 +10,7 @@ namespace Imper86\AllegroApi;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use Imper86\AllegroApi\Rest\Exception\InvalidRequestMethodException;
+use GuzzleHttp\Psr7\Request;
 use Imper86\AllegroApi\Rest\Exception\UnauthorizedClientException;
 use Imper86\AllegroApi\Rest\Model\Auth\TokenInterface;
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
@@ -32,6 +32,14 @@ class RestClient implements RestClientInterface
      * @var Client
      */
     private $httpClient;
+    /**
+     * @var \Psr\Http\Message\RequestInterface
+     */
+    private $lastHttpRequest;
+    /**
+     * @var ResponseInterface
+     */
+    private $lastHttpResponse;
 
     public function __construct(CredentialsInterface $credentials)
     {
@@ -41,9 +49,7 @@ class RestClient implements RestClientInterface
     private function getHttpClient(): Client
     {
         if (null === $this->httpClient) {
-            $this->httpClient = new Client([
-                'base_uri' => 'https://api.allegro.pl',
-            ]);
+            $this->httpClient = new Client(['base_uri' => RestClientInterface::REST_API_URL]);
         }
 
         return $this->httpClient;
@@ -58,28 +64,29 @@ class RestClient implements RestClientInterface
         return $this->authService;
     }
 
-    public function sendRequest(TokenInterface $token, RequestInterface $request): ResponseInterface
-    {
-        switch ($request->getRequestMethod()) {
-            case 'GET': $requestKey = 'query'; break;
-            case 'POST': $requestKey = 'json'; break;
-            case 'PUT': $requestKey = 'json'; break;
-            case 'DELETE': $requestKey = 'query'; break;
-            default: throw new InvalidRequestMethodException();
-        }
-
+    public function sendRequest(
+        TokenInterface $token,
+        RequestInterface $request,
+        array $guzzleOptions = []
+    ): ResponseInterface {
         try {
-            $response = $this->getHttpClient()->request(
-                $request->getRequestMethod(),
-                $request->getRequestUri(),
-                [
-                    'headers' => $this->prepareHeaders($token, $request),
-                    $requestKey => $request->getRequestArray()
-                ]
+            $httpRequest = new Request(
+                $request->getMethod(),
+                $request->getUri().'?'.http_build_query($request->getQuery()),
+                $this->prepareHeaders($token, $request),
+                empty($request->getBody()) ? null : json_encode($request->getBody())
             );
+
+            $this->lastHttpRequest = $httpRequest;
+
+            $response = $this->getHttpClient()->send($httpRequest, $guzzleOptions);
+
+            $this->lastHttpResponse = $response;
 
             return $response;
         } catch (ClientException $clientException) {
+            $this->lastHttpResponse = $clientException->getResponse();
+
             if (401 == $clientException->getCode()) {
                 throw new UnauthorizedClientException($clientException);
             }
@@ -91,14 +98,26 @@ class RestClient implements RestClientInterface
     private function prepareHeaders(TokenInterface $token, RequestInterface $request)
     {
         $contentType = null === $request->getContentType()
-            ? 'application/vnd.allegro.public.v1+json'
+            ? RestClientInterface::CONTENT_TYPE_PUBLIC
             : $request->getContentType();
 
         return [
             'Authorization' => 'Bearer '.$token->getAccessToken(),
-            'Api-Key' => $this->credentials->getAllegroApiRestApiKey(),
+            'Api-Key' => $this->credentials->getRestApiKey(),
             'Accept' => $contentType,
             'Content-Type' => $contentType,
         ];
     }
+
+    public function getLastHttpRequest(): ?\Psr\Http\Message\RequestInterface
+    {
+        return $this->lastHttpRequest;
+    }
+
+    public function getLastHttpResponse(): ?ResponseInterface
+    {
+        return $this->lastHttpResponse;
+    }
+
+
 }

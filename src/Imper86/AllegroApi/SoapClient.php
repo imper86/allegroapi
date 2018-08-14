@@ -64,7 +64,7 @@ class SoapClient implements SoapClientInterface
     public function getService(): SoapService
     {
         if (is_null($this->soapService)) {
-            $this->soapService = new SoapService();
+            $this->soapService = new SoapService(['trace' => true]);
         }
 
         return $this->soapService;
