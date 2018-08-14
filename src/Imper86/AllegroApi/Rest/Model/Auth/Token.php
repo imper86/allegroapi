@@ -7,6 +7,7 @@
 
 namespace Imper86\AllegroApi\Rest\Model\Auth;
 
+use Lcobucci\JWT\Parser;
 use Psr\Http\Message\ResponseInterface;
 
 class Token implements TokenInterface
@@ -15,16 +16,22 @@ class Token implements TokenInterface
      * @var string
      */
     private $accessToken;
-
+    /**
+     * @var \Lcobucci\JWT\Token
+     */
+    private $accessTokenDecoded;
     /**
      * @var string
      */
     private $refreshToken;
-
     /**
      * @var \DateTime
      */
     private $expirationTime;
+    /**
+     * @var string
+     */
+    private $userId;
 
     public function __construct(ResponseInterface $apiResponse)
     {
@@ -45,6 +52,11 @@ class Token implements TokenInterface
         $expirationTime->add(new \DateInterval("PT{$data->expires_in}S"));
 
         $this->expirationTime = $expirationTime;
+
+        $jwtParser = new Parser();
+        $tokenDecoded = $jwtParser->parse($this->accessToken);
+        $this->accessTokenDecoded = $tokenDecoded;
+        $this->userId = $tokenDecoded->getClaim('user_name');
     }
 
 
@@ -62,4 +74,11 @@ class Token implements TokenInterface
     {
         return $this->expirationTime;
     }
+
+    public function getUserId(): string
+    {
+        return $this->userId;
+    }
+
+
 }

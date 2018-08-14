@@ -3,12 +3,14 @@
     "description": "library making allegro rest and soap api using easier",
     "type": "library",
     "require": {
+        "php": ">=7.1.0",
         "guzzlehttp/guzzle": "^6.3",
-        "ramsey/uuid": "^3.7"
+        "ramsey/uuid": "^3.7",
+        "lcobucci/jwt": "^3.2",
+        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
     },
     "require-dev": {
-        "symfony/var-dumper": "^3.3",
-        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
+        "symfony/var-dumper": "^3.3"
     },
     "license": "MIT",
     "authors": [

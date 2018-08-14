@@ -8,6 +8,8 @@
 namespace Imper86\AllegroApi\Rest\Model\Request;
 
 
+use Imper86\AllegroApi\RestClientInterface;
+
 trait RequestToolsTrait
 {
     private function stringifyBoolean(?bool $value): ?string
@@ -18,5 +20,15 @@ trait RequestToolsTrait
         }
 
         return $value;
+    }
+
+    private function changeDateTimeZone(?\DateTime $dateTime): void
+    {
+        if (null === $dateTime) {
+            return;
+        }
+
+        $zone = new \DateTimeZone(RestClientInterface::DATE_TIME_ZONE);
+        $dateTime->setTimezone($zone);
     }
 }

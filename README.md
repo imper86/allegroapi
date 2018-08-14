@@ -56,26 +56,22 @@ $newToken = $authService->refreshToken($token);
 The best explanation how to use it will be some example, so here it is:
 
 ```php
-$request = new Request('GET', 'pricing/offer-quotes', ['offer.id' => '123123123']);
+$request = new Request('GET', 'pricing/offer-quotes', null, ['offer.id' => '123123123']);
 $response = $client->sendRequest($token, $request);
 
-var_dump(json_decode($response->getBody()->getContents()));
+var_dump(json_decode((string) $response->getBody()));
 ```
 
-With that simple way you can use all api methods. Alternative method is use prepared request classes. Currently available are:
-* Imper86\AllegroApi\Rest\Model\Request\Get\Pricing\OfferQuotesRequest
-* Imper86\AllegroApi\Rest\Model\Request\Get\Sale\UserRatingsRequest
-* Imper86\AllegroApi\Rest\Model\Request\Get\AfterSalesServiceConditionsRequest
-* Imper86\AllegroApi\Rest\Model\Request\Put\Offers\ChangePriceRequest
+With that simple way you can use all api methods. Alternative method is use prepared request classes.
 
 Of course you can create your own, just implement RequestInterface. It's very simple.
 
 Example:
 ```php
-$request = new ChangePriceRequest('123123123', 10000);
+$request = new PutChangePriceCommandRequest('123123123', '123.45');
 $response = $client->sendRequest($token, $request);
 
-var_dump(json_decode($response->getBody()->getContents()));
+var_dump(json_decode((string) $response->getBody()));
 ```
 
 ## Exceptions

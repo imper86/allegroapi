@@ -56,6 +56,11 @@ class PostBuyFormAddressStruct
     protected $postBuyFormAdrType = null;
 
     /**
+     * @var string $postBuyFormAdrId
+     */
+    protected $postBuyFormAdrId = null;
+
+    /**
      * @param int $postBuyFormAdrCountry
      * @param string $postBuyFormAdrStreet
      * @param string $postBuyFormAdrPostcode
@@ -258,6 +263,24 @@ class PostBuyFormAddressStruct
     public function setPostBuyFormAdrType($postBuyFormAdrType)
     {
       $this->postBuyFormAdrType = $postBuyFormAdrType;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPostBuyFormAdrId()
+    {
+      return $this->postBuyFormAdrId;
+    }
+
+    /**
+     * @param string $postBuyFormAdrId
+     * @return \Imper86\AllegroApi\Soap\Wsdl\PostBuyFormAddressStruct
+     */
+    public function setPostBuyFormAdrId($postBuyFormAdrId)
+    {
+      $this->postBuyFormAdrId = $postBuyFormAdrId;
       return $this;
     }
 
