@@ -76,14 +76,18 @@ class PutOfferPublicationCommandRequest implements RequestInterface
                 'action' => $this->action,
             ],
             'offerCriteria' => [
-                'offers' => $this->offerIdsCollectionToArray($this->offerIds),
-                'type' => 'CONTAINS_OFFERS',
+                [
+                    'offers' => $this->offerIdsCollectionToArray($this->offerIds),
+                    'type' => 'CONTAINS_OFFERS',
+                ],
             ]
         ];
 
         if (null !== $this->scheduledFor) {
             $body['publication']['scheduledFor'] = $this->scheduledFor->format(RestClientInterface::DATE_TIME_FORMAT);
         }
+
+        return $body;
     }
 
     public function getQuery(): ?array
