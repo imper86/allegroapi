@@ -72,7 +72,7 @@ class RestClient implements RestClientInterface
         try {
             $httpRequest = new Request(
                 $request->getMethod(),
-                $request->getUri().'?'.http_build_query($request->getQuery()),
+                $request->getUri().'?'.http_build_query($request->getQuery() ?? []),
                 $this->prepareHeaders($token, $request),
                 empty($request->getBody()) ? null : json_encode($request->getBody())
             );
