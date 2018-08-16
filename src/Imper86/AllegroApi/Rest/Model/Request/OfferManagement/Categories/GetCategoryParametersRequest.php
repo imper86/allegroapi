@@ -48,5 +48,21 @@ class GetCategoryParametersRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getCategoryId(): string
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * @param string $categoryId
+     */
+    public function setCategoryId(string $categoryId): void
+    {
+        $this->categoryId = $categoryId;
+    }
+
 
 }

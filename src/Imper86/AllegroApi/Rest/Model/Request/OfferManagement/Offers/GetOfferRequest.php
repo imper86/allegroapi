@@ -48,5 +48,21 @@ class GetOfferRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getOfferId(): string
+    {
+        return $this->offerId;
+    }
+
+    /**
+     * @param string $offerId
+     */
+    public function setOfferId(string $offerId): void
+    {
+        $this->offerId = $offerId;
+    }
+
 
 }

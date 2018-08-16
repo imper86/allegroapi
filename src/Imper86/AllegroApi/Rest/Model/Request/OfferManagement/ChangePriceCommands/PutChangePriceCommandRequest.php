@@ -76,4 +76,69 @@ class PutChangePriceCommandRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getOfferId(): string
+    {
+        return $this->offerId;
+    }
+
+    /**
+     * @param string $offerId
+     */
+    public function setOfferId(string $offerId): void
+    {
+        $this->offerId = $offerId;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBuyNowPrice(): float
+    {
+        return $this->buyNowPrice;
+    }
+
+    /**
+     * @param float $buyNowPrice
+     */
+    public function setBuyNowPrice(float $buyNowPrice): void
+    {
+        $this->buyNowPrice = $buyNowPrice;
+    }
+
+    /**
+     * @return UuidInterface
+     */
+    public function getUuid(): UuidInterface
+    {
+        return $this->uuid;
+    }
+
+    /**
+     * @param UuidInterface $uuid
+     */
+    public function setUuid(UuidInterface $uuid): void
+    {
+        $this->uuid = $uuid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCurrency(): string
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param string $currency
+     */
+    public function setCurrency(string $currency): void
+    {
+        $this->currency = $currency;
+    }
+
+
 }

@@ -53,5 +53,37 @@ class PutOfferRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getOfferId(): string
+    {
+        return $this->offerId;
+    }
+
+    /**
+     * @param string $offerId
+     */
+    public function setOfferId(string $offerId): void
+    {
+        $this->offerId = $offerId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRequestBody(): array
+    {
+        return $this->requestBody;
+    }
+
+    /**
+     * @param array $requestBody
+     */
+    public function setRequestBody(array $requestBody): void
+    {
+        $this->requestBody = $requestBody;
+    }
+
 
 }

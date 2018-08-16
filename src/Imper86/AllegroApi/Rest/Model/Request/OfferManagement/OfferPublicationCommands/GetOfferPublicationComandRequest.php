@@ -48,5 +48,21 @@ class GetOfferPublicationComandRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getCommandId(): string
+    {
+        return $this->commandId;
+    }
+
+    /**
+     * @param string $commandId
+     */
+    public function setCommandId(string $commandId): void
+    {
+        $this->commandId = $commandId;
+    }
+
 
 }

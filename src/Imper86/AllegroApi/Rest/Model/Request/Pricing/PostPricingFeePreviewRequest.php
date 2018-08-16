@@ -151,5 +151,229 @@ class PostPricingFeePreviewRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getCategoryId(): string
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * @param string $categoryId
+     */
+    public function setCategoryId(string $categoryId): void
+    {
+        $this->categoryId = $categoryId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDuration(): string
+    {
+        return $this->duration;
+    }
+
+    /**
+     * @param string $duration
+     */
+    public function setDuration(string $duration): void
+    {
+        $this->duration = $duration;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType(string $type): void
+    {
+        $this->type = $type;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getIncludeQuotingBundles(): ?bool
+    {
+        return $this->includeQuotingBundles;
+    }
+
+    /**
+     * @param bool|null $includeQuotingBundles
+     */
+    public function setIncludeQuotingBundles(?bool $includeQuotingBundles): void
+    {
+        $this->includeQuotingBundles = $includeQuotingBundles;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getNumberOfBigPhotos(): ?int
+    {
+        return $this->numberOfBigPhotos;
+    }
+
+    /**
+     * @param int|null $numberOfBigPhotos
+     */
+    public function setNumberOfBigPhotos(?int $numberOfBigPhotos): void
+    {
+        $this->numberOfBigPhotos = $numberOfBigPhotos;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getNumberOfPhotos(): ?int
+    {
+        return $this->numberOfPhotos;
+    }
+
+    /**
+     * @param int|null $numberOfPhotos
+     */
+    public function setNumberOfPhotos(?int $numberOfPhotos): void
+    {
+        $this->numberOfPhotos = $numberOfPhotos;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getQuantity(): ?int
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param int|null $quantity
+     */
+    public function setQuantity(?int $quantity): void
+    {
+        $this->quantity = $quantity;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getSoldQuantity(): ?int
+    {
+        return $this->soldQuantity;
+    }
+
+    /**
+     * @param int|null $soldQuantity
+     */
+    public function setSoldQuantity(?int $soldQuantity): void
+    {
+        $this->soldQuantity = $soldQuantity;
+    }
+
+    /**
+     * @return float
+     */
+    public function getUnitPrice(): float
+    {
+        return $this->unitPrice;
+    }
+
+    /**
+     * @param float $unitPrice
+     */
+    public function setUnitPrice(float $unitPrice): void
+    {
+        $this->unitPrice = $unitPrice;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getBold(): ?bool
+    {
+        return $this->bold;
+    }
+
+    /**
+     * @param bool|null $bold
+     */
+    public function setBold(?bool $bold): void
+    {
+        $this->bold = $bold;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getHighlight(): ?bool
+    {
+        return $this->highlight;
+    }
+
+    /**
+     * @param bool|null $highlight
+     */
+    public function setHighlight(?bool $highlight): void
+    {
+        $this->highlight = $highlight;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getDepartmentPage(): ?bool
+    {
+        return $this->departmentPage;
+    }
+
+    /**
+     * @param bool|null $departmentPage
+     */
+    public function setDepartmentPage(?bool $departmentPage): void
+    {
+        $this->departmentPage = $departmentPage;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getEmphasized(): ?bool
+    {
+        return $this->emphasized;
+    }
+
+    /**
+     * @param bool|null $emphasized
+     */
+    public function setEmphasized(?bool $emphasized): void
+    {
+        $this->emphasized = $emphasized;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getEmphasizedHighlightBoldPackage(): ?bool
+    {
+        return $this->emphasizedHighlightBoldPackage;
+    }
+
+    /**
+     * @param bool|null $emphasizedHighlightBoldPackage
+     */
+    public function setEmphasizedHighlightBoldPackage(?bool $emphasizedHighlightBoldPackage): void
+    {
+        $this->emphasizedHighlightBoldPackage = $emphasizedHighlightBoldPackage;
+    }
+
 
 }

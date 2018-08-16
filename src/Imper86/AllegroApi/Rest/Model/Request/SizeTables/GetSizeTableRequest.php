@@ -48,5 +48,21 @@ class GetSizeTableRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getTableId(): string
+    {
+        return $this->tableId;
+    }
+
+    /**
+     * @param string $tableId
+     */
+    public function setTableId(string $tableId): void
+    {
+        $this->tableId = $tableId;
+    }
+
 
 }

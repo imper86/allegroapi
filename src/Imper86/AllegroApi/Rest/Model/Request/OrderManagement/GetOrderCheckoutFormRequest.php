@@ -48,5 +48,21 @@ class GetOrderCheckoutFormRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getCheckoutFormId(): string
+    {
+        return $this->checkoutFormId;
+    }
+
+    /**
+     * @param string $checkoutFormId
+     */
+    public function setCheckoutFormId(string $checkoutFormId): void
+    {
+        $this->checkoutFormId = $checkoutFormId;
+    }
+
 
 }

@@ -47,5 +47,21 @@ class GetPricingOfferQuotesRequest implements RequestInterface
         return ['offer.id' => $this->offerId];
     }
 
+    /**
+     * @return string
+     */
+    public function getOfferId(): string
+    {
+        return $this->offerId;
+    }
+
+    /**
+     * @param string $offerId
+     */
+    public function setOfferId(string $offerId): void
+    {
+        $this->offerId = $offerId;
+    }
+
 
 }

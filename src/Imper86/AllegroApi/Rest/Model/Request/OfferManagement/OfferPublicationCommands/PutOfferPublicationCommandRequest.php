@@ -105,4 +105,70 @@ class PutOfferPublicationCommandRequest implements RequestInterface
 
         return $offers;
     }
+
+    /**
+     * @return StringCollection
+     */
+    public function getOfferIds(): StringCollection
+    {
+        return $this->offerIds;
+    }
+
+    /**
+     * @param StringCollection $offerIds
+     */
+    public function setOfferIds(StringCollection $offerIds): void
+    {
+        $this->offerIds = $offerIds;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAction(): string
+    {
+        return $this->action;
+    }
+
+    /**
+     * @param string $action
+     */
+    public function setAction(string $action): void
+    {
+        $this->action = $action;
+    }
+
+    /**
+     * @return \DateTime|null
+     */
+    public function getScheduledFor(): ?\DateTime
+    {
+        return $this->scheduledFor;
+    }
+
+    /**
+     * @param \DateTime|null $scheduledFor
+     */
+    public function setScheduledFor(?\DateTime $scheduledFor): void
+    {
+        $this->scheduledFor = $scheduledFor;
+    }
+
+    /**
+     * @return null|UuidInterface
+     */
+    public function getUuid(): ?UuidInterface
+    {
+        return $this->uuid;
+    }
+
+    /**
+     * @param null|UuidInterface $uuid
+     */
+    public function setUuid(?UuidInterface $uuid): void
+    {
+        $this->uuid = $uuid;
+    }
+
+
 }

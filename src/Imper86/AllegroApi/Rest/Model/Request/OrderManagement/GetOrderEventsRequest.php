@@ -62,5 +62,53 @@ class GetOrderEventsRequest implements RequestInterface
         ];
     }
 
+    /**
+     * @return null|string
+     */
+    public function getFromId(): ?string
+    {
+        return $this->fromId;
+    }
+
+    /**
+     * @param null|string $fromId
+     */
+    public function setFromId(?string $fromId): void
+    {
+        $this->fromId = $fromId;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param null|string $type
+     */
+    public function setType(?string $type): void
+    {
+        $this->type = $type;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getLimit(): ?int
+    {
+        return $this->limit;
+    }
+
+    /**
+     * @param int|null $limit
+     */
+    public function setLimit(?int $limit): void
+    {
+        $this->limit = $limit;
+    }
+
 
 }

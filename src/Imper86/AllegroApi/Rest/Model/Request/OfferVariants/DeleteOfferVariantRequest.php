@@ -48,5 +48,21 @@ class DeleteOfferVariantRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getSetId(): string
+    {
+        return $this->setId;
+    }
+
+    /**
+     * @param string $setId
+     */
+    public function setSetId(string $setId): void
+    {
+        $this->setId = $setId;
+    }
+
 
 }

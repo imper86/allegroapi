@@ -107,5 +107,149 @@ class GetOffersListingRequest implements RequestInterface
         ];
     }
 
+    /**
+     * @return null|string
+     */
+    public function getCategoryId(): ?string
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * @param null|string $categoryId
+     */
+    public function setCategoryId(?string $categoryId): void
+    {
+        $this->categoryId = $categoryId;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getPhrase(): ?string
+    {
+        return $this->phrase;
+    }
+
+    /**
+     * @param null|string $phrase
+     */
+    public function setPhrase(?string $phrase): void
+    {
+        $this->phrase = $phrase;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getSellerId(): ?string
+    {
+        return $this->sellerId;
+    }
+
+    /**
+     * @param null|string $sellerId
+     */
+    public function setSellerId(?string $sellerId): void
+    {
+        $this->sellerId = $sellerId;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getSearchMode(): ?string
+    {
+        return $this->searchMode;
+    }
+
+    /**
+     * @param null|string $searchMode
+     */
+    public function setSearchMode(?string $searchMode): void
+    {
+        $this->searchMode = $searchMode;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getOffset(): ?int
+    {
+        return $this->offset;
+    }
+
+    /**
+     * @param int|null $offset
+     */
+    public function setOffset(?int $offset): void
+    {
+        $this->offset = $offset;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getLimit(): ?int
+    {
+        return $this->limit;
+    }
+
+    /**
+     * @param int|null $limit
+     */
+    public function setLimit(?int $limit): void
+    {
+        $this->limit = $limit;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getSort(): ?string
+    {
+        return $this->sort;
+    }
+
+    /**
+     * @param null|string $sort
+     */
+    public function setSort(?string $sort): void
+    {
+        $this->sort = $sort;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getInclude(): ?string
+    {
+        return $this->include;
+    }
+
+    /**
+     * @param null|string $include
+     */
+    public function setInclude(?string $include): void
+    {
+        $this->include = $include;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getFallback(): ?bool
+    {
+        return $this->fallback;
+    }
+
+    /**
+     * @param bool|null $fallback
+     */
+    public function setFallback(?bool $fallback): void
+    {
+        $this->fallback = $fallback;
+    }
+
 
 }

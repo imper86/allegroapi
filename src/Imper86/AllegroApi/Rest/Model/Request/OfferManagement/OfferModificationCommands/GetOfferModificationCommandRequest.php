@@ -47,4 +47,20 @@ class GetOfferModificationCommandRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return string
+     */
+    public function getCommandUuid(): string
+    {
+        return $this->commandUuid;
+    }
+
+    /**
+     * @param string $commandUuid
+     */
+    public function setCommandUuid(string $commandUuid): void
+    {
+        $this->commandUuid = $commandUuid;
+    }
+
 }

@@ -106,5 +106,85 @@ class PutOfferVariantRequest implements RequestInterface
         return null;
     }
 
+    /**
+     * @return Offer[]|OfferCollection
+     */
+    public function getOffers()
+    {
+        return $this->offers;
+    }
+
+    /**
+     * @param Offer[]|OfferCollection $offers
+     */
+    public function setOffers($offers): void
+    {
+        $this->offers = $offers;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isUseColorPattern(): bool
+    {
+        return $this->useColorPattern;
+    }
+
+    /**
+     * @param bool $useColorPattern
+     */
+    public function setUseColorPattern(bool $useColorPattern): void
+    {
+        $this->useColorPattern = $useColorPattern;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSetId(): string
+    {
+        return $this->setId;
+    }
+
+    /**
+     * @param string $setId
+     */
+    public function setSetId(string $setId): void
+    {
+        $this->setId = $setId;
+    }
+
+    /**
+     * @return StringCollection|null
+     */
+    public function getParameterIds(): ?StringCollection
+    {
+        return $this->parameterIds;
+    }
+
+    /**
+     * @param StringCollection|null $parameterIds
+     */
+    public function setParameterIds(?StringCollection $parameterIds): void
+    {
+        $this->parameterIds = $parameterIds;
+    }
+
 
 }

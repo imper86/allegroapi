@@ -89,5 +89,85 @@ class GetOrderCheckoutFormsRequest implements RequestInterface
         ];
     }
 
+    /**
+     * @return int|null
+     */
+    public function getOffset(): ?int
+    {
+        return $this->offset;
+    }
+
+    /**
+     * @param int|null $offset
+     */
+    public function setOffset(?int $offset): void
+    {
+        $this->offset = $offset;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getLimit(): ?int
+    {
+        return $this->limit;
+    }
+
+    /**
+     * @param int|null $limit
+     */
+    public function setLimit(?int $limit): void
+    {
+        $this->limit = $limit;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param null|string $status
+     */
+    public function setStatus(?string $status): void
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return \DateTime|null
+     */
+    public function getBoughtAtFrom(): ?\DateTime
+    {
+        return $this->boughtAtFrom;
+    }
+
+    /**
+     * @param \DateTime|null $boughtAtFrom
+     */
+    public function setBoughtAtFrom(?\DateTime $boughtAtFrom): void
+    {
+        $this->boughtAtFrom = $boughtAtFrom;
+    }
+
+    /**
+     * @return \DateTime|null
+     */
+    public function getBoughtAtTo(): ?\DateTime
+    {
+        return $this->boughtAtTo;
+    }
+
+    /**
+     * @param \DateTime|null $boughtAtTo
+     */
+    public function setBoughtAtTo(?\DateTime $boughtAtTo): void
+    {
+        $this->boughtAtTo = $boughtAtTo;
+    }
+
 
 }

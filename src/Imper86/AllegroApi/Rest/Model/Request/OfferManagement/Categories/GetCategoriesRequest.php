@@ -48,4 +48,20 @@ class GetCategoriesRequest implements RequestInterface
         return ['parent.id' => $this->parentId];
     }
 
+    /**
+     * @return null|string
+     */
+    public function getParentId(): ?string
+    {
+        return $this->parentId;
+    }
+
+    /**
+     * @param null|string $parentId
+     */
+    public function setParentId(?string $parentId): void
+    {
+        $this->parentId = $parentId;
+    }
+
 }
