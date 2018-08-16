@@ -11,7 +11,7 @@ namespace Imper86\AllegroApi\Rest\Model\Request\OfferManagement\Offers;
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 use Imper86\AllegroApi\RestClientInterface;
 
-class GetSaleOfferRequest implements RequestInterface
+class GetOfferRequest implements RequestInterface
 {
     /**
      * @var string
