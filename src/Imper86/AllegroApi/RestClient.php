@@ -33,6 +33,10 @@ class RestClient implements RestClientInterface
      */
     private $httpClient;
     /**
+     * @var \finfo
+     */
+    private $finfo;
+    /**
      * @var \Psr\Http\Message\RequestInterface
      */
     private $lastHttpRequest;
@@ -44,15 +48,7 @@ class RestClient implements RestClientInterface
     public function __construct(CredentialsInterface $credentials)
     {
         $this->credentials = $credentials;
-    }
-
-    private function getHttpClient(): Client
-    {
-        if (null === $this->httpClient) {
-            $this->httpClient = new Client(['base_uri' => RestClientInterface::REST_API_URL]);
-        }
-
-        return $this->httpClient;
+        $this->finfo = new \finfo(FILEINFO_MIME_TYPE);
     }
 
     public function getAuthService(): AuthServiceInterface
@@ -95,18 +91,35 @@ class RestClient implements RestClientInterface
         }
     }
 
-    private function prepareHeaders(TokenInterface $token, RequestInterface $request)
+    public function uploadImage(TokenInterface $token, string $imageBody): ResponseInterface
     {
-        $contentType = null === $request->getContentType()
-            ? RestClientInterface::CONTENT_TYPE_PUBLIC
-            : $request->getContentType();
+        try {
+            $imageMime = $this->finfo->buffer($imageBody);
 
-        return [
-            'Authorization' => 'Bearer '.$token->getAccessToken(),
-            'Api-Key' => $this->credentials->getRestApiKey(),
-            'Accept' => $contentType,
-            'Content-Type' => $contentType,
-        ];
+            $httpRequest = new Request(
+                'POST',
+                RestClientInterface::UPLOAD_URL.'/sale/images',
+                [
+                    'Authorization' => 'Bearer '.$token->getAccessToken(),
+                    'Accept' => RestClientInterface::CONTENT_TYPE_BETA,
+                    'Content-Type' => $imageMime,
+                ],
+                $imageBody
+            );
+
+            $this->lastHttpRequest = $httpRequest;
+            $this->lastHttpResponse = $this->getHttpClient()->send($httpRequest);
+
+            return $this->lastHttpResponse;
+        } catch (ClientException $clientException) {
+            $this->lastHttpResponse = $clientException->getResponse();
+
+            if (401 == $clientException->getCode()) {
+                throw new UnauthorizedClientException($clientException);
+            }
+
+            throw $clientException;
+        }
     }
 
     public function getLastHttpRequest(): ?\Psr\Http\Message\RequestInterface
@@ -117,6 +130,28 @@ class RestClient implements RestClientInterface
     public function getLastHttpResponse(): ?ResponseInterface
     {
         return $this->lastHttpResponse;
+    }
+
+    private function getHttpClient(): Client
+    {
+        if (null === $this->httpClient) {
+            $this->httpClient = new Client(['base_uri' => RestClientInterface::REST_API_URL]);
+        }
+
+        return $this->httpClient;
+    }
+
+    private function prepareHeaders(TokenInterface $token, RequestInterface $request)
+    {
+        $contentType = null === $request->getContentType()
+            ? RestClientInterface::CONTENT_TYPE_PUBLIC
+            : $request->getContentType();
+
+        return [
+            'Authorization' => 'Bearer '.$token->getAccessToken(),
+            'Accept' => $contentType,
+            'Content-Type' => $contentType,
+        ];
     }
 
 
