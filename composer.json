@@ -4,6 +4,8 @@
     "type": "library",
     "require": {
         "php": ">=7.1.0",
+        "ext-fileinfo": "*",
+        "ext-json": "*",
         "guzzlehttp/guzzle": "^6.3",
         "ramsey/uuid": "^3.7",
         "lcobucci/jwt": "^3.2",

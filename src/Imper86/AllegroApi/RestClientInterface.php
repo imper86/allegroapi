@@ -25,11 +25,15 @@ interface RestClientInterface
 
     const REST_API_URL = 'https://api.allegro.pl';
 
+    const UPLOAD_URL = 'https://upload.allegro.pl';
+
     const OAUTH_URL = 'https://allegro.pl/auth/oauth';
 
     public function getAuthService(): AuthServiceInterface;
 
     public function sendRequest(TokenInterface $token, RequestInterface $request): ResponseInterface;
+
+    public function uploadImage(TokenInterface $token, string $imageBody): ResponseInterface;
 
     public function getLastHttpRequest(): ?\Psr\Http\Message\RequestInterface;
 
