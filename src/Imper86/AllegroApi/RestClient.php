@@ -101,7 +101,7 @@ class RestClient implements RestClientInterface
                 RestClientInterface::UPLOAD_URL.'/sale/images',
                 [
                     'Authorization' => 'Bearer '.$token->getAccessToken(),
-                    'Accept' => RestClientInterface::CONTENT_TYPE_BETA,
+                    'Accept' => RestClientInterface::CONTENT_TYPE_PUBLIC,
                     'Content-Type' => $imageMime,
                 ],
                 $imageBody

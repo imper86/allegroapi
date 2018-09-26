@@ -45,7 +45,7 @@ class GetOfferPublicationCommandTasksRequest implements RequestInterface
 
     public function getContentType(): ?string
     {
-        return RestClientInterface::CONTENT_TYPE_BETA;
+        return RestClientInterface::CONTENT_TYPE_PUBLIC;
     }
 
     public function getBody(): ?array
