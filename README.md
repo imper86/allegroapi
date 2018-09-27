@@ -82,6 +82,10 @@ I've created two Exception classes:
 InvalidRequestMethodException - just means that you used wrong HTTP method name in your request.
 UnauthorizedClientException - you should catch it just to know when refreshing token is necessary.
 
+## A full, working example
+If you don't understand my approach, or even the whole library, please look at this gist. Maybe
+that way will be easier for you to start working with my solution: [link](https://gist.github.com/imper86/c3dffb37e33621e673829c5412720502)
+
 ## SOAP API
 There is a class AllegroApiSoapClient inside this lib, and you can use it, by so far I got no time to finish it.
 It should work ok, but I need some time to document it.
