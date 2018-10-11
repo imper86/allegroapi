@@ -23,7 +23,7 @@ class PostPricingFeePreviewRequest implements RequestInterface
      */
     private $categoryId;
     /**
-     * @var string
+     * @var string|null
      */
     private $duration;
     /**
@@ -77,7 +77,7 @@ class PostPricingFeePreviewRequest implements RequestInterface
 
     public function __construct(
         string $categoryId,
-        string $duration,
+        ?string $duration,
         string $type,
         ?bool $includeQuotingBundles,
         ?int $numberOfBigPhotos,
@@ -85,11 +85,11 @@ class PostPricingFeePreviewRequest implements RequestInterface
         ?int $quantity,
         ?int $soldQuantity,
         float $unitPrice,
-        ?bool $bold,
-        ?bool $highlight,
-        ?bool $departmentPage,
-        ?bool $emphasized,
-        ?bool $emphasizedHighlightBoldPackage
+        ?bool $bold = null,
+        ?bool $highlight = null,
+        ?bool $departmentPage = null,
+        ?bool $emphasized = null,
+        ?bool $emphasizedHighlightBoldPackage = null
     ) {
         $this->categoryId = $categoryId;
         $this->duration = $duration;
@@ -170,7 +170,7 @@ class PostPricingFeePreviewRequest implements RequestInterface
     /**
      * @return string
      */
-    public function getDuration(): string
+    public function getDuration(): ?string
     {
         return $this->duration;
     }
@@ -178,7 +178,7 @@ class PostPricingFeePreviewRequest implements RequestInterface
     /**
      * @param string $duration
      */
-    public function setDuration(string $duration): void
+    public function setDuration(?string $duration): void
     {
         $this->duration = $duration;
     }
