@@ -31,7 +31,11 @@ interface RestClientInterface
 
     public function getAuthService(): AuthServiceInterface;
 
-    public function sendRequest(TokenInterface $token, RequestInterface $request): ResponseInterface;
+    public function sendRequest(
+        TokenInterface $token,
+        RequestInterface $request,
+        array $guzzleOptions = []
+    ): ResponseInterface;
 
     public function uploadImage(TokenInterface $token, string $imageBody): ResponseInterface;
 
