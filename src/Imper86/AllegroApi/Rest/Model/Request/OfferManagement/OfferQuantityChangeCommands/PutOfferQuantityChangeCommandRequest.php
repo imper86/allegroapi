@@ -13,7 +13,7 @@ use Imper86\AllegroApi\RestClientInterface;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
 
-class PutOfferQuantityChangeCommand implements RequestInterface
+class PutOfferQuantityChangeCommandRequest implements RequestInterface
 {
     /**
      * @var string

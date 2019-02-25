@@ -11,7 +11,7 @@ namespace Imper86\AllegroApi\Rest\Model\Request\OfferManagement\OfferQuantityCha
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 use Imper86\AllegroApi\RestClientInterface;
 
-class GetOfferQuantityChangeCommandTasks implements RequestInterface
+class GetOfferQuantityChangeCommandTasksRequest implements RequestInterface
 {
     /**
      * @var string

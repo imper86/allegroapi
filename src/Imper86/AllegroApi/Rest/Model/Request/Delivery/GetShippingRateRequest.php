@@ -2,25 +2,25 @@
 /**
  * Copyright: IMPER.INFO Adrian Szuszkiewicz
  * Date: 25.02.19
- * Time: 15:53
+ * Time: 16:52
  */
 
-namespace Imper86\AllegroApi\Rest\Model\Request\OfferManagement\OfferQuantityChangeCommands;
+namespace Imper86\AllegroApi\Rest\Model\Request\Delivery;
 
 
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 use Imper86\AllegroApi\RestClientInterface;
 
-class GetOfferQuantityChangeCommand implements RequestInterface
+class GetShippingRateRequest implements RequestInterface
 {
     /**
      * @var string
      */
-    private $commandId;
+    private $id;
 
-    public function __construct(string $commandId)
+    public function __construct(string $id)
     {
-        $this->commandId = $commandId;
+        $this->id = $id;
     }
 
     public function getMethod(): string
@@ -30,7 +30,7 @@ class GetOfferQuantityChangeCommand implements RequestInterface
 
     public function getUri(): string
     {
-        return "sale/offer-quantity-change-commands/{$this->commandId}";
+        return "sale/shipping-rates/{$this->id}";
     }
 
     public function getContentType(): ?string
@@ -51,16 +51,16 @@ class GetOfferQuantityChangeCommand implements RequestInterface
     /**
      * @return string
      */
-    public function getCommandId(): string
+    public function getId(): string
     {
-        return $this->commandId;
+        return $this->id;
     }
 
     /**
-     * @param string $commandId
+     * @param string $id
      */
-    public function setCommandId(string $commandId): void
+    public function setId(string $id): void
     {
-        $this->commandId = $commandId;
+        $this->id = $id;
     }
 }
