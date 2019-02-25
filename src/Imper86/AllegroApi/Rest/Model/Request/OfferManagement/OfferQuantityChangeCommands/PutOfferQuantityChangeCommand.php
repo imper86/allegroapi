@@ -32,7 +32,7 @@ class PutOfferQuantityChangeCommand implements RequestInterface
      */
     private $uuid;
 
-    public function __construct(string $changeType, int $value, array $offerIds, ?UuidInterface $uuid)
+    public function __construct(string $changeType, int $value, array $offerIds, ?UuidInterface $uuid = null)
     {
         if (null === $uuid) {
             $uuid = Uuid::uuid4();
