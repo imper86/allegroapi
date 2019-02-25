@@ -73,8 +73,10 @@ class PutOfferQuantityChangeCommand implements RequestInterface
                 'value' => $this->value,
             ],
             'offerCriteria' => [
-                'offers' => $offersStruct,
-                'type' => 'CONTAINS_OFFERS',
+                [
+                    'offers' => $offersStruct,
+                    'type' => 'CONTAINS_OFFERS',
+                ],
             ],
         ];
     }
