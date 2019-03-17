@@ -17,6 +17,7 @@ class SoapService extends ServiceService
     {
         $options['trace'] = true;
         $options['keep_alive'] = false;
+        $options['features'] = SOAP_SINGLE_ELEMENT_ARRAYS;
 //        $options['classmap']['ArrayOfLong'] = ArrayOfLong::class;
 
         parent::__construct($options);
