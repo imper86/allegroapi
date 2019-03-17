@@ -24,20 +24,14 @@ class ServiceService extends \SoapClient
       'PharmacyRecipientDataStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\PharmacyRecipientDataStruct',
       'DoBidItemRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoBidItemRequest',
       'doBidItemResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doBidItemResponse',
-      'ArrayOfInt' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfInt',
-      'DoCancelBidItemRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoCancelBidItemRequest',
-      'doCancelBidItemResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doCancelBidItemResponse',
       'DoCancelRefundFormRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoCancelRefundFormRequest',
       'doCancelRefundFormResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doCancelRefundFormResponse',
-      'DoCancelRefundWarningRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoCancelRefundWarningRequest',
-      'doCancelRefundWarningResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doCancelRefundWarningResponse',
-      'DoCancelTransactionRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoCancelTransactionRequest',
-      'doCancelTransactionResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doCancelTransactionResponse',
       'RangeIntValueStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RangeIntValueStruct',
       'RangeFloatValueStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RangeFloatValueStruct',
       'RangeDateValueStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RangeDateValueStruct',
       'FieldsValue' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FieldsValue',
       'ArrayOfFieldsvalue' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFieldsvalue',
+      'ArrayOfInt' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfInt',
       'VariantQuantityStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\VariantQuantityStruct',
       'ArrayOfVariantquantitystruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfVariantquantitystruct',
       'VariantStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\VariantStruct',
@@ -60,19 +54,6 @@ class ServiceService extends \SoapClient
       'doCheckItemDescriptionResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doCheckItemDescriptionResponse',
       'DoCheckNewAuctionExtRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoCheckNewAuctionExtRequest',
       'doCheckNewAuctionExtResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doCheckNewAuctionExtResponse',
-      'DoCreateItemTemplateRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoCreateItemTemplateRequest',
-      'CreatedItemTemplateStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\CreatedItemTemplateStruct',
-      'doCreateItemTemplateResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doCreateItemTemplateResponse',
-      'SellRatingEstimationStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingEstimationStruct',
-      'ArrayOfSellratingestimationstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingestimationstruct',
-      'DoFeedbackRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoFeedbackRequest',
-      'doFeedbackResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doFeedbackResponse',
-      'FeedbackManyStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FeedbackManyStruct',
-      'ArrayOfFeedbackmanystruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFeedbackmanystruct',
-      'DoFeedbackManyRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoFeedbackManyRequest',
-      'FeedbackResultStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FeedbackResultStruct',
-      'ArrayOfFeedbackresultstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFeedbackresultstruct',
-      'doFeedbackManyResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doFeedbackManyResponse',
       'DoFinishItemRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoFinishItemRequest',
       'doFinishItemResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doFinishItemResponse',
       'FinishItemsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FinishItemsStruct',
@@ -82,12 +63,6 @@ class ServiceService extends \SoapClient
       'FinishFailureStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FinishFailureStruct',
       'ArrayOfFinishfailurestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFinishfailurestruct',
       'doFinishItemsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doFinishItemsResponse',
-      'DoGetAdminUserLicenceDateRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetAdminUserLicenceDateRequest',
-      'doGetAdminUserLicenceDateResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetAdminUserLicenceDateResponse',
-      'DoGetArchiveRefundsListRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetArchiveRefundsListRequest',
-      'ArchiveRefundsListTypeStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArchiveRefundsListTypeStruct',
-      'ArrayOfArchiverefundslisttypestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfArchiverefundslisttypestruct',
-      'doGetArchiveRefundsListResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetArchiveRefundsListResponse',
       'DoGetBidItem2Request' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetBidItem2Request',
       'BidListStruct2' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\BidListStruct2',
       'ArrayOfBidliststruct2' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfBidliststruct2',
@@ -116,18 +91,6 @@ class ServiceService extends \SoapClient
       'DealsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DealsStruct',
       'ArrayOfDealsstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfDealsstruct',
       'doGetDealsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetDealsResponse',
-      'DoGetFavouriteCategoriesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetFavouriteCategoriesRequest',
-      'FavouritesCategoriesStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FavouritesCategoriesStruct',
-      'ArrayOfFavouritescategoriesstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFavouritescategoriesstruct',
-      'doGetFavouriteCategoriesResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetFavouriteCategoriesResponse',
-      'DoGetFavouriteSellersRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetFavouriteSellersRequest',
-      'FavouritesSellersStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FavouritesSellersStruct',
-      'ArrayOfFavouritessellersstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFavouritessellersstruct',
-      'doGetFavouriteSellersResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetFavouriteSellersResponse',
-      'DoGetFeedbackRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetFeedbackRequest',
-      'FeedbackList' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FeedbackList',
-      'ArrayOfFeedbacklist' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFeedbacklist',
-      'doGetFeedbackResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetFeedbackResponse',
       'DoGetFilledPostBuyFormsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetFilledPostBuyFormsRequest',
       'FilledPostBuyFormsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FilledPostBuyFormsStruct',
       'doGetFilledPostBuyFormsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetFilledPostBuyFormsResponse',
@@ -135,24 +98,13 @@ class ServiceService extends \SoapClient
       'doGetFreeDeliveryAmountResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetFreeDeliveryAmountResponse',
       'DoGetItemFieldsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetItemFieldsRequest',
       'doGetItemFieldsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetItemFieldsResponse',
-      'DoGetItemTemplatesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetItemTemplatesRequest',
-      'ItemTemplateListStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemTemplateListStruct',
-      'ArrayOfItemtemplateliststruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemtemplateliststruct',
-      'ItemTemplatesStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemTemplatesStruct',
-      'doGetItemTemplatesResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetItemTemplatesResponse',
-      'ItemGetImage' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemGetImage',
-      'ArrayOfItemgetimage' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemgetimage',
-      'DoGetItemsImagesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetItemsImagesRequest',
-      'ItemImageList' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemImageList',
-      'ArrayOfItemimagelist' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemimagelist',
-      'ItemImagesStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemImagesStruct',
-      'ArrayOfItemimagesstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemimagesstruct',
-      'doGetItemsImagesResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetItemsImagesResponse',
       'DoGetItemsInfoRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetItemsInfoRequest',
       'DurationInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DurationInfoStruct',
       'ItemInfo' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemInfo',
       'ItemCatList' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemCatList',
       'ArrayOfItemcatlist' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemcatlist',
+      'ItemImageList' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemImageList',
+      'ArrayOfItemimagelist' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemimagelist',
       'AttribStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\AttribStruct',
       'ArrayOfAttribstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfAttribstruct',
       'FulfillmentTimeStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FulfillmentTimeStruct',
@@ -194,11 +146,6 @@ class ServiceService extends \SoapClient
       'FiltersListType' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FiltersListType',
       'ArrayOfFilterslisttype' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFilterslisttype',
       'doGetItemsListResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetItemsListResponse',
-      'DoGetMyAddressesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMyAddressesRequest',
-      'AddressUserDataStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\AddressUserDataStruct',
-      'AddressInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\AddressInfoStruct',
-      'ArrayOfAddressinfostruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfAddressinfostruct',
-      'doGetMyAddressesResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetMyAddressesResponse',
       'SortOptionsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SortOptionsStruct',
       'DoGetMyBidItemsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMyBidItemsRequest',
       'ItemPriceStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemPriceStruct',
@@ -258,10 +205,6 @@ class ServiceService extends \SoapClient
       'PaymentsPayoutStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\PaymentsPayoutStruct',
       'PaymentsInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\PaymentsInfoStruct',
       'doGetMyPaymentsInfoResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetMyPaymentsInfoResponse',
-      'DoGetMyPaymentsRefundsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMyPaymentsRefundsRequest',
-      'UserPaymentRefundsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\UserPaymentRefundsStruct',
-      'ArrayOfUserpaymentrefundsstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfUserpaymentrefundsstruct',
-      'doGetMyPaymentsRefundsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetMyPaymentsRefundsResponse',
       'DoGetMyPayoutsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMyPayoutsRequest',
       'UserPayoutStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\UserPayoutStruct',
       'ArrayOfUserpayoutstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfUserpayoutstruct',
@@ -279,18 +222,6 @@ class ServiceService extends \SoapClient
       'SellItemStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellItemStruct',
       'ArrayOfSellitemstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellitemstruct',
       'doGetMySellItemsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetMySellItemsResponse',
-      'DoGetMySellRatingRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMySellRatingRequest',
-      'SellRatingAverageStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingAverageStruct',
-      'ArrayOfSellratingaveragestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingaveragestruct',
-      'SellRatingReasonSumStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingReasonSumStruct',
-      'ArrayOfSellratingreasonsumstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingreasonsumstruct',
-      'SellRatingDetailStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingDetailStruct',
-      'ArrayOfSellratingdetailstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingdetailstruct',
-      'SellRatingStatsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingStatsStruct',
-      'ArrayOfSellratingstatsstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingstatsstruct',
-      'SellRatingAveragePerMonthStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingAveragePerMonthStruct',
-      'ArrayOfSellratingaveragepermonthstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingaveragepermonthstruct',
-      'doGetMySellRatingResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetMySellRatingResponse',
       'SoldFilterOptionsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SoldFilterOptionsStruct',
       'DoGetMySoldItemsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetMySoldItemsRequest',
       'SoldItemStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SoldItemStruct',
@@ -300,10 +231,6 @@ class ServiceService extends \SoapClient
       'WonItemStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\WonItemStruct',
       'ArrayOfWonitemstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfWonitemstruct',
       'doGetMyWonItemsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetMyWonItemsResponse',
-      'DoGetPaymentDataRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetPaymentDataRequest',
-      'BillingDataType' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\BillingDataType',
-      'ArrayOfBillingdatatype' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfBillingdatatype',
-      'doGetPaymentDataResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetPaymentDataResponse',
       'DoGetPaymentMethodsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetPaymentMethodsRequest',
       'PaymentMethodStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\PaymentMethodStruct',
       'ArrayOfPaymentmethodstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfPaymentmethodstruct',
@@ -354,32 +281,11 @@ class ServiceService extends \SoapClient
       'ReasonInfoType' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ReasonInfoType',
       'ArrayOfReasoninfotype' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfReasoninfotype',
       'doGetRefundsReasonsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetRefundsReasonsResponse',
-      'DoGetRelatedItemsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetRelatedItemsRequest',
-      'RelatedItemStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RelatedItemStruct',
-      'ArrayOfRelateditemstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfRelateditemstruct',
-      'RelatedItemsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RelatedItemsStruct',
-      'doGetRelatedItemsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetRelatedItemsResponse',
-      'DoGetSellFormAttribsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellFormAttribsRequest',
+      'DoGetSellFormFieldsForCategoryRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellFormFieldsForCategoryRequest',
       'SellFormType' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellFormType',
       'ArrayOfSellformtype' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellformtype',
-      'doGetSellFormAttribsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSellFormAttribsResponse',
-      'DoGetSellFormFieldsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellFormFieldsRequest',
-      'doGetSellFormFieldsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSellFormFieldsResponse',
-      'DoGetSellFormFieldsExtRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellFormFieldsExtRequest',
-      'doGetSellFormFieldsExtResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSellFormFieldsExtResponse',
-      'DoGetSellFormFieldsExtLimitRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellFormFieldsExtLimitRequest',
-      'doGetSellFormFieldsExtLimitResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSellFormFieldsExtLimitResponse',
-      'DoGetSellFormFieldsForCategoryRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellFormFieldsForCategoryRequest',
       'SellFormFieldsForCategoryStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellFormFieldsForCategoryStruct',
       'doGetSellFormFieldsForCategoryResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSellFormFieldsForCategoryResponse',
-      'DoGetSellFormFieldsLimitRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellFormFieldsLimitRequest',
-      'doGetSellFormFieldsLimitResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSellFormFieldsLimitResponse',
-      'DoGetSellRatingReasonsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSellRatingReasonsRequest',
-      'SellRatingReasonStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingReasonStruct',
-      'ArrayOfSellratingreasonstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingreasonstruct',
-      'SellRatingInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingInfoStruct',
-      'ArrayOfSellratinginfostruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratinginfostruct',
-      'doGetSellRatingReasonsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSellRatingReasonsResponse',
       'DoGetSessionHandleForWidgetRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetSessionHandleForWidgetRequest',
       'doGetSessionHandleForWidgetResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetSessionHandleForWidgetResponse',
       'DoGetShipmentDataRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetShipmentDataRequest',
@@ -387,14 +293,6 @@ class ServiceService extends \SoapClient
       'ShipmentDataStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ShipmentDataStruct',
       'ArrayOfShipmentdatastruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfShipmentdatastruct',
       'doGetShipmentDataResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetShipmentDataResponse',
-      'DoGetShipmentDataForRelatedItemsRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetShipmentDataForRelatedItemsRequest',
-      'ShipmentPaymentInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ShipmentPaymentInfoStruct',
-      'ArrayOfShipmentpaymentinfostruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfShipmentpaymentinfostruct',
-      'SellerPaymentInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellerPaymentInfoStruct',
-      'SellerShipmentDataStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellerShipmentDataStruct',
-      'ArrayOfSellershipmentdatastruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellershipmentdatastruct',
-      'RelatedItemsShipmentDataStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RelatedItemsShipmentDataStruct',
-      'doGetShipmentDataForRelatedItemsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetShipmentDataForRelatedItemsResponse',
       'DoGetShipmentPriceTypesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetShipmentPriceTypesRequest',
       'ShipmentPriceTypeStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ShipmentPriceTypeStruct',
       'ArrayOfShipmentpricetypestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfShipmentpricetypestruct',
@@ -423,16 +321,8 @@ class ServiceService extends \SoapClient
       'doGetTransactionsIDsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetTransactionsIDsResponse',
       'DoGetUserIDRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetUserIDRequest',
       'doGetUserIDResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetUserIDResponse',
-      'DoGetUserLicenceDateRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetUserLicenceDateRequest',
-      'doGetUserLicenceDateResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetUserLicenceDateResponse',
       'DoGetUserLoginRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetUserLoginRequest',
       'doGetUserLoginResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetUserLoginResponse',
-      'DoGetWaitingFeedbacksRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetWaitingFeedbacksRequest',
-      'WaitFeedbackStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\WaitFeedbackStruct',
-      'ArrayOfWaitfeedbackstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfWaitfeedbackstruct',
-      'doGetWaitingFeedbacksResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetWaitingFeedbacksResponse',
-      'DoGetWaitingFeedbacksCountRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetWaitingFeedbacksCountRequest',
-      'doGetWaitingFeedbacksCountResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetWaitingFeedbacksCountResponse',
       'DoLoginRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoLoginRequest',
       'doLoginResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doLoginResponse',
       'DoLoginEncRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoLoginEncRequest',
@@ -451,16 +341,6 @@ class ServiceService extends \SoapClient
       'ItemBilling' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemBilling',
       'ArrayOfItembilling' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItembilling',
       'doMyBillingItemResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doMyBillingItemResponse',
-      'DoMyContactRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoMyContactRequest',
-      'MyContactList' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\MyContactList',
-      'ArrayOfMycontactlist' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfMycontactlist',
-      'doMyContactResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doMyContactResponse',
-      'DoMyFeedback2Request' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoMyFeedback2Request',
-      'MyFeedbackListStruct2' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\MyFeedbackListStruct2',
-      'ArrayOfMyfeedbackliststruct2' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfMyfeedbackliststruct2',
-      'doMyFeedback2Response' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doMyFeedback2Response',
-      'DoMyFeedback2LimitRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoMyFeedback2LimitRequest',
-      'doMyFeedback2LimitResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doMyFeedback2LimitResponse',
       'ItemTemplateCreateStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemTemplateCreateStruct',
       'DoNewAuctionExtRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoNewAuctionExtRequest',
       'doNewAuctionExtResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doNewAuctionExtResponse',
@@ -474,16 +354,9 @@ class ServiceService extends \SoapClient
       'BlackListResStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\BlackListResStruct',
       'ArrayOfBlacklistresstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfBlacklistresstruct',
       'doRemoveFromBlackListResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doRemoveFromBlackListResponse',
-      'DoRemoveItemTemplatesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoRemoveItemTemplatesRequest',
-      'RemovedItemTemplatesStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RemovedItemTemplatesStruct',
-      'doRemoveItemTemplatesResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doRemoveItemTemplatesResponse',
-      'DoRequestCancelBidRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoRequestCancelBidRequest',
-      'doRequestCancelBidResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doRequestCancelBidResponse',
       'DoRequestPayoutRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoRequestPayoutRequest',
       'RequestPayoutStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\RequestPayoutStruct',
       'doRequestPayoutResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doRequestPayoutResponse',
-      'DoRequestSurchargeRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoRequestSurchargeRequest',
-      'doRequestSurchargeResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doRequestSurchargeResponse',
       'DoSellSomeAgainRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoSellSomeAgainRequest',
       'StructSellAgain' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\StructSellAgain',
       'ArrayOfStructsellagain' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfStructsellagain',
@@ -494,33 +367,19 @@ class ServiceService extends \SoapClient
       'doSellSomeAgainInShopResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSellSomeAgainInShopResponse',
       'DoSendEmailToUserRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoSendEmailToUserRequest',
       'doSendEmailToUserResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSendEmailToUserResponse',
-      'NewPostBuyFormSellerStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\NewPostBuyFormSellerStruct',
-      'ArrayOfNewpostbuyformsellerstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfNewpostbuyformsellerstruct',
-      'InvoiceInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\InvoiceInfoStruct',
-      'NewPostBuyFormCommonStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\NewPostBuyFormCommonStruct',
-      'DoSendPostBuyFormRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoSendPostBuyFormRequest',
-      'ActionDataStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ActionDataStruct',
-      'ArrayOfActiondatastruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfActiondatastruct',
-      'TransactionPayByLinkStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\TransactionPayByLinkStruct',
-      'PostBuyFormStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\PostBuyFormStruct',
-      'doSendPostBuyFormResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSendPostBuyFormResponse',
       'DoSendRefundFormRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoSendRefundFormRequest',
       'doSendRefundFormResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSendRefundFormResponse',
       'DoSetFreeDeliveryAmountRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoSetFreeDeliveryAmountRequest',
       'doSetFreeDeliveryAmountResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSetFreeDeliveryAmountResponse',
       'DoSetShipmentPriceTypeRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoSetShipmentPriceTypeRequest',
       'doSetShipmentPriceTypeResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSetShipmentPriceTypeResponse',
-      'DoSetUserLicenceDateRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoSetUserLicenceDateRequest',
-      'doSetUserLicenceDateResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSetUserLicenceDateResponse',
       'DoShowItemInfoExtRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoShowItemInfoExtRequest',
       'ItemInfoExt' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemInfoExt',
-      'ItemVariantAttributeStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemVariantAttributeStruct',
-      'ArrayOfItemvariantattributestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemvariantattributestruct',
-      'ItemVariantStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemVariantStruct',
-      'ArrayOfItemvariantstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemvariantstruct',
       'doShowItemInfoExtResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doShowItemInfoExtResponse',
       'DoShowUserRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoShowUserRequest',
       'ShowUserFeedbacks' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ShowUserFeedbacks',
+      'SellRatingAverageStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\SellRatingAverageStruct',
+      'ArrayOfSellratingaveragestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfSellratingaveragestruct',
       'doShowUserResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doShowUserResponse',
       'DoVerifyItemRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoVerifyItemRequest',
       'doVerifyItemResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doVerifyItemResponse',
@@ -574,39 +433,12 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoCancelBidItemRequest $parameters
-     * @return doCancelBidItemResponse
-     */
-    public function doCancelBidItem(DoCancelBidItemRequest $parameters)
-    {
-      return $this->__soapCall('doCancelBidItem', array($parameters));
-    }
-
-    /**
      * @param DoCancelRefundFormRequest $parameters
      * @return doCancelRefundFormResponse
      */
     public function doCancelRefundForm(DoCancelRefundFormRequest $parameters)
     {
       return $this->__soapCall('doCancelRefundForm', array($parameters));
-    }
-
-    /**
-     * @param DoCancelRefundWarningRequest $parameters
-     * @return doCancelRefundWarningResponse
-     */
-    public function doCancelRefundWarning(DoCancelRefundWarningRequest $parameters)
-    {
-      return $this->__soapCall('doCancelRefundWarning', array($parameters));
-    }
-
-    /**
-     * @param DoCancelTransactionRequest $parameters
-     * @return doCancelTransactionResponse
-     */
-    public function doCancelTransaction(DoCancelTransactionRequest $parameters)
-    {
-      return $this->__soapCall('doCancelTransaction', array($parameters));
     }
 
     /**
@@ -655,33 +487,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoCreateItemTemplateRequest $parameters
-     * @return doCreateItemTemplateResponse
-     */
-    public function doCreateItemTemplate(DoCreateItemTemplateRequest $parameters)
-    {
-      return $this->__soapCall('doCreateItemTemplate', array($parameters));
-    }
-
-    /**
-     * @param DoFeedbackRequest $parameters
-     * @return doFeedbackResponse
-     */
-    public function doFeedback(DoFeedbackRequest $parameters)
-    {
-      return $this->__soapCall('doFeedback', array($parameters));
-    }
-
-    /**
-     * @param DoFeedbackManyRequest $parameters
-     * @return doFeedbackManyResponse
-     */
-    public function doFeedbackMany(DoFeedbackManyRequest $parameters)
-    {
-      return $this->__soapCall('doFeedbackMany', array($parameters));
-    }
-
-    /**
      * @param DoFinishItemRequest $parameters
      * @return doFinishItemResponse
      */
@@ -697,24 +502,6 @@ class ServiceService extends \SoapClient
     public function doFinishItems(DoFinishItemsRequest $parameters)
     {
       return $this->__soapCall('doFinishItems', array($parameters));
-    }
-
-    /**
-     * @param DoGetAdminUserLicenceDateRequest $parameters
-     * @return doGetAdminUserLicenceDateResponse
-     */
-    public function doGetAdminUserLicenceDate(DoGetAdminUserLicenceDateRequest $parameters)
-    {
-      return $this->__soapCall('doGetAdminUserLicenceDate', array($parameters));
-    }
-
-    /**
-     * @param DoGetArchiveRefundsListRequest $parameters
-     * @return doGetArchiveRefundsListResponse
-     */
-    public function doGetArchiveRefundsList(DoGetArchiveRefundsListRequest $parameters)
-    {
-      return $this->__soapCall('doGetArchiveRefundsList', array($parameters));
     }
 
     /**
@@ -790,33 +577,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoGetFavouriteCategoriesRequest $parameters
-     * @return doGetFavouriteCategoriesResponse
-     */
-    public function doGetFavouriteCategories(DoGetFavouriteCategoriesRequest $parameters)
-    {
-      return $this->__soapCall('doGetFavouriteCategories', array($parameters));
-    }
-
-    /**
-     * @param DoGetFavouriteSellersRequest $parameters
-     * @return doGetFavouriteSellersResponse
-     */
-    public function doGetFavouriteSellers(DoGetFavouriteSellersRequest $parameters)
-    {
-      return $this->__soapCall('doGetFavouriteSellers', array($parameters));
-    }
-
-    /**
-     * @param DoGetFeedbackRequest $parameters
-     * @return doGetFeedbackResponse
-     */
-    public function doGetFeedback(DoGetFeedbackRequest $parameters)
-    {
-      return $this->__soapCall('doGetFeedback', array($parameters));
-    }
-
-    /**
      * @param DoGetFilledPostBuyFormsRequest $parameters
      * @return doGetFilledPostBuyFormsResponse
      */
@@ -844,24 +604,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoGetItemTemplatesRequest $parameters
-     * @return doGetItemTemplatesResponse
-     */
-    public function doGetItemTemplates(DoGetItemTemplatesRequest $parameters)
-    {
-      return $this->__soapCall('doGetItemTemplates', array($parameters));
-    }
-
-    /**
-     * @param DoGetItemsImagesRequest $parameters
-     * @return doGetItemsImagesResponse
-     */
-    public function doGetItemsImages(DoGetItemsImagesRequest $parameters)
-    {
-      return $this->__soapCall('doGetItemsImages', array($parameters));
-    }
-
-    /**
      * @param DoGetItemsInfoRequest $parameters
      * @return doGetItemsInfoResponse
      */
@@ -877,15 +619,6 @@ class ServiceService extends \SoapClient
     public function doGetItemsList(DoGetItemsListRequest $parameters)
     {
       return $this->__soapCall('doGetItemsList', array($parameters));
-    }
-
-    /**
-     * @param DoGetMyAddressesRequest $parameters
-     * @return doGetMyAddressesResponse
-     */
-    public function doGetMyAddresses(DoGetMyAddressesRequest $parameters)
-    {
-      return $this->__soapCall('doGetMyAddresses', array($parameters));
     }
 
     /**
@@ -979,15 +712,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoGetMyPaymentsRefundsRequest $parameters
-     * @return doGetMyPaymentsRefundsResponse
-     */
-    public function doGetMyPaymentsRefunds(DoGetMyPaymentsRefundsRequest $parameters)
-    {
-      return $this->__soapCall('doGetMyPaymentsRefunds', array($parameters));
-    }
-
-    /**
      * @param DoGetMyPayoutsRequest $parameters
      * @return doGetMyPayoutsResponse
      */
@@ -1015,15 +739,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoGetMySellRatingRequest $parameters
-     * @return doGetMySellRatingResponse
-     */
-    public function doGetMySellRating(DoGetMySellRatingRequest $parameters)
-    {
-      return $this->__soapCall('doGetMySellRating', array($parameters));
-    }
-
-    /**
      * @param DoGetMySoldItemsRequest $parameters
      * @return doGetMySoldItemsResponse
      */
@@ -1039,15 +754,6 @@ class ServiceService extends \SoapClient
     public function doGetMyWonItems(DoGetMyWonItemsRequest $parameters)
     {
       return $this->__soapCall('doGetMyWonItems', array($parameters));
-    }
-
-    /**
-     * @param DoGetPaymentDataRequest $parameters
-     * @return doGetPaymentDataResponse
-     */
-    public function doGetPaymentData(DoGetPaymentDataRequest $parameters)
-    {
-      return $this->__soapCall('doGetPaymentData', array($parameters));
     }
 
     /**
@@ -1132,75 +838,12 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoGetRelatedItemsRequest $parameters
-     * @return doGetRelatedItemsResponse
-     */
-    public function doGetRelatedItems(DoGetRelatedItemsRequest $parameters)
-    {
-      return $this->__soapCall('doGetRelatedItems', array($parameters));
-    }
-
-    /**
-     * @param DoGetSellFormAttribsRequest $parameters
-     * @return doGetSellFormAttribsResponse
-     */
-    public function doGetSellFormAttribs(DoGetSellFormAttribsRequest $parameters)
-    {
-      return $this->__soapCall('doGetSellFormAttribs', array($parameters));
-    }
-
-    /**
-     * @param DoGetSellFormFieldsRequest $parameters
-     * @return doGetSellFormFieldsResponse
-     */
-    public function doGetSellFormFields(DoGetSellFormFieldsRequest $parameters)
-    {
-      return $this->__soapCall('doGetSellFormFields', array($parameters));
-    }
-
-    /**
-     * @param DoGetSellFormFieldsExtRequest $parameters
-     * @return doGetSellFormFieldsExtResponse
-     */
-    public function doGetSellFormFieldsExt(DoGetSellFormFieldsExtRequest $parameters)
-    {
-      return $this->__soapCall('doGetSellFormFieldsExt', array($parameters));
-    }
-
-    /**
-     * @param DoGetSellFormFieldsExtLimitRequest $parameters
-     * @return doGetSellFormFieldsExtLimitResponse
-     */
-    public function doGetSellFormFieldsExtLimit(DoGetSellFormFieldsExtLimitRequest $parameters)
-    {
-      return $this->__soapCall('doGetSellFormFieldsExtLimit', array($parameters));
-    }
-
-    /**
      * @param DoGetSellFormFieldsForCategoryRequest $parameters
      * @return doGetSellFormFieldsForCategoryResponse
      */
     public function doGetSellFormFieldsForCategory(DoGetSellFormFieldsForCategoryRequest $parameters)
     {
       return $this->__soapCall('doGetSellFormFieldsForCategory', array($parameters));
-    }
-
-    /**
-     * @param DoGetSellFormFieldsLimitRequest $parameters
-     * @return doGetSellFormFieldsLimitResponse
-     */
-    public function doGetSellFormFieldsLimit(DoGetSellFormFieldsLimitRequest $parameters)
-    {
-      return $this->__soapCall('doGetSellFormFieldsLimit', array($parameters));
-    }
-
-    /**
-     * @param DoGetSellRatingReasonsRequest $parameters
-     * @return doGetSellRatingReasonsResponse
-     */
-    public function doGetSellRatingReasons(DoGetSellRatingReasonsRequest $parameters)
-    {
-      return $this->__soapCall('doGetSellRatingReasons', array($parameters));
     }
 
     /**
@@ -1219,15 +862,6 @@ class ServiceService extends \SoapClient
     public function doGetShipmentData(DoGetShipmentDataRequest $parameters)
     {
       return $this->__soapCall('doGetShipmentData', array($parameters));
-    }
-
-    /**
-     * @param DoGetShipmentDataForRelatedItemsRequest $parameters
-     * @return doGetShipmentDataForRelatedItemsResponse
-     */
-    public function doGetShipmentDataForRelatedItems(DoGetShipmentDataForRelatedItemsRequest $parameters)
-    {
-      return $this->__soapCall('doGetShipmentDataForRelatedItems', array($parameters));
     }
 
     /**
@@ -1312,39 +946,12 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoGetUserLicenceDateRequest $parameters
-     * @return doGetUserLicenceDateResponse
-     */
-    public function doGetUserLicenceDate(DoGetUserLicenceDateRequest $parameters)
-    {
-      return $this->__soapCall('doGetUserLicenceDate', array($parameters));
-    }
-
-    /**
      * @param DoGetUserLoginRequest $parameters
      * @return doGetUserLoginResponse
      */
     public function doGetUserLogin(DoGetUserLoginRequest $parameters)
     {
       return $this->__soapCall('doGetUserLogin', array($parameters));
-    }
-
-    /**
-     * @param DoGetWaitingFeedbacksRequest $parameters
-     * @return doGetWaitingFeedbacksResponse
-     */
-    public function doGetWaitingFeedbacks(DoGetWaitingFeedbacksRequest $parameters)
-    {
-      return $this->__soapCall('doGetWaitingFeedbacks', array($parameters));
-    }
-
-    /**
-     * @param DoGetWaitingFeedbacksCountRequest $parameters
-     * @return doGetWaitingFeedbacksCountResponse
-     */
-    public function doGetWaitingFeedbacksCount(DoGetWaitingFeedbacksCountRequest $parameters)
-    {
-      return $this->__soapCall('doGetWaitingFeedbacksCount', array($parameters));
     }
 
     /**
@@ -1411,33 +1018,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoMyContactRequest $parameters
-     * @return doMyContactResponse
-     */
-    public function doMyContact(DoMyContactRequest $parameters)
-    {
-      return $this->__soapCall('doMyContact', array($parameters));
-    }
-
-    /**
-     * @param DoMyFeedback2Request $parameters
-     * @return doMyFeedback2Response
-     */
-    public function doMyFeedback2(DoMyFeedback2Request $parameters)
-    {
-      return $this->__soapCall('doMyFeedback2', array($parameters));
-    }
-
-    /**
-     * @param DoMyFeedback2LimitRequest $parameters
-     * @return doMyFeedback2LimitResponse
-     */
-    public function doMyFeedback2Limit(DoMyFeedback2LimitRequest $parameters)
-    {
-      return $this->__soapCall('doMyFeedback2Limit', array($parameters));
-    }
-
-    /**
      * @param DoNewAuctionExtRequest $parameters
      * @return doNewAuctionExtResponse
      */
@@ -1474,39 +1054,12 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoRemoveItemTemplatesRequest $parameters
-     * @return doRemoveItemTemplatesResponse
-     */
-    public function doRemoveItemTemplates(DoRemoveItemTemplatesRequest $parameters)
-    {
-      return $this->__soapCall('doRemoveItemTemplates', array($parameters));
-    }
-
-    /**
-     * @param DoRequestCancelBidRequest $parameters
-     * @return doRequestCancelBidResponse
-     */
-    public function doRequestCancelBid(DoRequestCancelBidRequest $parameters)
-    {
-      return $this->__soapCall('doRequestCancelBid', array($parameters));
-    }
-
-    /**
      * @param DoRequestPayoutRequest $parameters
      * @return doRequestPayoutResponse
      */
     public function doRequestPayout(DoRequestPayoutRequest $parameters)
     {
       return $this->__soapCall('doRequestPayout', array($parameters));
-    }
-
-    /**
-     * @param DoRequestSurchargeRequest $parameters
-     * @return doRequestSurchargeResponse
-     */
-    public function doRequestSurcharge(DoRequestSurchargeRequest $parameters)
-    {
-      return $this->__soapCall('doRequestSurcharge', array($parameters));
     }
 
     /**
@@ -1537,15 +1090,6 @@ class ServiceService extends \SoapClient
     }
 
     /**
-     * @param DoSendPostBuyFormRequest $parameters
-     * @return doSendPostBuyFormResponse
-     */
-    public function doSendPostBuyForm(DoSendPostBuyFormRequest $parameters)
-    {
-      return $this->__soapCall('doSendPostBuyForm', array($parameters));
-    }
-
-    /**
      * @param DoSendRefundFormRequest $parameters
      * @return doSendRefundFormResponse
      */
@@ -1570,15 +1114,6 @@ class ServiceService extends \SoapClient
     public function doSetShipmentPriceType(DoSetShipmentPriceTypeRequest $parameters)
     {
       return $this->__soapCall('doSetShipmentPriceType', array($parameters));
-    }
-
-    /**
-     * @param DoSetUserLicenceDateRequest $parameters
-     * @return doSetUserLicenceDateResponse
-     */
-    public function doSetUserLicenceDate(DoSetUserLicenceDateRequest $parameters)
-    {
-      return $this->__soapCall('doSetUserLicenceDate', array($parameters));
     }
 
     /**
