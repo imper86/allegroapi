@@ -35,7 +35,7 @@ class Token implements TokenInterface
 
     public function __construct(ResponseInterface $apiResponse)
     {
-        $rawData = json_decode((string)$apiResponse->getBody());
+        $rawData = (string)$apiResponse->getBody();
         $data = json_decode($rawData);
 
         if (
