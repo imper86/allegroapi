@@ -19,6 +19,8 @@ interface RestClientInterface
 
     const CONTENT_TYPE_BETA = 'application/vnd.allegro.beta.v1+json';
 
+    const CONTENT_TYPE_BETA_V2 = 'application/vnd.allegro.beta.v2+json';
+
     const DATE_TIME_FORMAT = 'Y-m-d\TH:i:s.v\Z';
 
     const DATE_TIME_ZONE = 'UTC';

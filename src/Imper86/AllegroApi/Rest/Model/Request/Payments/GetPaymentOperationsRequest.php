@@ -1,24 +1,25 @@
 <?php
 /**
  * Copyright: IMPER.INFO Adrian Szuszkiewicz
- * Date: 14.08.18
- * Time: 16:29
+ * Date: 03.07.19
+ * Time: 14:41
  */
 
-namespace Imper86\AllegroApi\Rest\Model\Request\OrderManagement;
+namespace Imper86\AllegroApi\Rest\Model\Request\Payments;
 
 
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 use Imper86\AllegroApi\RestClientInterface;
 
-class GetOrderCheckoutFormsRequest implements RequestInterface
+class GetPaymentOperationsRequest implements RequestInterface
 {
     /**
      * @var array|null
      */
     private $queryParameters;
 
-    public function __construct(?array $queryParameters = null) {
+    public function __construct(?array $queryParameters = null)
+    {
         $this->queryParameters = $queryParameters;
     }
 
@@ -29,12 +30,12 @@ class GetOrderCheckoutFormsRequest implements RequestInterface
 
     public function getUri(): string
     {
-        return "order/checkout-forms";
+        return 'payments/payment-operations';
     }
 
     public function getContentType(): ?string
     {
-        return RestClientInterface::CONTENT_TYPE_BETA;
+        return RestClientInterface::CONTENT_TYPE_PUBLIC;
     }
 
     public function getBody(): ?array
@@ -44,7 +45,7 @@ class GetOrderCheckoutFormsRequest implements RequestInterface
 
     public function getQuery(): ?array
     {
-        return $this->getQueryParameters();
+        return $this->queryParameters;
     }
 
     /**

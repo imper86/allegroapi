@@ -13,6 +13,16 @@ use Imper86\AllegroApi\RestClientInterface;
 
 class GetOrderEventStatsRequest implements RequestInterface
 {
+    /**
+     * @var array|null
+     */
+    private $queryParameters;
+
+    public function __construct(?array $queryParameters = null)
+    {
+        $this->queryParameters = $queryParameters;
+    }
+
     public function getMethod(): string
     {
         return 'GET';
@@ -35,7 +45,22 @@ class GetOrderEventStatsRequest implements RequestInterface
 
     public function getQuery(): ?array
     {
-        return null;
+        return $this->getQueryParameters();
     }
 
+    /**
+     * @return array|null
+     */
+    public function getQueryParameters(): ?array
+    {
+        return $this->queryParameters;
+    }
+
+    /**
+     * @param array|null $queryParameters
+     */
+    public function setQueryParameters(?array $queryParameters): void
+    {
+        $this->queryParameters = $queryParameters;
+    }
 }

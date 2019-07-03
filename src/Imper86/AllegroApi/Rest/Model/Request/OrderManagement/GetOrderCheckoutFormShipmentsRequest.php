@@ -1,8 +1,8 @@
 <?php
 /**
  * Copyright: IMPER.INFO Adrian Szuszkiewicz
- * Date: 14.08.18
- * Time: 16:29
+ * Date: 03.07.19
+ * Time: 14:29
  */
 
 namespace Imper86\AllegroApi\Rest\Model\Request\OrderManagement;
@@ -11,15 +11,16 @@ namespace Imper86\AllegroApi\Rest\Model\Request\OrderManagement;
 use Imper86\AllegroApi\Rest\Model\RequestInterface;
 use Imper86\AllegroApi\RestClientInterface;
 
-class GetOrderCheckoutFormsRequest implements RequestInterface
+class GetOrderCheckoutFormShipmentsRequest implements RequestInterface
 {
     /**
-     * @var array|null
+     * @var string
      */
-    private $queryParameters;
+    private $orderId;
 
-    public function __construct(?array $queryParameters = null) {
-        $this->queryParameters = $queryParameters;
+    public function __construct(string $orderId)
+    {
+        $this->orderId = $orderId;
     }
 
     public function getMethod(): string
@@ -29,7 +30,7 @@ class GetOrderCheckoutFormsRequest implements RequestInterface
 
     public function getUri(): string
     {
-        return "order/checkout-forms";
+        return "order/checkout-forms/{$this->orderId}/shipments";
     }
 
     public function getContentType(): ?string
@@ -44,22 +45,22 @@ class GetOrderCheckoutFormsRequest implements RequestInterface
 
     public function getQuery(): ?array
     {
-        return $this->getQueryParameters();
+        return null;
     }
 
     /**
-     * @return array|null
+     * @return string
      */
-    public function getQueryParameters(): ?array
+    public function getOrderId(): string
     {
-        return $this->queryParameters;
+        return $this->orderId;
     }
 
     /**
-     * @param array|null $queryParameters
+     * @param string $orderId
      */
-    public function setQueryParameters(?array $queryParameters): void
+    public function setOrderId(string $orderId): void
     {
-        $this->queryParameters = $queryParameters;
+        $this->orderId = $orderId;
     }
 }

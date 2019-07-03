@@ -35,14 +35,15 @@ class Token implements TokenInterface
 
     public function __construct(ResponseInterface $apiResponse)
     {
-        $data = json_decode($apiResponse->getBody()->getContents());
+        $rawData = json_decode((string)$apiResponse->getBody());
+        $data = json_decode($rawData);
 
         if (
             empty($data->access_token)
             || empty($data->refresh_token)
             || empty($data->expires_in)
         ) {
-            throw new \Exception('Nieprawidłowa struktura odpowiedzi API, otrzymano: '.$apiResponse->getBody()->getContents());
+            throw new \Exception('Nieprawidłowa struktura odpowiedzi API, otrzymano: '.$rawData);
         }
 
         $this->accessToken = $data->access_token;
