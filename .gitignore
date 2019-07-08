@@ -1,7 +1,4 @@
-/.idea/
-composer.lock
 /vendor/
-/dev/tests/
-/dev/
-test.php
-testtoken
+/.idea/
+/tests/
+composer.lock

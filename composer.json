@@ -1,29 +1,28 @@
 {
-    "name": "imper86/allegroapi",
-    "description": "library making allegro rest and soap api using easier",
+    "name": "imper86/allegro-rest-api-sdk",
+    "description": "Simple PHP SDK for Allegro.pl REST Api",
     "type": "library",
-    "require": {
-        "php": ">=7.1.0",
-        "ext-fileinfo": "*",
-        "ext-json": "*",
-        "ext-soap": "*",
-        "guzzlehttp/guzzle": "^6.3",
-        "ramsey/uuid": "^3.7",
-        "lcobucci/jwt": "^3.2",
-        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
-    },
-    "require-dev": {
-        "symfony/var-dumper": "^3.3"
-    },
     "license": "MIT",
     "authors": [
         {
-            "name": "imper",
+            "name": "Adrian Szuszkiewicz",
             "email": "me@imper.info"
         }
     ],
-    "minimum-stability": "stable",
+    "require": {
+        "lcobucci/jwt": "^3.3",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*",
+        "psr/container": "^1.0",
+        "ramsey/uuid": "^3.8",
+        "ext-fileinfo": "*"
+    },
     "autoload": {
-        "psr-4": { "Imper86\\AllegroApi\\": "src/Imper86/AllegroApi" }
+        "psr-4": {
+            "Imper86\\AllegroRestApiSdk\\": "src"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3"
     }
 }
