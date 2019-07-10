@@ -12,7 +12,7 @@ use GuzzleHttp\Promise\PromiseInterface;
 use Imper86\AllegroRestApiSdk\Model\Credentials\AppCredentialsInterface;
 use Imper86\AllegroRestApiSdk\Service\AuthServiceInterface;
 use Imper86\AllegroRestApiSdk\Service\Container;
-use Imper86\AllegroRestApiSdk\Service\Factory\RequestFactoryInterface;
+use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactoryInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
@@ -38,9 +38,9 @@ class AllegroRestApiSdk implements AllegroRestApiSdkInterface
         return $this->container->getAuthService();
     }
 
-    public function getRequestFactory(): RequestFactoryInterface
+    public function getTokenBundleFactory(): TokenBundleFactoryInterface
     {
-        return $this->container->getRequestFactory();
+        return $this->container->getTokenBundleFactory();
     }
 
     public function sendRequest(RequestInterface $request, array $options = []): ResponseInterface
