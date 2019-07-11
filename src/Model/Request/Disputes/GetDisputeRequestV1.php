@@ -20,7 +20,7 @@ class GetDisputeRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sales/disputes/{$disputeId}",
+            "/sale/disputes/{$disputeId}",
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

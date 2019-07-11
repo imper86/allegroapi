@@ -21,7 +21,7 @@ class PostSaleImageWithUrlRequestV1 extends Request
     public function __construct($token, string $imageUrl, bool $sandbox = false)
     {
         $host = $sandbox ? AllegroRestApiSdkInterface::UPLOAD_SANDBOX_HOST : AllegroRestApiSdkInterface::UPLOAD_HOST;
-        $uri = new Uri("https://{$host}/sales/images");
+        $uri = new Uri("https://{$host}/sale/images");
 
         parent::__construct(
             'POST',

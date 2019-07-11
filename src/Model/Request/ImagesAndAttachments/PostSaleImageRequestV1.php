@@ -22,7 +22,7 @@ class PostSaleImageRequestV1 extends Request
     public function __construct($token, string $imageBody, bool $sandbox = false)
     {
         $host = $sandbox ? AllegroRestApiSdkInterface::UPLOAD_SANDBOX_HOST : AllegroRestApiSdkInterface::UPLOAD_HOST;
-        $uri = new Uri("https://{$host}/sales/images");
+        $uri = new Uri("https://{$host}/sale/images");
 
         $finfo = new finfo(FILEINFO_MIME_TYPE);
 
