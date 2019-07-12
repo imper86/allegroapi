@@ -12,6 +12,9 @@ use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Request;
 use Imper86\AllegroRestApiSdk\Model\Auth\TokenBundleInterface;
 use Imper86\AllegroRestApiSdk\Model\Credentials\AppCredentialsInterface;
+use Imper86\AllegroRestApiSdk\Model\SoapWsdl\DoLoginWithAccessTokenRequest;
+use Imper86\AllegroRestApiSdk\Model\SoapWsdl\doLoginWithAccessTokenResponse;
+use Imper86\AllegroRestApiSdk\Model\SoapWsdl\ServiceService;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactoryInterface;
 
 class AuthService implements AuthServiceInterface
@@ -28,16 +31,22 @@ class AuthService implements AuthServiceInterface
      * @var AppCredentialsInterface
      */
     private $appCredentials;
+    /**
+     * @var ServiceService
+     */
+    private $soapService;
 
     public function __construct(
         AppCredentialsInterface $appCredentials,
         ClientInterface $httpClient,
-        TokenBundleFactoryInterface $tokenBundleFactory
+        TokenBundleFactoryInterface $tokenBundleFactory,
+        ServiceService $soapService
     )
     {
         $this->httpClient = $httpClient;
         $this->tokenBundleFactory = $tokenBundleFactory;
         $this->appCredentials = $appCredentials;
+        $this->soapService = $soapService;
     }
 
     /**
@@ -89,6 +98,17 @@ class AuthService implements AuthServiceInterface
         $response = $this->httpClient->send($request);
 
         return $this->tokenBundleFactory->buildFromResponse($response);
+    }
+
+    public function generateSoapToken($accessToken): doLoginWithAccessTokenResponse
+    {
+        return $this->soapService->doLoginWithAccessToken(
+            new DoLoginWithAccessTokenRequest(
+                (string)$accessToken,
+                1,
+                $this->appCredentials->getClientId()
+            )
+        );
     }
 
     private function getUriForCredentials(): string

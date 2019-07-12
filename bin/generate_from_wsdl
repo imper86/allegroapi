@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+use Wsdl2PhpGenerator\Config;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$outputDir = realpath(__DIR__ . '/../src/Model/SoapWsdl');
+
+shell_exec("rm -rf {$outputDir}");
+
+$generator = new \Wsdl2PhpGenerator\Generator();
+$generator->generate(new Config([
+    'inputFile' => 'https://webapi.allegro.pl/service.php?wsdl',
+    'outputDir' => $outputDir,
+    'namespaceName' => 'Imper86\AllegroRestApiSdk\Model\SoapWsdl',
+    'constructorParamsDefaultToNull' => true,
+]));

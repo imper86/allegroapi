@@ -9,6 +9,7 @@ namespace Imper86\AllegroRestApiSdk;
 
 
 use GuzzleHttp\Promise\PromiseInterface;
+use Imper86\AllegroRestApiSdk\Model\SoapWsdl\ServiceService;
 use Imper86\AllegroRestApiSdk\Service\AuthServiceInterface;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactoryInterface;
 use Psr\Http\Message\RequestInterface;
@@ -28,4 +29,6 @@ interface AllegroRestApiSdkInterface
     public function sendRequest(RequestInterface $request, array $options = []): ResponseInterface;
 
     public function sendAsyncRequest(RequestInterface $request, array $options = []): PromiseInterface;
+
+    public function soap(): ServiceService;
 }

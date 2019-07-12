@@ -11,6 +11,7 @@ namespace Imper86\AllegroRestApiSdk\Service;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Imper86\AllegroRestApiSdk\Model\Credentials\AppCredentialsInterface;
+use Imper86\AllegroRestApiSdk\Model\SoapWsdl\ServiceService;
 use Imper86\AllegroRestApiSdk\Service\Factory\RequestFactory;
 use Imper86\AllegroRestApiSdk\Service\Factory\RequestFactoryInterface;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactory;
@@ -27,6 +28,10 @@ class Container
      * @var AppCredentialsInterface
      */
     private $appCredentials;
+    /**
+     * @var ServiceService
+     */
+    private $soapService;
 
     public function __construct(AppCredentialsInterface $appCredentials)
     {
@@ -41,7 +46,8 @@ class Container
             $instanceRef = new AuthService(
                 $this->appCredentials,
                 $this->getHttpClient(),
-                $this->getTokenBundleFactory()
+                $this->getTokenBundleFactory(),
+                $this->getSoapService()
             );
         }
 
@@ -79,5 +85,25 @@ class Container
         }
 
         return $instanceRef;
+    }
+
+    public function getSoapService(): ServiceService
+    {
+        if (null === $this->soapService) {
+            $wsdlUrl = $this->appCredentials->isSandbox()
+                ? 'https://webapi.allegro.pl.allegrosandbox.pl/service.php?wsdl'
+                : 'https://webapi.allegro.pl/service.php?wsdl';
+
+            $this->soapService = new ServiceService(
+                [
+                    'trace' => true,
+                    'keep_alive' => false,
+                    'features' => SOAP_SINGLE_ELEMENT_ARRAYS,
+                ],
+                $wsdlUrl
+            );
+        }
+
+        return $this->soapService;
     }
 }

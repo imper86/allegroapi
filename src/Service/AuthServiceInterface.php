@@ -11,6 +11,7 @@ namespace Imper86\AllegroRestApiSdk\Service;
 
 
 use Imper86\AllegroRestApiSdk\Model\Auth\TokenBundleInterface;
+use Imper86\AllegroRestApiSdk\Model\SoapWsdl\doLoginWithAccessTokenResponse;
 use Lcobucci\JWT\Token;
 
 /**
@@ -38,4 +39,10 @@ interface AuthServiceInterface
      * @return TokenBundleInterface
      */
     public function refreshToken($refreshToken): TokenBundleInterface;
+
+    /**
+     * @param $accessToken
+     * @return doLoginWithAccessTokenResponse
+     */
+    public function generateSoapToken($accessToken): doLoginWithAccessTokenResponse;
 }

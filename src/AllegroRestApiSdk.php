@@ -10,6 +10,7 @@ namespace Imper86\AllegroRestApiSdk;
 
 use GuzzleHttp\Promise\PromiseInterface;
 use Imper86\AllegroRestApiSdk\Model\Credentials\AppCredentialsInterface;
+use Imper86\AllegroRestApiSdk\Model\SoapWsdl\ServiceService;
 use Imper86\AllegroRestApiSdk\Service\AuthServiceInterface;
 use Imper86\AllegroRestApiSdk\Service\Container;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactoryInterface;
@@ -51,6 +52,11 @@ class AllegroRestApiSdk implements AllegroRestApiSdkInterface
     public function sendAsyncRequest(RequestInterface $request, array $options = []): PromiseInterface
     {
         return $this->container->getHttpClient()->sendAsync($this->prepareRequest($request), $options);
+    }
+
+    public function soap(): ServiceService
+    {
+        return $this->container->getSoapService();
     }
 
     private function prepareRequest(RequestInterface $request): RequestInterface
