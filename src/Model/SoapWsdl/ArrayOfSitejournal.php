@@ -8,12 +8,12 @@ class ArrayOfSitejournal implements \ArrayAccess, \Iterator, \Countable
     /**
      * @var SiteJournal[] $item
      */
-    protected $item = null;
+    protected $item = [];
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -30,7 +30,7 @@ class ArrayOfSitejournal implements \ArrayAccess, \Iterator, \Countable
      */
     public function setItem(array $item = null)
     {
-      $this->item = $item;
+      $this->item = $item ?: [];
       return $this;
     }
 
