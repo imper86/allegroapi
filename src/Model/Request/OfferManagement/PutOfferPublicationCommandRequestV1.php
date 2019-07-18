@@ -33,6 +33,10 @@ class PutOfferPublicationCommandRequestV1 extends Request
     {
         $this->commandId = $commandId ?: Uuid::uuid4()->toString();
 
+        $offersStruct = array_map(function ($offerId) {
+            return ['id' => (string)$offerId];
+        }, $offerIds);
+
         parent::__construct(
             'PUT',
             "/sale/offer-publication-commands/{$this->commandId}",
@@ -40,7 +44,7 @@ class PutOfferPublicationCommandRequestV1 extends Request
             json_encode([
                 'offerCriteria' => [
                     [
-                        'offers' => $offerIds,
+                        'offers' => $offersStruct,
                         'type' => 'CONTAINS_OFFERS',
                     ],
                 ],
