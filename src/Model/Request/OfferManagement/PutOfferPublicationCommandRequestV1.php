@@ -35,7 +35,7 @@ class PutOfferPublicationCommandRequestV1 extends Request
 
         $offersStruct = array_map(function ($offerId) {
             return ['id' => (string)$offerId];
-        }, $offerIds);
+        }, array_values(array_unique($offerIds)));
 
         parent::__construct(
             'PUT',
@@ -44,7 +44,7 @@ class PutOfferPublicationCommandRequestV1 extends Request
             json_encode([
                 'offerCriteria' => [
                     [
-                        'offers' => $offersStruct,
+                        'offers' => array_values($offersStruct),
                         'type' => 'CONTAINS_OFFERS',
                     ],
                 ],
