@@ -8,6 +8,7 @@
 namespace Imper86\AllegroRestApiSdk;
 
 
+use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Promise\PromiseInterface;
 use Imper86\AllegroRestApiSdk\Model\Credentials\AppCredentialsInterface;
 use Imper86\AllegroRestApiSdk\Model\SoapWsdl\ServiceService;
@@ -16,6 +17,9 @@ use Imper86\AllegroRestApiSdk\Service\Container;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactoryInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use Psr\Log\LoggerInterface;
+use ReflectionClass;
+use SoapFault;
 
 class AllegroRestApiSdk implements AllegroRestApiSdkInterface
 {
@@ -27,11 +31,16 @@ class AllegroRestApiSdk implements AllegroRestApiSdkInterface
      * @var Container
      */
     private $container;
+    /**
+     * @var LoggerInterface|null
+     */
+    private $logger;
 
-    public function __construct(AppCredentialsInterface $appCredentials)
+    public function __construct(AppCredentialsInterface $appCredentials, ?LoggerInterface $logger = null)
     {
         $this->appCredentials = $appCredentials;
-        $this->container = new Container($appCredentials);
+        $this->container = new Container($appCredentials, $logger);
+        $this->logger = $logger;
     }
 
     public function getAuthService(): AuthServiceInterface
@@ -46,12 +55,57 @@ class AllegroRestApiSdk implements AllegroRestApiSdkInterface
 
     public function sendRequest(RequestInterface $request, array $options = []): ResponseInterface
     {
-        return $this->container->getHttpClient()->send($this->prepareRequest($request), $options);
+        try {
+            $request = $this->prepareRequest($request);
+            $response = $this->container->getHttpClient()->send($request, $options);
+
+            $this->container->getLogFactory()->create($request, $response);
+
+            return $response;
+        } catch (BadResponseException $exception) {
+            $this->container->getLogFactory()->create($exception->getRequest(), $exception->getResponse());
+
+            throw $exception;
+        }
     }
 
     public function sendAsyncRequest(RequestInterface $request, array $options = []): PromiseInterface
     {
-        return $this->container->getHttpClient()->sendAsync($this->prepareRequest($request), $options);
+        try {
+            $request = $this->prepareRequest($request);
+            $response = $this->container->getHttpClient()->sendAsync($request, $options);
+
+            $this->container->getLogFactory()->create($request);
+
+            return $response;
+        } catch (BadResponseException $exception) {
+            $this->container->getLogFactory()->create($exception->getRequest(), $exception->getResponse());
+
+            throw $exception;
+        }
+    }
+
+    public function sendSoapRequest($request)
+    {
+        try {
+            if (is_object($request) && method_exists($request, 'setWebapiKey')) {
+                $request->setWebapiKey($this->appCredentials->getClientId());
+            }
+
+            $reflection = new ReflectionClass($request);
+            $methodName = lcfirst($reflection->getShortName());
+            $methodName = substr($methodName, 0, strlen($methodName) - strlen('Request'));
+
+            $response = $this->soap()->{$methodName}($request);
+
+            $this->container->getLogFactory()->createFromSoap($this->soap());
+
+            return $response;
+        } catch (SoapFault $fault) {
+            $this->container->getLogFactory()->createFromSoap($this->soap(), $fault);
+
+            throw $fault;
+        }
     }
 
     public function soap(): ServiceService

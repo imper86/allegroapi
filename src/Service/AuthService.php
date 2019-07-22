@@ -9,13 +9,17 @@ namespace Imper86\AllegroRestApiSdk\Service;
 
 
 use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Psr7\Request;
 use Imper86\AllegroRestApiSdk\Model\Auth\TokenBundleInterface;
 use Imper86\AllegroRestApiSdk\Model\Credentials\AppCredentialsInterface;
 use Imper86\AllegroRestApiSdk\Model\SoapWsdl\DoLoginWithAccessTokenRequest;
 use Imper86\AllegroRestApiSdk\Model\SoapWsdl\doLoginWithAccessTokenResponse;
 use Imper86\AllegroRestApiSdk\Model\SoapWsdl\ServiceService;
+use Imper86\AllegroRestApiSdk\Service\Factory\LogFactoryInterface;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactoryInterface;
+use SoapFault;
+use function GuzzleHttp\Psr7\build_query;
 
 class AuthService implements AuthServiceInterface
 {
@@ -35,18 +39,24 @@ class AuthService implements AuthServiceInterface
      * @var ServiceService
      */
     private $soapService;
+    /**
+     * @var LogFactoryInterface
+     */
+    private $logFactory;
 
     public function __construct(
         AppCredentialsInterface $appCredentials,
         ClientInterface $httpClient,
         TokenBundleFactoryInterface $tokenBundleFactory,
-        ServiceService $soapService
+        ServiceService $soapService,
+        LogFactoryInterface $logFactory
     )
     {
         $this->httpClient = $httpClient;
         $this->tokenBundleFactory = $tokenBundleFactory;
         $this->appCredentials = $appCredentials;
         $this->soapService = $soapService;
+        $this->logFactory = $logFactory;
     }
 
     /**
@@ -54,14 +64,16 @@ class AuthService implements AuthServiceInterface
      */
     public function getAuthUrl(): string
     {
-        $query = http_build_query([
+        $query = build_query([
             'response_type' => 'code',
             'client_id' => $this->appCredentials->getClientId(),
             'redirect_uri' => $this->appCredentials->getRedirectUri(),
             'prompt' => 'confirm',
         ]);
 
-        return $this->getUriForCredentials() . '/authorize?' . $query;
+        $url = $this->getUriForCredentials() . '/authorize?' . $query;
+
+        return $url;
     }
 
     /**
@@ -69,17 +81,25 @@ class AuthService implements AuthServiceInterface
      */
     public function generateTokenBundle(string $authCode): TokenBundleInterface
     {
-        $query = http_build_query([
-            'grant_type' => 'authorization_code',
-            'code' => $authCode,
-            'redirect_uri' => $this->appCredentials->getRedirectUri(),
-        ]);
-        $uri = $this->getUriForCredentials() . '/token?' . $query;
+        try {
+            $query = build_query([
+                'grant_type' => 'authorization_code',
+                'code' => $authCode,
+                'redirect_uri' => $this->appCredentials->getRedirectUri(),
+            ]);
+            $uri = $this->getUriForCredentials() . '/token?' . $query;
 
-        $request = new Request('POST', $uri, $this->getHttpHeaders());
-        $response = $this->httpClient->send($request);
+            $request = new Request('POST', $uri, $this->getHttpHeaders());
+            $response = $this->httpClient->send($request);
 
-        return $this->tokenBundleFactory->buildFromResponse($response);
+            $this->logFactory->create($request, $response);
+
+            return $this->tokenBundleFactory->buildFromResponse($response);
+        } catch (BadResponseException $exception) {
+            $this->logFactory->create($exception->getRequest(), $exception->getResponse());
+
+            throw $exception;
+        }
     }
 
     /**
@@ -87,28 +107,44 @@ class AuthService implements AuthServiceInterface
      */
     public function refreshToken($refreshToken): TokenBundleInterface
     {
-        $query = http_build_query([
-            'grant_type' => 'refresh_token',
-            'refresh_token' => (string)$refreshToken,
-            'redirect_uri' => $this->appCredentials->getRedirectUri(),
-        ]);
-        $uri = $this->getUriForCredentials() . '/token?' . $query;
+        try {
+            $query = build_query([
+                'grant_type' => 'refresh_token',
+                'refresh_token' => (string)$refreshToken,
+                'redirect_uri' => $this->appCredentials->getRedirectUri(),
+            ]);
+            $uri = $this->getUriForCredentials() . '/token?' . $query;
 
-        $request = new Request('POST', $uri, $this->getHttpHeaders());
-        $response = $this->httpClient->send($request);
+            $request = new Request('POST', $uri, $this->getHttpHeaders());
+            $response = $this->httpClient->send($request);
 
-        return $this->tokenBundleFactory->buildFromResponse($response);
+            $this->logFactory->create($request, $response);
+
+            return $this->tokenBundleFactory->buildFromResponse($response);
+        } catch (BadResponseException $exception) {
+            $this->logFactory->create($exception->getRequest(), $exception->getResponse());
+        }
     }
 
     public function generateSoapToken($accessToken): doLoginWithAccessTokenResponse
     {
-        return $this->soapService->doLoginWithAccessToken(
-            new DoLoginWithAccessTokenRequest(
-                (string)$accessToken,
-                1,
-                $this->appCredentials->getClientId()
-            )
-        );
+        try {
+            $response = $this->soapService->doLoginWithAccessToken(
+                new DoLoginWithAccessTokenRequest(
+                    (string)$accessToken,
+                    1,
+                    $this->appCredentials->getClientId()
+                )
+            );
+
+            $this->logFactory->createFromSoap($this->soapService);
+
+            return $response;
+        } catch (SoapFault $fault) {
+            $this->logFactory->createFromSoap($this->soapService, $fault);
+
+            throw $fault;
+        }
     }
 
     private function getUriForCredentials(): string

@@ -12,11 +12,14 @@ use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Imper86\AllegroRestApiSdk\Model\Credentials\AppCredentialsInterface;
 use Imper86\AllegroRestApiSdk\Model\SoapWsdl\ServiceService;
+use Imper86\AllegroRestApiSdk\Service\Factory\LogFactory;
+use Imper86\AllegroRestApiSdk\Service\Factory\LogFactoryInterface;
 use Imper86\AllegroRestApiSdk\Service\Factory\RequestFactory;
 use Imper86\AllegroRestApiSdk\Service\Factory\RequestFactoryInterface;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactory;
 use Imper86\AllegroRestApiSdk\Service\Factory\TokenBundleFactoryInterface;
 use Lcobucci\JWT\Parser;
+use Psr\Log\LoggerInterface;
 
 class Container
 {
@@ -32,10 +35,19 @@ class Container
      * @var ServiceService
      */
     private $soapService;
+    /**
+     * @var LoggerInterface|null
+     */
+    private $logger;
+    /**
+     * @var LogFactoryInterface|null
+     */
+    private $logFactory;
 
-    public function __construct(AppCredentialsInterface $appCredentials)
+    public function __construct(AppCredentialsInterface $appCredentials, ?LoggerInterface $logger = null)
     {
         $this->appCredentials = $appCredentials;
+        $this->logger = $logger;
     }
 
     public function getAuthService(): AuthServiceInterface
@@ -47,7 +59,8 @@ class Container
                 $this->appCredentials,
                 $this->getHttpClient(),
                 $this->getTokenBundleFactory(),
-                $this->getSoapService()
+                $this->getSoapService(),
+                $this->getLogFactory()
             );
         }
 
@@ -105,5 +118,14 @@ class Container
         }
 
         return $this->soapService;
+    }
+
+    public function getLogFactory(): LogFactoryInterface
+    {
+        if (null === $this->logFactory) {
+            $this->logFactory = new LogFactory($this->appCredentials, $this->getTokenParser(), $this->logger);
+        }
+
+        return $this->logFactory;
     }
 }

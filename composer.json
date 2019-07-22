@@ -15,7 +15,8 @@
         "ext-json": "*",
         "ramsey/uuid": "^3.8",
         "ext-fileinfo": "*",
-        "ext-soap": "*"
+        "ext-soap": "*",
+        "psr/log": "^1.1"
     },
     "autoload": {
         "psr-4": {
@@ -24,6 +25,7 @@
     },
     "require-dev": {
         "symfony/var-dumper": "^4.3",
-        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
+        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4",
+        "graylog2/gelf-php": "^1.6"
     }
 }
