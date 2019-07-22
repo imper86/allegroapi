@@ -19,12 +19,17 @@ class GetLineItemIdMappingRequestV1 extends Request
 
     public function __construct($token, ?string $lineItemId, ?string $dealId)
     {
+        if ($lineItemId) {
+            $query['lineItemId'] = $lineItemId;
+        }
+
+        if ($dealId) {
+            $query['dealId'] = $dealId;
+        }
+
         parent::__construct(
             'GET',
-            "/order/line-item-id-mappings?" . build_query([
-                'lineItemId' => $lineItemId,
-                'dealId' => $dealId,
-            ]),
+            "/order/line-item-id-mappings?" . build_query($query ?? []),
             $this->prepareHeaders($token, ContentType::BETA_V1)
         );
     }

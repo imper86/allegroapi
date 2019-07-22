@@ -19,12 +19,17 @@ class GetPaymentIdMappingRequestV1 extends Request
 
     public function __construct($token, ?string $paymentId, ?string $transactionId)
     {
+        if ($paymentId) {
+            $query['paymentId'] = $paymentId;
+        }
+
+        if ($transactionId) {
+            $query['transactionId'] = $transactionId;
+        }
+
         parent::__construct(
             'GET',
-            "/payments/payment-id-mappings?" . build_query([
-                'paymentId' => $paymentId,
-                'transactionId' => $transactionId,
-            ]),
+            "/payments/payment-id-mappings?" . build_query($query ?? []),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
