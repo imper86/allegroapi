@@ -43,7 +43,7 @@ class LogFactory implements LogFactoryInterface
         $this->tokenParser = $tokenParser;
     }
 
-    public function create(RequestInterface $request, ?ResponseInterface $response = null): void
+    public function create(RequestInterface $request, ?ResponseInterface $response = null, array $userContext = []): void
     {
         if (!$this->logger) {
             return;
@@ -60,9 +60,7 @@ class LogFactory implements LogFactoryInterface
         $responseBodyIsJson = $response && false !== strpos($response->getHeaderLine('Content-Type'), 'json');
         $token = $this->fetchTokenFromRequest($request);
 
-        $this->logger->log(
-            $logLevel,
-            "{$request->getMethod()} {$request->getUri()->getPath()} - {$responseStatusCode}",
+        $context = array_merge(
             [
                 'clientId' => $this->credentials->getClientId(),
                 'userId' => $token ? $token->getClaim('user_name') : null,
@@ -80,17 +78,21 @@ class LogFactory implements LogFactoryInterface
                     ? json_decode((string)$response->getBody(), true)
                     : (string)$response->getBody(),
                 'backtrace' => debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS),
-            ]
+            ],
+            $userContext
+        );
+
+        $this->logger->log(
+            $logLevel,
+            "{$request->getMethod()} {$request->getUri()->getPath()} - {$responseStatusCode}",
+            $context
         );
     }
 
-    public function createFromSoap(ServiceService $service, ?SoapFault $fault = null): void
+    public function createFromSoap(ServiceService $service, ?SoapFault $fault = null, array $userContext = []): void
     {
         $method = $this->fetchSoapActionFromHeaders($service->__getLastRequestHeaders()) ?? 'UNKNOWN_METHOD';
-
-        $this->logger->log(
-            $fault ? 'error' : 'debug',
-            "{$method} - " . ($fault ? 'ERROR' : 'OK'),
+        $context = array_merge(
             [
                 'requestMethod' => $method,
                 'backtrace' => debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS),
@@ -100,7 +102,14 @@ class LogFactory implements LogFactoryInterface
                 'responseHeaders' => $service->__getLastResponseHeaders(),
                 'faultCode' => $fault ? $fault->faultcode : null,
                 'faultString' => $fault ? $fault->faultstring : null,
-            ]
+            ],
+            $userContext
+        );
+
+        $this->logger->log(
+            $fault ? 'error' : 'debug',
+            "{$method} - " . ($fault ? 'ERROR' : 'OK'),
+            $context
         );
     }
 

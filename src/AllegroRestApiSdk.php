@@ -53,39 +53,39 @@ class AllegroRestApiSdk implements AllegroRestApiSdkInterface
         return $this->container->getTokenBundleFactory();
     }
 
-    public function sendRequest(RequestInterface $request, array $options = []): ResponseInterface
+    public function sendRequest(RequestInterface $request, array $options = [], array $logContext = []): ResponseInterface
     {
         try {
             $request = $this->prepareRequest($request);
             $response = $this->container->getHttpClient()->send($request, $options);
 
-            $this->container->getLogFactory()->create($request, $response);
+            $this->container->getLogFactory()->create($request, $response, $logContext);
 
             return $response;
         } catch (BadResponseException $exception) {
-            $this->container->getLogFactory()->create($exception->getRequest(), $exception->getResponse());
+            $this->container->getLogFactory()->create($exception->getRequest(), $exception->getResponse(), $logContext);
 
             throw $exception;
         }
     }
 
-    public function sendAsyncRequest(RequestInterface $request, array $options = []): PromiseInterface
+    public function sendAsyncRequest(RequestInterface $request, array $options = [], array $logContext = []): PromiseInterface
     {
         try {
             $request = $this->prepareRequest($request);
             $response = $this->container->getHttpClient()->sendAsync($request, $options);
 
-            $this->container->getLogFactory()->create($request);
+            $this->container->getLogFactory()->create($request, null, $logContext);
 
             return $response;
         } catch (BadResponseException $exception) {
-            $this->container->getLogFactory()->create($exception->getRequest(), $exception->getResponse());
+            $this->container->getLogFactory()->create($exception->getRequest(), $exception->getResponse(), $logContext);
 
             throw $exception;
         }
     }
 
-    public function sendSoapRequest($request)
+    public function sendSoapRequest($request, array $logContext = [])
     {
         try {
             if (is_object($request) && method_exists($request, 'setWebapiKey')) {
@@ -98,11 +98,11 @@ class AllegroRestApiSdk implements AllegroRestApiSdkInterface
 
             $response = $this->soap()->{$methodName}($request);
 
-            $this->container->getLogFactory()->createFromSoap($this->soap());
+            $this->container->getLogFactory()->createFromSoap($this->soap(), null, $logContext);
 
             return $response;
         } catch (SoapFault $fault) {
-            $this->container->getLogFactory()->createFromSoap($this->soap(), $fault);
+            $this->container->getLogFactory()->createFromSoap($this->soap(), $fault, $logContext);
 
             throw $fault;
         }

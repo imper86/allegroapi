@@ -15,7 +15,7 @@ use SoapFault;
 
 interface LogFactoryInterface
 {
-    public function create(RequestInterface $request, ?ResponseInterface $response = null): void;
+    public function create(RequestInterface $request, ?ResponseInterface $response = null, array $userContext = []): void;
 
-    public function createFromSoap(ServiceService $service, ?SoapFault $fault = null): void;
+    public function createFromSoap(ServiceService $service, ?SoapFault $fault = null, array $userContext = []): void;
 }

@@ -79,7 +79,7 @@ class AuthService implements AuthServiceInterface
     /**
      * @inheritDoc
      */
-    public function generateTokenBundle(string $authCode): TokenBundleInterface
+    public function generateTokenBundle(string $authCode, array $logContext = []): TokenBundleInterface
     {
         try {
             $query = build_query([
@@ -92,11 +92,11 @@ class AuthService implements AuthServiceInterface
             $request = new Request('POST', $uri, $this->getHttpHeaders());
             $response = $this->httpClient->send($request);
 
-            $this->logFactory->create($request, $response);
+            $this->logFactory->create($request, $response, $logContext);
 
             return $this->tokenBundleFactory->buildFromResponse($response);
         } catch (BadResponseException $exception) {
-            $this->logFactory->create($exception->getRequest(), $exception->getResponse());
+            $this->logFactory->create($exception->getRequest(), $exception->getResponse(), $logContext);
 
             throw $exception;
         }
@@ -105,7 +105,7 @@ class AuthService implements AuthServiceInterface
     /**
      * @inheritDoc
      */
-    public function refreshToken($refreshToken): TokenBundleInterface
+    public function refreshToken($refreshToken, array $logContext = []): TokenBundleInterface
     {
         try {
             $query = build_query([
@@ -118,15 +118,17 @@ class AuthService implements AuthServiceInterface
             $request = new Request('POST', $uri, $this->getHttpHeaders());
             $response = $this->httpClient->send($request);
 
-            $this->logFactory->create($request, $response);
+            $this->logFactory->create($request, $response, $logContext);
 
             return $this->tokenBundleFactory->buildFromResponse($response);
         } catch (BadResponseException $exception) {
-            $this->logFactory->create($exception->getRequest(), $exception->getResponse());
+            $this->logFactory->create($exception->getRequest(), $exception->getResponse(), $logContext);
+
+            throw $exception;
         }
     }
 
-    public function generateSoapToken($accessToken): doLoginWithAccessTokenResponse
+    public function generateSoapToken($accessToken, array $logContext = []): doLoginWithAccessTokenResponse
     {
         try {
             $response = $this->soapService->doLoginWithAccessToken(
@@ -137,11 +139,11 @@ class AuthService implements AuthServiceInterface
                 )
             );
 
-            $this->logFactory->createFromSoap($this->soapService);
+            $this->logFactory->createFromSoap($this->soapService, null, $logContext);
 
             return $response;
         } catch (SoapFault $fault) {
-            $this->logFactory->createFromSoap($this->soapService, $fault);
+            $this->logFactory->createFromSoap($this->soapService, $fault, $logContext);
 
             throw $fault;
         }

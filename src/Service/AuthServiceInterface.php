@@ -30,19 +30,22 @@ interface AuthServiceInterface
 
     /**
      * @param string $authCode
+     * @param array $logContext
      * @return TokenBundleInterface
      */
-    public function generateTokenBundle(string $authCode): TokenBundleInterface;
+    public function generateTokenBundle(string $authCode, array $logContext = []): TokenBundleInterface;
 
     /**
      * @param string|Token $refreshToken
+     * @param array $logContext
      * @return TokenBundleInterface
      */
-    public function refreshToken($refreshToken): TokenBundleInterface;
+    public function refreshToken($refreshToken, array $logContext = []): TokenBundleInterface;
 
     /**
      * @param $accessToken
+     * @param array $logContext
      * @return doLoginWithAccessTokenResponse
      */
-    public function generateSoapToken($accessToken): doLoginWithAccessTokenResponse;
+    public function generateSoapToken($accessToken, array $logContext = []): doLoginWithAccessTokenResponse;
 }

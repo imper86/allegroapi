@@ -26,9 +26,11 @@ interface AllegroRestApiSdkInterface
 
     public function getTokenBundleFactory(): TokenBundleFactoryInterface;
 
-    public function sendRequest(RequestInterface $request, array $options = []): ResponseInterface;
+    public function sendRequest(RequestInterface $request, array $options = [], array $logContext = []): ResponseInterface;
 
-    public function sendAsyncRequest(RequestInterface $request, array $options = []): PromiseInterface;
+    public function sendAsyncRequest(RequestInterface $request, array $options = [], array $logContext = []): PromiseInterface;
+
+    public function sendSoapRequest($request, array $logContext = []);
 
     public function soap(): ServiceService;
 }
