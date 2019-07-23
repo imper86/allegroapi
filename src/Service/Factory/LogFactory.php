@@ -16,6 +16,7 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use SoapFault;
+use Throwable;
 
 class LogFactory implements LogFactoryInterface
 {
@@ -127,7 +128,13 @@ class LogFactory implements LogFactoryInterface
             return null;
         }
 
-        return $this->tokenParser->parse($authExploded[1]);
+        try {
+            $token = $this->tokenParser->parse($authExploded[1]);
+
+            return $token;
+        } catch (Throwable $exception) {
+            return null;
+        }
     }
 
     private function fetchSoapActionFromHeaders(?string $strHeaders): ?string
