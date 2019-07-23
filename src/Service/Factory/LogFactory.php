@@ -83,6 +83,11 @@ class LogFactory implements LogFactoryInterface
             $userContext
         );
 
+        if (!empty($context['responseBody']['errors'])) {
+            $context['faultCode'] = $context['responseBody']['errors'][0]['code'] ?? null;
+            $context['faultString'] = $context['responseBody']['errors'][0]['message'] ?? null;
+        }
+
         $this->logger->log(
             $logLevel,
             "{$request->getMethod()} {$request->getUri()->getPath()} - {$responseStatusCode}",
