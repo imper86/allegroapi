@@ -111,6 +111,7 @@ class LogFactory implements LogFactoryInterface
                 'backtrace' => debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS),
                 'request' => $service->__getLastRequest(),
                 'requestHeaders' => $service->__getLastRequestHeaders(),
+                'requestHash' => sha1($service->__getLastRequest()),
                 'response' => $service->__getLastResponse(),
                 'responseHeaders' => $service->__getLastResponseHeaders(),
                 'faultCode' => $fault ? $fault->faultcode : null,
