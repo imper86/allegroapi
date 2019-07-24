@@ -83,6 +83,13 @@ class LogFactory implements LogFactoryInterface
             $userContext
         );
 
+        $context['requestHash'] = sha1(json_encode([
+            $context['requestMethod'],
+            $context['requestUriPath'],
+            $context['requestQuery'],
+            $context['requestBody'],
+        ]));
+
         if (!empty($context['responseBody']['errors'])) {
             $context['faultCode'] = $context['responseBody']['errors'][0]['code'] ?? null;
             $context['faultString'] = $context['responseBody']['errors'][0]['message'] ?? null;
