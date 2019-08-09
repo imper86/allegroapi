@@ -21,7 +21,7 @@ class PutBidRequestV1 extends Request
         parent::__construct(
             'PUT',
             "/bidding/offers/{$offerId}/bid",
-            $this->prepareHeaders($token, ContentType::BETA_V1),
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );
     }
