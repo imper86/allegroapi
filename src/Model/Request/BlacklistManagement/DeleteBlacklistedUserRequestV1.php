@@ -21,7 +21,7 @@ class DeleteBlacklistedUserRequestV1 extends Request
         parent::__construct(
             'DELETE',
             "/sale/blacklisted-users/{$excludedUserId}",
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }

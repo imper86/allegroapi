@@ -21,7 +21,7 @@ class PostBlacklistedUserRequestV1 extends Request
         parent::__construct(
             'POST',
             "/sale/blacklisted-users",
-            $this->prepareHeaders($token, ContentType::BETA_V1),
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );
     }

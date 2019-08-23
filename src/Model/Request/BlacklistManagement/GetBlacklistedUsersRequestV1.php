@@ -21,7 +21,7 @@ class GetBlacklistedUsersRequestV1 extends Request
         parent::__construct(
             'GET',
             "/sale/blacklisted-users",
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }
