@@ -8,12 +8,12 @@ class ArrayOfPostbuyformdatastruct implements \ArrayAccess, \Iterator, \Countabl
     /**
      * @var PostBuyFormDataStruct[] $item
      */
-    protected $item = [];
+    protected $item = null;
 
-
+    
     public function __construct()
     {
-
+    
     }
 
     /**
@@ -30,7 +30,7 @@ class ArrayOfPostbuyformdatastruct implements \ArrayAccess, \Iterator, \Countabl
      */
     public function setItem(array $item = null)
     {
-      $this->item = $item ?: [];
+      $this->item = $item;
       return $this;
     }
 
