@@ -8,12 +8,12 @@ class ArrayOfSitejournaldealsstruct implements \ArrayAccess, \Iterator, \Countab
     /**
      * @var SiteJournalDealsStruct[] $item
      */
-    protected $item = null;
+    protected $item = [];
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -30,7 +30,7 @@ class ArrayOfSitejournaldealsstruct implements \ArrayAccess, \Iterator, \Countab
      */
     public function setItem(array $item = null)
     {
-      $this->item = $item;
+      $this->item = null === $item ? [] : $item;
       return $this;
     }
 
