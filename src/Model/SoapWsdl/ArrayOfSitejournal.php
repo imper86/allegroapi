@@ -8,12 +8,12 @@ class ArrayOfSitejournal implements \ArrayAccess, \Iterator, \Countable
     /**
      * @var SiteJournal[] $item
      */
-    protected $item = null;
+    protected $item = [];
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -28,9 +28,9 @@ class ArrayOfSitejournal implements \ArrayAccess, \Iterator, \Countable
      * @param SiteJournal[] $item
      * @return \Imper86\AllegroRestApiSdk\Model\SoapWsdl\ArrayOfSitejournal
      */
-    public function setItem(array $item = null)
+    public function setItem(?array $item = null)
     {
-      $this->item = $item;
+      $this->item = null === $item ? [] : $item;
       return $this;
     }
 

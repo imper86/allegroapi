@@ -28,7 +28,7 @@ class ArrayOfSitejournaldealsstruct implements \ArrayAccess, \Iterator, \Countab
      * @param SiteJournalDealsStruct[] $item
      * @return \Imper86\AllegroRestApiSdk\Model\SoapWsdl\ArrayOfSitejournaldealsstruct
      */
-    public function setItem(array $item = null)
+    public function setItem(?array $item = null)
     {
       $this->item = null === $item ? [] : $item;
       return $this;
