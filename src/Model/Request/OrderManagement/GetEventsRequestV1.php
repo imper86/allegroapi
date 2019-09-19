@@ -26,7 +26,7 @@ class GetEventsRequestV1 extends Request
                 'type' => $type,
                 'limit' => $limit,
             ]),
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }

@@ -21,7 +21,7 @@ class GetCheckoutFormRequestV1 extends Request
         parent::__construct(
             'GET',
             "/order/checkout-forms/{$id}",
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }

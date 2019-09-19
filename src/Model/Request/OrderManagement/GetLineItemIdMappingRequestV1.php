@@ -30,7 +30,7 @@ class GetLineItemIdMappingRequestV1 extends Request
         parent::__construct(
             'GET',
             "/order/line-item-id-mappings?" . build_query($query ?? []),
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }

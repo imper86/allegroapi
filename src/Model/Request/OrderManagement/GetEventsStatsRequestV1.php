@@ -21,7 +21,7 @@ class GetEventsStatsRequestV1 extends Request
         parent::__construct(
             'GET',
             "/order/event-stats",
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }
