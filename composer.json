@@ -12,6 +12,7 @@
         "lcobucci/jwt": "^3.2",
         "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
     },
+    "abandoned": "imper86/allegro-rest-api-sdk",
     "require-dev": {
         "symfony/var-dumper": "^3.3"
     },

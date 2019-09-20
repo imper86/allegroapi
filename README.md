@@ -1,4 +1,10 @@
-# allegroapi PHP SDK
+# allegroapi PHP SDK [ABANDONED]
+
+## This package is abandoned.
+
+Please use [imper86/allegro-rest-api-sdk](https://github.com/imper86/allegro-rest-api-sdk)
+as soon as possible.
+
 Library that makes allegro rest and soap api using easier
 
 ## Installation
