@@ -9,9 +9,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OrderManagement;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetLineItemIdMappingRequestV1 extends Request
 {
@@ -29,7 +28,7 @@ class GetLineItemIdMappingRequestV1 extends Request
 
         parent::__construct(
             'GET',
-            "/order/line-item-id-mappings?" . build_query($query ?? []),
+            $this->prepareApiUri('/order/line-item-id-mappings', $query ?? []),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

@@ -10,13 +10,16 @@
         }
     ],
     "require": {
+        "php": "^7.1",
         "lcobucci/jwt": "^3.3",
         "guzzlehttp/guzzle": "^6.3",
         "ext-json": "*",
         "ramsey/uuid": "^3.8",
         "ext-fileinfo": "*",
         "ext-soap": "*",
-        "psr/log": "^1.1"
+        "psr/log": "^1.1",
+        "php-http/httplug": "^2.0",
+        "php-http/guzzle6-adapter": "^2.0"
     },
     "autoload": {
         "psr-4": {

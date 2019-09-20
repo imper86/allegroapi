@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\Classifieds;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetOfferClassifiedsPackagesRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetOfferClassifiedsPackagesRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/offer-classifieds-packages/{$offerId}",
+            $this->prepareApiUri("/sale/offer-classifieds-packages/{$offerId}"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

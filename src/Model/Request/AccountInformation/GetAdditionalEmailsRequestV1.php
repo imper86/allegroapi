@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\AccountInformation;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetAdditionalEmailsRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetAdditionalEmailsRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/account/additional-emails",
+            $this->prepareApiUri("/account/additional-emails"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

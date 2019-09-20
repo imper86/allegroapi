@@ -5,7 +5,7 @@
  * Time: 16:59
  */
 
-namespace Imper86\AllegroRestApiSdk\Model\Request;
+namespace Imper86\AllegroRestApiSdk\Constants;
 
 
 interface ContentType

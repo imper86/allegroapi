@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\Delivery;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetDeliverySettingsRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetDeliverySettingsRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            '/sale/delivery-settings',
+            $this->prepareApiUri('/sale/delivery-settings'),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

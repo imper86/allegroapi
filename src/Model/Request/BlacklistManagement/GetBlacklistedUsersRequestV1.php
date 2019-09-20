@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\BlacklistManagement;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetBlacklistedUsersRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetBlacklistedUsersRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/blacklisted-users",
+            $this->prepareApiUri("/sale/blacklisted-users"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

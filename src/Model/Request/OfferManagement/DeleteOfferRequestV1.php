@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OfferManagement;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class DeleteOfferRequestV1 extends Request
@@ -20,7 +20,7 @@ class DeleteOfferRequestV1 extends Request
     {
         parent::__construct(
             'DELETE',
-            "/sale/offers/{$offerId}",
+            $this->prepareApiUri("/sale/offers/{$offerId}"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

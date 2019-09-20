@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\AuctionsAndBidding;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PutBidRequestV1 extends Request
@@ -20,7 +20,7 @@ class PutBidRequestV1 extends Request
     {
         parent::__construct(
             'PUT',
-            "/bidding/offers/{$offerId}/bid",
+            $this->prepareApiUri("/bidding/offers/{$offerId}/bid"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );

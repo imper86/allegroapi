@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\BadgeCampaigns;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetBadgeApplicationRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetBadgeApplicationRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/badge-applications/{$applicationId}",
+            $this->prepareApiUri("/sale/badge-applications/{$applicationId}"),
             $this->prepareHeaders($token, ContentType::BETA_V1)
         );
     }

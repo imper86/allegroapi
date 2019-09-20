@@ -9,9 +9,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\UserInformation;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetUserRatingsRequestV1 extends Request
 {
@@ -21,7 +20,7 @@ class GetUserRatingsRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/user-ratings?" . build_query([
+            $this->prepareApiUri('/sale/user-ratings', [
                 'user.id' => $userId,
                 'recommended' => $recommended,
                 'offset' => $offset,

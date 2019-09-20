@@ -9,9 +9,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\AdditionalServices;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetAdditionalServiceGroupsRequestV1 extends Request
 {
@@ -21,7 +20,7 @@ class GetAdditionalServiceGroupsRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/offer-additional-services/groups?" . build_query([
+            $this->prepareApiUri('/sale/offer-additional-servies/groups', [
                 'user.id' => $userId,
                 'offset' => $offset,
                 'limit' => $limit,

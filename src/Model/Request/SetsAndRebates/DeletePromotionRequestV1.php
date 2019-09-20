@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\SetsAndRebates;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class DeletePromotionRequestV1 extends Request
@@ -20,7 +20,7 @@ class DeletePromotionRequestV1 extends Request
     {
         parent::__construct(
             'DELETE',
-            "/sale/loyalty/promotions/{$promotionId}",
+            $this->prepareApiUri("/sale/loyalty/promotions/{$promotionId}"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

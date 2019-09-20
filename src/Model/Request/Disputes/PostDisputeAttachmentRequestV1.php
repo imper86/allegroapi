@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\Disputes;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PostDisputeAttachmentRequestV1 extends Request
@@ -20,7 +20,7 @@ class PostDisputeAttachmentRequestV1 extends Request
     {
         parent::__construct(
             'POST',
-            "/sale/dispute-attachments",
+            $this->prepareApiUri("/sale/dispute-attachments"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode(['fileName' => $fileName, 'size' => $size])
         );

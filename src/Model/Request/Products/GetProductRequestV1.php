@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\Products;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetProductRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetProductRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/products/{$productId}",
+            $this->prepareApiUri("/sale/products/{$productId}"),
             $this->prepareHeaders($token, ContentType::BETA_V1)
         );
     }

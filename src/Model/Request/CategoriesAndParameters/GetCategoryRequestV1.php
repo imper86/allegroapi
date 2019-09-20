@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\CategoriesAndParameters;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetCategoryRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetCategoryRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/categories/{$categoryId}",
+            $this->prepareApiUri("/sale/categories/{$categoryId}"),
             $this->prepareHeaders((string)$token, ContentType::PUBLIC_V1)
         );
     }

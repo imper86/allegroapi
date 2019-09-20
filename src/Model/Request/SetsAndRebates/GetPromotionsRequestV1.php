@@ -9,10 +9,9 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\SetsAndRebates;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 use Lcobucci\JWT\Token;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetPromotionsRequestV1 extends Request
 {
@@ -26,7 +25,7 @@ class GetPromotionsRequestV1 extends Request
 
         parent::__construct(
             'GET',
-            "/sale/loyalty/promotions?" . build_query($queryParameters),
+            $this->prepareApiUri('/sale/loyalty/promotions', $queryParameters),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\AdditionalServices;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PostAdditionalServiceGroupRequestV1 extends Request
@@ -20,7 +20,7 @@ class PostAdditionalServiceGroupRequestV1 extends Request
     {
         parent::__construct(
             'POST',
-            "/sale/offer-additional-services/groups",
+            $this->prepareApiUri("/sale/offer-additional-services/groups"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );

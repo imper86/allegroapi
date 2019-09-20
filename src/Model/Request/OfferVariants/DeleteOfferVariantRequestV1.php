@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OfferVariants;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class DeleteOfferVariantRequestV1 extends Request
@@ -20,7 +20,7 @@ class DeleteOfferVariantRequestV1 extends Request
     {
         parent::__construct(
             'DELETE',
-            "/sale/offer-variants/{$setId}",
+            $this->prepareApiUri("/sale/offer-variants/{$setId}"),
             $this->prepareHeaders($token, ContentType::BETA_V1)
         );
     }

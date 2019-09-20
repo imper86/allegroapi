@@ -9,9 +9,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\Disputes;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetDisputesRequestV1 extends Request
 {
@@ -21,7 +20,9 @@ class GetDisputesRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/disputes?" . build_query(['checkoutForm.id' => $checkoutFormId]),
+            $this->prepareApiUri('/sale/disputes', [
+                'checkoutForm.id' => $checkoutFormId,
+            ]),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

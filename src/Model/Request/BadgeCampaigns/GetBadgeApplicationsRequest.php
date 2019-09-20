@@ -9,9 +9,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\BadgeCampaigns;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetBadgeApplicationsRequest extends Request
 {
@@ -21,7 +20,7 @@ class GetBadgeApplicationsRequest extends Request
     {
         parent::__construct(
             'GET',
-            '/sale/badge-applications?' . build_query($queryParameters),
+            $this->prepareApiUri('/sale/badge-applications', $queryParameters),
             $this->prepareHeaders($token, ContentType::BETA_V1)
         );
     }

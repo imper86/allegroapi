@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\Pricing;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PostFeePreviewRequestV1 extends Request
@@ -20,7 +20,7 @@ class PostFeePreviewRequestV1 extends Request
     {
         parent::__construct(
             'POST',
-            "/pricing/fee-preview",
+            $this->prepareApiUri("/pricing/fee-preview"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );

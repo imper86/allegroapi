@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\BatchOfferModification;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class GetOfferPriceChangeCommandRequestV1 extends Request
@@ -20,7 +20,7 @@ class GetOfferPriceChangeCommandRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/offer-price-change-commands/{$commandId}",
+            $this->prepareApiUri("/sale/offer-price-change-commands/{$commandId}"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

@@ -9,9 +9,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OfferVariants;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetOfferVariantsRequestV1 extends Request
 {
@@ -21,7 +20,7 @@ class GetOfferVariantsRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/offer-variants?" . build_query([
+            $this->prepareApiUri('/sale/offer-variants', [
                 'user.id' => $userId,
                 'offset' => $offset,
                 'limit' => $limit,

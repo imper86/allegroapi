@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OfferTags;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PostOfferTagsRequestV1 extends Request
@@ -20,7 +20,7 @@ class PostOfferTagsRequestV1 extends Request
     {
         parent::__construct(
             'POST',
-            "/sale/offers/{$offerId}/tags",
+            $this->prepareApiUri("/sale/offers/{$offerId}/tags"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );

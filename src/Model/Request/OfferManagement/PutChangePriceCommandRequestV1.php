@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OfferManagement;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 use Ramsey\Uuid\Uuid;
 
@@ -28,7 +28,7 @@ class PutChangePriceCommandRequestV1 extends Request
 
         parent::__construct(
             'PUT',
-            "/offers/{$offerId}/change-price-commands/{$this->commandId}",
+            $this->prepareApiUri("/offers/{$offerId}/change-price-commands/{$this->commandId}"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode([
                 'id' => $this->commandId,

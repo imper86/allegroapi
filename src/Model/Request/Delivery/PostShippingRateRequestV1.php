@@ -9,10 +9,10 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\Delivery;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
-class PostShippingRateRequest extends Request
+class PostShippingRateRequestV1 extends Request
 {
     use RequestTrait;
 
@@ -20,7 +20,7 @@ class PostShippingRateRequest extends Request
     {
         parent::__construct(
             'POST',
-            "/sale/shipping-rates",
+            $this->prepareApiUri("/sale/shipping-rates"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );

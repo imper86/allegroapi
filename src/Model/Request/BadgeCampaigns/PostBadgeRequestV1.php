@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\BadgeCampaigns;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PostBadgeRequestV1 extends Request
@@ -20,7 +20,7 @@ class PostBadgeRequestV1 extends Request
     {
         parent::__construct(
             'POST',
-            '/sale/badges',
+            $this->prepareApiUri('/sale/badges'),
             $this->prepareHeaders($token, ContentType::BETA_V1),
             json_encode($body)
         );

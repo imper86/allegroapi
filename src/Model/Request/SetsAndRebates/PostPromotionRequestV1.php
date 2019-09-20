@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\SetsAndRebates;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PostPromotionRequestV1 extends Request
@@ -20,7 +20,7 @@ class PostPromotionRequestV1 extends Request
     {
         parent::__construct(
             'POST',
-            "/sale/loyalty/promotions",
+            $this->prepareApiUri("/sale/loyalty/promotions"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );

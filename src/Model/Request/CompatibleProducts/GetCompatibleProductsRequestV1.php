@@ -11,9 +11,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\CompatibleProducts;
 use DateTime;
 use DateTimeZone;
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetCompatibleProductsRequestV1 extends Request
 {
@@ -31,7 +30,7 @@ class GetCompatibleProductsRequestV1 extends Request
 
         parent::__construct(
             'GET',
-            '/sale/compatible-products?' . build_query($queryParameters),
+            $this->prepareApiUri('/sale/compatible-products', $queryParameters),
             $headers
         );
     }

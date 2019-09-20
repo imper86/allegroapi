@@ -9,10 +9,9 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OfferTags;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 use Lcobucci\JWT\Token;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetTagsRequestV2 extends Request
 {
@@ -22,7 +21,7 @@ class GetTagsRequestV2 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/offer-tags?" . build_query([
+            $this->prepareApiUri('/sale/offer-tags', [
                 'user.id' => $token->getClaim('user_name'),
                 'limit' => $limit,
                 'offset' => $offset,

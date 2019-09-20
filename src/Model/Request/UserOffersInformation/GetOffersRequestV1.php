@@ -9,9 +9,8 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\UserOffersInformation;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
-use function GuzzleHttp\Psr7\build_query;
 
 class GetOffersRequestV1 extends Request
 {
@@ -21,7 +20,7 @@ class GetOffersRequestV1 extends Request
     {
         parent::__construct(
             'GET',
-            "/sale/offers?" . build_query($queryParameters),
+            $this->prepareApiUri('/sale/offers', $queryParameters),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\OfferVariants;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PutOfferVariantRequestV1 extends Request
@@ -20,7 +20,7 @@ class PutOfferVariantRequestV1 extends Request
     {
         parent::__construct(
             'PUT',
-            "/sale/offer-variants/{$setId}",
+            $this->prepareApiUri("/sale/offer-variants/{$setId}"),
             $this->prepareHeaders($token, ContentType::BETA_V1),
             json_encode($body)
         );

@@ -10,7 +10,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\ImagesAndAttachments;
 
 use finfo;
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PutOfferAttachmentRequestV1 extends Request
@@ -26,7 +26,7 @@ class PutOfferAttachmentRequestV1 extends Request
 
         parent::__construct(
             'PUT',
-            "/sale/offer-attachments/{$attachmentId}",
+            $this->prepareApiUri("/sale/offer-attachments/{$attachmentId}"),
             $headers,
             $fileBody
         );

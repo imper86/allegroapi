@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\PointsOfService;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class PostPointOfServiceRequestV1 extends Request
@@ -20,7 +20,7 @@ class PostPointOfServiceRequestV1 extends Request
     {
         parent::__construct(
             'POST',
-            "/points-of-service",
+            $this->prepareApiUri("/points-of-service"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );

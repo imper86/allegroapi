@@ -9,7 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Request\ListingBadges;
 
 
 use GuzzleHttp\Psr7\Request;
-use Imper86\AllegroRestApiSdk\Model\Request\ContentType;
+use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
 class DeletePromotionCampaignApplicationRequestV1 extends Request
@@ -20,7 +20,7 @@ class DeletePromotionCampaignApplicationRequestV1 extends Request
     {
         parent::__construct(
             'DELETE',
-            "/sale/loyalty/promotion-campaign-applications/{$applicationId}",
+            $this->prepareApiUri("/sale/loyalty/promotion-campaign-applications/{$applicationId}"),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
