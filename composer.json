@@ -13,6 +13,9 @@
         "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
     },
     "abandoned": "imper86/allegro-rest-api-sdk",
+    "suggest": {
+        "imper86/allegro-rest-api-sdk": "Package imper86/allegroapi is no longer maintained - use imper86/allegro-rest-api instead"
+    },
     "require-dev": {
         "symfony/var-dumper": "^3.3"
     },
