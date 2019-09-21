@@ -1,9 +1,10 @@
-# allegroapi PHP SDK [ABANDONED]
+# Unmaintained
 
-## This package is abandoned.
+Hello, this is V4 version and it's no longer maintained.
+Please switch to [V5](https://github.com/imper86/allegroapi/tree/v5)
+as soon as possible
 
-Please use [imper86/allegro-rest-api-sdk](https://github.com/imper86/allegro-rest-api-sdk)
-as soon as possible.
+# allegroapi PHP SDK 
 
 Library that makes allegro rest and soap api using easier
 
