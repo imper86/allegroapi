@@ -1,5 +1,5 @@
 {
-    "name": "imper86/allegro-rest-api-sdk",
+    "name": "imper86/allegroapi",
     "description": "Simple PHP SDK for Allegro.pl REST Api",
     "type": "library",
     "license": "MIT",
