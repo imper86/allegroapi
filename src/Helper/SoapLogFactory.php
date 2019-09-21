@@ -31,7 +31,7 @@ class SoapLogFactory
 
         $logger->log(
             $exception ? 'error' : 'debug',
-            "{$method} - " . $exception ? "ERROR {$exception->faultcode}" : "OK",
+            "{$method} - " . ($exception ? "ERROR {$exception->faultcode}" : "OK"),
             $context
         );
     }
