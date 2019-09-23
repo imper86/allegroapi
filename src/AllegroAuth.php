@@ -13,6 +13,7 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 use Http\Adapter\Guzzle6\Client;
 use Imper86\AllegroRestApiSdk\Constants\EndpointHost;
+use Imper86\AllegroRestApiSdk\Constants\GrantType;
 use Imper86\AllegroRestApiSdk\Helper\LogFactory;
 use Imper86\AllegroRestApiSdk\Helper\SandboxUri;
 use Imper86\AllegroRestApiSdk\Helper\SoapLogFactory;
@@ -80,7 +81,7 @@ class AllegroAuth implements AllegroAuthInterface
     public function fetchTokenFromCode(string $code, array $logContext = []): TokenBundleInterface
     {
         $query = build_query([
-            'grant_type' => 'authorization_code',
+            'grant_type' => GrantType::AUTHORIZATION_CODE,
             'code' => $code,
             'redirect_uri' => $this->credentials->getRedirectUri(),
         ]);
@@ -94,7 +95,7 @@ class AllegroAuth implements AllegroAuthInterface
             throw new BadResponseException("Bad response", $request, $response);
         }
 
-        return TokenBundleFactory::buildFromResponse($response, 'authorization_code');
+        return TokenBundleFactory::buildFromResponse($response, GrantType::AUTHORIZATION_CODE);
     }
 
     /**
@@ -103,7 +104,7 @@ class AllegroAuth implements AllegroAuthInterface
     public function fetchTokenFromRefresh($refreshToken, array $logContext = []): TokenBundleInterface
     {
         $query = build_query([
-            'grant_type' => 'refresh_token',
+            'grant_type' => GrantType::REFRESH_TOKEN,
             'refresh_token' => (string)$refreshToken,
             'redirect_uri' => $this->credentials->getRedirectUri(),
         ]);
@@ -117,7 +118,7 @@ class AllegroAuth implements AllegroAuthInterface
             throw new BadResponseException("Bad response", $request, $response);
         }
 
-        return TokenBundleFactory::buildFromResponse($response, 'refresh_token');
+        return TokenBundleFactory::buildFromResponse($response, GrantType::REFRESH_TOKEN);
     }
 
     /**
@@ -144,7 +145,7 @@ class AllegroAuth implements AllegroAuthInterface
 
     public function fetchTokenFromClientCredentials(array $logContext = []): TokenBundleInterface
     {
-        $query = build_query(['grant_type' => 'client_credentials']);
+        $query = build_query(['grant_type' => GrantType::CLIENT_CREDENTIALS]);
         $request = new Request('POST', $this->prepareTokenUri($query), $this->prepareHeaders());
         $response = $this->httpClient->sendRequest($request);
 
@@ -154,7 +155,7 @@ class AllegroAuth implements AllegroAuthInterface
             throw new BadResponseException("Bad response", $request, $response);
         }
 
-        return TokenBundleFactory::buildFromResponse($response, 'client_credentials');
+        return TokenBundleFactory::buildFromResponse($response, GrantType::CLIENT_CREDENTIALS);
     }
 
     /**

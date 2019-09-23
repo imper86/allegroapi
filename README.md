@@ -22,6 +22,9 @@ composer require imper86/allegro-rest-api-sdk
 * [Rest Api usage](docs/rest_api_usage.md)
 * [SOAP Api usage](docs/soap_api_usage.md)
 
+## Framework integrations
+* [Symfony 4](https://github.com/imper86/allegro-api-bundle)
+
 ## Contributing
 Any help will be very appreciated :).
 
