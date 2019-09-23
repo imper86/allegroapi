@@ -23,14 +23,19 @@ class TokenBundle implements TokenBundleInterface
      */
     private $accessToken;
     /**
-     * @var Token
+     * @var Token|null
      */
     private $refreshToken;
+    /**
+     * @var string|null
+     */
+    private $grantType;
 
-    public function __construct(Token $accessToken, Token $refreshToken)
+    public function __construct(Token $accessToken, ?Token $refreshToken = null, ?string $grantType = null)
     {
         $this->accessToken = $accessToken;
         $this->refreshToken = $refreshToken;
+        $this->grantType = $grantType;
     }
 
     /**
@@ -42,19 +47,21 @@ class TokenBundle implements TokenBundleInterface
     }
 
     /**
-     * @return Token
+     * @return Token|null
      */
-    public function getRefreshToken(): Token
+    public function getRefreshToken(): ?Token
     {
         return $this->refreshToken;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getUserId(): string
+    public function getUserId(): ?string
     {
-        return $this->getAccessToken()->getClaim('user_name');
+        return $this->getAccessToken()->hasClaim('user_name')
+            ? $this->getAccessToken()->getClaim('user_name')
+            : null;
     }
 
     /**
@@ -70,8 +77,16 @@ class TokenBundle implements TokenBundleInterface
      * @return DateTime
      * @throws Exception
      */
-    public function getRefreshExpirationTime(): DateTime
+    public function getRefreshExpirationTime(): ?DateTime
     {
         return new DateTime('@' . $this->getRefreshToken()->getClaim('exp'));
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getGrantType(): ?string
+    {
+        return $this->grantType;
     }
 }

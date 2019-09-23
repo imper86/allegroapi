@@ -43,4 +43,6 @@ interface AllegroAuthInterface
      * @return doLoginWithAccessTokenResponse
      */
     public function fetchSoapSessionId($accessToken, array $logContext = []): doLoginWithAccessTokenResponse;
+
+    public function fetchTokenFromClientCredentials(array $logContext = []): TokenBundleInterface;
 }

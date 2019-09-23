@@ -94,7 +94,7 @@ class AllegroAuth implements AllegroAuthInterface
             throw new BadResponseException("Bad response", $request, $response);
         }
 
-        return TokenBundleFactory::buildFromResponse($response);
+        return TokenBundleFactory::buildFromResponse($response, 'authorization_code');
     }
 
     /**
@@ -117,7 +117,7 @@ class AllegroAuth implements AllegroAuthInterface
             throw new BadResponseException("Bad response", $request, $response);
         }
 
-        return TokenBundleFactory::buildFromResponse($response);
+        return TokenBundleFactory::buildFromResponse($response, 'refresh_token');
     }
 
     /**
@@ -140,6 +140,21 @@ class AllegroAuth implements AllegroAuthInterface
 
             throw $exception;
         }
+    }
+
+    public function fetchTokenFromClientCredentials(array $logContext = []): TokenBundleInterface
+    {
+        $query = build_query(['grant_type' => 'client_credentials']);
+        $request = new Request('POST', $this->prepareTokenUri($query), $this->prepareHeaders());
+        $response = $this->httpClient->sendRequest($request);
+
+        LogFactory::log($this->logger, $logContext, $request, $response);
+
+        if ($response->getStatusCode() >= 400) {
+            throw new BadResponseException("Bad response", $request, $response);
+        }
+
+        return TokenBundleFactory::buildFromResponse($response, 'client_credentials');
     }
 
     /**

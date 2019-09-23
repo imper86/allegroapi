@@ -16,24 +16,36 @@ use Psr\Http\Message\ResponseInterface;
 
 class TokenBundleFactory
 {
-    public static function buildFromResponse(ResponseInterface $response): TokenBundleInterface
+    public static function buildFromResponse(
+        ResponseInterface $response,
+        ?string $grantType = null
+    ): TokenBundleInterface
     {
         $body = json_decode((string)$response->getBody(), true);
 
-        if (!isset($body['access_token']) || !isset($body['refresh_token'])) {
-            throw new InvalidHttpResponseException("Response got no access_token or refresh_token");
+        if (!isset($body['access_token'])) {
+            throw new InvalidHttpResponseException("Response got no access_token");
         }
 
-        return self::buildFromJwtString($body['access_token'], $body['refresh_token']);
+        return self::buildFromJwtString(
+            $body['access_token'],
+            $body['refresh_token'] ?? null,
+            $grantType
+        );
     }
 
-    public static function buildFromJwtString(string $accessToken, string $refreshToken): TokenBundleInterface
+    public static function buildFromJwtString(
+        string $accessToken,
+        ?string $refreshToken = null,
+        ?string $grantType = null
+    ): TokenBundleInterface
     {
         $parser = new Parser();
 
         return new TokenBundle(
             $parser->parse($accessToken),
-            $parser->parse($refreshToken)
+            $refreshToken ? $parser->parse($refreshToken) : null,
+            $grantType
         );
     }
 }

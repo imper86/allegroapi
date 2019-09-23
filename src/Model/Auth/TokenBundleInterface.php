@@ -15,11 +15,13 @@ interface TokenBundleInterface
 {
     public function getAccessToken(): Token;
 
-    public function getRefreshToken(): Token;
+    public function getRefreshToken(): ?Token;
 
-    public function getUserId(): string;
+    public function getUserId(): ?string;
 
     public function getAccessExpirationTime(): DateTime;
 
-    public function getRefreshExpirationTime(): DateTime;
+    public function getRefreshExpirationTime(): ?DateTime;
+
+    public function getGrantType(): ?string;
 }
