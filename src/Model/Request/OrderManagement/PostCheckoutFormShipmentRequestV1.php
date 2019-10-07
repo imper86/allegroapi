@@ -21,7 +21,7 @@ class PostCheckoutFormShipmentRequestV1 extends Request
         parent::__construct(
             'POST',
             $this->prepareApiUri("/order/checkout-forms/{$id}/shipments"),
-            $this->prepareHeaders($token, ContentType::BETA_V1),
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );
     }
