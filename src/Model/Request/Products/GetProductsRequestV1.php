@@ -21,7 +21,7 @@ class GetProductsRequestV1 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri('/sale/products', $queryParameters),
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }

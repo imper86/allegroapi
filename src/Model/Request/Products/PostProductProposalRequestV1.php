@@ -21,7 +21,7 @@ class PostProductProposalRequestV1 extends Request
         parent::__construct(
             'POST',
             $this->prepareApiUri('/sale/product-proposals'),
-            $this->prepareHeaders($token, ContentType::BETA_V1),
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1),
             json_encode($body)
         );
     }
