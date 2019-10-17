@@ -18,12 +18,15 @@ class GetOfferQuotesRequestV1 extends Request
 
     public function __construct($token, array $offerIds, ?string $name = null)
     {
+        $query = ['offer.id' => $offerIds];
+
+        if ($name) {
+            $query['name'] = $name;
+        }
+
         parent::__construct(
             'GET',
-            $this->prepareApiUri('/pricing/offer-quotes', [
-                'offer.id' => $offerIds,
-                'name' => $name,
-            ]),
+            $this->prepareApiUri('/pricing/offer-quotes', $query),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }

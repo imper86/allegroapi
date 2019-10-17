@@ -18,6 +18,10 @@ class GetMeV1 extends Request
 
     public function __construct($token)
     {
-        parent::__construct('GET', '/me', $this->prepareHeaders($token, ContentType::PUBLIC_V1));
+        parent::__construct(
+            'GET',
+            $this->prepareApiUri('/me'),
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
+        );
     }
 }
