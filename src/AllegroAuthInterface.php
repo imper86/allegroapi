@@ -24,11 +24,23 @@ interface AllegroAuthInterface
     public function createAuthUrl(): string;
 
     /**
+     * @return array
+     */
+    public function createDeviceAuthorization(): array;
+
+    /**
      * @param string $code
      * @param array $logContext
      * @return TokenBundleInterface
      */
     public function fetchTokenFromCode(string $code, array $logContext = []): TokenBundleInterface;
+
+    /**
+     * @param string $deviceCode
+     * @param array $logContext
+     * @return TokenBundleInterface
+     */
+    public function fetchTokenFromDeviceCode(string $deviceCode, array $logContext = []): TokenBundleInterface
 
     /**
      * @param string|Token $refreshToken

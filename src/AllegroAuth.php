@@ -78,6 +78,27 @@ class AllegroAuth implements AllegroAuthInterface
     /**
      * {@inheritDoc}
      */
+    public function createDeviceAuthorization(): array
+    {
+        $query = build_query([
+            'client_id' => $this->credentials->getClientId(),
+        ]);
+
+        $request = new Request('POST', $this->prepareDeviceUri($query), $this->prepareHeaders());
+        $response = $this->httpClient->sendRequest($request);
+
+        LogFactory::log($this->logger, [], $request, $response);
+
+        if ($response->getStatusCode() >= 400) {
+            throw new BadResponseException("Bad response", $request, $response);
+        }
+
+        return json_decode($response->getBody(), true);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function fetchTokenFromCode(string $code, array $logContext = []): TokenBundleInterface
     {
         $query = build_query([
@@ -96,6 +117,30 @@ class AllegroAuth implements AllegroAuthInterface
         }
 
         return TokenBundleFactory::buildFromResponse($response, GrantType::AUTHORIZATION_CODE);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function fetchTokenFromDeviceCode(string $deviceCode, array $logContext = []): TokenBundleInterface
+    {
+        $query = build_query([
+            'grant_type' => GrantType::DEVICE_CODE,
+            'device_code' => $deviceCode,
+        ]);
+
+        $request = new Request('POST', $this->prepareTokenUri($query), $this->prepareHeaders([
+            'Content-Type' => "application/x-www-form-urlencoded",
+        ]));
+        $response = $this->httpClient->sendRequest($request);
+
+        LogFactory::log($this->logger, $logContext, $request, $response);
+
+        if ($response->getStatusCode() >= 400) {
+            throw new BadResponseException("Bad response", $request, $response);
+        }
+
+        return TokenBundleFactory::buildFromResponse($response);
     }
 
     /**
@@ -171,14 +216,26 @@ class AllegroAuth implements AllegroAuthInterface
     }
 
     /**
+     * @param string $query
+     * @return UriInterface
+     */
+    private function prepareDeviceUri(string $query): UriInterface
+    {
+        $host = EndpointHost::OAUTH;
+        $uri = new Uri("https://{$host}/auth/oauth/device?{$query}");
+
+        return $this->credentials->isSandbox() ? SandboxUri::prep($uri) : $uri;
+    }
+
+    /**
      * @return array
      */
-    private function prepareHeaders(): array
+    private function prepareHeaders(array $extraHeaders = []): array
     {
         $basicAuthString = base64_encode("{$this->credentials->getClientId()}:{$this->credentials->getClientSecret()}");
 
-        return [
+        return array_merge([
             'Authorization' => "Basic {$basicAuthString}",
-        ];
+        ], $extraHeaders);
     }
 }

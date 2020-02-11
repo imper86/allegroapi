@@ -19,4 +19,6 @@ interface GrantType
     const REFRESH_TOKEN = 'refresh_token';
 
     const CLIENT_CREDENTIALS = 'client_credentials';
+
+    const DEVICE_CODE = 'urn:ietf:params:oauth:grant-type:device_code';
 }
