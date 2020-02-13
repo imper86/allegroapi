@@ -40,7 +40,7 @@ interface AllegroAuthInterface
      * @param array $logContext
      * @return TokenBundleInterface
      */
-    public function fetchTokenFromDeviceCode(string $deviceCode, array $logContext = []): TokenBundleInterface
+    public function fetchTokenFromDeviceCode(string $deviceCode, array $logContext = []): TokenBundleInterface;
 
     /**
      * @param string|Token $refreshToken
