@@ -84,7 +84,9 @@ class AllegroAuth implements AllegroAuthInterface
             'client_id' => $this->credentials->getClientId(),
         ]);
 
-        $request = new Request('POST', $this->prepareDeviceUri($query), $this->prepareHeaders());
+        $request = new Request('POST', $this->prepareDeviceUri($query), $this->prepareHeaders([
+            'Content-Type' => "application/x-www-form-urlencoded",
+        ]));
         $response = $this->httpClient->sendRequest($request);
 
         LogFactory::log($this->logger, [], $request, $response);
