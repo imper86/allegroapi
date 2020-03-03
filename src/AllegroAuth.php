@@ -228,6 +228,7 @@ class AllegroAuth implements AllegroAuthInterface
     }
 
     /**
+     * @param array $extraHeaders
      * @return array
      */
     private function prepareHeaders(array $extraHeaders = []): array
