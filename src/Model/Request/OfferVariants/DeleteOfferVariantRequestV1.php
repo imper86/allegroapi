@@ -21,7 +21,7 @@ class DeleteOfferVariantRequestV1 extends Request
         parent::__construct(
             'DELETE',
             $this->prepareApiUri("/sale/offer-variants/{$setId}"),
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }

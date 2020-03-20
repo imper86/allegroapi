@@ -21,7 +21,7 @@ class GetOfferVariantRequestV1 extends Request
          parent::__construct(
              'GET',
              $this->prepareApiUri("/sale/offer-variants/{$setId}"),
-             $this->prepareHeaders($token, ContentType::BETA_V1)
+             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
          );
      }
 }

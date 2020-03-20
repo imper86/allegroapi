@@ -26,7 +26,7 @@ class GetOfferVariantsRequestV1 extends Request
                 'limit' => $limit,
                 'query' => $query,
             ]),
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }
