@@ -19,9 +19,10 @@ use Lcobucci\JWT\Token;
 interface AllegroAuthInterface
 {
     /**
+     * @param string|null $state
      * @return string
      */
-    public function createAuthUrl(): string;
+    public function createAuthUrl(?string $state = null): string;
 
     /**
      * @return array
