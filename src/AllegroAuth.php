@@ -61,18 +61,21 @@ class AllegroAuth implements AllegroAuthInterface
     /**
      * {@inheritDoc}
      */
-    public function createAuthUrl(?string $state = null): string
+    public function createAuthUrl(?string $state = null, bool $prompt = true): string
     {
         $host = EndpointHost::OAUTH;
         $query = [
             'response_type' => 'code',
             'client_id' => $this->credentials->getClientId(),
             'redirect_uri' => $this->credentials->getRedirectUri(),
-            'prompt' => 'confirm',
         ];
 
         if ($state) {
             $query['state'] = $state;
+        }
+
+        if ($prompt) {
+            $query['prompt'] = 'confirm';
         }
 
         $uri = (new Uri("https://{$host}/auth/oauth/authorize"))
