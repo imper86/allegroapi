@@ -12,6 +12,11 @@ use GuzzleHttp\Psr7\Request;
 use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
+/**
+ * Class GetPaymentIdMappingRequestV1
+ * @package Imper86\AllegroRestApiSdk\Model\Request\Payments
+ * @deprecated https://github.com/allegro/allegro-api/issues/3134
+ */
 class GetPaymentIdMappingRequestV1 extends Request
 {
     use RequestTrait;
