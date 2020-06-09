@@ -21,7 +21,7 @@ class GetCheckoutFormShipmentsRequestV1 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri("/order/checkout-forms/{$id}/shipments"),
-            $this->prepareHeaders($token, ContentType::BETA_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
 }
