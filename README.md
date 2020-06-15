@@ -8,7 +8,7 @@ maintained.
 ## Installation
 Install with composer (http://getcomposer.org)
 ```sh
-composer require imper86/allegro-rest-api-sdk
+composer require imper86/allegroapi
 ```
 
 ## Requirements
