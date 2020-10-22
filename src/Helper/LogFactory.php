@@ -46,6 +46,8 @@ class LogFactory
             }
         }
 
+        $context['backtrace'] = json_encode(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS));
+
         $logger->log(
             $logLevel,
             "{$context['requestMethod']} {$context['requestPath']} - {$context['responseStatusCode']}",
