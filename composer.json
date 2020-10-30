@@ -29,6 +29,7 @@
     "require-dev": {
         "symfony/var-dumper": "^4.3",
         "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4",
-        "graylog2/gelf-php": "^1.6"
+        "graylog2/gelf-php": "^1.6",
+        "imper86/vbump": "^1.0"
     }
 }
