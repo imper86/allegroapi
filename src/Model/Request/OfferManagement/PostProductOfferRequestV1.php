@@ -12,12 +12,12 @@ class PostProductOfferRequestV1 extends Request
 {
     use RequestTrait;
 
-    public function __construct($token, array $body)
+    public function __construct($token, array $body, string $contentType = ContentType::BETA_V2)
     {
         parent::__construct(
             'POST',
             $this->prepareApiUri('/sale/product-offers'),
-            $this->prepareHeaders($token, ContentType::BETA_V1),
+            $this->prepareHeaders($token, $contentType),
             json_encode($body)
         );
     }

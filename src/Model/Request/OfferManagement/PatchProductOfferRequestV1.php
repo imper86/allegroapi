@@ -12,12 +12,12 @@ class PatchProductOfferRequestV1 extends Request
 {
     use RequestTrait;
 
-    public function __construct($token, string $offerId, array $body)
+    public function __construct($token, string $offerId, array $body, string $contentType = ContentType::BETA_V2)
     {
         parent::__construct(
             'PATCH',
             $this->prepareApiUri(sprintf('/sale/product-offers/%s', $offerId)),
-            $this->prepareHeaders($token, ContentType::BETA_V1),
+            $this->prepareHeaders($token, $contentType),
             json_encode($body)
         );
     }
