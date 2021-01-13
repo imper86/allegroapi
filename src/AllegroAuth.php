@@ -26,6 +26,7 @@ use Imper86\AllegroRestApiSdk\Model\SoapWsdl\doLoginWithAccessTokenResponse;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\UriInterface;
 use Psr\Log\LoggerInterface;
+use SoapFault;
 use function GuzzleHttp\Psr7\build_query;
 
 /**
@@ -61,7 +62,7 @@ class AllegroAuth implements AllegroAuthInterface
     /**
      * {@inheritDoc}
      */
-    public function createAuthUrl(?string $state = null, bool $prompt = true): string
+    public function createAuthUrl(?string $state = null, bool $prompt = true, ?array $scope = null): string
     {
         $host = EndpointHost::OAUTH;
         $query = [
@@ -76,6 +77,10 @@ class AllegroAuth implements AllegroAuthInterface
 
         if ($prompt) {
             $query['prompt'] = 'confirm';
+        }
+
+        if ($scope) {
+            $query['scope'] = implode(' ', $scope);
         }
 
         $uri = (new Uri("https://{$host}/auth/oauth/authorize"))
@@ -192,7 +197,7 @@ class AllegroAuth implements AllegroAuthInterface
             SoapLogFactory::log($this->logger, $service, null, $logContext);
 
             return $response;
-        } catch (\SoapFault $exception) {
+        } catch (SoapFault $exception) {
             SoapLogFactory::log($this->logger, $service, $exception, $logContext);
 
             throw $exception;

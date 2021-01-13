@@ -24,4 +24,6 @@ interface TokenBundleInterface
     public function getRefreshExpirationTime(): ?DateTime;
 
     public function getGrantType(): ?string;
+
+    public function getScope(): ?array;
 }

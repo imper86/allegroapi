@@ -7,7 +7,6 @@
 
 namespace Imper86\AllegroRestApiSdk\Model\Auth;
 
-
 use DateTime;
 use Exception;
 use Lcobucci\JWT\Token;
@@ -30,12 +29,21 @@ class TokenBundle implements TokenBundleInterface
      * @var string|null
      */
     private $grantType;
+    /**
+     * @var string[]|null
+     */
+    private $scope;
 
-    public function __construct(Token $accessToken, ?Token $refreshToken = null, ?string $grantType = null)
-    {
+    public function __construct(
+        Token $accessToken,
+        ?Token $refreshToken = null,
+        ?string $grantType = null,
+        ?array $scope = null
+    ) {
         $this->accessToken = $accessToken;
         $this->refreshToken = $refreshToken;
         $this->grantType = $grantType;
+        $this->scope = $scope;
     }
 
     /**
@@ -88,5 +96,10 @@ class TokenBundle implements TokenBundleInterface
     public function getGrantType(): ?string
     {
         return $this->grantType;
+    }
+
+    public function getScope(): ?array
+    {
+        return $this->scope;
     }
 }

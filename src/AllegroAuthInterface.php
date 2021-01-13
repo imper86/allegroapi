@@ -20,9 +20,11 @@ interface AllegroAuthInterface
 {
     /**
      * @param string|null $state
+     * @param bool $prompt
+     * @param string[]|null $scope
      * @return string
      */
-    public function createAuthUrl(?string $state = null): string;
+    public function createAuthUrl(?string $state = null, bool $prompt = true, ?array $scope = null): string;
 
     /**
      * @return array

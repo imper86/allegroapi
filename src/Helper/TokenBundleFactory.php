@@ -30,14 +30,16 @@ class TokenBundleFactory
         return self::buildFromJwtString(
             $body['access_token'],
             $body['refresh_token'] ?? null,
-            $grantType
+            $grantType,
+            empty($body['scope']) ? null : explode(' ', $body['scope'])
         );
     }
 
     public static function buildFromJwtString(
         string $accessToken,
         ?string $refreshToken = null,
-        ?string $grantType = null
+        ?string $grantType = null,
+        ?array $scope = null
     ): TokenBundleInterface
     {
         $parser = new Parser();
@@ -45,7 +47,8 @@ class TokenBundleFactory
         return new TokenBundle(
             $parser->parse($accessToken),
             $refreshToken ? $parser->parse($refreshToken) : null,
-            $grantType
+            $grantType,
+            $scope
         );
     }
 }
