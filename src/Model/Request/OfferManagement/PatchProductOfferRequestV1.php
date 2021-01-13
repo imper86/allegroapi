@@ -12,7 +12,7 @@ class PatchProductOfferRequestV1 extends Request
 {
     use RequestTrait;
 
-    public function __construct($token, string $offerId, array $body, string $contentType = ContentType::BETA_V2)
+    public function __construct($token, string $offerId, array $body, string $contentType = ContentType::PUBLIC_V1)
     {
         parent::__construct(
             'PATCH',
