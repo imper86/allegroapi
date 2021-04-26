@@ -16,11 +16,11 @@ class GetProductRequestV1 extends Request
 {
     use RequestTrait;
 
-    public function __construct($token, string $productId)
+    public function __construct($token, string $productId, ?array $query = null)
     {
         parent::__construct(
             'GET',
-            $this->prepareApiUri("/sale/products/{$productId}"),
+            $this->prepareApiUri("/sale/products/{$productId}", $query),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );
     }
