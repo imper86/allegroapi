@@ -27,7 +27,7 @@ class PutCheckoutFormInvoiceFileRequestV1 extends Request
             'PUT',
             $this->prepareApiUri(
                 sprintf(
-                    '/order/checkout-forms/%s/invoice/%s/file',
+                    '/order/checkout-forms/%s/invoices/%s/file',
                     $checkoutFormId,
                     $invoiceId
                 )
