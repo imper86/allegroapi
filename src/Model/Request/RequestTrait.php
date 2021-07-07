@@ -17,11 +17,11 @@ use function GuzzleHttp\Psr7\build_query;
 
 trait RequestTrait
 {
-    private function prepareHeaders($token, string $contentType): array
+    private function prepareHeaders($token, string $contentType, ?string $accept = null): array
     {
         return [
             'Authorization' => "Bearer {$token}",
-            'Accept' => $contentType,
+            'Accept' => $accept ?: $contentType,
             'Content-Type' => $contentType,
         ];
     }
