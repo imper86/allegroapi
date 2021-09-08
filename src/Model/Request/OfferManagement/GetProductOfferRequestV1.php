@@ -12,12 +12,12 @@ class GetProductOfferRequestV1 extends Request
 {
     use RequestTrait;
 
-    public function __construct($token, string $offerId)
+    public function __construct($token, string $offerId, string $contentType = ContentType::PUBLIC_V2)
     {
         parent::__construct(
             'GET',
             $this->prepareApiUri(sprintf('/sale/product-offers/%s', $offerId)),
-            $this->prepareHeaders($token, ContentType::PUBLIC_V2)
+            $this->prepareHeaders($token, $contentType)
         );
     }
 }
