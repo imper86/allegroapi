@@ -22,7 +22,7 @@ class GetAfterSalesServiceConditionsRequestV2 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri("/after-sales-service-conditions/{$type}", [
-                'seller.id' => $token->getClaim('user_name'),
+                'seller.id' => $token->claims()->get('user_name'),
                 'limit' => $limit,
                 'offset' => $offset,
             ]),

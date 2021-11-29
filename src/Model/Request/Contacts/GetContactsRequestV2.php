@@ -22,7 +22,7 @@ class GetContactsRequestV2 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri('/sale/offer-contacts', [
-                'seller.id' => $token->getClaim('user_name'),
+                'seller.id' => $token->claims()->get('user_name'),
             ]),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );

@@ -22,7 +22,7 @@ class GetPointsOfServiceRequestV2 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri('/points-of-service', [
-                'seller.id' => $token->getClaim('user_name'),
+                'seller.id' => $token->claims()->get('user_name'),
             ]),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );

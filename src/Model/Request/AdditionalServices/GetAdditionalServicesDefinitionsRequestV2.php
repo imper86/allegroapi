@@ -22,7 +22,7 @@ class GetAdditionalServicesDefinitionsRequestV2 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri('/sale/offer-additional-services/definitions', [
-                'user.id' => $token->getClaim('user_name'),
+                'user.id' => $token->claims()->get('user_name'),
                 'offset' => $offset,
                 'limit' => $limit,
             ]),

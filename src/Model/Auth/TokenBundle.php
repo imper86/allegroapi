@@ -67,8 +67,8 @@ class TokenBundle implements TokenBundleInterface
      */
     public function getUserId(): ?string
     {
-        return $this->getAccessToken()->hasClaim('user_name')
-            ? $this->getAccessToken()->getClaim('user_name')
+        return $this->getAccessToken()->claims()->has('user_name')
+            ? $this->getAccessToken()->claims()->get('user_name')
             : null;
     }
 
@@ -78,7 +78,7 @@ class TokenBundle implements TokenBundleInterface
      */
     public function getAccessExpirationTime(): DateTime
     {
-        return new DateTime('@' . $this->getAccessToken()->getClaim('exp'));
+        return new DateTime('@' . $this->getAccessToken()->claims()->get('exp'));
     }
 
     /**
@@ -87,7 +87,7 @@ class TokenBundle implements TokenBundleInterface
      */
     public function getRefreshExpirationTime(): ?DateTime
     {
-        return new DateTime('@' . $this->getRefreshToken()->getClaim('exp'));
+        return new DateTime('@' . $this->getRefreshToken()->claims()->get('exp'));
     }
 
     /**
