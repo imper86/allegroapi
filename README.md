@@ -1,9 +1,12 @@
 # Allegro REST API PHP SDK
 This lib was made to to make your life easier dealing with allegro APIs.
 
-If you're still using [v4](https://github.com/imper86/allegroapi/tree/v4)
-please refactor your app and use v5, because v4 is no longer
+If you're still using [v5](https://github.com/imper86/allegroapi/tree/v5)
+please refactor your app and use v6, because older versions are no longer
 maintained.
+
+## V6.x
+This version allows PHP8, and uses lcobucci/jwt v4.
 
 ## Installation
 Install with composer (http://getcomposer.org)
