@@ -42,7 +42,7 @@ class TokenBundleFactory
         ?array $scope = null
     ): TokenBundleInterface
     {
-        $parser = new Parser();
+        $parser = JwtParser::get();
 
         return new TokenBundle(
             $parser->parse($accessToken),

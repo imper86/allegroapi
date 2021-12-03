@@ -20,7 +20,7 @@ class RequestTokenFetcher
         if ($header = $request->getHeaderLine('Authorization')) {
             if ($stringToken = (explode(' ', $header)[1] ?? null)) {
                 try {
-                    $token = (new Parser())->parse($stringToken);
+                    $token = JwtParser::get()->parse($stringToken);
 
                     return $token;
                 } catch (Throwable $exception) {}

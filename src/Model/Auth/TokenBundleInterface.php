@@ -9,6 +9,7 @@ namespace Imper86\AllegroRestApiSdk\Model\Auth;
 
 
 use DateTime;
+use DateTimeInterface;
 use Lcobucci\JWT\Token;
 
 interface TokenBundleInterface
@@ -19,9 +20,9 @@ interface TokenBundleInterface
 
     public function getUserId(): ?string;
 
-    public function getAccessExpirationTime(): DateTime;
+    public function getAccessExpirationTime(): DateTimeInterface;
 
-    public function getRefreshExpirationTime(): ?DateTime;
+    public function getRefreshExpirationTime(): ?DateTimeInterface;
 
     public function getGrantType(): ?string;
 

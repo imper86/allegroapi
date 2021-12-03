@@ -8,6 +8,7 @@
 namespace Imper86\AllegroRestApiSdk\Model\Auth;
 
 use DateTime;
+use DateTimeInterface;
 use Exception;
 use Lcobucci\JWT\Token;
 
@@ -73,21 +74,25 @@ class TokenBundle implements TokenBundleInterface
     }
 
     /**
-     * @return DateTime
+     * @return DateTimeInterface
      * @throws Exception
      */
-    public function getAccessExpirationTime(): DateTime
+    public function getAccessExpirationTime(): DateTimeInterface
     {
-        return new DateTime('@' . $this->getAccessToken()->claims()->get('exp'));
+        $exp = $this->getAccessToken()->claims()->get('exp');
+
+        return $exp instanceof DateTimeInterface ? $exp : new DateTime('@' . $exp);
     }
 
     /**
-     * @return DateTime
+     * @return DateTimeInterface
      * @throws Exception
      */
-    public function getRefreshExpirationTime(): ?DateTime
+    public function getRefreshExpirationTime(): ?DateTimeInterface
     {
-        return new DateTime('@' . $this->getRefreshToken()->claims()->get('exp'));
+        $exp = $this->getRefreshToken()->claims()->get('exp');
+
+        return $exp instanceof DateTimeInterface ? $exp : new DateTime('@' . $exp);
     }
 
     /**
