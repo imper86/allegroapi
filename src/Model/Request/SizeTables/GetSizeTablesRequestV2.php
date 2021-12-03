@@ -22,7 +22,7 @@ class GetSizeTablesRequestV2 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri('/sale/size-tables', [
-                'user.id' => $token->getClaim('user_name'),
+                'user.id' => $token->claims()->get('user_name'),
             ]),
             $this->prepareHeaders($token, ContentType::PUBLIC_V1)
         );

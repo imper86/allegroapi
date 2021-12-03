@@ -20,7 +20,7 @@ class GetPromotionsRequestV1 extends Request
     public function __construct($token, array $queryParameters = [])
     {
         if (!isset($queryParameters['user.id']) && $token instanceof Token) {
-            $queryParameters['user.id'] = $token->getClaim('user_name');
+            $queryParameters['user.id'] = $token->claims()->get('user_name');
         }
 
         parent::__construct(

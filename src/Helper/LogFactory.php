@@ -41,8 +41,8 @@ class LogFactory
         }
 
         if ($token = RequestTokenFetcher::fetch($request)) {
-            if ($token->hasClaim('user_name')) {
-                $context['userId'] = $token->getClaim('user_name');
+            if ($token && $token->claims()->has('user_name')) {
+                $context['userId'] = $token->claims()->get('user_name');
             }
         }
 
