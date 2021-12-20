@@ -17,7 +17,7 @@ class GetParcelLabelRequestV1 extends Request
         parent::__construct(
             'GET',
             $this->prepareApiUri('/parcel-management/parcels/label', $query),
-            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1, 'application/pdf')
         );
     }
 }
