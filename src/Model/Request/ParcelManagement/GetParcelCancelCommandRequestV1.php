@@ -8,6 +8,9 @@ use GuzzleHttp\Psr7\Request;
 use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 
+/**
+ * @deprecated
+ */
 class GetParcelCancelCommandRequestV1 extends Request
 {
     use RequestTrait;
