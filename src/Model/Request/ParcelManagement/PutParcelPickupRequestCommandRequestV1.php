@@ -9,6 +9,9 @@ use Imper86\AllegroRestApiSdk\Constants\ContentType;
 use Imper86\AllegroRestApiSdk\Model\Request\RequestTrait;
 use Ramsey\Uuid\Uuid;
 
+/**
+ * @deprecated
+ */
 class PutParcelPickupRequestCommandRequestV1 extends Request
 {
     use RequestTrait;
