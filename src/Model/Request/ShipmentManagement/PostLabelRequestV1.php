@@ -17,7 +17,7 @@ class PostLabelRequestV1 extends Request
         parent::__construct(
             'POST',
             $this->prepareApiUri('/shipment-management/label'),
-            $this->prepareHeaders($token, ContentType::PUBLIC_V1),
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1, ContentType::OCTET_STREAM),
             json_encode(
                 [
                     'shipmentIds' => $shipmentIds,
