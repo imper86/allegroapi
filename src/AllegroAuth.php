@@ -28,6 +28,7 @@ use Psr\Http\Message\UriInterface;
 use Psr\Log\LoggerInterface;
 use SoapFault;
 use function GuzzleHttp\Psr7\build_query;
+use function http_build_query;
 
 /**
  * Class AllegroAuth
@@ -117,13 +118,13 @@ class AllegroAuth implements AllegroAuthInterface
      */
     public function fetchTokenFromCode(string $code, array $logContext = []): TokenBundleInterface
     {
-        $query = build_query([
+        $body = http_build_query([
             'grant_type' => GrantType::AUTHORIZATION_CODE,
             'code' => $code,
             'redirect_uri' => $this->credentials->getRedirectUri(),
         ]);
 
-        $request = new Request('POST', $this->prepareTokenUri($query), $this->prepareHeaders());
+        $request = new Request('POST', $this->prepareTokenUri(), $this->prepareHeaders(), $body);
         $response = $this->httpClient->sendRequest($request);
 
         LogFactory::log($this->logger, $logContext, $request, $response);
@@ -140,14 +141,12 @@ class AllegroAuth implements AllegroAuthInterface
      */
     public function fetchTokenFromDeviceCode(string $deviceCode, array $logContext = []): TokenBundleInterface
     {
-        $query = build_query([
+        $body = http_build_query([
             'grant_type' => GrantType::DEVICE_CODE,
             'device_code' => $deviceCode,
         ]);
 
-        $request = new Request('POST', $this->prepareTokenUri($query), $this->prepareHeaders([
-            'Content-Type' => "application/x-www-form-urlencoded",
-        ]));
+        $request = new Request('POST', $this->prepareTokenUri(), $this->prepareHeaders(), $body);
         $response = $this->httpClient->sendRequest($request);
 
         LogFactory::log($this->logger, $logContext, $request, $response);
@@ -164,13 +163,13 @@ class AllegroAuth implements AllegroAuthInterface
      */
     public function fetchTokenFromRefresh($refreshToken, array $logContext = []): TokenBundleInterface
     {
-        $query = build_query([
+        $body = http_build_query([
             'grant_type' => GrantType::REFRESH_TOKEN,
             'refresh_token' => (string)$refreshToken,
             'redirect_uri' => $this->credentials->getRedirectUri(),
         ]);
 
-        $request = new Request('POST', $this->prepareTokenUri($query), $this->prepareHeaders());
+        $request = new Request('POST', $this->prepareTokenUri(), $this->prepareHeaders(), $body);
         $response = $this->httpClient->sendRequest($request);
 
         LogFactory::log($this->logger, $logContext, $request, $response);
@@ -206,8 +205,8 @@ class AllegroAuth implements AllegroAuthInterface
 
     public function fetchTokenFromClientCredentials(array $logContext = []): TokenBundleInterface
     {
-        $query = build_query(['grant_type' => GrantType::CLIENT_CREDENTIALS]);
-        $request = new Request('POST', $this->prepareTokenUri($query), $this->prepareHeaders());
+        $body = http_build_query(['grant_type' => GrantType::CLIENT_CREDENTIALS]);
+        $request = new Request('POST', $this->prepareTokenUri(), $this->prepareHeaders(), $body);
         $response = $this->httpClient->sendRequest($request);
 
         LogFactory::log($this->logger, $logContext, $request, $response);
@@ -223,10 +222,10 @@ class AllegroAuth implements AllegroAuthInterface
      * @param string $query
      * @return UriInterface
      */
-    private function prepareTokenUri(string $query): UriInterface
+    private function prepareTokenUri(): UriInterface
     {
         $host = EndpointHost::OAUTH;
-        $uri = new Uri("https://{$host}/auth/oauth/token?{$query}");
+        $uri = new Uri("https://$host/auth/oauth/token");
 
         return $this->credentials->isSandbox() ? SandboxUri::prep($uri) : $uri;
     }
@@ -238,7 +237,7 @@ class AllegroAuth implements AllegroAuthInterface
     private function prepareDeviceUri(string $query): UriInterface
     {
         $host = EndpointHost::OAUTH;
-        $uri = new Uri("https://{$host}/auth/oauth/device?{$query}");
+        $uri = new Uri("https://$host/auth/oauth/device?$query");
 
         return $this->credentials->isSandbox() ? SandboxUri::prep($uri) : $uri;
     }
@@ -252,7 +251,9 @@ class AllegroAuth implements AllegroAuthInterface
         $basicAuthString = base64_encode("{$this->credentials->getClientId()}:{$this->credentials->getClientSecret()}");
 
         return array_merge([
-            'Authorization' => "Basic {$basicAuthString}",
+            'Authorization' => "Basic $basicAuthString",
+            'Content-Type' => 'application/x-www-form-urlencoded',
+            'Accept' => 'application/json',
         ], $extraHeaders);
     }
 }
