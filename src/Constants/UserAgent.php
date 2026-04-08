@@ -6,5 +6,5 @@ namespace Imper86\AllegroRestApiSdk\Constants;
 
 interface UserAgent
 {
-    public const DEFAULT = 'imper86/allegroapi/6.5 (https://github.com/imper86/allegroapi)';
+    public const DEFAULT = 'imper86/allegroapi/5.8 (https://github.com/imper86/allegroapi)';
 }
