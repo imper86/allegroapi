@@ -14,6 +14,7 @@ use GuzzleHttp\Psr7\Uri;
 use Http\Adapter\Guzzle6\Client;
 use Imper86\AllegroRestApiSdk\Constants\EndpointHost;
 use Imper86\AllegroRestApiSdk\Constants\GrantType;
+use Imper86\AllegroRestApiSdk\Constants\UserAgent;
 use Imper86\AllegroRestApiSdk\Helper\LogFactory;
 use Imper86\AllegroRestApiSdk\Helper\SandboxUri;
 use Imper86\AllegroRestApiSdk\Helper\SoapLogFactory;
@@ -48,16 +49,22 @@ class AllegroAuth implements AllegroAuthInterface
      * @var ClientInterface|null
      */
     private $httpClient;
+    /**
+     * @var string|null
+     */
+    private $userAgent;
 
     public function __construct(
         AppCredentialsInterface $credentials,
         ?LoggerInterface $logger = null,
-        ?ClientInterface $httpClient = null
+        ?ClientInterface $httpClient = null,
+        ?string $userAgent = null
     )
     {
         $this->credentials = $credentials;
         $this->logger = $logger;
         $this->httpClient = $httpClient ?? Client::createWithConfig([]);
+        $this->userAgent = $userAgent;
     }
 
     /**
@@ -254,6 +261,7 @@ class AllegroAuth implements AllegroAuthInterface
             'Authorization' => "Basic $basicAuthString",
             'Content-Type' => 'application/x-www-form-urlencoded',
             'Accept' => 'application/json',
+            'User-Agent' => $this->userAgent ?? UserAgent::DEFAULT,
         ], $extraHeaders);
     }
 }
