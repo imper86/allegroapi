@@ -9,6 +9,7 @@ namespace Imper86\AllegroRestApiSdk;
 
 
 use Http\Adapter\Guzzle6\Client;
+use Imper86\AllegroRestApiSdk\Constants\UserAgent;
 use Imper86\AllegroRestApiSdk\Helper\LogFactory;
 use Imper86\AllegroRestApiSdk\Helper\SandboxUri;
 use Imper86\AllegroRestApiSdk\Helper\SoapLogFactory;
@@ -33,16 +34,22 @@ class AllegroClient implements AllegroClientInterface
      * @var ClientInterface|null
      */
     private $httpClient;
+    /**
+     * @var string|null
+     */
+    private $userAgent;
 
     public function __construct(
         AppCredentialsInterface $credentials,
         ?LoggerInterface $logger = null,
-        ?ClientInterface $httpClient = null
+        ?ClientInterface $httpClient = null,
+        ?string $userAgent = null
     )
     {
         $this->credentials = $credentials;
         $this->logger = $logger;
         $this->httpClient = $httpClient ?? Client::createWithConfig([]);
+        $this->userAgent = $userAgent;
     }
 
     /**
@@ -53,6 +60,8 @@ class AllegroClient implements AllegroClientInterface
         if ($this->credentials->isSandbox()) {
             $request = $request->withUri(SandboxUri::prep($request->getUri()));
         }
+
+        $request = $request->withHeader('User-Agent', $this->userAgent ?? UserAgent::DEFAULT);
 
         $response = $this->httpClient->sendRequest($request);
 
